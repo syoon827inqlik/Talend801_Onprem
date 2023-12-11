@@ -110,37 +110,37 @@
   </parameters>
   <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" show="false" value="ApplicationServer"/>
-    <elementParameter field="TEXT" name="CLIENT" show="false" value="&quot;800&quot;"/>
-    <elementParameter field="TEXT" name="USERID" show="false" value="&quot;qlik&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:vC9iA2vLMaVMzVBhk6NsriQ9f3D3DAYVSDsy1MRWuzQn8dzwFoQ="/>
-    <elementParameter field="TEXT" name="LANGUAGE" show="false" value="&quot;EN&quot;"/>
-    <elementParameter field="TEXT" name="HOSTNAME" show="false" value="&quot;172.20.16.11&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMNUMBER" show="false" value="&quot;00&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;800&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;qlik&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:vC9iA2vLMaVMzVBhk6NsriQ9f3D3DAYVSDsy1MRWuzQn8dzwFoQ="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;172.20.16.11&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
     <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TEXT" name="RFC_SERVER_URL" value="&quot;http://localhost:8080&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_ID" value="&quot;default&quot;"/>
-    <elementParameter field="TEXT" name="PACKAGE_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="THREAD_COUNT" value="2"/>
-    <elementParameter field="TEXT" name="TOPIC_PARTITION_COUNT" value="2"/>
-    <elementParameter field="TEXT" name="MAX_TIME_TO_WAIT" value="60"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;MARA&quot;"/>
-    <elementParameter field="CHECK" name="CDS_VIEWS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="RFC_SERVER_URL" show="false" value="&quot;http://localhost:8080&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_ID" show="false" value="&quot;default&quot;"/>
+    <elementParameter field="TEXT" name="PACKAGE_SIZE" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="THREAD_COUNT" show="false" value="2"/>
+    <elementParameter field="TEXT" name="TOPIC_PARTITION_COUNT" show="false" value="2"/>
+    <elementParameter field="TEXT" name="MAX_TIME_TO_WAIT" show="false" value="60"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;MARC&quot;"/>
+    <elementParameter field="CHECK" name="CDS_VIEWS" value="false"/>
     <elementParameter field="TABLE" name="CDS_VIEW_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="FROM_STATEMENT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FILTER" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" show="false" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
     <elementParameter field="TEXT" name="START_ROW" value="-1"/>
     <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="-1"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
-    <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_FTP_BATCH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FTP_BATCH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="FILE_PROTOCOL" show="false" value="FTP"/>
     <elementParameter field="TEXT" name="FTP_HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FTP_PORT" show="false" value="21"/>
@@ -149,12 +149,12 @@
     <elementParameter field="CHECK" name="USE_SERVER_LOGICAL_PATH" show="false" value="false"/>
     <elementParameter field="TEXT" name="FTP_DIR" show="false" value="&quot;/usr/sap/talend/ftp/&quot;"/>
     <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" show="false" value="&quot;current_data_file&quot;"/>
-    <elementParameter field="CHECK" name="STREAMING_MODE" value="true"/>
+    <elementParameter field="CHECK" name="STREAMING_MODE" value="false"/>
     <elementParameter field="CHECK" name="NUMC_AS_STRING" value="false"/>
     <elementParameter field="CHECK" name="DATE_AS_STRING" value="false"/>
     <elementParameter field="CHECK" name="TRIM_SPACES" value="true"/>
-    <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false"/>
-    <elementParameter field="TABLE" name="KAFKA_PROPERTIES"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="TABLE" name="KAFKA_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="USE_CUSTOM_MAXLENGTH_FOR_VARIABLE_LENGTH" value="false"/>
     <elementParameter field="TEXT" name="CUSTOM_MAXLENGTH_FOR_VARIABLE_LENGTH" show="false" value="100"/>
     <elementParameter field="TEXT" name="FETCH_SIZE" show="false" value="10000"/>
@@ -162,7 +162,9 @@
     <elementParameter field="TEXT" name="REMOTE_DIR" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="REPLACE_CONTROL_CHARACTERS" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSAPTableInput_1"/>
+    <metadata connector="FLOW" name="tSAPTableInput_1">
+      <column comment="" key="false" length="-1" name="MANDT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -177,13 +179,23 @@
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANDT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="MANDT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPTableInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MANDT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -192,13 +204,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0a09fcaf-5bb0-4b8c-9ad5-fcd218326bc5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j0o29BLwS50cp/XY3+zr++ZKjBskcLNztqld5S2ZUkP2pyI2HgVLcn5nw56zCH2R9pP6t04/Ic6j&#13;
-oUpsyo8A3Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a4b61ad1-ffaf-4166-ab9f-265fe61230a8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EFjvLJzepafJ/G3Oyqcn/C3BqbV0e2onTf4ZWQidEjJNNw2oy4+Saxa6Z1hGk6rDN7IuNXms+AZQ&#13;
-rLVAE82htw==</DigestValue></Reference></SignedInfo><SignatureValue>Sugq1q7AKboPX5mDg9Aw8zdBQ95AY/M9K8krGgX78HoG6qqKIeLi15ylW+q0VMB9rd2JbtrEYe8y&#13;
-t+N4lsz4o6ew0siCrDwJlSIYqjO/NgLesQ3P0HFkiYSlKnQZlUH60vYN49EExyRDq2HG9mLg7D+e&#13;
-qpn8GdWeA5mN1hMAc4mIP4MoNslLuNBSm3b8ep580e3pPaSYZFfWb2gwfI6FMtS6eA3Mwxsq110g&#13;
-4vOC5fnADA0UjHE7gQbm25JybmWcih9bkEtn3bJBAzmBN51nbtRXnBJjtnIdVeydEQWVLkqrfush&#13;
-eK/z8Owr5TGsJXz8v06Oc1KglNwHyZJwIUyPTA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a2f1d215-e0cc-4f6b-a93b-c63c0965a78e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nhhDhuFvzoOvXhYxsnsGXJh7ioP6XMnhTWFWj0RFObQ4Vj/eSpzRCb82u8FY5HmLPqM8nF+SoyPC&#13;
+KH38l0h4Dw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c5bd32c0-f565-4621-880a-fd1d4cff4862"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>26ndfVowhRDQQAjTpRJMgJKBhqj10oIQLBaoRiINxWgdeIKTF0XYtIPNBh1SqBan0oDCmezmRYsA&#13;
+dZstTZLO2w==</DigestValue></Reference></SignedInfo><SignatureValue>iTgumG8Pa0XKKXMTyGO18VQqQH1AaI/R589Kb+JSXKZ8l187xaY+fRu90sIilqDtSZO9vPAfu033&#13;
+BQAdbu8WHPEfBwYlEP40vSFF2dhw9ZNip60gd2XHEdZaAywClbJL21mOozFiZ4uJun7z9sXLBeJR&#13;
+gqsJWacbTOn5GLZB7PSndQK9btRIQqnu7JHbK1CoKkRgyFZ/xLNG4NuY8IfdCAcJEbjfeD06xHCT&#13;
+RjzHgMQaoPwLVH7/Oti9EfiKL1p0jLNeAlAlTz9VKbSvOFPtZuvHijad+3GPzDUuBPhDbSs8Xyq5&#13;
+ql8/YLVl+G22Aat5Am3U2lZRqIWY6E4SzUDY3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -220,4 +232,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a4b61ad1-ffaf-4166-ab9f-265fe61230a8" Target="#_0a09fcaf-5bb0-4b8c-9ad5-fcd218326bc5"><Timestamp>2023-12-11 07:06:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c5bd32c0-f565-4621-880a-fd1d4cff4862" Target="#_a2f1d215-e0cc-4f6b-a93b-c63c0965a78e"><Timestamp>2023-12-11 07:09:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
