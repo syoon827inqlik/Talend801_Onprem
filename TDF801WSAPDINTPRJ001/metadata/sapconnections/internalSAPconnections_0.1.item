@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
   <TalendMetadata:SAPConnection Client="800" Host="10.90.0.22" Language="EN" Password="enc:system.encryption.key.v1:dztRo559RKwdQ9LI5Zepij/6IFl1/ojj3wIbtqPPb6bAeh/nYwcn" SystemNumber="00" Username="sean" dataPackage="_wMSaMK4vEe6vkuQllB0LoQ" jcoVersion="SAP2" xmi:id="_EmhrkK31Ee6CKZXXC7SGPQ">
     <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_EmpAUK31Ee6CKZXXC7SGPQ"/>
+    <BWInfoCubes id="_AJe2sK4wEe6vkuQllB0LoQ" label="IC_SD1" modelType="InfoCube" name="IC_SD1" tableSearchType="STANDARD" tableType="TABLE" xmi:id="_DbmuwK4wEe6vkuQllB0LoQ">
+      <feature businessName="" comment="Order Number" label="EAUFNR" length="12" name="EAUFNR" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuwa4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Delivery" label="EVBELN" length="10" name="EVBELN" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuwq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Delivery Item" label="EPOSNR" length="6" name="EPOSNR" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_Dbmuw64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Division" label="ESPART" length="2" name="ESPART" sourceType="STRING" talendType="id_String" xmi:id="_DbmuxK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Sales Office" label="EVKBUR" length="4" name="EVKBUR" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuxa4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Sales Group" label="EVKGRP" length="3" name="EVKGRP" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuxq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Distribution Channel" label="EVTWEG" length="2" name="EVTWEG" sourceType="STRING" talendType="id_String" xmi:id="_Dbmux64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Material Number" label="EMATNR" length="18" name="EMATNR" sourceType="STRING" talendType="id_String" xmi:id="_DbmuyK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Material Type" label="EMTART" length="4" name="EMTART" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuya4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Delivery Date" label="EERDAT" length="12" name="EERDAT" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuyq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Delivery Amount" label="ENETPR" length="17" name="ENETPR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_Dbmuy64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Order Amount" label="ENETWR" length="17" name="ENETWR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_DbmuzK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Delivery Currency" label="EWAERK" length="5" name="EWAERK" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuza4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Order Currency" label="EEWAERK" length="5" name="EEWAERK" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuzq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+    </BWInfoCubes>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage dataManager="_EmhrkK31Ee6CKZXXC7SGPQ" name="internalSAPconnections" xmi:id="_wMSaMK4vEe6vkuQllB0LoQ">
     <ownedElement id="_o78ZEK4vEe6vkuQllB0LoQ" label="MARA" name="MARA" tableSearchType="TRANSPARENT" tableType="TABLE" xmi:id="_wMTBQK4vEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPTable">
@@ -818,13 +834,13 @@
       </feature>
     </ownedElement>
   </TalendMetadata:GenericPackage>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_efd2459d-7ecb-4e7e-9942-c7bdc9e653fa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w/e0IcNZKvgytC5jiDKj2ComBJzkF4UPb55bn/YY9/aX9qdYet0bG46uP8hl0MsF+Y8lPzrRYGjs&#13;
-8vxc3FXQpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3011b47c-9386-4dff-88f9-20ce35efff21"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zbyvXpGiiJiY8EWrx7CbKLIcIIX2Dn5kdpDSLGX0RHv5nTtxSWuF8eSeh/XRi6d8CWdLZ6PfkyL4&#13;
-n4DhFKoYVw==</DigestValue></Reference></SignedInfo><SignatureValue>hwW22IvuW4QZUwEDhNTpuL5k6PyApksVoHYC7v7kwe5RABc+9ghXTiyDAo75JOAIAmc/4Ym6dxiP&#13;
-1+FCwOeQ5ZcuKrkcwtbbXeIYBZkB7cQRc7T5jHq63A39g2FnJ6200T1r6p5j+zZ255bg5FPjSrRj&#13;
-aidXu2kG2ThzgnpcQ9wn8EAC31kpWxxPA6VgYy58ByMHcGr125tbO/DrlZrCxfnmIyuTZN2nqga+&#13;
-HQlrqNokt88OexoYpzgjoW4fgRIhJP0W5JbORQcayEgVMTogr+KGIBN8SFN8+78ghRLrWLCRkVwZ&#13;
-nj98tiy9xqvACHma6WlUvan17a1LjoIzdlq9Sw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_548e8ffb-3c9b-4c33-9c7a-36b139f7e444"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nntvT2v6qkwwJ/mBPIiMpZC7sKjgI9Vje3mX1f9zVoqC5ZGwxEjt4MtHTad0qsVCx7iH0BCVwyF3&#13;
+yEHigmZQng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f203f112-0791-49eb-a368-855b35053c85"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RTjghylDOf5v1TrAD0IIHnCHONPbjKQorDGJxN9s4xNhXUZq5pu7SGBKdh3OJiJjQSbkAYSWOPbP&#13;
+npxoYwkKVQ==</DigestValue></Reference></SignedInfo><SignatureValue>cg0ycyhV5wgd5Jx7nyxlGNqN8BqCMhIrDckkemm8Hnjarsttu2NcQr90P9E94qHzTzr7yKm/qElx&#13;
+OoYpN9kNXpIZGtanQf4x9BFqZtHPoMRM7jAYPWfKjuITlsUnIbgb1Dvkt6HOuEk9llWVycyspbkl&#13;
+oHNmfDEzdhr29qjc+EK0JcYkkpaGt+eLJn9ZnqCrUvScAg7gKBdSjVJuLMHqS/FvOYPwm/Ordb9Q&#13;
+REFVUJsWh6YpENq8zECivzhK2dMqKtODmreQD2R8SLHkiH9jMZuhUzADb6GeD7EqbzpsRokvwGvc&#13;
+pWfbBpHsVkZexZYpYO+04vZNH2Ivd19xkr72ug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -846,4 +862,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3011b47c-9386-4dff-88f9-20ce35efff21" Target="#_efd2459d-7ecb-4e7e-9942-c7bdc9e653fa"><Timestamp>2024-01-08 14:11:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f203f112-0791-49eb-a368-855b35053c85" Target="#_548e8ffb-3c9b-4c33-9c7a-36b139f7e444"><Timestamp>2024-01-08 14:13:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
