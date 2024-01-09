@@ -2,21 +2,106 @@
   <TalendMetadata:SAPConnection Client="800" Host="10.90.0.22" Language="EN" Password="enc:system.encryption.key.v1:NNT1ngVTTJL6SF1phIBHAj59++DTYjGrUb+EHabspyeRdAMgRdWw" SystemNumber="00" Username="sean" dataPackage="_wMSaMK4vEe6vkuQllB0LoQ" id="_EmP-wK31Ee6CKZXXC7SGPQ" jcoVersion="SAP2" xmi:id="_EmhrkK31Ee6CKZXXC7SGPQ">
     <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_EmpAUK31Ee6CKZXXC7SGPQ"/>
     <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_3BnEgK41Ee6vkuQllB0LoQ"/>
-    <BWInfoCubes id="_AJe2sK4wEe6vkuQllB0LoQ" label="IC_SD1" modelType="InfoCube" name="IC_SD1" tableSearchType="STANDARD" tableType="TABLE" xmi:id="_DbmuwK4wEe6vkuQllB0LoQ">
-      <feature businessName="" comment="Order Number" label="EAUFNR" length="12" name="EAUFNR" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuwa4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Delivery" label="EVBELN" length="10" name="EVBELN" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuwq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Delivery Item" label="EPOSNR" length="6" name="EPOSNR" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_Dbmuw64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Division" label="ESPART" length="2" name="ESPART" sourceType="STRING" talendType="id_String" xmi:id="_DbmuxK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Sales Office" label="EVKBUR" length="4" name="EVKBUR" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuxa4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Sales Group" label="EVKGRP" length="3" name="EVKGRP" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuxq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Distribution Channel" label="EVTWEG" length="2" name="EVTWEG" sourceType="STRING" talendType="id_String" xmi:id="_Dbmux64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Material Number" label="EMATNR" length="18" name="EMATNR" sourceType="STRING" talendType="id_String" xmi:id="_DbmuyK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Material Type" label="EMTART" length="4" name="EMTART" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuya4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Delivery Date" label="EERDAT" length="12" name="EERDAT" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuyq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Delivery Amount" label="ENETPR" length="17" name="ENETPR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_Dbmuy64wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Order Amount" label="ENETWR" length="17" name="ENETWR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_DbmuzK4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Delivery Currency" label="EWAERK" length="5" name="EWAERK" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuza4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="" comment="Order Currency" label="EEWAERK" length="5" name="EEWAERK" sourceType="STRING" talendType="id_String" xmi:id="_Dbmuzq4wEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+    <BWInfoCubes id="_AJe2sK4wEe6vkuQllB0LoQ" label="IC_SD1" modelType="InfoCube" name="IC_SD1" tableSearchType="STANDARD" tableType="TABLE" xmi:id="_10olgK6tEe6vkuQllB0LoQ">
+      <feature businessName="" comment="Order Number" label="EAUFNR" length="12" name="EAUFNR" sourceType="STRING" talendType="id_String" xmi:id="_10olga6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10olgq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Delivery" label="EVBELN" length="10" name="EVBELN" sourceType="STRING" talendType="id_String" xmi:id="_10olg66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10olhK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Delivery Item" label="EPOSNR" length="6" name="EPOSNR" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10olha6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10olhq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Division" label="ESPART" length="2" name="ESPART" sourceType="STRING" talendType="id_String" xmi:id="_10olh66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10oliK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Sales Office" label="EVKBUR" length="4" name="EVKBUR" sourceType="STRING" talendType="id_String" xmi:id="_10olia6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMkK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Sales Group" label="EVKGRP" length="3" name="EVKGRP" sourceType="STRING" talendType="id_String" xmi:id="_10pMka6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMkq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Distribution Channel" label="EVTWEG" length="2" name="EVTWEG" sourceType="STRING" talendType="id_String" xmi:id="_10pMk66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMlK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Material Number" label="EMATNR" length="18" name="EMATNR" sourceType="STRING" talendType="id_String" xmi:id="_10pMla6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMlq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Material Type" label="EMTART" length="4" name="EMTART" sourceType="STRING" talendType="id_String" xmi:id="_10pMl66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMmK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Delivery Date" label="EERDAT" length="12" name="EERDAT" sourceType="STRING" talendType="id_String" xmi:id="_10pMma6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMmq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Delivery Amount" label="ENETPR" length="17" name="ENETPR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMm66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMnK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Order Amount" label="ENETWR" length="17" name="ENETWR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMna6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMnq6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Delivery Currency" label="EWAERK" length="5" name="EWAERK" sourceType="STRING" talendType="id_String" xmi:id="_10pMn66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMoK6tEe6vkuQllB0LoQ"/>
+      </feature>
+      <feature businessName="" comment="Order Currency" label="EEWAERK" length="5" name="EEWAERK" sourceType="STRING" talendType="id_String" xmi:id="_10pMoa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_10pMoq6tEe6vkuQllB0LoQ"/>
+      </feature>
+    </BWInfoCubes>
+    <BWInfoCubes id="_uxZMQK6tEe6vkuQllB0LoQ" label="_CPD_AVR_07" modelType="InfoCube" name="/CPD/AVR_07" tableType="TABLE" xmi:id="_10pMo66tEe6vkuQllB0LoQ">
+      <feature businessName="" comment="Controlling Area Currency" label="_CPD_ACACUR" length="5" name="/CPD/ACACUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMpK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Controlling Area" label="_CPD_ACOAREA" length="4" name="/CPD/ACOAREA" sourceType="STRING" talendType="id_String" xmi:id="_10pMpa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cost Element" label="_CPD_ACOELEMT" length="10" name="/CPD/ACOELEMT" sourceType="STRING" talendType="id_String" xmi:id="_10pMpq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Company Code" label="_CPD_ACOMPCOD" length="4" name="/CPD/ACOMPCOD" sourceType="STRING" talendType="id_String" xmi:id="_10pMp66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost" label="_CPD_ACST" length="17" name="/CPD/ACST" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMqK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost in Plan Crcy" label="_CPD_ACSTFPC" length="17" name="/CPD/ACSTFPC" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMqa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cost (Actual)" label="_CPD_ACT" length="17" name="/CPD/ACT" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMqq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost in CO Area Currency" label="_CPD_ACTCACUR" length="17" name="/CPD/ACTCACUR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMq66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost Trans. Crcy" label="_CPD_ACTCUR" length="5" name="/CPD/ACTCUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMrK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost in Object Currency" label="_CPD_ACTOBCUR" length="17" name="/CPD/ACTOBCUR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMra6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Cost in Transaction Currency" label="_CPD_ACTTCUR" length="16" name="/CPD/ACTTCUR" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_10pMrq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Company Code Currency" label="_CPD_AOBCUR" length="5" name="/CPD/AOBCUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMr66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue" label="_CPD_AREV" length="17" name="/CPD/AREV" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMsK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue in CO Area Crcy" label="_CPD_AREVCA" length="17" name="/CPD/AREVCA" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMsa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue in Plan Crcy" label="_CPD_AREVFPC" length="17" name="/CPD/AREVFPC" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMsq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue in Object Crcy" label="_CPD_AREVOC" length="17" name="/CPD/AREVOC" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMs66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue in Transaction Crcy" label="_CPD_AREVTC" length="17" name="/CPD/AREVTC" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMtK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Actual Revenue Trans. Crcy" label="_CPD_ARTCUR" length="5" name="/CPD/ARTCUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMta6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Total Quantity" label="_CPD_ATQNTY" length="17" name="/CPD/ATQNTY" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMtq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Value Type" label="_CPD_AVALTYPE" length="2" name="/CPD/AVALTYPE" sourceType="STRING" talendType="id_String" xmi:id="_10pMt66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cumulative Actual Cost" label="_CPD_CMACT" length="17" name="/CPD/CMACT" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMuK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Document Date" label="_CPD_DOCDAT" length="8" name="/CPD/DOCDAT" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_10pMua6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Document Number" label="_CPD_DOCNUM" length="10" name="/CPD/DOCNUM" sourceType="STRING" talendType="id_String" xmi:id="_10pMuq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Document Reversed" label="_CPD_DOCRVS" length="1" name="/CPD/DOCRVS" sourceType="STRING" talendType="id_String" xmi:id="_10pMu66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Quantity (Actual)" label="_CPD_FAQTY" length="17" name="/CPD/FAQTY" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMvK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Revenue (Actual)" label="_CPD_FASR" length="17" name="/CPD/FASR" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pMva6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Controlling Area" label="_CPD_FCNTAREA" length="4" name="/CPD/FCNTAREA" sourceType="STRING" talendType="id_String" xmi:id="_10pMvq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Plan Currency" label="_CPD_FPCUR" length="5" name="/CPD/FPCUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMv66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Employee" label="_CPD_FPERID" length="8" name="/CPD/FPERID" sourceType="STRING" talendType="id_String" xmi:id="_10pMwK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Structure Element" label="_CPD_FPID" length="50" name="/CPD/FPID" sourceType="STRING" talendType="id_String" xmi:id="_10pMwa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Financial Plan ID" label="_CPD_FPOID" length="8" name="/CPD/FPOID" sourceType="STRING" talendType="id_String" xmi:id="_10pMwq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Profile" label="_CPD_FPROFILE" length="8" name="/CPD/FPROFILE" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pMw66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Plan Scenario" label="_CPD_FPSCEN" length="4" name="/CPD/FPSCEN" sourceType="STRING" talendType="id_String" xmi:id="_10pMxK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Resource" label="_CPD_FRES" length="24" name="/CPD/FRES" sourceType="STRING" talendType="id_String" xmi:id="_10pMxa6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Resource Type" label="_CPD_FRTYP" length="4" name="/CPD/FRTYP" sourceType="STRING" talendType="id_String" xmi:id="_10pMxq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Transaction Currency" label="_CPD_FTCUR" length="5" name="/CPD/FTCUR" sourceType="STRING" talendType="id_String" xmi:id="_10pMx66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="UoM" label="_CPD_FUOM" length="3" name="/CPD/FUOM" sourceType="STRING" talendType="id_String" xmi:id="_10pMyK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Version" label="_CPD_FVER" length="28" name="/CPD/FVER" sourceType="STRING" talendType="id_String" xmi:id="_10pMya6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Key Figure Element" label="_CPD_KFEL" length="4" name="/CPD/KFEL" sourceType="STRING" talendType="id_String" xmi:id="_10pMyq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Material" label="_CPD_MATNR" length="14" name="/CPD/MATNR" sourceType="STRING" talendType="id_String" xmi:id="_10pMy66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="CO Business Transaction" label="_CPD_ORGVG" length="4" name="/CPD/ORGVG" sourceType="STRING" talendType="id_String" xmi:id="_10pMzK6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Personnel Number" label="_CPD_PERNR" length="8" name="/CPD/PERNR" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pMza6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Plant" label="_CPD_PLANT" length="4" name="/CPD/PLANT" sourceType="STRING" talendType="id_String" xmi:id="_10pMzq6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Posting Date" label="_CPD_PSTDAT" length="8" name="/CPD/PSTDAT" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_10pMz66tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Query Name" label="_CPD_QRYNAM" length="40" name="/CPD/QRYNAM" sourceType="STRING" talendType="id_String" xmi:id="_10pM0K6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Total Commitments in Plan Crcy" label="_CPD_TCMNTFPC" length="17" name="/CPD/TCMNTFPC" precision="2" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pM0a6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Commitments Quantity" label="_CPD_TCQNTY" length="17" name="/CPD/TCQNTY" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_10pM0q6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Calendar Year/Month" label="_CALMONTH" length="6" name="0CALMONTH" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pM066tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Client" label="_CLIENT" length="3" name="0CLIENT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pM1K6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Currency Key" label="_CURRENCY" length="5" name="0CURRENCY" sourceType="STRING" talendType="id_String" xmi:id="_10pM1a6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Fiscal year / period" label="_FISCPER" length="7" name="0FISCPER" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pM1q6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Fiscal year variant" label="_FISCVARNT" length="2" name="0FISCVARNT" sourceType="STRING" talendType="id_String" xmi:id="_10pM166tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Unit of Measure" label="_UNIT" length="3" name="0UNIT" sourceType="STRING" talendType="id_String" xmi:id="_10pM2K6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Number" label="_CPD_NUMBER" length="10" name="/CPD/NUMBER" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_10pM2a6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cost Element" label="_CPD_COSELMNT" length="10" name="/CPD/COSELMNT" sourceType="STRING" talendType="id_String" xmi:id="_10pM2q6tEe6vkuQllB0LoQ" xsi:type="TalendMetadata:SAPBWTableField"/>
     </BWInfoCubes>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage dataManager="_EmhrkK31Ee6CKZXXC7SGPQ" name="internalSAPconnections" xmi:id="_wMSaMK4vEe6vkuQllB0LoQ">
@@ -835,13 +920,13 @@
       </feature>
     </ownedElement>
   </TalendMetadata:GenericPackage>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_588a9cb0-15fd-4f92-bc9c-d9c1a738b00c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YRUnm4/iZvv35bJBVYioiI/XUbmQl9agzK5jvBFhxP4Cx66ix6vu/TvMgQalbuXeD7Y9cigs6kKp&#13;
-WLQBwKN09g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b2784263-d4b7-4b67-963b-8eaee1ea4060"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HV3BoWyTjcuDoWnHLLej2oRRhouthRg5iQ1pS1zInkWI8PI1R8D7SwqG02ayEOKTdIVgzBirTfH9&#13;
-ElQFcZLrRQ==</DigestValue></Reference></SignedInfo><SignatureValue>hwj8wjl8+J6whtphAcoUBV/GivapjC2KehmImpTMtyiiuJOXkDV5j6cI2tibUqWWs1ZxP81ncJwn&#13;
-7nGMaxMqJvFzo7mhRFvNdmHXXRSCpjlap/zqhlFvx8Q5TbOBzMIouckUjc6WVTNuwAXppyl3M4rX&#13;
-8NzFVnm+28bW7LZnh5LZwqR8p2tYBb7JHH70H7yVzz1ocwScesylUWfMW7AJ1ZDQB3EjFFsiICS9&#13;
-HF5cs5t7NPcw1P044A4/wr+pncRrD1NKhpXAvFRUP1ec2C9TEmwcoxp6lJWSloqsO4cMq9CJ73ge&#13;
-wNmA0HZkFCzAv7A0+IhgmbFQJdZCiVRCPt3sXQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e7fb4be0-6d3f-4753-84f2-b326e931bded"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iQ6lBoIJwu/yBHbHxbJmtmGaK6ixAHha9TpVMoPLSMLpl+mANw64NWppvf3niN2RhKyr6h4iEJ/D&#13;
+Fq20Zuh/nw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a5f55d8f-63de-48af-a847-20975af9aad8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xB4H9XWdUVEjfvDOLYDDf85V5SJ+ilyx5b9+rQBMHqJvkNAGBZOeV4NTeM5/1H6b8en/65C/85Q+&#13;
++6VBsOW3gA==</DigestValue></Reference></SignedInfo><SignatureValue>XeOfvRNJEubVI9/KI9EKPQhMRR3WHBQJgtLsw4Ow0dqtg3QQXTeeFw5seMWs4E7x2JV/K5/NayZ2&#13;
+O34yAFOV7A9+YxHMY4L0wS7fLqfYdb1UEcmHFtPP/tjoaWf8MKqySftMHVfB8Vftgt0HXWr/iutL&#13;
+Nc5cGvFmV9EytIz0kmbPdfFYBPbAKfZ+9Ucv1NMNd6hZfPlnUQunIbtCzp7ni5/fFp75EjX0J0MK&#13;
+Lf4Nsa9Pi4HLSvDUG6IVwJlChOGPu3LVkRGRE5DSPXwKBn4tGWdWWHAVzwJFs5Dqq0SfQIhkCGRZ&#13;
+MRDyLa49eulbl9NxZdyc9JqgRvu7QqK1BYSFZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -863,4 +948,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b2784263-d4b7-4b67-963b-8eaee1ea4060" Target="#_588a9cb0-15fd-4f92-bc9c-d9c1a738b00c"><Timestamp>2024-01-08 14:55:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a5f55d8f-63de-48af-a847-20975af9aad8" Target="#_e7fb4be0-6d3f-4753-84f2-b326e931bded"><Timestamp>2024-01-09 05:13:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
