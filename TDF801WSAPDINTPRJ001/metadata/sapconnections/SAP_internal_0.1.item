@@ -1,13 +1,831 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SAPConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" Client="800" Host="10.90.0.22" Language="EN" Password="enc:system.encryption.key.v1:wATAUqVtmY6n7uo/4woDJ1Z8zP2aPRItwZM2QO525geom7W2dhAF" SystemNumber="00" Username="sean" jcoVersion="SAP2" xmi:id="_J2ZBQLNcEe6d1uDK_zTclw" xmi:version="2.0">
-  <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_J2ZBQbNcEe6d1uDK_zTclw"/>
-  <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_J2ZBQrNcEe6d1uDK_zTclw"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_05a1d250-2f5a-4aa3-b9a2-31aee3f4a362"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FfONBcHA3urZ+z407waUxDY2xibPiZXfi0poG3QdPnoltL/HwfSXMMa0JMF8Uht5ulcQmDoe/W3Q&#13;
-5inZKZLDig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dbc42da7-522f-43e3-9ef4-73eacd66c277"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XU5AvQM0jwCUvbl/lIgCIPQi+DpHtPZ54qGhCPANqTx010slT3/Sooh/PwtMqkWRhEW9XuysEfnp&#13;
-HgB7pkweHg==</DigestValue></Reference></SignedInfo><SignatureValue>hcYx9rijJrYWyZefgwBCqRCA7W9rW2iDhY6spP5bRq1Gz0mvO6FWl3Rvns9vvRPiLBXZEOfNYWC8&#13;
-TbFUZuaJcfMqEL8jvmnHdOPH1XlpqIKVC82OXLosSjpBCtYsFniZ5IF2qjvWFxCmvHXZyjbHGHZI&#13;
-PkcZkBtROOZnAb2k1s/YZywuEcbF4H6K2V210bgsUxYiFqMX3vOvLhi7yfe2OeV6lTMScQdZHd2E&#13;
-DFBY2dGj66bcJ4Myc+8FC36hIbmxt17AfgZtvxLT7rVCO+XrjKpSJ0u8ZN0sCK+FbtqceCzYToSQ&#13;
-8alSnveTcAc9M7JIggrC7ZMNVf5Us4WhI4tunA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:SAPConnection Client="800" Host="10.90.0.22" Language="EN" Password="enc:system.encryption.key.v1:wATAUqVtmY6n7uo/4woDJ1Z8zP2aPRItwZM2QO525geom7W2dhAF" SystemNumber="00" Username="sean" dataPackage="_eSFM4LNdEe6d1uDK_zTclw" jcoVersion="SAP2" xmi:id="_J2ZBQLNcEe6d1uDK_zTclw">
+    <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_J2ZBQbNcEe6d1uDK_zTclw"/>
+    <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_J2ZBQrNcEe6d1uDK_zTclw"/>
+  </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage dataManager="_J2ZBQLNcEe6d1uDK_zTclw" name="SAP_internal" xmi:id="_eSFM4LNdEe6d1uDK_zTclw">
+    <ownedElement id="_8skO0LNcEe6d1uDK_zTclw" label="MARA" name="MARA" tableSearchType="TRANSPARENT" tableType="TABLE" xmi:id="_eSFz8LNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTable">
+      <feature businessName="Client" comment="Client" key="true" label="MANDT" length="3" name="MANDT" sourceType="STRING" talendType="id_String" xmi:id="_eSFz8bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz8rNdEe6d1uDK_zTclw"/>
+        <refTable>T000</refTable>
+      </feature>
+      <feature businessName="Material" comment="Material Number" key="true" label="MATNR" length="18" name="MATNR" sourceType="STRING" talendType="id_String" xmi:id="_eSFz87NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz9LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Created On" comment="Created On" label="ERSDA" length="8" name="ERSDA" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSFz9bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz9rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Created By" comment="Name of Person Who Created the Object" label="ERNAM" length="12" name="ERNAM" sourceType="STRING" talendType="id_String" xmi:id="_eSFz97NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz-LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Last Change" comment="Date of Last Change" label="LAEDA" length="8" name="LAEDA" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSFz-bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz-rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Changed by" comment="Name of person who changed object" label="AENAM" length="12" name="AENAM" sourceType="STRING" talendType="id_String" xmi:id="_eSFz-7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz_LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Compl. maint. status" comment="Maintenance status of complete material" label="VPSTA" length="15" name="VPSTA" sourceType="STRING" talendType="id_String" xmi:id="_eSFz_bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSFz_rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Maintenance status" comment="Maintenance status" label="PSTAT" length="15" name="PSTAT" sourceType="STRING" talendType="id_String" xmi:id="_eSFz_7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ALNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="DF at client level" comment="Flag Material for Deletion at Client Level" label="LVORM" length="1" name="LVORM" sourceType="STRING" talendType="id_String" xmi:id="_eSF0AbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ArNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material Type" comment="Material Type" label="MTART" length="4" name="MTART" sourceType="STRING" talendType="id_String" xmi:id="_eSF0A7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0BLNdEe6d1uDK_zTclw"/>
+        <refTable>T134</refTable>
+      </feature>
+      <feature businessName="Industry Sector" comment="Industry Sector" label="MBRSH" length="1" name="MBRSH" sourceType="STRING" talendType="id_String" xmi:id="_eSF0BbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0BrNdEe6d1uDK_zTclw"/>
+        <refTable>T137</refTable>
+      </feature>
+      <feature businessName="Material Group" comment="Material Group" label="MATKL" length="9" name="MATKL" sourceType="STRING" talendType="id_String" xmi:id="_eSF0B7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0CLNdEe6d1uDK_zTclw"/>
+        <refTable>T023</refTable>
+      </feature>
+      <feature businessName="Old material number" comment="Old material number" label="BISMT" length="18" name="BISMT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0CbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0CrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Base Unit of Measure" comment="Base Unit of Measure" label="MEINS" length="3" name="MEINS" sourceType="STRING" talendType="id_String" xmi:id="_eSF0C7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0DLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Order Unit" comment="Purchase Order Unit of Measure" label="BSTME" length="3" name="BSTME" sourceType="STRING" talendType="id_String" xmi:id="_eSF0DbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0DrNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Document" comment="Document number (without document management system)" label="ZEINR" length="22" name="ZEINR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0D7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ELNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Document type" comment="Document type (without Document Management system)" label="ZEIAR" length="3" name="ZEIAR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0EbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ErNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Doc. Version" comment="Document version (without Document Management system)" label="ZEIVR" length="2" name="ZEIVR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0E7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0FLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Page format" comment="Page format of document (without Document Management system)" label="ZEIFO" length="4" name="ZEIFO" sourceType="STRING" talendType="id_String" xmi:id="_eSF0FbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0FrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Document change no." comment="Document change number (without document management system)" label="AESZN" length="6" name="AESZN" sourceType="STRING" talendType="id_String" xmi:id="_eSF0F7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0GLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Page number" comment="Page number of document (without Document Management system)" label="BLATT" length="3" name="BLATT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0GbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0GrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Number of sheets" comment="Number of sheets (without Document Management system)" label="BLANZ" length="3" name="BLANZ" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF0G7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0HLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Prod./insp. memo" comment="Production/inspection memo" label="FERTH" length="18" name="FERTH" sourceType="STRING" talendType="id_String" xmi:id="_eSF0HbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0HrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Page format" comment="Page Format of Production Memo" label="FORMT" length="4" name="FORMT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0H7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ILNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Size/dimensions" comment="Size/dimensions" label="GROES" length="32" name="GROES" sourceType="STRING" talendType="id_String" xmi:id="_eSF0IbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0IrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Basic material" comment="Basic Material" label="WRKST" length="48" name="WRKST" sourceType="STRING" talendType="id_String" xmi:id="_eSF0I7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0JLNdEe6d1uDK_zTclw"/>
+        <refTable>TWSPR</refTable>
+      </feature>
+      <feature businessName="Industry Std Desc." comment="Industry Standard Description (such as ANSI or ISO)" label="NORMT" length="18" name="NORMT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0JbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0JrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Lab/Office" comment="Laboratory/design office" label="LABOR" length="3" name="LABOR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0J7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0KLNdEe6d1uDK_zTclw"/>
+        <refTable>T024L</refTable>
+      </feature>
+      <feature businessName="Purchasing value key" comment="Purchasing Value Key" label="EKWSL" length="4" name="EKWSL" sourceType="STRING" talendType="id_String" xmi:id="_eSF0KbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0KrNdEe6d1uDK_zTclw"/>
+        <refTable>T405</refTable>
+      </feature>
+      <feature businessName="Gross Weight" comment="Gross Weight" label="BRGEW" length="13" name="BRGEW" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0K7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0LLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Net Weight" comment="Net Weight" label="NTGEW" length="13" name="NTGEW" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0LbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0LrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Weight Unit" comment="Weight Unit" label="GEWEI" length="3" name="GEWEI" sourceType="STRING" talendType="id_String" xmi:id="_eSF0L7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0MLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Volume" comment="Volume" label="VOLUM" length="13" name="VOLUM" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0MbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0MrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Volume Unit" comment="Volume Unit" label="VOLEH" length="3" name="VOLEH" sourceType="STRING" talendType="id_String" xmi:id="_eSF0M7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0NLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Container reqmts" comment="Container requirements" label="BEHVO" length="2" name="BEHVO" sourceType="STRING" talendType="id_String" xmi:id="_eSF0NbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0NrNdEe6d1uDK_zTclw"/>
+        <refTable>T144</refTable>
+      </feature>
+      <feature businessName="Storage conditions" comment="Storage conditions" label="RAUBE" length="2" name="RAUBE" sourceType="STRING" talendType="id_String" xmi:id="_eSF0N7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0OLNdEe6d1uDK_zTclw"/>
+        <refTable>T142</refTable>
+      </feature>
+      <feature businessName="Temp. conditions" comment="Temperature conditions indicator" label="TEMPB" length="2" name="TEMPB" sourceType="STRING" talendType="id_String" xmi:id="_eSF0ObNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0OrNdEe6d1uDK_zTclw"/>
+        <refTable>T143</refTable>
+      </feature>
+      <feature businessName="Low-Level Code" comment="Low-Level Code" label="DISST" length="3" name="DISST" sourceType="STRING" talendType="id_String" xmi:id="_eSF0O7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0PLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Transportation Group" comment="Transportation Group" label="TRAGR" length="4" name="TRAGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0PbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0PrNdEe6d1uDK_zTclw"/>
+        <refTable>TTGR</refTable>
+      </feature>
+      <feature businessName="Haz. material number" comment="Hazardous material number" label="STOFF" length="18" name="STOFF" sourceType="STRING" talendType="id_String" xmi:id="_eSF0P7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0QLNdEe6d1uDK_zTclw"/>
+        <refTable>MGEF</refTable>
+      </feature>
+      <feature businessName="Division" comment="Division" label="SPART" length="2" name="SPART" sourceType="STRING" talendType="id_String" xmi:id="_eSF0QbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0QrNdEe6d1uDK_zTclw"/>
+        <refTable>TSPA</refTable>
+      </feature>
+      <feature businessName="Competitor" comment="Competitor" label="KUNNR" length="10" name="KUNNR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0Q7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0RLNdEe6d1uDK_zTclw"/>
+        <refTable>V_KNA1WETT</refTable>
+      </feature>
+      <feature businessName="EAN number" comment="European Article Number (EAN) - obsolete!!!!!" label="EANNR" length="13" name="EANNR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0RbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0RrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Number of GR slips" comment="Quantity: Number of GR/GI slips to be printed" label="WESCH" length="13" name="WESCH" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0R7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0SLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Procurement rule" comment="Procurement rule" label="BWVOR" length="1" name="BWVOR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0SbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0SrNdEe6d1uDK_zTclw"/>
+        <refTable>T6WP1</refTable>
+      </feature>
+      <feature businessName="Source of supply" comment="Source of Supply" label="BWSCL" length="1" name="BWSCL" sourceType="STRING" talendType="id_String" xmi:id="_eSF0S7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0TLNdEe6d1uDK_zTclw"/>
+        <refTable>TMBW1</refTable>
+      </feature>
+      <feature businessName="Season" comment="Season Category" label="SAISO" length="4" name="SAISO" sourceType="STRING" talendType="id_String" xmi:id="_eSF0TbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0TrNdEe6d1uDK_zTclw"/>
+        <refTable>T6WSP</refTable>
+      </feature>
+      <feature businessName="Label type" comment="Label type" label="ETIAR" length="2" name="ETIAR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0T7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ULNdEe6d1uDK_zTclw"/>
+        <refTable>T6WP3</refTable>
+      </feature>
+      <feature businessName="Label form" comment="Label form" label="ETIFO" length="2" name="ETIFO" sourceType="STRING" talendType="id_String" xmi:id="_eSF0UbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0UrNdEe6d1uDK_zTclw"/>
+        <refTable>T6WP4</refTable>
+      </feature>
+      <feature businessName="Field deactivated" comment="Deactivated" label="ENTAR" length="1" name="ENTAR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0U7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0VLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="EAN/UPC" comment="International Article Number (EAN/UPC)" label="EAN11" length="18" name="EAN11" sourceType="STRING" talendType="id_String" xmi:id="_eSF0VbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0VrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="EAN category" comment="Category of International Article Number (EAN)" label="NUMTP" length="2" name="NUMTP" sourceType="STRING" talendType="id_String" xmi:id="_eSF0V7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0WLNdEe6d1uDK_zTclw"/>
+        <refTable>TNTP</refTable>
+      </feature>
+      <feature businessName="Length" comment="Length" label="LAENG" length="13" name="LAENG" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0WbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0WrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Width" comment="Width" label="BREIT" length="13" name="BREIT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0W7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0XLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Height" comment="Height" label="HOEHE" length="13" name="HOEHE" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0XbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0XrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Unit of Dimension" comment="Unit of Dimension for Length/Width/Height" label="MEABM" length="3" name="MEABM" sourceType="STRING" talendType="id_String" xmi:id="_eSF0X7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0YLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Product Hierarchy" comment="Product Hierarchy" label="PRDHA" length="18" name="PRDHA" sourceType="STRING" talendType="id_String" xmi:id="_eSF0YbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0YrNdEe6d1uDK_zTclw"/>
+        <refTable>T179</refTable>
+      </feature>
+      <feature businessName="Net Change Costing" comment="Stock Transfer Net Change Costing" label="AEKLK" length="1" name="AEKLK" sourceType="STRING" talendType="id_String" xmi:id="_eSF0Y7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ZLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="CAD Indicator" comment="CAD Indicator" label="CADKZ" length="1" name="CADKZ" sourceType="STRING" talendType="id_String" xmi:id="_eSF0ZbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0ZrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="QM proc. active" comment="QM in Procurement is Active" label="QMPUR" length="1" name="QMPUR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0Z7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0aLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Allowed pkg weight" comment="Allowed packaging weight" label="ERGEW" length="13" name="ERGEW" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0abNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0arNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Unit of weight" comment="Unit of weight (allowed packaging weight)" label="ERGEI" length="3" name="ERGEI" sourceType="STRING" talendType="id_String" xmi:id="_eSF0a7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0bLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Allowed pkg volume" comment="Allowed packaging volume" label="ERVOL" length="13" name="ERVOL" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0bbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0brNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Volume unit" comment="Volume unit (allowed packaging volume)" label="ERVOE" length="3" name="ERVOE" sourceType="STRING" talendType="id_String" xmi:id="_eSF0b7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0cLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Excess wt tolerance" comment="Excess Weight Tolerance for Handling unit" label="GEWTO" length="3" name="GEWTO" precision="1" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0cbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0crNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Excess volume tol." comment="Excess Volume Tolerance of the Handling Unit" label="VOLTO" length="3" name="VOLTO" precision="1" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0c7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0dLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Variable Purchase Order Unit" comment="Variable Purchase Order Unit Active" label="VABME" length="1" name="VABME" sourceType="STRING" talendType="id_String" xmi:id="_eSF0dbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0drNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Revision Level Assgd" comment="Revision Level Has Been Assigned to the Material" label="KZREV" length="1" name="KZREV" sourceType="STRING" talendType="id_String" xmi:id="_eSF0d7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0eLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material is configurable" comment="Configurable Material" label="KZKFG" length="1" name="KZKFG" sourceType="STRING" talendType="id_String" xmi:id="_eSF0ebNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0erNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Batch management" comment="Batch management requirement indicator" label="XCHPF" length="1" name="XCHPF" sourceType="STRING" talendType="id_String" xmi:id="_eSF0e7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0fLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Packaging mat. type" comment="Packaging Material Type" label="VHART" length="4" name="VHART" sourceType="STRING" talendType="id_String" xmi:id="_eSF0fbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0frNdEe6d1uDK_zTclw"/>
+        <refTable>TVTY</refTable>
+      </feature>
+      <feature businessName="Maximum level" comment="Maximum level (by volume)" label="FUELG" length="3" name="FUELG" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0f7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0gLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Stackability factor" comment="Stacking factor" label="STFAK" length="5" name="STFAK" sourceType="SHORT" talendType="id_Short" xmi:id="_eSF0gbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0grNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Matl Grp Pack.Matls" comment="Material Group: Packaging Materials" label="MAGRV" length="4" name="MAGRV" sourceType="STRING" talendType="id_String" xmi:id="_eSF0g7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0hLNdEe6d1uDK_zTclw"/>
+        <refTable>TVEGR</refTable>
+      </feature>
+      <feature businessName="Authorization Group" comment="Authorization Group" label="BEGRU" length="4" name="BEGRU" sourceType="STRING" talendType="id_String" xmi:id="_eSF0hbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0hrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Valid From" comment="Valid-From Date" label="DATAB" length="8" name="DATAB" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSF0h7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0iLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Valid to" comment="Deletion date" label="LIQDT" length="8" name="LIQDT" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSF0ibNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0irNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Season Year" comment="Season Year" label="SAISJ" length="4" name="SAISJ" sourceType="STRING" talendType="id_String" xmi:id="_eSF0i7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0jLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Price Band Category" comment="Price Band Category" label="PLGTP" length="2" name="PLGTP" sourceType="STRING" talendType="id_String" xmi:id="_eSF0jbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0jrNdEe6d1uDK_zTclw"/>
+        <refTable>TWPT</refTable>
+      </feature>
+      <feature businessName="With empties BOM" comment="Empties Bill of Material" label="MLGUT" length="1" name="MLGUT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0j7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0kLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Ext. Material Group" comment="External Material Group" label="EXTWG" length="18" name="EXTWG" sourceType="STRING" talendType="id_String" xmi:id="_eSF0kbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0krNdEe6d1uDK_zTclw"/>
+        <refTable>TWEW</refTable>
+      </feature>
+      <feature businessName="Cross-plant CM" comment="Cross-Plant Configurable Material" label="SATNR" length="18" name="SATNR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0k7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0lLNdEe6d1uDK_zTclw"/>
+        <refTable>MARA</refTable>
+      </feature>
+      <feature businessName="Material Category" comment="Material Category" label="ATTYP" length="2" name="ATTYP" sourceType="STRING" talendType="id_String" xmi:id="_eSF0lbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0lrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Co-product" comment="Indicator: Material can be co-product" label="KZKUP" length="1" name="KZKUP" sourceType="STRING" talendType="id_String" xmi:id="_eSF0l7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0mLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Follow-up material" comment="Indicator: The material has a follow-up material" label="KZNFM" length="1" name="KZNFM" sourceType="STRING" talendType="id_String" xmi:id="_eSF0mbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0mrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Pricing Ref. Matl" comment="Pricing Reference Material" label="PMATA" length="18" name="PMATA" sourceType="STRING" talendType="id_String" xmi:id="_eSF0m7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0nLNdEe6d1uDK_zTclw"/>
+        <refTable>MARA</refTable>
+      </feature>
+      <feature businessName="X-plant matl status" comment="Cross-Plant Material Status" label="MSTAE" length="2" name="MSTAE" sourceType="STRING" talendType="id_String" xmi:id="_eSF0nbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0nrNdEe6d1uDK_zTclw"/>
+        <refTable>T141</refTable>
+      </feature>
+      <feature businessName="X-distr.chain status" comment="Cross-distribution-chain material status" label="MSTAV" length="2" name="MSTAV" sourceType="STRING" talendType="id_String" xmi:id="_eSF0n7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0oLNdEe6d1uDK_zTclw"/>
+        <refTable>TVMS</refTable>
+      </feature>
+      <feature businessName="Valid from" comment="Date from which the cross-plant material status is valid" label="MSTDE" length="8" name="MSTDE" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSF0obNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0orNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Valid from" comment="Date from which the X-distr.-chain material status is valid" label="MSTDV" length="8" name="MSTDV" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_eSF0o7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0pLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Tax classification" comment="Tax classification of the material" label="TAKLV" length="1" name="TAKLV" sourceType="STRING" talendType="id_String" xmi:id="_eSF0pbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0prNdEe6d1uDK_zTclw"/>
+        <refTable>TSKM</refTable>
+      </feature>
+      <feature businessName="Catalog profile" comment="Catalog Profile" label="RBNRM" length="9" name="RBNRM" sourceType="STRING" talendType="id_String" xmi:id="_eSF0p7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0qLNdEe6d1uDK_zTclw"/>
+        <refTable>T352B</refTable>
+      </feature>
+      <feature businessName="Min. Rem. Shelf Life" comment="Minimum Remaining Shelf Life" label="MHDRZ" length="4" name="MHDRZ" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0qbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0qrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Total shelf life" comment="Total shelf life" label="MHDHB" length="4" name="MHDHB" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0q7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0rLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Storage percentage" comment="Storage percentage" label="MHDLP" length="3" name="MHDLP" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0rbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0rrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Content unit" comment="Content unit" label="INHME" length="3" name="INHME" sourceType="STRING" talendType="id_String" xmi:id="_eSF0r7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0sLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Net contents" comment="Net contents" label="INHAL" length="13" name="INHAL" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0sbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0srNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="ComparisonPriceUnit" comment="Comparison price unit" label="VPREH" length="5" name="VPREH" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0s7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0tLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Labeling matl grpg" comment="IS-R Labeling: material grouping (deactivated in 4.0)" label="ETIAG" length="18" name="ETIAG" sourceType="STRING" talendType="id_String" xmi:id="_eSF0tbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0trNdEe6d1uDK_zTclw"/>
+        <refTable>TWEA</refTable>
+      </feature>
+      <feature businessName="Gross contents" comment="Gross contents" label="INHBR" length="13" name="INHBR" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF0t7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0uLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Conversion Method" comment="Quantity Conversion Method" label="CMETH" length="1" name="CMETH" sourceType="STRING" talendType="id_String" xmi:id="_eSF0ubNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0urNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Internal object no." comment="Internal object number" label="CUOBF" length="18" name="CUOBF" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_eSF0u7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0vLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Environmentally rlvt" comment="Environmentally Relevant" label="KZUMW" length="1" name="KZUMW" sourceType="STRING" talendType="id_String" xmi:id="_eSF0vbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0vrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Product allocation" comment="Product allocation determination procedure" label="KOSCH" length="18" name="KOSCH" sourceType="STRING" talendType="id_String" xmi:id="_eSF0v7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0wLNdEe6d1uDK_zTclw"/>
+        <refTable>T190S</refTable>
+      </feature>
+      <feature businessName="Pricing profile" comment="Pricing profile for variants" label="SPROF" length="1" name="SPROF" sourceType="STRING" talendType="id_String" xmi:id="_eSF0wbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0wrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Qual.f.FreeGoodsDis." comment="Material qualifies for discount in kind" label="NRFHG" length="1" name="NRFHG" sourceType="STRING" talendType="id_String" xmi:id="_eSF0w7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0xLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Manufacturer Part No." comment="Manufacturer Part Number" label="MFRPN" length="40" name="MFRPN" sourceType="STRING" talendType="id_String" xmi:id="_eSF0xbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0xrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Manufacturer" comment="Manufacturer number" label="MFRNR" length="10" name="MFRNR" sourceType="STRING" talendType="id_String" xmi:id="_eSF0x7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0yLNdEe6d1uDK_zTclw"/>
+        <refTable>LFA1</refTable>
+      </feature>
+      <feature businessName="Int. material number" comment="Number of firm's own (internal) inventory-managed material" label="BMATN" length="18" name="BMATN" sourceType="STRING" talendType="id_String" xmi:id="_eSF0ybNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0yrNdEe6d1uDK_zTclw"/>
+        <refTable>MARA</refTable>
+      </feature>
+      <feature businessName="Mfr part profile" comment="Mfr part profile" label="MPROF" length="4" name="MPROF" sourceType="STRING" talendType="id_String" xmi:id="_eSF0y7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0zLNdEe6d1uDK_zTclw"/>
+        <refTable>TMPPF</refTable>
+      </feature>
+      <feature businessName="Units of meas. usage" comment="Units of measure usage" label="KZWSM" length="1" name="KZWSM" sourceType="STRING" talendType="id_String" xmi:id="_eSF0zbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0zrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Rollout" comment="Rollout in a Season" label="SAITY" length="2" name="SAITY" sourceType="STRING" talendType="id_String" xmi:id="_eSF0z7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF00LNdEe6d1uDK_zTclw"/>
+        <refTable>T6WSA</refTable>
+      </feature>
+      <feature businessName="DG indicator profile" comment="Dangerous Goods Indicator Profile" label="PROFL" length="3" name="PROFL" sourceType="STRING" talendType="id_String" xmi:id="_eSF00bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF00rNdEe6d1uDK_zTclw"/>
+        <refTable>TDG41</refTable>
+      </feature>
+      <feature businessName="Highly viscous" comment="Indicator: Highly Viscous" label="IHIVI" length="1" name="IHIVI" sourceType="STRING" talendType="id_String" xmi:id="_eSF007NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF01LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="In bulk/liquid" comment="Indicator: In Bulk/Liquid" label="ILOOS" length="1" name="ILOOS" sourceType="STRING" talendType="id_String" xmi:id="_eSF01bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF01rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Serialization level" comment="Level of Explicitness for Serial Number" label="SERLV" length="1" name="SERLV" sourceType="STRING" talendType="id_String" xmi:id="_eSF017NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF02LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Closed" comment="Packaging Material is Closed Packaging" label="KZGVH" length="1" name="KZGVH" sourceType="STRING" talendType="id_String" xmi:id="_eSF02bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF02rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Appr.batch rec. req." comment="Indicator: Approved batch record required" label="XGCHP" length="1" name="XGCHP" sourceType="STRING" talendType="id_String" xmi:id="_eSF027NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF03LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Assign effect. vals" comment="Assign effectivity parameter values/ override change numbers" label="KZEFF" length="1" name="KZEFF" sourceType="STRING" talendType="id_String" xmi:id="_eSF03bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF03rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material completion level" comment="Material completion level" label="COMPL" length="2" name="COMPL" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF037NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF04LNdEe6d1uDK_zTclw"/>
+        <refTable>TCSCP_COMP_LVL</refTable>
+      </feature>
+      <feature businessName="Period Ind. for SLED" comment="Period Indicator for Shelf Life Expiration Date" label="IPRKZ" length="1" name="IPRKZ" sourceType="STRING" talendType="id_String" xmi:id="_eSF04bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF04rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Rounding rule SLED" comment="Rounding rule for calculation of SLED" label="RDMHD" length="1" name="RDMHD" sourceType="STRING" talendType="id_String" xmi:id="_eSF047NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF05LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Product Composition" comment="Indicator: Product composition printed on packaging" label="PRZUS" length="1" name="PRZUS" sourceType="STRING" talendType="id_String" xmi:id="_eSF05bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF05rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Gen. item cat. grp" comment="General item category group" label="MTPOS_MARA" length="4" name="MTPOS_MARA" sourceType="STRING" talendType="id_String" xmi:id="_eSF057NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF06LNdEe6d1uDK_zTclw"/>
+        <refTable>TPTM</refTable>
+      </feature>
+      <feature businessName="Logistical variants" comment="Generic Material with Logistical Variants" label="BFLME" length="1" name="BFLME" sourceType="STRING" talendType="id_String" xmi:id="_eSF06bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF06rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material is locked" comment="Material Is Locked" label="MATFI" length="1" name="MATFI" sourceType="STRING" talendType="id_String" xmi:id="_eSF067NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF07LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Relevant for CM" comment="Relevant for Configuration Management" label="CMREL" length="1" name="CMREL" sourceType="STRING" talendType="id_String" xmi:id="_eSF07bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF07rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Assortment List Type" comment="Assortment List Type" label="BBTYP" length="1" name="BBTYP" sourceType="STRING" talendType="id_String" xmi:id="_eSF077NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF08LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Expiration Date" comment="Expiration Date" label="SLED_BBD" length="1" name="SLED_BBD" sourceType="STRING" talendType="id_String" xmi:id="_eSF08bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF08rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="EAN Variant" comment="Global Trade Item Number Variant" label="GTIN_VARIANT" length="2" name="GTIN_VARIANT" sourceType="STRING" talendType="id_String" xmi:id="_eSF087NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF09LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Generic Material" comment="Material Number of the Generic Material in Prepack Materials" label="GENNR" length="18" name="GENNR" sourceType="STRING" talendType="id_String" xmi:id="_eSF09bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF09rNdEe6d1uDK_zTclw"/>
+        <refTable>MARA</refTable>
+      </feature>
+      <feature businessName="Reference matl for packing" comment="Reference material for materials packed in same way" label="RMATP" length="18" name="RMATP" sourceType="STRING" talendType="id_String" xmi:id="_eSF097NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0-LNdEe6d1uDK_zTclw"/>
+        <refTable>MARA</refTable>
+      </feature>
+      <feature businessName="GDS-Relevant" comment="Indicator: Global Data Synchronization-Relevant" label="GDS_RELEVANT" length="1" name="GDS_RELEVANT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0-bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0-rNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Origin Acceptance" comment="Acceptance At Origin" label="WEORA" length="1" name="WEORA" sourceType="STRING" talendType="id_String" xmi:id="_eSF0-7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0_LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Standard HU Type" comment="Standard HU Type" label="HUTYP_DFLT" length="4" name="HUTYP_DFLT" sourceType="STRING" talendType="id_String" xmi:id="_eSF0_bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF0_rNdEe6d1uDK_zTclw"/>
+        <refTable>THUTYP</refTable>
+      </feature>
+      <feature businessName="Pilferable" comment="Pilferable" label="PILFERABLE" length="1" name="PILFERABLE" sourceType="STRING" talendType="id_String" xmi:id="_eSF0_7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ALNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="WH Storage Condition" comment="Warehouse Storage Condition" label="WHSTC" length="2" name="WHSTC" sourceType="STRING" talendType="id_String" xmi:id="_eSF1AbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ArNdEe6d1uDK_zTclw"/>
+        <refTable>TWHSTC</refTable>
+      </feature>
+      <feature businessName="WH Material Group" comment="Warehouse Material Group" label="WHMATGR" length="4" name="WHMATGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1A7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1BLNdEe6d1uDK_zTclw"/>
+        <refTable>TWHMATGR</refTable>
+      </feature>
+      <feature businessName="Handling Indicator" comment="Handling Indicator" label="HNDLCODE" length="4" name="HNDLCODE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1BbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1BrNdEe6d1uDK_zTclw"/>
+        <refTable>THNDLCD</refTable>
+      </feature>
+      <feature businessName="Rel. for HS" comment="Relevant for Hazardous Substances" label="HAZMAT" length="1" name="HAZMAT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1B7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1CLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Handling Unit Type" comment="Handling Unit Type" label="HUTYP" length="4" name="HUTYP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1CbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1CrNdEe6d1uDK_zTclw"/>
+        <refTable>THUTYP</refTable>
+      </feature>
+      <feature businessName="Varb. Tare Weight" comment="Variable Tare Weight" label="TARE_VAR" length="1" name="TARE_VAR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1C7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1DLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Maximum Capacity" comment="Maximum Allowed Capacity of Packaging Material" label="MAXC" length="15" name="MAXC" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1DbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1DrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Overcapacity Toler." comment="Overcapacity Tolerance of the Handling Unit" label="MAXC_TOL" length="3" name="MAXC_TOL" precision="1" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1D7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ELNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Max. Pack. Length" comment="Maximum Packing Length of Packaging Material" label="MAXL" length="15" name="MAXL" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1EbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ErNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Max. Pack. Width" comment="Maximum Packing Width of Packaging Material" label="MAXB" length="15" name="MAXB" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1E7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1FLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Max. Pack. Height" comment="Maximum Packing Height of Packaging Material" label="MAXH" length="15" name="MAXH" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1FbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1FrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Unit of Measurement" comment="Unit of Measure for Maximum Packing Length/Width/Height" label="MAXDIM_UOM" length="3" name="MAXDIM_UOM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1F7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1GLNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Country of origin" comment="Country of Origin of Material (Non-Preferential Origin)" label="HERKL" length="3" name="HERKL" sourceType="STRING" talendType="id_String" xmi:id="_eSF1GbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1GrNdEe6d1uDK_zTclw"/>
+        <refTable>T005</refTable>
+      </feature>
+      <feature businessName="Material freight grp" comment="Material freight group" label="MFRGR" length="8" name="MFRGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1G7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1HLNdEe6d1uDK_zTclw"/>
+        <refTable>TMFG</refTable>
+      </feature>
+      <feature businessName="Quarant. Per." comment="Quarantine Period" label="QQTIME" length="3" name="QQTIME" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1HbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1HrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Time Unit" comment="Time Unit for Quarantine Period" label="QQTIMEUOM" length="3" name="QQTIMEUOM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1H7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ILNdEe6d1uDK_zTclw"/>
+        <refTable>T006</refTable>
+      </feature>
+      <feature businessName="Quality Inspec. Grp" comment="Quality Inspection Group" label="QGRP" length="4" name="QGRP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1IbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1IrNdEe6d1uDK_zTclw"/>
+        <refTable>TQGRP</refTable>
+      </feature>
+      <feature businessName="Serial No. Profile" comment="Serial Number Profile" label="SERIAL" length="4" name="SERIAL" sourceType="STRING" talendType="id_String" xmi:id="_eSF1I7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1JLNdEe6d1uDK_zTclw"/>
+        <refTable>TSERIAL</refTable>
+      </feature>
+      <feature businessName="Form Name" comment="Form Name" label="PS_SMARTFORM" length="30" name="PS_SMARTFORM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1JbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1JrNdEe6d1uDK_zTclw"/>
+        <refTable>STXFADM</refTable>
+      </feature>
+      <feature businessName="Logistics Unit of Measure" comment="EWM CW: Logistics Unit of Measure" label="LOGUNIT" length="3" name="LOGUNIT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1J7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1KLNdEe6d1uDK_zTclw"/>
+        <refTable>MARM</refTable>
+      </feature>
+      <feature businessName="Catch-Weight-Relevant" comment="EWM CW: Material Is a Catch Weight Material" label="CWQREL" length="1" name="CWQREL" sourceType="STRING" talendType="id_String" xmi:id="_eSF1KbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1KrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="CW Profile for CW Qty" comment="EWM CW: Catch Weight Profile for Entering CW Quantity" label="CWQPROC" length="2" name="CWQPROC" sourceType="STRING" talendType="id_String" xmi:id="_eSF1K7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1LLNdEe6d1uDK_zTclw"/>
+        <refTable>TCWQPROC</refTable>
+      </feature>
+      <feature businessName="CW Tolerance Group" comment="EWM-CW: Catch Weight Tolerance Group for EWM" label="CWQTOLGR" length="9" name="CWQTOLGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1LbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1LrNdEe6d1uDK_zTclw"/>
+        <refTable>TCWQTOLGR</refTable>
+      </feature>
+      <feature businessName="Adjustment Profile" comment="Adjustment Profile" label="ADPROF" length="3" name="ADPROF" sourceType="STRING" talendType="id_String" xmi:id="_eSF1L7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1MLNdEe6d1uDK_zTclw"/>
+        <refTable>TAPROF</refTable>
+      </feature>
+      <feature businessName="Intellectual Property" comment="ID for an Intellectual Property (CRM Product)" label="IPMIPPRODUCT" length="40" name="IPMIPPRODUCT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1MbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1MrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Variant Price Allowed" comment="Variant Price Allowed (for Material Master)" label="ALLOW_PMAT_IGNO" length="1" name="ALLOW_PMAT_IGNO" sourceType="STRING" talendType="id_String" xmi:id="_eSF1M7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1NLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Medium" comment="Medium" label="MEDIUM" length="6" name="MEDIUM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1NbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1NrNdEe6d1uDK_zTclw"/>
+        <refTable>T372M</refTable>
+      </feature>
+      <feature businessName="Physical Commodity" comment="Physical Commodity" label="COMMODITY" length="18" name="COMMODITY" sourceType="STRING" talendType="id_String" xmi:id="_eSF1N7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1OLNdEe6d1uDK_zTclw"/>
+        <refTable>TBAC_PHYSCOMM</refTable>
+      </feature>
+      <feature businessName="Cont. Non-Textile Parts of Animal Origin" comment="Indicator: Contains Non-Textile Parts of Animal Origin" label="ANIMAL_ORIGIN" length="1" name="ANIMAL_ORIGIN" sourceType="STRING" talendType="id_String" xmi:id="_eSF1ObNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1OrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Textile Composition Maintenance Active" comment="Indicator: New Textile Composition Function" label="TEXTILE_COMP_IND" length="1" name="TEXTILE_COMP_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1O7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1PLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Segmentation Structure" comment="Segmentation Structure" label="SGT_CSGR" length="4" name="SGT_CSGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1PbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1PrNdEe6d1uDK_zTclw"/>
+        <refTable>SGT_CSGR_T</refTable>
+      </feature>
+      <feature businessName="Segmentation Strategy" comment="Segmentation Strategy" label="SGT_COVSA" length="8" name="SGT_COVSA" sourceType="STRING" talendType="id_String" xmi:id="_eSF1P7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1QLNdEe6d1uDK_zTclw"/>
+        <refTable>SGT_COVS_T</refTable>
+      </feature>
+      <feature businessName="Segmentation Status" comment="Segmentation Material Master Status" label="SGT_STAT" length="1" name="SGT_STAT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1QbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1QrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Segmentation Strategy Scope" comment="Segmentation Strategy Scope" label="SGT_SCOPE" length="1" name="SGT_SCOPE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1Q7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1RLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Segmentation Relevant" comment="Segmentation Relevant" label="SGT_REL" length="1" name="SGT_REL" sourceType="STRING" talendType="id_String" xmi:id="_eSF1RbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1RrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Fashion Attribute 1" comment="Fashion Information Field: 1" label="FSH_MG_AT1" length="10" name="FSH_MG_AT1" sourceType="STRING" talendType="id_String" xmi:id="_eSF1R7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1SLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Fashion Attribute 2" comment="Fashion Information Field: 2" label="FSH_MG_AT2" length="10" name="FSH_MG_AT2" sourceType="STRING" talendType="id_String" xmi:id="_eSF1SbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1SrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Fashion Attribute 3" comment="Fashion Information Field: 3" label="FSH_MG_AT3" length="6" name="FSH_MG_AT3" sourceType="STRING" talendType="id_String" xmi:id="_eSF1S7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1TLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Season Usage" comment="Indicator: Use of Season" label="FSH_SEALV" length="1" name="FSH_SEALV" sourceType="STRING" talendType="id_String" xmi:id="_eSF1TbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1TrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Season Active in Inventory Management" comment="Indicator: Season Active in Inventory Management" label="FSH_SEAIM" length="1" name="FSH_SEAIM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1T7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ULNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material Conv. ID" comment="Material Conversion ID for Characteristic Value Conversion" label="FSH_SC_MID" length="2" name="FSH_SC_MID" sourceType="STRING" talendType="id_String" xmi:id="_eSF1UbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1UrNdEe6d1uDK_zTclw"/>
+        <refTable>FSH_SC_VCIDS</refTable>
+      </feature>
+      <feature businessName="ANP Code" comment="ANP Code" label="ANP" length="9" name="ANP" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1U7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1VLNdEe6d1uDK_zTclw"/>
+        <refTable>J_1BTANP</refTable>
+      </feature>
+      <feature businessName="Protected Species Management Code" comment="Code of Protected Species Management" label="PSM_CODE" length="2" name="PSM_CODE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1VbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1VrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Loading Units" comment="Loading Units" label="_BEV1_LULEINH" length="8" name="/BEV1/LULEINH" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1V7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1WLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Loading Unit Group" comment="Loading Unit Group: IS Beverage" label="_BEV1_LULDEGRP" length="3" name="/BEV1/LULDEGRP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1WbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1WrNdEe6d1uDK_zTclw"/>
+        <refTable>/BEV1/LUT906</refTable>
+      </feature>
+      <feature businessName="Structure Category" comment="Structure Category for Material Relationship" label="_BEV1_NESTRUCCAT" length="1" name="/BEV1/NESTRUCCAT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1W7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1XLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Tolerance Type ID" comment="Tolerance Type ID" label="_DSD_SL_TOLTYP" length="4" name="/DSD/SL_TOLTYP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1XbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1XrNdEe6d1uDK_zTclw"/>
+        <refTable>/DSD/SL_TGTYP</refTable>
+      </feature>
+      <feature businessName="Counting Group" comment="Counting Group" label="_DSD_SV_CNT_GRP" length="10" name="/DSD/SV_CNT_GRP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1X7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1YLNdEe6d1uDK_zTclw"/>
+        <refTable>/DSD/SV_CNTGR</refTable>
+      </feature>
+      <feature businessName="DSD Grouping" comment="DSD Grouping" label="_DSD_VC_GROUP" length="6" name="/DSD/VC_GROUP" sourceType="STRING" talendType="id_String" xmi:id="_eSF1YbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1YrNdEe6d1uDK_zTclw"/>
+        <refTable>/DSD/VC_GRP</refTable>
+      </feature>
+      <feature businessName="Tilting Allowed" comment="Material may be Tilted (Vehicle Space Optimization)" label="_VSO_R_TILT_IND" length="1" name="/VSO/R_TILT_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1Y7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ZLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="No Stacking" comment="Stacking not Allowed (VSO)" label="_VSO_R_STACK_IND" length="1" name="/VSO/R_STACK_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1ZbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1ZrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Only Bottom Layer" comment="Bottom Layer (Vehicle Space Optimization)" label="_VSO_R_BOT_IND" length="1" name="/VSO/R_BOT_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1Z7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1aLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Only Top Layer" comment="Top Layer (VSO)" label="_VSO_R_TOP_IND" length="1" name="/VSO/R_TOP_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1abNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1arNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Stacking Factor" comment="Stacking Factor (Vehicle Space Optimization)" label="_VSO_R_STACK_NO" length="3" name="/VSO/R_STACK_NO" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1a7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1bLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Load without PKM" comment="Load without Packaging Material (VSO)" label="_VSO_R_PAL_IND" length="1" name="/VSO/R_PAL_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1bbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1brNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="PKM Overhang Depth" comment="Permissible Overhang (Depth) of Packaging Material (VSO)" label="_VSO_R_PAL_OVR_D" length="13" name="/VSO/R_PAL_OVR_D" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1b7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1cLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="PKM Overhang Width" comment="Permissible Overhang (Width) of Shipping Material (VSO)" label="_VSO_R_PAL_OVR_W" length="13" name="/VSO/R_PAL_OVR_W" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1cbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1crNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Max. Stacking Height" comment="Maximum Stacking Height of the Packaging Material (VSO)" label="_VSO_R_PAL_B_HT" length="13" name="/VSO/R_PAL_B_HT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1c7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1dLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Min. Stacking Height" comment="Minimum Stacking Height of the Packaging Material (VSO)" label="_VSO_R_PAL_MIN_H" length="13" name="/VSO/R_PAL_MIN_H" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1dbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1drNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Max.StackH Tolerance" comment="Tolerance to Exceed the Max. Stacking Height (VSO)" label="_VSO_R_TOL_B_HT" length="13" name="/VSO/R_TOL_B_HT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1d7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1eLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="No. Mat / Closed PKM" comment="Number of Materials for each Closed PKM (VSO)" label="_VSO_R_NO_P_GVH" length="2" name="/VSO/R_NO_P_GVH" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1ebNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1erNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="VSO Unit of Measure" comment="Unit of Measure Vehicle Space Optimization" label="_VSO_R_QUAN_UNIT" length="3" name="/VSO/R_QUAN_UNIT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1e7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1fLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Closed PKM Required" comment="Closed Packaging Material Required (VSO)" label="_VSO_R_KZGVH_IND" length="1" name="/VSO/R_KZGVH_IND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1fbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1frNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Packaging Code" comment="Packaging Code" label="PACKCODE" length="10" name="PACKCODE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1f7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1gLNdEe6d1uDK_zTclw"/>
+        <refTable>CCUNC121</refTable>
+      </feature>
+      <feature businessName="DG Packaging Status" comment="Dangerous Goods Packaging Status" label="DG_PACK_STATUS" length="10" name="DG_PACK_STATUS" sourceType="STRING" talendType="id_String" xmi:id="_eSF1gbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1grNdEe6d1uDK_zTclw"/>
+        <refTable>TDG101</refTable>
+      </feature>
+      <feature businessName="Material Condition Mgmt" comment="Material Condition Management" label="MCOND" length="1" name="MCOND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1g7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1hLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Return Code" comment="Return Code" label="RETDELC" length="1" name="RETDELC" sourceType="STRING" talendType="id_String" xmi:id="_eSF1hbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1hrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Return to Logistics Level" comment="Return to Logistics Level" label="LOGLEV_RETO" length="1" name="LOGLEV_RETO" sourceType="STRING" talendType="id_String" xmi:id="_eSF1h7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1iLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="NATO Item ID Number" comment="NATO Item Identification Number" label="NSNID" length="9" name="NSNID" sourceType="STRING" talendType="id_String" xmi:id="_eSF1ibNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1irNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Spare Part Class Code" comment="Spare Part Class Code" label="ADSPC_SPC" length="1" name="ADSPC_SPC" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1i7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1jLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Form-Fit-Function class" comment="FFF class" label="IMATN" length="18" name="IMATN" sourceType="STRING" talendType="id_String" xmi:id="_eSF1jbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1jrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Supersession chain number" comment="Supersession chain number" label="PICNUM" length="18" name="PICNUM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1j7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1kLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Creation Status" comment="Creation Status - Seasonal Procurement" label="BSTAT" length="2" name="BSTAT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1kbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1krNdEe6d1uDK_zTclw"/>
+        <refTable>WRFMATBSTAT</refTable>
+      </feature>
+      <feature businessName="Int. Char. Number" comment="Internal Charactieristic Number for Color Characteristics" label="COLOR_ATINN" length="10" name="COLOR_ATINN" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_eSF1k7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1lLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Int. Char. Number" comment="Internal Char. Number for Characteristics for Main Sizes" label="SIZE1_ATINN" length="10" name="SIZE1_ATINN" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_eSF1lbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1lrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Int. Char. Number" comment="Internal Char. Number for Characteristics for Second Sizes" label="SIZE2_ATINN" length="10" name="SIZE2_ATINN" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_eSF1l7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1mLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Color" comment="Characteristic Value for Colors of Variants" label="COLOR" length="18" name="COLOR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1mbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1mrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Main Size" comment="Characteristic Value for Main Sizes of Variants" label="SIZE1" length="18" name="SIZE1" sourceType="STRING" talendType="id_String" xmi:id="_eSF1m7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1nLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Second Size" comment="Characteristic Value for Second Size for Variants" label="SIZE2" length="18" name="SIZE2" sourceType="STRING" talendType="id_String" xmi:id="_eSF1nbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1nrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Free Charact. Value" comment="Characteristic Value for Evaluation Purposes" label="FREE_CHAR" length="18" name="FREE_CHAR" sourceType="STRING" talendType="id_String" xmi:id="_eSF1n7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1oLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Care Code" comment="Care Codes (such as Washing Code, Ironing Code, etc.)" label="CARE_CODE" length="16" name="CARE_CODE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1obNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1orNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Brand" comment="Brand" label="BRAND_ID" length="4" name="BRAND_ID" sourceType="STRING" talendType="id_String" xmi:id="_eSF1o7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1pLNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_BRANDS</refTable>
+      </feature>
+      <feature businessName="Component 1" comment="Fiber Code for Textiles (Component 1)" label="FIBER_CODE1" length="3" name="FIBER_CODE1" sourceType="STRING" talendType="id_String" xmi:id="_eSF1pbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1prNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_FIBER_CODES</refTable>
+      </feature>
+      <feature businessName="Percentage Share 1" comment="Percentage Share of Fiber (Component 1)" label="FIBER_PART1" length="3" name="FIBER_PART1" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1p7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1qLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Component 2" comment="Fiber Code for Textiles (Component 2)" label="FIBER_CODE2" length="3" name="FIBER_CODE2" sourceType="STRING" talendType="id_String" xmi:id="_eSF1qbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1qrNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_FIBER_CODES</refTable>
+      </feature>
+      <feature businessName="Percentage Share 2" comment="Percentage Share of Fiber (Component 2)" label="FIBER_PART2" length="3" name="FIBER_PART2" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1q7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1rLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Component 3" comment="Fiber Code for Textiles (Component 3)" label="FIBER_CODE3" length="3" name="FIBER_CODE3" sourceType="STRING" talendType="id_String" xmi:id="_eSF1rbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1rrNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_FIBER_CODES</refTable>
+      </feature>
+      <feature businessName="Percentage Share 3" comment="Percentage Share of Fiber (Component 3)" label="FIBER_PART3" length="3" name="FIBER_PART3" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1r7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1sLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Component 4" comment="Fiber Code for Textiles (Component 4)" label="FIBER_CODE4" length="3" name="FIBER_CODE4" sourceType="STRING" talendType="id_String" xmi:id="_eSF1sbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1srNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_FIBER_CODES</refTable>
+      </feature>
+      <feature businessName="Percentage Share 4" comment="Percentage Share of Fiber (Component 4)" label="FIBER_PART4" length="3" name="FIBER_PART4" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1s7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1tLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Component 5" comment="Fiber Code for Textiles (Component 5)" label="FIBER_CODE5" length="3" name="FIBER_CODE5" sourceType="STRING" talendType="id_String" xmi:id="_eSF1tbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1trNdEe6d1uDK_zTclw"/>
+        <refTable>WRF_FIBER_CODES</refTable>
+      </feature>
+      <feature businessName="Percentage Share 5" comment="Percentage Share of Fiber (Component 5)" label="FIBER_PART5" length="3" name="FIBER_PART5" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1t7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1uLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Fashion Grade" comment="Fashion Grade" label="FASHGRD" length="4" name="FASHGRD" sourceType="STRING" talendType="id_String" xmi:id="_eSF1ubNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1urNdEe6d1uDK_zTclw"/>
+        <refTable>T6WFG</refTable>
+      </feature>
+      <feature businessName="Assignment UoM" comment="Assignment UoM" label="_ACCGO_ASSGD_UOM" length="3" name="/ACCGO/ASSGD_UOM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1u7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1vLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Serialization Type" comment="Serialization Type" label="_STTPEC_SERTYPE" length="3" name="/STTPEC/SERTYPE" sourceType="SHORT" talendType="id_Short" xmi:id="_eSF1vbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1vrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Synchronization Active" comment="Synchronization Active" label="_STTPEC_SYNCACT" length="1" name="/STTPEC/SYNCACT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1v7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1wLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Last Synchronization Time" comment="Synchronization Time Stamp" label="_STTPEC_SYNCTIME" length="15" name="/STTPEC/SYNCTIME" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_eSF1wbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1wrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Serialization Usage" comment="Indicator Changed Since Integration" label="_STTPEC_SYNCCHG" length="1" name="/STTPEC/SYNCCHG" sourceType="STRING" talendType="id_String" xmi:id="_eSF1w7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1xLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Profile-Relevant Country" comment="Profile-Relevant Country" label="_STTPEC_COUNTRY_REF" length="3" name="/STTPEC/COUNTRY_REF" sourceType="STRING" talendType="id_String" xmi:id="_eSF1xbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1xrNdEe6d1uDK_zTclw"/>
+        <refTable>T005</refTable>
+      </feature>
+      <feature businessName="Product Category" comment="Product Category" label="_STTPEC_PRDCAT" length="10" name="/STTPEC/PRDCAT" sourceType="STRING" talendType="id_String" xmi:id="_eSF1x7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1yLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Object ID" comment="Object ID" label="COBJID" length="8" name="COBJID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_eSF1ybNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1yrNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Object type" comment="Object Type" label="COTYPE" length="2" name="COTYPE" sourceType="STRING" talendType="id_String" xmi:id="_eSF1y7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1zLNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Product compat.grp." comment="TD product group" label="OIGROUPNAM" length="8" name="OIGROUPNAM" sourceType="STRING" talendType="id_String" xmi:id="_eSF1zbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF1zrNdEe6d1uDK_zTclw"/>
+        <refTable>TOIGAP</refTable>
+      </feature>
+      <feature businessName="Transfer sign" comment="Transfer sign for plant-to-plant transfers" label="OITRIND" length="1" name="OITRIND" sourceType="STRING" talendType="id_String" xmi:id="_eSF1z7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF10LNdEe6d1uDK_zTclw"/>
+      </feature>
+      <feature businessName="Material tax group" comment="Material tax group" label="OIHMTXGR" length="4" name="OIHMTXGR" sourceType="STRING" talendType="id_String" xmi:id="_eSF10bNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_eSF10rNdEe6d1uDK_zTclw"/>
+        <refTable>OIH2M_J1B</refTable>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_98ca1660-704e-40bb-9d99-1fd1af5dd335"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bnE9Cr0RSgNoj4NAQVF0886zstdsnqvVtFAznQCOa2ZHfDjCC/FOgSXkI9XMpjSxFCR9LOHhMiq+&#13;
+zTnprwK8KA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b67c25e4-9b16-4783-886a-afeaf175edb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B6HqDHBnm0ayj5poLmgDeFwcUSMtPWZojvdXL5gKGImUJmQSRspkIP7R+bHMZ1yw3z18f3osVRh7&#13;
+ivNyDtwhBg==</DigestValue></Reference></SignedInfo><SignatureValue>d8hFfKawGCJ6ir6fD7A4phUoB7Cs2kUkrk09A5E6Q78V2E5PEhmTFGNnpuMKoEeMI2CdN4Uueh24&#13;
+mX1RqhfDqGYPRC6Tx6+7k9kUUAQf5ujBE7rRTmRZYlAZRf4O42R5XsZdkevQlNCTo/rnKEO2K0fG&#13;
+fxgvpKGhc/ed9ZrXw3IDCVKrGz/ji3lP9KAkIU7f02+PFpr1+7VRAgs+A/WZa1pKguKOCO2PtdcQ&#13;
+NNRG1+VAEAMpBAFq5OpQTO89ufAIVQ96TtR6WCeJBE5V9CVEss/10wRxJA8xWIYthLcwM4AzCNRr&#13;
+ytQfiO7OWYCxIcHD5semPze6Ii6wQzN3yJTQ/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -29,4 +847,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dbc42da7-522f-43e3-9ef4-73eacd66c277" Target="#_05a1d250-2f5a-4aa3-b9a2-31aee3f4a362"><Timestamp>2024-01-15 04:11:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SAPConnection>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b67c25e4-9b16-4783-886a-afeaf175edb1" Target="#_98ca1660-704e-40bb-9d99-1fd1af5dd335"><Timestamp>2024-01-15 04:20:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
