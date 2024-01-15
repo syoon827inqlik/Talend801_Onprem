@@ -2,6 +2,18 @@
   <TalendMetadata:SAPConnection Client="800" Host="10.90.0.22" Language="EN" Password="enc:system.encryption.key.v1:wATAUqVtmY6n7uo/4woDJ1Z8zP2aPRItwZM2QO525geom7W2dhAF" SystemNumber="00" Username="sean" dataPackage="_eSFM4LNdEe6d1uDK_zTclw" jcoVersion="SAP2" xmi:id="_J2ZBQLNcEe6d1uDK_zTclw">
     <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_J2ZBQbNcEe6d1uDK_zTclw"/>
     <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_J2ZBQrNcEe6d1uDK_zTclw"/>
+    <BWInfoCubes id="_04PhcLNdEe6d1uDK_zTclw" label="_CPD_PFP_V01" modelType="InfoCube" name="/CPD/PFP_V01" tableType="TABLE" xmi:id="_47vzILNdEe6d1uDK_zTclw">
+      <feature businessName="" comment="Calendar Year/Month" label="_CALMONTH" length="6" name="0CALMONTH" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_47vzIbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Financial Plan ID" label="_CPD_FPOID" length="8" name="/CPD/FPOID" sourceType="STRING" talendType="id_String" xmi:id="_47vzIrNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Client" label="_CLIENT" length="3" name="0CLIENT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_47vzI7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Structure Element" label="_CPD_FPID" length="50" name="/CPD/FPID" sourceType="STRING" talendType="id_String" xmi:id="_47vzJLNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Version" label="_CPD_FVER" length="28" name="/CPD/FVER" sourceType="STRING" talendType="id_String" xmi:id="_47vzJbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cost Element" label="_CPD_COSELMNT" length="10" name="/CPD/COSELMNT" sourceType="STRING" talendType="id_String" xmi:id="_47vzJrNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Cost (Plan)" label="_CPD_FPCA" length="16" name="/CPD/FPCA" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_47vzJ7NdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Revenue (Plan)" label="_CPD_FPSR" length="16" name="/CPD/FPSR" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_47vzKLNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Plan Currency" label="_CPD_FPCUR" length="5" name="/CPD/FPCUR" sourceType="STRING" talendType="id_String" xmi:id="_47vzKbNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="" comment="Controlling Area" label="_CPD_FCNTAREA" length="4" name="/CPD/FCNTAREA" sourceType="STRING" talendType="id_String" xmi:id="_47vzKrNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPBWTableField"/>
+    </BWInfoCubes>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage dataManager="_J2ZBQLNcEe6d1uDK_zTclw" name="SAP_internal" xmi:id="_eSFM4LNdEe6d1uDK_zTclw">
     <ownedElement id="_8skO0LNcEe6d1uDK_zTclw" label="MARA" name="MARA" tableSearchType="TRANSPARENT" tableType="TABLE" xmi:id="_eSFz8LNdEe6d1uDK_zTclw" xsi:type="TalendMetadata:SAPTable">
@@ -819,13 +831,13 @@
       </feature>
     </ownedElement>
   </TalendMetadata:GenericPackage>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_98ca1660-704e-40bb-9d99-1fd1af5dd335"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bnE9Cr0RSgNoj4NAQVF0886zstdsnqvVtFAznQCOa2ZHfDjCC/FOgSXkI9XMpjSxFCR9LOHhMiq+&#13;
-zTnprwK8KA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b67c25e4-9b16-4783-886a-afeaf175edb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B6HqDHBnm0ayj5poLmgDeFwcUSMtPWZojvdXL5gKGImUJmQSRspkIP7R+bHMZ1yw3z18f3osVRh7&#13;
-ivNyDtwhBg==</DigestValue></Reference></SignedInfo><SignatureValue>d8hFfKawGCJ6ir6fD7A4phUoB7Cs2kUkrk09A5E6Q78V2E5PEhmTFGNnpuMKoEeMI2CdN4Uueh24&#13;
-mX1RqhfDqGYPRC6Tx6+7k9kUUAQf5ujBE7rRTmRZYlAZRf4O42R5XsZdkevQlNCTo/rnKEO2K0fG&#13;
-fxgvpKGhc/ed9ZrXw3IDCVKrGz/ji3lP9KAkIU7f02+PFpr1+7VRAgs+A/WZa1pKguKOCO2PtdcQ&#13;
-NNRG1+VAEAMpBAFq5OpQTO89ufAIVQ96TtR6WCeJBE5V9CVEss/10wRxJA8xWIYthLcwM4AzCNRr&#13;
-ytQfiO7OWYCxIcHD5semPze6Ii6wQzN3yJTQ/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_def03617-e80b-4b20-b315-a9fc77ae5797"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gRi8BDsAnGOefsW4EWYqglyWmZ5Sabrrc2aTT8TJ2VbOv6YqklkeJpvbWVLPvq8mmaMJ3Vs2a1wl&#13;
+kGbkPvfYMw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9568aeb3-e5ad-4367-bdcc-fe9c49cf71d6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f67c3vUHNCDMkyC//7dnun82pk+b39xvLlgmSQAlNE3dsZ+NayaQFMe/XDgDEIisBIpZs44AVH5s&#13;
+rlItQf3Ftw==</DigestValue></Reference></SignedInfo><SignatureValue>UlCT3KM56V8y9TaYJ0WRmV0ojqvuK+EJYq1QiKIKY/6FVN3AIH238rv/fyfa43kHUXSyi7WGneNA&#13;
+ikiLwNhcPJtBATTqo1yyQsOs2i0t7npfCGc2ik2OTom26LoCWrJGdDt/vy+ct58ry+3lpHRjqBw9&#13;
+V3K9x0NUPDEDJs4j4H3zv4styjfTt23WbgEaZ2qyGBkx8LAB/m+W6pnRBUOb2TG57kD+PMfZCLcs&#13;
+PRUvvvrDmSusexk38Ok+yJvzr+NuuDbclK3t64DoDhK2MUtVSOnZw3yhyZdcXwpC4Nc6HOnM9WiR&#13;
+CTFOnym1SzHEi2o8WXLA/o4mZTLnJLKMhZ5VfA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -847,4 +859,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b67c25e4-9b16-4783-886a-afeaf175edb1" Target="#_98ca1660-704e-40bb-9d99-1fd1af5dd335"><Timestamp>2024-01-15 04:20:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9568aeb3-e5ad-4367-bdcc-fe9c49cf71d6" Target="#_def03617-e80b-4b20-b315-a9fc77ae5797"><Timestamp>2024-01-15 04:23:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
