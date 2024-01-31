@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -106,13 +108,98 @@
     <routinesParameter id="_pWYhkLuREe66ArRQDOOGPA" name="TalendStringUtil"/>
     <routinesParameter id="_pWfPQLuREe66ArRQDOOGPA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_97f83d6f-2e8a-4be4-a533-5fb0fe594e47"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NbJO5tGJhff8k/nLaiz2NLQtC2RUSE6pF4F8R6xHqacO5JtoyPHtzfYLsVt3r68DMjnjurVVlag7&#13;
-xupZj006Gw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2de53612-8a5c-4de5-ae09-9680283ff8d4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aeQNjJfoCqqUndiyDY5ey+kCI0zZT++24/ZxR33RHhEZz2OLMVf8HGSJBMe6jxb0ZWEHDiWQ3lZh&#13;
-dCw/LsGuNQ==</DigestValue></Reference></SignedInfo><SignatureValue>e9eQMdLEXNARvcrGibsONkFi/Q8HMlE5JYyet+/CGC8qsWfdHAtZ9stRhu6+rPMST2RCPL3HgO2/&#13;
-95BUzBXBQReo1zNwrM9NmOoO0pqwRua4bsIFasIRnTVD9CNgk58E6CwHag7qbd5ZlUcDykfXynTz&#13;
-g+xxnadGSkCrsG+8EVEkG/jOsya3iz6iV2LBhVuJqP0ZAmwCIzrvDDVMmNkM9P0pGduNSgw1jJg0&#13;
-SNK4ZtdVF16tVew7i9fCbpgQai5/8e2cfI9jwYNbSzPSjiUfH8cFqHaRGBYMgdhOmNgPHQqxDdUi&#13;
-XB6gfu7VtSArxRaGRIafNdLZNjWZzhM4FrYraA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tSAPDSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPDSOInput_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPDSOInput"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.101 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Business/SAP"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPDSOInput"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="/opt/Talend-8.0.1/studio/configuration/lib/java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_hUqvwL0DEe6dystZwObypg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;001&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;developer&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:BO0QPjzVmd/eifcru1zmBo12cyovmUGPwjc/Um0z5ruDaEt4dyw="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;therock4.iptime.org&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
+    <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_hUqvwL0DEe6dystZwObypg - AD001"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;AD001&quot;"/>
+    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="-1"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
+    <elementParameter field="TABLE" name="FILTER_TABLE"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_FTP_BATCH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_PROTOCOL" show="false" value="FTP"/>
+    <elementParameter field="TEXT" name="FTP_HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FTP_PORT" show="false" value="21"/>
+    <elementParameter field="TEXT" name="FTP_USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="FTP_PASS" show="false" value="enc:system.encryption.key.v1:Y33ALy+5z6Xg9ccEryu5xVP6AYKFF0esxsBxPZ0j"/>
+    <elementParameter field="TEXT" name="FTP_DIR" show="false" value="&quot;/usr/sap/talend/ftp/&quot;"/>
+    <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" show="false" value="&quot;current_data_file&quot;"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="-1"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="CHECK" name="EXTRACT_REMOTE_PATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="REMOTE_DIR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="AD001"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AD001" name="tSAPDSOInput_1">
+      <column comment="KF_PRICE01" key="false" length="10" name="KF01" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="KF01"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AD001" name="tLogRow_1">
+      <column comment="KF_PRICE01" key="false" length="10" name="KF01" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPDSOInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPDSOInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPDSOInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ac4af14-d12d-43bc-8829-edbee30d391b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DHOa/F2gxKo0gDG8RfU5cQrm4vJuAgAFrfd5MNqiSq4u/jPjU6I4pVk+Acx5K+pw/SiA4IovxhKY&#13;
+hhgezzx1vA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d605fafa-4c06-47f9-979e-bf8efb406277"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3E+6p6+sP+Q2tFror8mWMyXblrhAOIKqFIbE2hXF4QHwU1IzlMogNyPGEHiPDjVt9BPJELREKtVZ&#13;
+ijdgBShIYw==</DigestValue></Reference></SignedInfo><SignatureValue>H9qt7r+abPFXXMEF69aRuJjn8ba/OzBGlsJlcaap1/R9aUBRdP0c4jDcBrq9ZUJdxZu/HiiUQ+ZM&#13;
+H3ugklqZ8qZkQvO2g3lhpfVqVf7xySNiiJr15IAs6Rp0LDe8ts94S0ZDsBJI4U3PSYPwQEv/SExT&#13;
+AGtd3OlJWNnXf9Rvq6Q+Pu7A1f/arDDGTTa+lRDI8Xl9h93usk6aFN5BWKtn86vwqTPEDdOqHfoR&#13;
+i/AOqqi/n4dBkprsIQwok76HYKt3Bl4XrfJvt7dqTcWQALMWwpQQAG0jEETooaOx8H8r71VkoGSQ&#13;
+EQpsP6o6gW8nwlMhYI9UgCN0FNCtthvSDh1z1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +221,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2de53612-8a5c-4de5-ae09-9680283ff8d4" Target="#_97f83d6f-2e8a-4be4-a533-5fb0fe594e47"><Timestamp>2024-01-31 03:10:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d605fafa-4c06-47f9-979e-bf8efb406277" Target="#_5ac4af14-d12d-43bc-8829-edbee30d391b"><Timestamp>2024-01-31 03:11:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
