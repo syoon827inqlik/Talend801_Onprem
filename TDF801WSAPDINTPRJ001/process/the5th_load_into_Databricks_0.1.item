@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -106,13 +108,245 @@
     <routinesParameter id="_pWYhkLuREe66ArRQDOOGPA" name="TalendStringUtil"/>
     <routinesParameter id="_pWfPQLuREe66ArRQDOOGPA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_39f815cc-993e-45fd-b3b7-ac51bd6e94e0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NbJO5tGJhff8k/nLaiz2NLQtC2RUSE6pF4F8R6xHqacO5JtoyPHtzfYLsVt3r68DMjnjurVVlag7&#13;
-xupZj006Gw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f2c4ef13-9e1b-411c-9b18-e89766204f6b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>23vbChEsXdi7Nd5yPy1Hs5Z7LcHSXcRVeOapdIXCukgKi7jjQbaY/zPfg+ZHgcmdEhM29Zq98WE1&#13;
-YplVmjS+DQ==</DigestValue></Reference></SignedInfo><SignatureValue>L3QVoDXrSM4PZ8V4IPaI/Hkn7jPCqFeaxCnzFhJxe/rxUKKqF1jUj6uvnWZd9PHV4axN1GYeMjfO&#13;
-NBh21a8zTK+TBVHWz6rXot6Yn/1vH+Z1Tjrxkh5xXUd8kXJ7jwj9n+gPeKgN2RVpOcRT6zomVPvJ&#13;
-Eq/XLuHpOnGWvVMsW8SFL82NYRkx0oPAtkOEwkahb4WwhMcZxMk7+NxzSVgpi00BdlKaTNbWAJSq&#13;
-neh6ZvtCc9WXG0LwVjgfuizqzCIIQ9HQ9g0c+ho6owo5c3LFARZFAbOK2RIuZl95ZfuFnOhHsHfm&#13;
-OYVtOZMT0Tvs0lm1EhpZ1mlPOy5TWaq+XF2eew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" show="false" value="100"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_custkey"/>
+      <elementValue elementRef="ARRAY" value="DataOperation.FIX(0.0)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_name"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_address"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_nationkey"/>
+      <elementValue elementRef="ARRAY" value="DataOperation.FIX(0.0)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_phone"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_acctbal"/>
+      <elementValue elementRef="ARRAY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_mktsegment"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_comment"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRowGenerator_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="c_custkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;FIX&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;d&quot;,&quot;PARAMETER_VALUE&quot;:&quot;0.0&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;DataOperation&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_address" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_nationkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;FIX&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;d&quot;,&quot;PARAMETER_VALUE&quot;:&quot;0.0&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;DataOperation&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_phone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_acctbal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_mktsegment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_comment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_fOTA4N0HEe62W74WE4g2kw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="out">
+      <column comment="" defaultValue="" key="false" length="-1" name="c_custkey" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_name" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_address" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_nationkey" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_phone" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_acctbal" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_mktsegment" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_comment" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.c_custkey " name="c_custkey" type="id_Long"/>
+        <mapperTableEntries expression="row1.c_name " name="c_name" type="id_String"/>
+        <mapperTableEntries expression="row1.c_address " name="c_address" type="id_String"/>
+        <mapperTableEntries expression="row1.c_nationkey " name="c_nationkey" type="id_Long"/>
+        <mapperTableEntries expression="row1.c_phone " name="c_phone" type="id_String"/>
+        <mapperTableEntries expression="row1.c_acctbal " name="c_acctbal" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.c_mktsegment " name="c_mktsegment" type="id_String"/>
+        <mapperTableEntries expression="row1.c_comment " name="c_comment" type="id_String"/>
+      </varTables>
+      <outputTables name="out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.c_custkey " name="c_custkey" type="id_Long"/>
+        <mapperTableEntries expression="Var.c_name " name="c_name" type="id_String"/>
+        <mapperTableEntries expression="Var.c_address " name="c_address" type="id_String"/>
+        <mapperTableEntries expression="Var.c_nationkey " name="c_nationkey" type="id_Long"/>
+        <mapperTableEntries expression="Var.c_phone " name="c_phone" type="id_String"/>
+        <mapperTableEntries expression="Var.c_acctbal " name="c_acctbal" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.c_mktsegment " name="c_mktsegment" type="id_String"/>
+        <mapperTableEntries expression="Var.c_comment " name="c_comment" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="c_custkey" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="c_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="c_address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="c_nationkey" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="c_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="c_acctbal" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="c_mktsegment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="c_comment" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="DeltaLakeOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="bmV3amRiYyNKREJDI091dHB1dA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" show="false" value="JDBC"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" show="false" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:databricks://community.cloud.databricks.com:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/7871980250213381/0308-032259-r0upyjwn;AuthMech=3;UID=token;PWD=&lt;personal-access-token&gt;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" show="false" value="&quot;80&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:com.databricks/databricks-jdbc/2.6.32/jar"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;com.databricks.client.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;sean.yoon@qlik.com&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:cPrIu0xvlIQNdCi7PAKhqu7IeETeef3b8ns+RQ0SWOMTcpAB+b232A6SHKw="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" show="false" value="&quot;databricks_delta_lake_id&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" show="false" value="&quot;BASIC&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" show="false" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;customer&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" show="false" value="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" show="false" value="-1"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" show="false" value="COMPOUND"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" show="false" value="AUTO"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" show="false" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" show="false" value="30"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" show="false" value="10"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_custkey"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_name"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_address"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_nationkey"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_phone"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_acctbal"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_mktsegment"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c_comment"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" show="false" value="30"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" show="false" value="true"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" show="false" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" show="false" value="-1"/>
+    <metadata connector="FLOW" label="out" name="tDBOutput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="c_custkey" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_name" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_address" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_nationkey" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_phone" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="c_acctbal" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_mktsegment" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c_comment" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b1a399c4-2375-476d-990c-0a3ade06c7f6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dIi8QOBdWX430Ct3dp97tZOA0K03T64M8299JC5nQwdKoNYWUgiW3bj3LRY4b3ufsUar2iQxM9u3&#13;
+6XN1Z4tIyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fab13330-d04e-4813-af6f-720952e85531"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7jfeXZEEhTQxB4Ihmh/dP1KebXeuQ7u6oN3nRKgxwnH79aJLtV2nc5o9sT/tgRexPjAlHI6BFb1V&#13;
+ZtXAXJ//wA==</DigestValue></Reference></SignedInfo><SignatureValue>NqD0Mc0hEg9cuVN1tOM25xMuBlYQeaXy3iR6DRcrch+lVtoIeThYSxiEjQO2arSFBiVGRyKzKC7r&#13;
+Te2MrbXPEPvKe22r/QL889JSAUBD4DJNitaxJ9yhoeFEviRMI79xufWMhgZ1U8ac4ZNzVVLwNMmi&#13;
+He+gJCVp09ZlK8mS/y1WJIsYIEwOXYUXKRQNS7CHFCRdzb7DQrnSFLq0V5NqvnunRivX+6A3rtDs&#13;
+B4Dd6DdlJWpwJvGqrbEBJ72KdUOAHIOeoaiDomAGQBzFtFNKTz3xhFkpVrpr3FqI4NDijELhq4h5&#13;
+QWPCLu4grSOh50DP7CMWH3SQi/dmzwXYDf1w5w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +368,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f2c4ef13-9e1b-411c-9b18-e89766204f6b" Target="#_39f815cc-993e-45fd-b3b7-ac51bd6e94e0"><Timestamp>2024-03-08 04:51:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fab13330-d04e-4813-af6f-720952e85531" Target="#_b1a399c4-2375-476d-990c-0a3ade06c7f6"><Timestamp>2024-03-08 05:20:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
