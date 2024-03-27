@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_meE3sLuREe66ArRQDOOGPA" label="tdf801wsapDINTprj001" description="The 1st data integration project on tdf801wsap" language="java" technicalLabel="TDF801WSAPDINTPRJ001" author="_meE3sbuREe66ArRQDOOGPA" productVersion="Talend Data Fabric-8.0.1.20240222_1049-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/syoon827inqlik/Talend801_Onprem.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+    <componentsSettings xmi:id="_Bzli0OwPEe6hT7q6qWEQYg" name="DI|tSAPIDocInput" family="Business/SAP"/>
+    <componentsSettings xmi:id="_CJ2GsOwPEe6hT7q6qWEQYg" name="DI|tAccessBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_CZVUMOwPEe6hT7q6qWEQYg" name="DI|tAccessOutputBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_Cqt_IOwPEe6hT7q6qWEQYg" name="DI|tSAPHanaUnload" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_DWXkMOwPEe6hT7q6qWEQYg" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_DWXkMewPEe6hT7q6qWEQYg" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_DWXkMuwPEe6hT7q6qWEQYg" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_DWYLQOwPEe6hT7q6qWEQYg" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_DtCXwOwPEe6hT7q6qWEQYg" name="SPARK|tAvroMap" family="Processing"/>
+    <componentsSettings xmi:id="_EDiMMOwPEe6hT7q6qWEQYg" name="SPARKSTREAMING|tAvroMap" family="Processing"/>
+    <componentsSettings xmi:id="_EUxtMOwPEe6hT7q6qWEQYg" name="CAMEL|cAWSMQBroker" family="AWS"/>
+    <componentsSettings xmi:id="_En2aMOwPEe6hT7q6qWEQYg" name="CAMEL|cAzureStorageBlob" family="Azure"/>
+    <componentsSettings xmi:id="_E5nfoOwPEe6hT7q6qWEQYg" name="CAMEL|cAzureStorageBlob" family="Connectivity/File"/>
+    <componentsSettings xmi:id="_FLyNsOwPEe6hT7q6qWEQYg" name="CAMEL|cAWSMQBroker" family="Connectivity/Messaging"/>
     <migrationTask xmi:id="_mfVb8LuREe66ArRQDOOGPA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_meE3sbuREe66ArRQDOOGPA" login="sean.yoon@qlik.com" firstName="SEAN" lastName="YOON" type="DI" additionnalData="{}"/>
