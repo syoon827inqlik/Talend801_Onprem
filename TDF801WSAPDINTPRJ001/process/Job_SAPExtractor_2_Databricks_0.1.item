@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -106,13 +108,483 @@
     <routinesParameter id="_pWYhkLuREe66ArRQDOOGPA" name="TalendStringUtil"/>
     <routinesParameter id="_pWfPQLuREe66ArRQDOOGPA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7eadbc5b-b3c5-40d5-a7fa-4fb72554bac5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NbJO5tGJhff8k/nLaiz2NLQtC2RUSE6pF4F8R6xHqacO5JtoyPHtzfYLsVt3r68DMjnjurVVlag7&#13;
-xupZj006Gw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e47d4f81-8924-498c-b068-0ba637637113"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>68yiQKIfrb745WAdFgi8xlMI88Q3ezltu4ELY02elt0IMgp2CE38dbiQTd4kmmeO/j6vNBOTLIhz&#13;
-G/hl3A1THg==</DigestValue></Reference></SignedInfo><SignatureValue>CViFbLQc2O+DFKhGA+MpucrAyvOYCWOrXFk7dfUpO9Gcn2Nhdwuope8YOhpuGCo4SmlC8m4ViYWm&#13;
-IupOM982j4kbgAEp3HIN0LAVW4HX6B6JE0t5ZXomWlqb7xgwCGl3D+MUdkoUwMEwwg5x2jM/CujV&#13;
-XgePrbQKczrB9IYr4W5ZXQd+f/7ylDvqtf7cP3LyB00/8r0wBPBNibbVAwUuFjmDgr5p+Xwkuxdi&#13;
-MfzeabfgOpKSocQeN5wcjc9iLsBxUJAANNNYJpq7FMF7UcYR+KQPd9Wv4oLiM9VLTFAjJoK8IJWH&#13;
-0yk59LZf2sziyxgzp3vc9933M8xS3fyZUtyDqw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tSAPODPInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPODPInput_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPODPInput"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.101 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Business/SAP"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPODPInput"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IXavsLudEe6FCdBlB5LC4g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;800&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;TALEND_COM&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:rY5PrXM+ctNJypnBs7T75OCsguiPVKL+VBdzz0MKNafEy0nCRQ4="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;172.20.16.11&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
+    <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_IXavsLudEe6FCdBlB5LC4g - _2LIS_18_I3HDR"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
+    <elementParameter field="TABLE" name="SELECTION_TABLE"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;2LIS_18_I3HDR&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TALEND_COM&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;TALEND_COM&quot;"/>
+    <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
+    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="false"/>
+    <elementParameter field="CHECK" name="USE_FTP_BATCH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_PROTOCOL" show="false" value="FTP"/>
+    <elementParameter field="TEXT" name="FTP_HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FTP_PORT" show="false" value="21"/>
+    <elementParameter field="TEXT" name="FTP_USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="FTP_PASS" show="false" value="enc:system.encryption.key.v1:Sat0yMDfOujj/LPYj1Ghbn3Gv79A85cB3uAr0F7T"/>
+    <elementParameter field="CHECK" name="USE_SERVER_LOGICAL_PATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FTP_DIR" show="false" value="&quot;/usr/sap/talend/ftp/&quot;"/>
+    <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" show="false" value="&quot;current_data_file&quot;"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="-1"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTRACT_REMOTE_PATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="REMOTE_DIR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="_2LIS_18_I3HDR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="_2LIS_18_I3HDR" name="tSAPODPInput_1">
+      <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order Type" key="false" length="4" name="AUART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order Number" key="false" length="12" name="AUFNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Assembly" key="false" length="18" name="BAUTL_HD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order Run-time in Calendar Days (Gross)" key="false" length="16" name="DLZBRUTTO" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      <column comment="Order Lead Time/Working Days Acc. to Factory Calendar(Net)" key="false" length="16" name="DLZNETTO" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      <column comment="Lead Time Unit (Day)" key="false" length="3" name="EHTAG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Equipment Number" key="false" length="18" name="EQUNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on Which Record Was Created" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Maintenance activity type" key="false" length="3" name="ILART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Planner Group for Customer Service and Plant Maintenance" key="false" length="3" name="INGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maintenance Planning Plant" key="false" length="4" name="IWERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer Number" key="false" length="10" name="KUNUM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Functional Location" key="false" length="30" name="TPLNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Organization" key="false" length="4" name="VKORG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Distribution Channel" key="false" length="2" name="VTWEG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of orders" key="false" length="10" name="ZHLAFIH" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of Closed Orders" key="false" length="10" name="ZHLAFIH_ABGS" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of Planned Orders" key="false" length="10" name="ZHLAFIH_GEPL" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of orders not to be run" key="false" length="10" name="ZHLAFIH_NDGEF" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of Open Orders" key="false" length="10" name="ZHLAFIH_OFFEN" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of Immediate Orders" key="false" length="10" name="ZHLAFIH_SOF" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of On-time Closed Orders" key="false" length="10" name="ZHLAFIH_TGERL" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Number of Unscheduled Orders" key="false" length="10" name="ZHLAFIH_UNGPL" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Change Mode for a Data Record in the Delta" key="false" length="1" name="ODQ_CHANGEMODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <additionalProperties key="CONTENT_TYPE" value="METADATA_SAP_CONTENT_EXTRACTOR"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_w-PbABHZEe-a5N2Bmj_oXQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="output" name="output">
+      <column comment="" key="false" length="-1" name="ROCANCEL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUFNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BAUTL_HD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DLZBRUTTO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DLZNETTO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EHTAG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EQUNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERDAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ILART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INGRP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IWERK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KUNUM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SPART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TPLNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VKORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VTWEG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_ABGS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_GEPL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_NDGEF" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_OFFEN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_SOF" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_TGERL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_UNGPL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ODQ_CHANGEMODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ODQ_ENTITYCNTR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.ROCANCEL " name="ROCANCEL" type="id_String"/>
+        <mapperTableEntries expression="row1.AUART " name="AUART" type="id_String"/>
+        <mapperTableEntries expression="row1.AUFNR " name="AUFNR" type="id_String"/>
+        <mapperTableEntries expression="row1.BAUTL_HD " name="BAUTL_HD" type="id_String"/>
+        <mapperTableEntries expression="row1.DLZBRUTTO " name="DLZBRUTTO" type="id_Double"/>
+        <mapperTableEntries expression="row1.DLZNETTO " name="DLZNETTO" type="id_Double"/>
+        <mapperTableEntries expression="row1.EHTAG " name="EHTAG" type="id_String"/>
+        <mapperTableEntries expression="row1.EQUNR " name="EQUNR" type="id_String"/>
+        <mapperTableEntries expression="row1.ERDAT " name="ERDAT" type="id_Date"/>
+        <mapperTableEntries expression="row1.ILART " name="ILART" type="id_String"/>
+        <mapperTableEntries expression="row1.INGRP " name="INGRP" type="id_String"/>
+        <mapperTableEntries expression="row1.IWERK " name="IWERK" type="id_String"/>
+        <mapperTableEntries expression="row1.KUNUM " name="KUNUM" type="id_String"/>
+        <mapperTableEntries expression="row1.SPART " name="SPART" type="id_String"/>
+        <mapperTableEntries expression="row1.TPLNR " name="TPLNR" type="id_String"/>
+        <mapperTableEntries expression="row1.VKORG " name="VKORG" type="id_String"/>
+        <mapperTableEntries expression="row1.VTWEG " name="VTWEG" type="id_String"/>
+        <mapperTableEntries expression="row1.ZHLAFIH " name="ZHLAFIH" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_ABGS " name="ZHLAFIH_ABGS" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_GEPL " name="ZHLAFIH_GEPL" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_NDGEF " name="ZHLAFIH_NDGEF" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_OFFEN " name="ZHLAFIH_OFFEN" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_SOF " name="ZHLAFIH_SOF" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_TGERL " name="ZHLAFIH_TGERL" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ZHLAFIH_UNGPL " name="ZHLAFIH_UNGPL" type="id_Integer"/>
+        <mapperTableEntries expression="row1.ODQ_CHANGEMODE " name="ODQ_CHANGEMODE" type="id_String"/>
+        <mapperTableEntries expression="row1.ODQ_ENTITYCNTR " name="ODQ_ENTITYCNTR" type="id_BigDecimal"/>
+      </varTables>
+      <outputTables name="output" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.ROCANCEL " name="ROCANCEL" type="id_String"/>
+        <mapperTableEntries expression="Var.AUART " name="AUART" type="id_String"/>
+        <mapperTableEntries expression="Var.AUFNR " name="AUFNR" type="id_String"/>
+        <mapperTableEntries expression="Var.BAUTL_HD " name="BAUTL_HD" type="id_String"/>
+        <mapperTableEntries expression="Var.DLZBRUTTO " name="DLZBRUTTO" type="id_Double"/>
+        <mapperTableEntries expression="Var.DLZNETTO " name="DLZNETTO" type="id_Double"/>
+        <mapperTableEntries expression="Var.EHTAG " name="EHTAG" type="id_String"/>
+        <mapperTableEntries expression="Var.EQUNR " name="EQUNR" type="id_String"/>
+        <mapperTableEntries expression="Var.ERDAT " name="ERDAT" type="id_Date"/>
+        <mapperTableEntries expression="Var.ILART " name="ILART" type="id_String"/>
+        <mapperTableEntries expression="Var.INGRP " name="INGRP" type="id_String"/>
+        <mapperTableEntries expression="Var.IWERK " name="IWERK" type="id_String"/>
+        <mapperTableEntries expression="Var.KUNUM " name="KUNUM" type="id_String"/>
+        <mapperTableEntries expression="Var.SPART " name="SPART" type="id_String"/>
+        <mapperTableEntries expression="Var.TPLNR " name="TPLNR" type="id_String"/>
+        <mapperTableEntries expression="Var.VKORG " name="VKORG" type="id_String"/>
+        <mapperTableEntries expression="Var.VTWEG " name="VTWEG" type="id_String"/>
+        <mapperTableEntries expression="Var.ZHLAFIH " name="ZHLAFIH" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_ABGS " name="ZHLAFIH_ABGS" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_GEPL " name="ZHLAFIH_GEPL" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_NDGEF " name="ZHLAFIH_NDGEF" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_OFFEN " name="ZHLAFIH_OFFEN" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_SOF " name="ZHLAFIH_SOF" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_TGERL " name="ZHLAFIH_TGERL" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ZHLAFIH_UNGPL " name="ZHLAFIH_UNGPL" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ODQ_CHANGEMODE " name="ODQ_CHANGEMODE" type="id_String"/>
+        <mapperTableEntries expression="Var.ODQ_ENTITYCNTR " name="ODQ_ENTITYCNTR" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ROCANCEL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AUART" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AUFNR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BAUTL_HD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DLZBRUTTO" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DLZNETTO" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="EHTAG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EQUNR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ERDAT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ILART" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INGRP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IWERK" nullable="true" type="id_String"/>
+        <mapperTableEntries name="KUNUM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SPART" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TPLNR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VKORG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VTWEG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ZHLAFIH" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_ABGS" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_GEPL" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_NDGEF" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_OFFEN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_SOF" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_TGERL" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ZHLAFIH_UNGPL" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ODQ_CHANGEMODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ODQ_ENTITYCNTR" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="Output"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="bmV3amRiYyNKREJDI091dHB1dA"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="1"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="JDBC"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="HELP"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_NOEK8BHTEe-a5N2Bmj_oXQ"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Databricks_onQMI"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" show="false" value="JDBC"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" show="false" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:databricks://adb-2500934145022873.13.azuredatabricks.net:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/2500934145022873/0430-021842-qxb1rfrz;AuthMech=3;UID=token;PWD=&lt;personal-access-token&gt;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" show="false" value="&quot;80&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:com.databricks/databricks-jdbc/2.6.32/jar"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;com.databricks.client.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;ifw@qlik.com&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:daXFzny7IptYZ717xJev622O3A4fyiMEm7aC/DlRhYB9xb4sQSEP2K/cN2p1jj0/S1J0C79ushooHO+5jfvDjVRd"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" show="false" value="&quot;databricks_delta_lake_id&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" show="false" value="&quot;BASIC&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" show="false" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="LIS_18_13HDR"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" show="false" value="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" show="false" value="-1"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" show="false" value="COMPOUND"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" show="false" value="AUTO"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" show="false" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" show="false" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" show="false" value="30"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" show="false" value="10"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ROCANCEL"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AUART"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AUFNR"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BAUTL_HD"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DLZBRUTTO"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DLZNETTO"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EHTAG"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EQUNR"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ERDAT"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ILART"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INGRP"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IWERK"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KUNUM"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SPART"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TPLNR"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VKORG"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VTWEG"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_ABGS"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_GEPL"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_NDGEF"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_OFFEN"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_SOF"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_TGERL"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ZHLAFIH_UNGPL"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ODQ_CHANGEMODE"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ODQ_ENTITYCNTR"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" show="false" value="30"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" show="false" value="true"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" show="false" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" show="false" value="-1"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" show="false" value="configuration.dataSet.dataStore"/>
+    <metadata connector="FLOW" label="output" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="ROCANCEL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUFNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BAUTL_HD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DLZBRUTTO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DLZNETTO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EHTAG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EQUNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERDAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ILART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INGRP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IWERK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KUNUM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SPART" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TPLNR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VKORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VTWEG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_ABGS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_GEPL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_NDGEF" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_OFFEN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_SOF" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_TGERL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ZHLAFIH_UNGPL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ODQ_CHANGEMODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="ODQ_ENTITYCNTR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPODPInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPODPInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPODPInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a2101f7c-6354-49e6-befa-0300efcd8120"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V+WU4YQLbZTC4gKbFSaUGvEbObLB5wIYyfiWzgvw7DXAZuzDDkQww1ONJg9wxqnAV/Gy613TkXwi&#13;
+Jpnsfv3I8g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b13233c-d1b4-446f-99bc-d00b08e408f5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0Gmnr1ct6rceikatliaU5nnTnU5d24xweu4/5SKYgVgNSWvmd7jbh0kD37uRp0yd9l214b2Esbfy&#13;
+T8pNq6CKVg==</DigestValue></Reference></SignedInfo><SignatureValue>ONHzo7/kLqg+8tqGHPL2sHHltoJTOH+pYqvbdzaGKR5qB7LJLNHLMAwYpqJw5hnRmjz4NHBNjV+m&#13;
+S4pu+RpMbKp+Fhj+fP2q61Eu6WFkhSIi3i+u3jGhSgl8lcWKNa1mF7J5+R7pf1hnoS8Mv25x1/zs&#13;
+Wpd+5/xNIUAmOUfzNOcFpSSNkNuDHqqqJwHJ/ropCiASH352Z+EwtFZleeuUBOxipQ/g96Zai8Kz&#13;
+ZnTU3nOd5Qxseh0naJRDe27ML4Ouv57GG8EUg6nhcoZlT7GVihbb2uUExqVuEFKjzQ+cKomcecdr&#13;
+b1FXPjOigxIgJWI+BjVwtxSt8lb7Drq80hebww==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +606,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e47d4f81-8924-498c-b068-0ba637637113" Target="#_7eadbc5b-b3c5-40d5-a7fa-4fb72554bac5"><Timestamp>2024-05-14 10:07:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b13233c-d1b4-446f-99bc-d00b08e408f5" Target="#_a2101f7c-6354-49e6-befa-0300efcd8120"><Timestamp>2024-05-14 10:23:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
