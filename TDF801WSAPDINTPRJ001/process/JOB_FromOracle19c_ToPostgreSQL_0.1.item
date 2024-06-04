@@ -100,16 +100,6 @@
   </parameters>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tOracleInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/Oracle"/>
-    <elementParameter field="CHECK" name="START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tOracleInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -124,7 +114,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TwrC2dqX6bbu90F/6TTUmC9lj424/2xETUvRrpY0LMMJcSh3vKap"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FoYaVrptcWQ8FvnblzHh7gl3YxeRy9IOtUs3DPGtilTCw3lcKXd+"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SALESORDERDETAIL"/>
@@ -139,7 +129,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -226,67 +216,67 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="factinternetsales" name="load">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -306,7 +296,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.PRODUCTID " name="productkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="TalendDate.TO_CHAR(row2.ORDERDATE,&quot;YYYYMMDD&quot;) " name="orderdatekey" type="id_String"/>
@@ -336,27 +326,27 @@
         <mapperTableEntries expression="row2.SHIPDATE " name="shipdate" type="id_Date"/>
       </varTables>
       <outputTables name="load" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.productkey " name="productkey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.orderdatekey " name="orderdatekey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.duedatekey " name="duedatekey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.shipdatekey " name="shipdatekey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.customerkey " name="customerkey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.promotionkey " name="promotionkey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.currencykey " name="currencykey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.salesterritorykey " name="salesterritorykey" type="id_Integer"/>
+        <mapperTableEntries expression="Var.productkey " name="productkey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.orderdatekey " name="orderdatekey" type="id_String"/>
+        <mapperTableEntries expression="Var.duedatekey " name="duedatekey" type="id_String"/>
+        <mapperTableEntries expression="Var.shipdatekey " name="shipdatekey" type="id_String"/>
+        <mapperTableEntries expression="Var.customerkey " name="customerkey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.promotionkey " name="promotionkey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.currencykey " name="currencykey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.salesterritorykey " name="salesterritorykey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.salesordernumber " name="salesordernumber" type="id_String"/>
-        <mapperTableEntries expression=" Var.salesorderlinenumber " name="salesorderlinenumber" type="id_Short"/>
-        <mapperTableEntries expression="Var.revisionnumber " name="revisionnumber" type="id_Short"/>
-        <mapperTableEntries expression="Var.orderquantity " name="orderquantity" type="id_Short"/>
-        <mapperTableEntries expression=" Var.unitprice " name="unitprice" type="id_Object"/>
-        <mapperTableEntries expression="Var.extendedamount " name="extendedamount" type="id_Object"/>
-        <mapperTableEntries expression="Var.unitpricediscount " name="unitpricediscountpct" type="id_Double"/>
-        <mapperTableEntries expression="Var.discountamount " name="discountamount" type="id_Double"/>
-        <mapperTableEntries expression="Var.productstandardcost " name="productstandardcost" type="id_Object"/>
-        <mapperTableEntries expression="Var.totalproductcost " name="totalproductcost" type="id_Object"/>
-        <mapperTableEntries expression="Var.salesamount " name="salesamount" type="id_Object"/>
-        <mapperTableEntries expression=" Var.taxamt " name="taxamt" type="id_Object"/>
-        <mapperTableEntries expression=" Var.freight " name="freight" type="id_Object"/>
+        <mapperTableEntries expression=" Var.salesorderlinenumber " name="salesorderlinenumber" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.revisionnumber " name="revisionnumber" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.orderquantity " name="orderquantity" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.unitprice " name="unitprice" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.extendedamount " name="extendedamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.unitpricediscount " name="unitpricediscountpct" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.discountamount " name="discountamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.productstandardcost " name="productstandardcost" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.totalproductcost " name="totalproductcost" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.salesamount " name="salesamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.taxamt " name="taxamt" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.freight " name="freight" type="id_BigDecimal"/>
         <mapperTableEntries expression=" Var.rerriertrackingnumber " name="carriertrackingnumber" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.PURCHASEORDERNUMBER " name="customerponumber" nullable="true" type="id_String"/>
         <mapperTableEntries expression=" Var.orderdate " name="orderdate" nullable="true" type="id_Date"/>
@@ -441,16 +431,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tOracleInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/Oracle"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tOracleInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -465,7 +445,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UWDxQZ9wufHbwfQZpbWv0PbpG/F2lSTDnpHco1tw6886Qm6WVts4"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SY+nYK8z4aGcq6Q9BVo0QDnHkfZACw8AKp6O+QsfmMYrp9NLtVB+"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SALESORDERHEADER"/>
@@ -480,7 +460,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -629,16 +609,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tOracleInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/Oracle"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tOracleInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -653,7 +623,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8jvTefezQg//kMLSNygyY2ijrODKNsKX1S71p5mDeNptGfoVVPJN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p3YJL08hmAikMJi/9vgV1rBDhDuvo+b/w+6KOCDZ1d+79daWGeQ9"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - PD_PRODUCT"/>
@@ -668,7 +638,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -812,16 +782,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tOracleInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/Oracle"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tOracleInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -836,7 +796,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jGQEvhoX7JN9ao9VC/hSqZlrWH0lCm9fp69WqrbRGZ4/eAeuNFl8"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QxAvseTQbfqrHARDet0JlYoQLv6gFs27+Ts/0yMyZ2hvOTKxPQPK"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SPECIALOFFERPRODUCT"/>
@@ -851,7 +811,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -890,15 +850,6 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tPostgresqlOutput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/PostgreSQL"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tPostgresqlOutput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7FopMCIpEe-jfs5uxoVCzw"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -910,12 +861,10 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ajwGvDuXiDTB0j51E+MdAlp5bzlfpp+GFTM2FhpDvNBLQDk7XpIB"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Sw56Y2O8EsytRmUWUxriMTBoOfMvrVrSjVk0ygweKDVCESfHlycp"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;factinternetsales2&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_7FopMCIpEe-jfs5uxoVCzw - factinternetsales"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
@@ -1073,67 +1022,67 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="factinternetsales" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1153,67 +1102,67 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="factinternetsales" name="REJECT">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1260,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_20600651-cfe5-4e71-96e6-5f237df749af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3vb//dXhk8+KJW+ojLJsxEduZBaU8hEwrCpmPYw5gwzRyS7WxHbK+cQFyHRCdZHih5fpcnyQpItS&#13;
-pQZxHhZqIg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_83d7cf6b-761d-4a06-9868-42d9c39dab0e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1T5QKby+i4INyGzQ3VZoDD7Fy/pj5LSwR3Fg8IhgAY+zp1xX4TT9oYNKUG0gh+PzZvQBR/N5ZN5m&#13;
-2xLRRiSkIA==</DigestValue></Reference></SignedInfo><SignatureValue>XaGjm/vjkdE8KXsbYtzNhovSO6Rbh5NmTU7oe9tOn5NTDtwYADHoVbDgjb5Vj68HSH2PDu6C6C7w&#13;
-biCScstfogALhEa1O7YJfV6apAb9MnikZylofJlZ71Zf9IPhZXsrYr9ifWr9kDT82UVu5JdXSO2m&#13;
-LfzWJO0SKnXduZOtutSgr2qMUDdh0hHkekBzaW0jdDy0ikApJzR3OYCe0jqpUKl6aiRYX0C53ToB&#13;
-3cbekzEalZT00HmcDidTNWCrRc0jvbsHLIxNEyt/Xs4eNiEP5a3cM3FSLRtqDYU8+3+GOdZcewbB&#13;
-SvZcSrx5JM9kROcz8j8Q59Cz2F0z4tkwPOeYcw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_df3d4600-6804-41d0-bcb6-61b3e48d3b03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rkrMYQovq12Y2qaOrQ1dTm3tr++WYNyjUhfjgVeWppO2O8b9o+NIlkuAZRCtAbefIj/ULs8eEUFb&#13;
+ofhK2GzsNQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ac5114eb-2eef-4213-9837-905b318cf1a3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o+W6AfAys/F2ZD71Shwa6PI5dD0FchvM70uvTU6L+KT1aL6io5vcnwERsqUDzkbJp6QkRhpwnMnT&#13;
+kNjEgykggg==</DigestValue></Reference></SignedInfo><SignatureValue>BtzyFcJtJS0pRBHUbAYjBVcHzVkcZ5VyFOk5ucmIS7cJLytvIziK4kl6F1/1A4jMDFw4MP6JF3k6&#13;
+ajAbY8skNg2LYwj+FZ3qnRYL4+r9FJq0tUZADycKRlesxQ6c9uy6p8JRCJo7pxGlTOs4OVNQ/Etn&#13;
+JKMdhIuvu16kJLK06pNE5ib03FyXwGu70H0CmZBu0nFYEVkSrfpr4UE7L7P3z60CK/QKbd/8Ta0o&#13;
+wh7GYUtytOD6clURvJ9e9BT5wRvMHxPPfWcrLVAtuwGPGdIH4rnWEJJJpas6WdS5PxWHEb4FB7o2&#13;
+lrhnOHTJzRNj+2l4LEVOtCtZ6qLrnRQJrZWD1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1288,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_83d7cf6b-761d-4a06-9868-42d9c39dab0e" Target="#_20600651-cfe5-4e71-96e6-5f237df749af"><Timestamp>2024-06-04 05:24:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ac5114eb-2eef-4213-9837-905b318cf1a3" Target="#_df3d4600-6804-41d0-bcb6-61b3e48d3b03"><Timestamp>2024-06-04 05:30:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
