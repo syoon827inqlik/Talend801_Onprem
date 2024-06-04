@@ -114,7 +114,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FoYaVrptcWQ8FvnblzHh7gl3YxeRy9IOtUs3DPGtilTCw3lcKXd+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ycio40EikwuKbaeZGomECC/59ETc3iiow6JhOputPDrD1FwRcjTq"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SALESORDERDETAIL"/>
@@ -311,7 +311,7 @@
         <mapperTableEntries expression="row2.REVISIONNUMBER " name="revisionnumber" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.ORDERQTY " name="orderquantity" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.UNITPRICE " name="unitprice" type="id_BigDecimal"/>
-        <mapperTableEntries expression="row1.ORDERQTY * row1.UNITPRICE " name="extendedamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression="REAL(row1.ORDERQTY) * REAL(row1.UNITPRICE) " name="extendedamount" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.UNITPRICEDISCOUNT " name="unitpricediscount" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.UNITPRICE * row1.UNITPRICEDISCOUNT " name="discountamount" type="id_BigDecimal"/>
         <mapperTableEntries expression="row3.STANDARDCOST " name="productstandardcost" type="id_BigDecimal"/>
@@ -445,7 +445,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SY+nYK8z4aGcq6Q9BVo0QDnHkfZACw8AKp6O+QsfmMYrp9NLtVB+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:t1+kjy+TDpwXf2nuEhvdQsiFFlX4lJ45q3ZZB0GVJ4n8w1SPJnog"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SALESORDERHEADER"/>
@@ -623,7 +623,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p3YJL08hmAikMJi/9vgV1rBDhDuvo+b/w+6KOCDZ1d+79daWGeQ9"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fx7F2V+upIO0lNN8MyXHN7gYctQUUXnjwUPKhjio84DqRm+GHi4f"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - PD_PRODUCT"/>
@@ -796,7 +796,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;advworks&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QxAvseTQbfqrHARDet0JlYoQLv6gFs27+Ts/0yMyZ2hvOTKxPQPK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HP222Ydi/WhEWFA+C6Jv5qto5Pa5Hq5ACujRhYBHqYnvpUr+Kq+Z"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g - SL_SPECIALOFFERPRODUCT"/>
@@ -861,7 +861,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Sw56Y2O8EsytRmUWUxriMTBoOfMvrVrSjVk0ygweKDVCESfHlycp"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0ZDPXnwIP3D4BaKxMHKWd4jKAPXGoHwIKEl5n6dNw+t/z0vVagdM"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;factinternetsales2&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1209,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_661f10f1-923a-40a7-92a5-3c9cd909da3d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cgQflAiZmIwatQDGE5MzaFrH6MLpEd3r7kuzNCJqYkIzf5e1Sm+gZeb39g5BrU9K663V6DMNEgsU&#13;
-wcULvDVCMw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ee2d62e9-d38d-4530-9b00-71afc4446303"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iHZ+oChLxfEWiIHD+huHyN1Whq8I+3LfvTFffj4h/b30j3wl62q1y5O8olRgJRgupAG0bD/OZ5QV&#13;
-ByhKPwj+EA==</DigestValue></Reference></SignedInfo><SignatureValue>Cw+2gtro5Rs/AcrpVlJMxEQMjhC7mUQyyST3fetuAV978HHuuEbvXWEPlS6snFK9vpR/M3Fl4nUw&#13;
-6Dm+ROOjt5xmduzO7gui6q7704VOJLkeHifxBNNfhxFZAx8U0b4JkVMG1xKWKKUa7TgYBszA1nNU&#13;
-jldSZWK5xxKrNbsTfQ62Sp5wbU2df6C9K1s21BpaUlBVmjpOcECkRt9aIpMStOJ+4cUqev7m3KeX&#13;
-CS6ZoWSjcue5pjAY4bExEgDVw7CE3ZTjN3Z2OnAyBK+h/FNohuClF9DdJ357lejxHTR1cPIDtmQC&#13;
-CexHM30Bm0sg8A2SEDpBwAL2nqeFnY9elMKgdw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c3adb3b0-cec8-4eec-964f-f0335b2ff51c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wZHdI2pwXOJoFmVbWYu43gdbpb9yGaoZjzc4ieoel4/0XcNPR14HFrIG1DXClSDAft2jGuD2tn/8&#13;
+xEdsKp36Gg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_50364490-ad38-487d-a794-4a1a738edadf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cUbZMIM1bMeb17FLrBOa2CxoCo02Z1yJsZc/iUcvgeE79DMsYYrf/MDyZs0yIq/uGviER3qvz8X2&#13;
+6UtCYBcVbw==</DigestValue></Reference></SignedInfo><SignatureValue>AGWzEjdm5SO29Xg2gLkDW0tZWs6/ekcsbnr3Zl5R4Kkjao3fKDmo7jOKW/HMW2xX2WOwWYud+euH&#13;
+coD3tKnYxIOE69Dx3Xhcw7YzYeJ9HYMZ4I5d+JpNtY7Jf1TA246rfF0f6Tf4WhqI8ewjlSzw6BA+&#13;
+rRUOKcTsx+4Dj1PwFRnhqDCCGCWxenUhnuf7mISp2ysIFyDkgiFdOvqiJUvH5UO45ZvN7/u/b+Yf&#13;
+kkHXxs4q5wO4HvDnYrfh9EuWx8/adGU7js/cJaUAElLV8v35F1W8NAem5K4inkD0BlwhpvMsSlWt&#13;
+LJ6RMkg6bli09OKCbXHefyDs7jDQUFr+IWBnuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ee2d62e9-d38d-4530-9b00-71afc4446303" Target="#_661f10f1-923a-40a7-92a5-3c9cd909da3d"><Timestamp>2024-06-04 06:03:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_50364490-ad38-487d-a794-4a1a738edadf" Target="#_c3adb3b0-cec8-4eec-964f-f0335b2ff51c"><Timestamp>2024-06-04 06:27:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
