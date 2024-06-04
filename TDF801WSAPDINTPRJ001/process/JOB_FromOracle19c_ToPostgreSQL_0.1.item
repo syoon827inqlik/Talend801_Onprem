@@ -279,7 +279,7 @@
       <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="customerponumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1085,7 +1085,7 @@
       <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="customerponumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1165,7 +1165,7 @@
       <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="customerponumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1209,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_32db57c1-8692-421d-bac8-31a59c6c610e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/YcfXDH/HxLQmQwJYjW/7IDKjqhAj8bhfzx5Cgf0Wo+yVg0MihJTf3ZveOVzUznImarCQVWy9kcO&#13;
-bE7vKFBJHQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_71942364-169a-4977-b040-389f88db63d8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gjIllw1x6/b5ai8PoEpFuy09lF1LSEIWr01yObWfpA+AaAx/cFY4cOiuHmZYFJyOPO1UeAluLCnT&#13;
-7Jas1F263Q==</DigestValue></Reference></SignedInfo><SignatureValue>Bja7eTld+rD9CjcKcWdSZ7yaZ1+A3cXuz0SMuS0k5tgwzRN94y9lWMoiRuvp8Wk+QGEN7ViY2InL&#13;
-PrIFELRx9zPjm3LHuJPRSHoULhRVbev/CL/QB2zOx3H2Kj3Mz9y7lxfz8AL48l4I/ltCteFgwhR+&#13;
-xgj3Ken7xO9ZZqrntY00JSxsKEAlmalSmw9PrfN02bIQYKjF345CJINqZJ731VN0LXPzWPdSP2Ww&#13;
-X5otsIHQx/OE3E8QgreIqx87tiYE80jakJ4gXvtfaRFJjmaq0GI7YzZPPGdL/iyOIU7OdNINOqst&#13;
-JFw/SlALKiI8+/mPQYJQoXTfE+peTXBfuS0Wvg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f321de64-c838-4de6-ade8-562c846ab534"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1lqUgBJ/0I9leGKTpcU6v7+8RvIRIvMvTxtxUDxLsCF9alueSiXup7AyPUgPJQgU759DacFozP5m&#13;
+p9/JlhMvwg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ae243a6-ea65-4e02-9e6e-5919490e2200"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IINKyrZW7Lo4EiqsGYRVtTFu9ULmx+ozxGz7seMqc4qeg9TJi3xhJZeb6Ir2AxkH7kcr9w/fb2wM&#13;
+YrsBs2p+hw==</DigestValue></Reference></SignedInfo><SignatureValue>S7GxyFtwzLePoT9umguXaXq+c7r7LbOWcmKy4wySre4nBWEf4IzRsBQJyV46LIgMq8I+coE0NxoM&#13;
+U4oTxxNVC1MWsNyXJId9qC0LrdDMm+hnSDFvghxCI5BMRHrL+Z0fE8QQm1iH9+SkX9mH37hH6BfJ&#13;
+RShOxgSEvKdE6drAO+3QSn/8EwdVdxO3+TFfsH9CtNrpczk4J/3Rw2MzBcBAhguYxQM6wZB7XScy&#13;
+WzV6NfToF3Oi+szD4pf41WTlS04kfL04x1Loi+0ZxWyO0P1yRyKo9jWjJ5COwoYjaj3733qe7KGm&#13;
+8VTv3Sxxp/WRE6lttFObOu72PkJCgvAd6oLWhg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_71942364-169a-4977-b040-389f88db63d8" Target="#_32db57c1-8692-421d-bac8-31a59c6c610e"><Timestamp>2024-06-04 05:38:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ae243a6-ea65-4e02-9e6e-5919490e2200" Target="#_f321de64-c838-4de6-ade8-562c846ab534"><Timestamp>2024-06-04 05:43:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
