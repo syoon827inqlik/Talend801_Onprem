@@ -216,7 +216,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="factinternetsales" name="load">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
@@ -228,55 +228,55 @@
       <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -326,27 +326,27 @@
         <mapperTableEntries expression="row2.SHIPDATE " name="shipdate" type="id_Date"/>
       </varTables>
       <outputTables name="load" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.productkey " name="productkey" type="id_Float"/>
+        <mapperTableEntries expression="Var.productkey " name="productkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.orderdatekey " name="orderdatekey" type="id_String"/>
         <mapperTableEntries expression="Var.duedatekey " name="duedatekey" type="id_String"/>
         <mapperTableEntries expression="Var.shipdatekey " name="shipdatekey" type="id_String"/>
-        <mapperTableEntries expression="Var.customerkey " name="customerkey" type="id_Float"/>
-        <mapperTableEntries expression="Var.promotionkey " name="promotionkey" type="id_Float"/>
-        <mapperTableEntries expression="Var.currencykey " name="currencykey" type="id_Float"/>
-        <mapperTableEntries expression="Var.salesterritorykey " name="salesterritorykey" type="id_Float"/>
+        <mapperTableEntries expression="Var.customerkey " name="customerkey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.promotionkey " name="promotionkey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.currencykey " name="currencykey" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.salesterritorykey " name="salesterritorykey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.salesordernumber " name="salesordernumber" type="id_String"/>
-        <mapperTableEntries expression=" Var.salesorderlinenumber " name="salesorderlinenumber" type="id_Float"/>
-        <mapperTableEntries expression="Var.revisionnumber " name="revisionnumber" type="id_Float"/>
-        <mapperTableEntries expression="Var.orderquantity " name="orderquantity" type="id_Float"/>
-        <mapperTableEntries expression=" Var.unitprice " name="unitprice" type="id_Float"/>
-        <mapperTableEntries expression="Var.extendedamount " name="extendedamount" type="id_Float"/>
-        <mapperTableEntries expression="Var.unitpricediscount " name="unitpricediscountpct" type="id_Float"/>
-        <mapperTableEntries expression="Var.discountamount " name="discountamount" type="id_Float"/>
-        <mapperTableEntries expression="Var.productstandardcost " name="productstandardcost" type="id_Float"/>
-        <mapperTableEntries expression="Var.totalproductcost " name="totalproductcost" type="id_Float"/>
-        <mapperTableEntries expression="Var.salesamount " name="salesamount" type="id_Float"/>
-        <mapperTableEntries expression=" Var.taxamt " name="taxamt" type="id_Float"/>
-        <mapperTableEntries expression=" Var.freight " name="freight" type="id_Float"/>
+        <mapperTableEntries expression=" Var.salesorderlinenumber " name="salesorderlinenumber" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.revisionnumber " name="revisionnumber" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.orderquantity " name="orderquantity" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.unitprice " name="unitprice" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.extendedamount " name="extendedamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.unitpricediscount " name="unitpricediscountpct" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.discountamount " name="discountamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.productstandardcost " name="productstandardcost" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.totalproductcost " name="totalproductcost" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.salesamount " name="salesamount" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.taxamt " name="taxamt" type="id_BigDecimal"/>
+        <mapperTableEntries expression=" Var.freight " name="freight" type="id_BigDecimal"/>
         <mapperTableEntries expression=" Var.rerriertrackingnumber " name="carriertrackingnumber" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.PURCHASEORDERNUMBER " name="customerponumber" nullable="true" type="id_String"/>
         <mapperTableEntries expression=" Var.orderdate " name="orderdate" nullable="true" type="id_Date"/>
@@ -1022,7 +1022,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="factinternetsales" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
@@ -1034,55 +1034,55 @@
       <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1102,7 +1102,7 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="factinternetsales" name="REJECT">
-      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
@@ -1114,55 +1114,55 @@
       <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="promotionkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="currencykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="10" name="salesterritorykey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="salesordernumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="salesorderlinenumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="revisionnumber" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="5" name="orderquantity" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="unitprice" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="extendedamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="unitpricediscountpct" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="17" name="discountamount" nullable="false" pattern="" precision="17" sourceType="FLOAT8" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="productstandardcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="totalproductcost" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="salesamount" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="taxamt" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="freight" nullable="false" pattern="" precision="0" sourceType="MONEY" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="carriertrackingnumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1209,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_37f7c3aa-a9f0-4f09-b5d0-d76c92fd0e81"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Q8IjE9dQowyaX/XEr28fyNtDaaStISqzjT6SCWxjZMHL/Xh2D1JmOhxBF73DNcjPHuE6S9wPtZS/&#13;
-cmmpoB+rmQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_63b9e027-9f7f-434c-b9af-ebf3f591122e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0EAdg+KX1SDMIqYAmitI2NcrHXmQce8hGMUHZR0a9Hmmb0P5aM+WX3HcVnF+qdHMh+2p7b6/39yC&#13;
-ydlsNZefCw==</DigestValue></Reference></SignedInfo><SignatureValue>hTYUK3jEWRxIT4AdZTZwKIKQQ3j4gDnsVqzQPPa59eAZGVKmLxCf0HtBNe2QQcREE/4lycrrolsr&#13;
-2hHUWHwaq+mnSFpgOxKA3ZHYbo77oxy7VK2s7Oo7dBKVibQAB4FVyXtnfZYQ8O1OYLetsjqlglvu&#13;
-yoyky1dcSo84qDZZzhdPyOIlex73OvGAcR0ZmiVFQWjBaCBomeOB77PLWGGwYZZCfscbEbxskws6&#13;
-eTENH+zVY3RpmCEsSqWG9B1sjo4XJt63DaUNHbX707Wz8W8Ep73RtJNmLpmKeIwXWIGl9j3B+I44&#13;
-b49HRQrUlJH0oJKQ/nLssmEIsT25h/Vh/L69VQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0176f7a1-43e7-433c-bc14-e2a3b87c04f3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sp3gJh37GMxjYbHnxbV9GNxUHRVpgNarSLQnIYwrMaGV84zL2JTiTqU3slg/m/pi8CWJ97oOffdo&#13;
+e0plgun+5w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c10c0ac3-e8a2-4612-8d4f-3fe793949782"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1WMyI/XqP5z2VN2D0b4xeNWqd8inidosNlW1wFZsDLzPeVkq7j9GGcguPNd27aLbNW13SnafvpPe&#13;
+TOaJIih/hg==</DigestValue></Reference></SignedInfo><SignatureValue>aVuYOxrhJFLXIEZqcS8g3L7I9USh50Q3EOu3Zhj9cURAk7vyDKopxVAHRngMd4HCiQJ1zJBs5TLc&#13;
+3G0RgYxbFd5N4+ZhAQqgOrV2IC50l48DxPfYtR8vAKeDOz6ohp0R7YwWx8MkLA4qVVBuO6CmeW6+&#13;
+ibUwuBYvPxoj6WeFdfKAeI8LiSHnoGF5qdvIzJgGvTy2CcSOFGgrxkuYfry3VUq016tQYgvJsQYG&#13;
+HuqTZj58X9ZxQ7U6Hp2JXxS5odDqoFA4Un2EN6SE2MLkrj/9ovc+QSp7iZEZGIg3WH33FQR+ohJ+&#13;
+sTjW2HUIcOEyjjvvQPjaigSC/Si80ezDCElctg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_63b9e027-9f7f-434c-b9af-ebf3f591122e" Target="#_37f7c3aa-a9f0-4f09-b5d0-d76c92fd0e81"><Timestamp>2024-06-04 05:47:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c10c0ac3-e8a2-4612-8d4f-3fe793949782" Target="#_0176f7a1-43e7-433c-bc14-e2a3b87c04f3"><Timestamp>2024-06-04 05:49:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
