@@ -299,9 +299,9 @@
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.PRODUCTID " name="productkey" type="id_BigDecimal"/>
-        <mapperTableEntries expression="TalendDate.TO_CHAR(row2.ORDERDATE,&quot;YYYYMMDD&quot;) " name="orderdatekey" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.TO_CHAR(row2.DUEDATE,&quot;YYYYMMDD&quot;) " name="duedatekey" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.TO_CHAR(row2.SHIPDATE,&quot;YYYYMMDD&quot;) " name="shipdatekey" type="id_String"/>
+        <mapperTableEntries expression="CAST(TalendDate.TO_CHAR(row2.ORDERDATE,&quot;YYYYMMDD&quot;) AS STRING) " name="orderdatekey" type="id_String"/>
+        <mapperTableEntries expression="CAST(TalendDate.TO_CHAR(row2.DUEDATE,&quot;YYYYMMDD&quot;) AS STRING) " name="duedatekey" type="id_String"/>
+        <mapperTableEntries expression="CAST(TalendDate.TO_CHAR(row2.SHIPDATE,&quot;YYYYMMDD&quot;) AS STRING) " name="shipdatekey" type="id_String"/>
         <mapperTableEntries expression="row2.CUSTOMERID " name="customerkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="row4.SPECIALOFFERID " name="promotionkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="row2.CURRENCYRATEID " name="currencykey" type="id_BigDecimal"/>
@@ -1209,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_aedd694d-c16d-4bd9-b4ab-ccc55a9ca8af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vXu9cmAWTAujUVzVz/uYf2NAjBRg62OFaJsmZBmM1xZZG2187hsGy0/ldn/6YahQ2/DIED8r1z1G&#13;
-SdePv5EULQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5aea1cc0-226f-4a48-8636-59fcae6e587d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BJIICXZW/H/wFecD0onqcYIxGCrk+LCkFNOueQfJzthkNgCRpi7lQ4bOGkPk0AnWupN6oEWoiZYa&#13;
-FYyNeRoWMA==</DigestValue></Reference></SignedInfo><SignatureValue>pa/0Wp9gb/TF9uX4VTUl1X7RvrBKen6M+MeTKFM57sAXKw8Jfd4gfJiunLUv0xZt+RJBMlREikMy&#13;
-iz1G7SGQfNiLFPCtOk3bZn0lFG5QVtTyl8V/o53VEyATMGFJV47xAg/K+ALFHvTDO+VqztjvTCZw&#13;
-pZmQPq7YU6fLhPHkwVpLc3Ms8hVrFawl6aoMyozvQl7QeXhb2iFb9LlhBIqHS9Wq8div8GZhryLG&#13;
-g1GBxwlh8Quj0MdCNnMkSoUvLT/MrLzuGlpaW3dCoCBFHSYwDAhOBs9DRmZZGEcLTcuObdrr8yrH&#13;
-pztb8TJYS+Y+VuszQf0SK/5S37XpEy1pf0TRtg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9d1ac4f-a140-4062-9bf0-f93078ab7205"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DezH6Vm3UNXQEju0dekRJcJ1jr1XGpgLSWq4uATB7lCiHR6KGK5lK3LhaT9UsCHqOEt84VTvm98p&#13;
+00XSU+ekng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02545866-2d87-47da-9151-42eb6da16fec"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TCXtCdvzht3RetrtMDsMG7eNmYG2PkG4ddCcMw1SgD5dNnDqj+0CBTqyA6wPNLRl47aWYV0ePf+E&#13;
+U7URV//coA==</DigestValue></Reference></SignedInfo><SignatureValue>k9XN3cimaIp1IWDXAthOc/nK5h2eVpTBe1HKC9eBacW3AHfGV5YlyON/FytgcJzr6lLcJf4yN67E&#13;
+Gb36eVzPHjv04+RBc9jIoO0pKAcD8kJavJjisp9hWU7YBkxLhFB6A2hD4QgXNckrMsDyIFACkJLl&#13;
+UtCLvHb/Qsohq6B5/KgoDZ0jHrFBmzfRtcUr3LltZ5dG7oTaT8GdQAmrFEN+kdzuzdKtg/MfGKFK&#13;
+A8XdCWgjlpS+Z4TUOUfZ7N0Lxk2y3lD5N+ehB5Kj+sGCpOiuLo9TGPDbDc7PMGPHKdjN0dg+MXjW&#13;
+qSO0lwFEXumasf09IGqFmK81RpnFJlaDVeoHHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5aea1cc0-226f-4a48-8636-59fcae6e587d" Target="#_aedd694d-c16d-4bd9-b4ab-ccc55a9ca8af"><Timestamp>2024-06-04 06:47:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02545866-2d87-47da-9151-42eb6da16fec" Target="#_e9d1ac4f-a140-4062-9bf0-f93078ab7205"><Timestamp>2024-06-04 06:56:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
