@@ -219,13 +219,13 @@
       <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
@@ -299,9 +299,9 @@
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.PRODUCTID " name="productkey" type="id_BigDecimal"/>
-        <mapperTableEntries expression="StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.ORDERDATE,&quot;YYYYMMDD&quot;)) " name="orderdatekey" type="id_Integer"/>
-        <mapperTableEntries expression="StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.DUEDATE,&quot;YYYYMMDD&quot;)) " name="duedatekey" type="id_Integer"/>
-        <mapperTableEntries expression="StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.SHIPDATE,&quot;YYYYMMDD&quot;)) " name="shipdatekey" type="id_Integer"/>
+        <mapperTableEntries expression="System.out.println(StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.ORDERDATE,&quot;YYYYMMDD&quot;))) " name="orderdatekey" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.DUEDATE,&quot;YYYYMMDD&quot;)) " name="duedatekey" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.TO_CHAR(TalendDate.TO_CHAR(row2.SHIPDATE,&quot;YYYYMMDD&quot;)) " name="shipdatekey" type="id_String"/>
         <mapperTableEntries expression="row2.CUSTOMERID " name="customerkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="row4.SPECIALOFFERID " name="promotionkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="row2.CURRENCYRATEID " name="currencykey" type="id_BigDecimal"/>
@@ -327,9 +327,9 @@
       </varTables>
       <outputTables name="load" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.productkey " name="productkey" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.orderdatekey " name="orderdatekey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.duedatekey " name="duedatekey" type="id_Integer"/>
-        <mapperTableEntries expression="Var.shipdatekey " name="shipdatekey" type="id_Integer"/>
+        <mapperTableEntries expression="Var.orderdatekey " name="orderdatekey" type="id_String"/>
+        <mapperTableEntries expression="Var.duedatekey " name="duedatekey" type="id_String"/>
+        <mapperTableEntries expression="Var.shipdatekey " name="shipdatekey" type="id_String"/>
         <mapperTableEntries expression="Var.customerkey " name="customerkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.promotionkey " name="promotionkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.currencykey " name="currencykey" type="id_BigDecimal"/>
@@ -1025,13 +1025,13 @@
       <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
@@ -1105,13 +1105,13 @@
       <column comment="" key="false" length="10" name="productkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="orderdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="duedatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="shipdatekey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="customerkey" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_BigDecimal" usefulColumn="true">
@@ -1209,13 +1209,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a23b37b1-08a7-4f0d-a76b-622f83849f0e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xtyHSPhtLFuD0Sv7JqgcGbXlIuFbjTpbf6EHqsC/YtBitnKMyArNCvCUI/fuRYzo6N2WU0/NvmuB&#13;
-hGOaecclxw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1553d872-04d4-4960-9d6d-a6b8df2cbb3e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H5xIf9SzdSlEF2aQjL7EtAGzaioIQsO78ATJN9rp1iK3U2i97bRrwxnvaAWm0M8ECNhvVN2Bx8YD&#13;
-Kla/Io+2Ag==</DigestValue></Reference></SignedInfo><SignatureValue>gS/lRQp7hC20on6Jm9jRlbpZQEtIqYN12EgBLQ/INGPb6LQPyE6m3jHxBYu1z016PhSa4rig14LW&#13;
-PghuoC7Eg5iwGWGBaR139GTFZnOGNrcx09hqCW0pNL6qqI6dNSGhGROQFpa++qILimBVSJwnqgUY&#13;
-t93/zQXjSCcUfX7SUiKTm+z4QGiyUpmnBuyRulnompNS+nrXSDBKcz+DwnM/A4zQI1Xaq5bYyQcQ&#13;
-Rusv7s8ose3STTFNPIQHiZkNjM8Vpl/n2W/k54cepW68dajnqtnUCuv/QpIoNiLfNmCNjgcvPzWM&#13;
-Pj7EBokPVkBDiLm7UC2zn7wXIMhso/GzzlRgkw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_12fba841-f1a9-42f2-88ed-87b308a6c569"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bSprMGlizTnt+hR9eE1PjykLBjVkRiWR6P4Z6qlJc5XoLg7ivdnLk4IZ3W1hJAaDd9q6G2VFipeU&#13;
+K1BcEZYtlw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_86835dc0-2ae1-4fbd-834b-6e2bbf112ebd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6rN81yyS4vPw37kdt7LkAdFnQHy4p5uPtX9MknyggTCzR/Y8ycVitPA1Yh4wiUSvfHmMuo2LDKf+&#13;
+kacnvYEYIA==</DigestValue></Reference></SignedInfo><SignatureValue>bm4LBbdOuq8V8BB8LL08f14lQvWJOH3wzm1SmR2KOybk7m4Li0OLVJwv81G9hj90BDFVmfTNx85s&#13;
+s2QA6Zmn113i9r68fO8R+xUbbKQ9bUO4F8StYucwHsmCrJfa+gyAUhnQO4uLQLciQdEk4u1KtvR5&#13;
+iGi7nRFh/iHTcSrTTpfUmOapLZ2ctjH4wkLcQCU97sjbjdn3JTfU2NxXSSdArt7GlmKXjNn/NZ0P&#13;
+FSmKIPj/lScoz0gCyo8YtLJwC93qlNMOqsqSeDDfIyYZ9P0Ol97BrcLanchj7ZECNiPwODfylaKh&#13;
+KNg4PZ4j60SpcG9SFJeOmgGkxRX4CfE1u0d70w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1237,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1553d872-04d4-4960-9d6d-a6b8df2cbb3e" Target="#_a23b37b1-08a7-4f0d-a76b-622f83849f0e"><Timestamp>2024-06-04 07:47:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_86835dc0-2ae1-4fbd-834b-6e2bbf112ebd" Target="#_12fba841-f1a9-42f2-88ed-87b308a6c569"><Timestamp>2024-06-04 07:49:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
