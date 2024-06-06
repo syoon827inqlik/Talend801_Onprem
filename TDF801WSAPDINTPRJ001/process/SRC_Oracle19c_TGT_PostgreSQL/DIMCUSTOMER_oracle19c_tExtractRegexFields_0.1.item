@@ -242,6 +242,7 @@
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -262,6 +263,7 @@
         <mapperTableEntries expression="StringHandling.TRIM(row5.ADDRESSLINE1) " name="ADDRESSLINE1" type="id_String"/>
         <mapperTableEntries expression="StringHandling.TRIM(row5.ADDRESSLINE2) " name="ADDRESSLINE2" type="id_String"/>
         <mapperTableEntries expression="StringHandling.TRIM(row6.PHONENUMBER) " name="PHONENUMBER" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.EREPLACE(row1.DEMOGRAPHICS,&quot;&lt;/TotalPurchaseYTD&gt;&lt;/IndividualSurvey&gt;&quot;, &quot;&lt;/TotalPurchaseYTD&gt;&lt;DateFirstPurchase&gt;&lt;/DateFirstPurchase&gt;&lt;BirthDate&gt;&lt;/BirthDate&gt;&lt;MaritalStatus&gt;&lt;/MaritalStatus&gt;&lt;YearlyIncome&gt;&lt;/YearlyIncome&gt;&lt;Gender&gt;&lt;/Gender&gt;&lt;TotalChildren&gt;&lt;/TotalChildren&gt;&lt;NumberChildrenAtHome&gt;&lt;/NumberChildrenAtHome&gt;&lt;Education&gt;&lt;/Education&gt;&lt;Occupation&gt;&lt;/Occupation&gt;&lt;HomeOwnerFlag&gt;&lt;/HomeOwnerFlag&gt;&lt;NumberCarsOwned&gt;&lt;/NumberCarsOwned&gt;&lt;CommuteDistance&gt;&lt;/CommuteDistance&gt;&lt;/IndividualSurvey&gt;&quot;) " name="processedDEMOGRAPHICS" type="id_String"/>
       </varTables>
       <outputTables name="extCLOBXML" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" nullable="true" type="id_BigDecimal"/>
@@ -280,6 +282,7 @@
         <mapperTableEntries expression="Var.ADDRESSLINE1 " name="ADDRESSLINE1" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.ADDRESSLINE2 " name="ADDRESSLINE2" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.PHONENUMBER " name="PHONENUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.processedDEMOGRAPHICS " name="processedDEMOGRAPHICS" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="BUSINESSENTITYID" type="id_BigDecimal"/>
@@ -810,7 +813,7 @@
   </node>
   <node componentName="tExtractRegexFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractRegexFields_1"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="DEMOGRAPHICS"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="processedDEMOGRAPHICS"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#10;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#10;&#9;  "/>
     <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;.*?&lt;/IndividualSurvey&gt;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
@@ -994,6 +997,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="extCLOBXML" lineStyle="0" metaname="extCLOBXML" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tExtractRegexFields_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="processedDEMOGRAPHICS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="extCLOBXML"/>
   </connection>
@@ -1077,13 +1085,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c47e660c-cbfa-440d-9e2e-573edfe29403"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vA4ANsirrAhbDnnoVSu3LS/cHn21RTcdbpbduQC1n1XbN5cJTnVrcHopmngwoFbcGSJSL7cMi4Lc&#13;
-956JzB/3bQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4fedd4c2-4c34-4630-8822-46528b0c272e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gqoPg5EYf8PPyJecUw53YUoNFFSnuQxxM5jlpYNY+Zy52XzmDBjnOxksbTKeGOQlZysYrwWQK71m&#13;
-eoasVbPlgA==</DigestValue></Reference></SignedInfo><SignatureValue>jkWtOF03mGY2nDwpnRZjOJr5omzAyQDprKSyJuZbY3UT6LgVObzmuDG1uUeyUDTCQpSUlpx4hdxo&#13;
-IGuDKZhh2UrGB7VDbedAYKwgvDX42jLxO0qoCduVRhtHn07xaaZbJoBoZYZBghnS/UUHWNnsna39&#13;
-dpLFFPrL+Ndd6DnZVIHCLVs5sIdqErZRpM9RHnwLOr7TSkqqSCDyqiF13DDcbMKJ9Zo/M3seYF2U&#13;
-+8lrTxaiDONyIIIqQaJXR9sJ3+JI6SVQahAE321wjGq+N9LCUl9TLPNJHCPp/7g7+OdGuIuc0QCp&#13;
-AHf2gE/8oLxivS/gvn+5Jc+H+XgZo2G546aM0Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_664e0b40-8add-4296-a585-4d892b160a42"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>usz9Fp73dkvK0i1fawYWSTG9RnqRv1u0S2pkTLnq5MYtymYWX6ImFdcc4O0SLoQZ9HjfVn5OHnKd&#13;
+Gp2sBUZ4dQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6fcc8ce0-07a3-44a2-ae31-c9c243d2ac77"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XN84pJGs855sPj36ifBT/aQZ8LOa+jdBP9QPZ9A7X95sChxwxm/zjroTWtTdB4IsV9via5ASsSxB&#13;
+rlnVd5kjRw==</DigestValue></Reference></SignedInfo><SignatureValue>TWxCa/KxmOEI7xyHHwp7nZ2EIlY+opgZjn8R9zbuU13kpShM84X/3sJzHunwLHtZyApfMlTbLMCb&#13;
+kjXvbZUjJjNjOcFTYHz/XK8tYGTR0AAP1zglLYZDJ5/rqrIyDSuEqkVDDyGPKN/ZtybDfcm37Rhv&#13;
+krtsYpB0DATVxpn+It9zbkp8aWa52DYwAhTLW0/spS4DZfMn5yq7g+b2qyr+Yr91ib0bCNvPOQwy&#13;
+yQTAXMvAQznQ5+DbWJ+SFEeuUeo4Gg/KRyt7gfzbyEm79WnW16QE/DJH0Z2yBAj3oPdyHgS/EdN4&#13;
+xDfQ3Hmo0i+npJP1SzBLyILw0L0Q7Qh6fwdlZg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1105,4 +1113,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4fedd4c2-4c34-4630-8822-46528b0c272e" Target="#_c47e660c-cbfa-440d-9e2e-573edfe29403"><Timestamp>2024-06-06 07:37:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6fcc8ce0-07a3-44a2-ae31-c9c243d2ac77" Target="#_664e0b40-8add-4296-a585-4d892b160a42"><Timestamp>2024-06-06 09:13:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
