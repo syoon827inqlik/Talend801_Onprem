@@ -227,6 +227,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="extCLOBXML">
       <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -246,6 +247,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.BUSINESSENTITYID " name="BUSINESSENTITYID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.PERSONID " name="PERSONID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row3.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row3.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row3.ACCOUNTNUMBER " name="ACCOUNTNUMBER" type="id_String"/>
@@ -263,6 +265,7 @@
       </varTables>
       <outputTables name="extCLOBXML" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.PERSONID " name="PERSONID" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.ACCOUNTNUMBER " name="ACCOUNTNUMBER" type="id_String"/>
@@ -809,12 +812,13 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractRegexFields_1"/>
     <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="DEMOGRAPHICS"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#10;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#10;&#9;  "/>
-    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;&quot;&#13;&#10;"/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?(&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;)?.*?(&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;)?.*?(&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;)?.*?(&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;)?.*?(&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;)?.*?(&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;)?.*?(&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;)?.*?(&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;)?.*?(&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;)?.*?(&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;)?.*?(&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;)?.*?(&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;)?&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tExtractRegexFields_1">
       <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -845,6 +849,7 @@
     </metadata>
     <metadata connector="REJECT" label="extCLOBXML" name="REJECT">
       <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -891,6 +896,8 @@
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="BUSINESSENTITYID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERSONID"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERID"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -952,6 +959,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tLogRow_1">
       <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -988,6 +996,9 @@
   <connection connectorName="FLOW" label="extCLOBXML" lineStyle="0" metaname="extCLOBXML" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tExtractRegexFields_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="BUSINESSENTITYID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERSONID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -1062,6 +1073,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="BUSINESSENTITYID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERSONID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
@@ -1071,13 +1085,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0e2cbbe5-90a2-4762-891d-f701698e5aad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X957czWVighnFuVT5DaUUCSjR8jhwObg2VwIqCoO039tWwrXX3MTInKT1p9kVKYkAB9FzU5GuCJR&#13;
-otfQrpx7vg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe4dcdba-de32-47c4-b580-0bea983c66d8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xtk8qzE+I3E19ExCx0h1e4WJtj/3hombIQfDbGfnlFDzxNFt6mmeYaWdvPJoBJgCJpQxMSe1gxrv&#13;
-C8I8R6zvVg==</DigestValue></Reference></SignedInfo><SignatureValue>VK+Ur1shrueUONj8S/UEd4/gUmVowPgTzZi+PjJ+aabvkeaTlmm4PX8weiWc4cIjyDRVaCSJgs6y&#13;
-WKcCuYwtcktl79Dgkv/jlL6kPQ3ITGQ0zZ9TEN4srhwJfjXTBvq8mC6qSCWB+szOHIb1UOnF1SIn&#13;
-BnWmlk/XO/OU7enUN4Ku58LjSHcpSM09bCQrUyVGcmif69CxwqclYSjn4KhjC9T+yp9ZAIgw4O2G&#13;
-GPKcHf6+k84sLP1FDj/+RhkwbZQhyKgksUgs74Pj9Zln8YnAk6Xe2n+GtzbYOn0qMkr/nef4RCSc&#13;
-zSHj1rrxrTYhV8iNMK2AdfzrAiLZrtpuzApYTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_54333544-08c3-4e0b-908d-80e4e8e798b4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OgMcRlaKImHu5y6YTBACph+vH7CsIwCU55ID1+FVKNubl9OVALVJSaLJFlpx0n/1zShcaPCHqhxF&#13;
+IBlR4c7DOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e25e4669-070f-4b21-a333-204c0eb56873"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t4YPozrOS96mljEojetVBqTAAwhYoD5FqvY5T7K1kLu5SHXAWzh/hM41oqIDbQjDGa88Ji926R6Q&#13;
+NukJiwoi+w==</DigestValue></Reference></SignedInfo><SignatureValue>L3qFSgtJM7ZGjJiGAN7WV+JVW59DzfKi21FLsVrgsNX6anbcyqQ84gu42UhS51n9J2wJgSkfRM5/&#13;
+mARFmCwuR/atLAdplNOdcMvrV052AtHCQcqLPkzzj3nHiei/sXR16CL6yhQfJhYJlxrEdXlWLeMp&#13;
+tgSub98hINyhGCV6fjUWCYRbhJMSq7QChIWkhu5Dyp2VbguV8GCEy6tugNv49sIqF66+oCU4xwVh&#13;
+8t3z/2Zvw17eqSxbDLrRFYW2vhPxm8E1DzxS/hlxRrXpr2gjk6gETQEHElTOWMpo0oYbLX43Vlgv&#13;
+wVb4uS/mOQ/1kO3YwnbuWrBOKn4tRr/8u8ZkZA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1099,4 +1113,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe4dcdba-de32-47c4-b580-0bea983c66d8" Target="#_0e2cbbe5-90a2-4762-891d-f701698e5aad"><Timestamp>2024-06-06 04:52:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e25e4669-070f-4b21-a333-204c0eb56873" Target="#_54333544-08c3-4e0b-908d-80e4e8e798b4"><Timestamp>2024-06-06 05:01:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
