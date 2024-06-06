@@ -4,90 +4,6 @@
     <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_yaXgIBHsEe-mUutTEp414w"/>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage dataManager="_IXuRsLudEe6FCdBlB5LC4g" name="internalSAPconnection" xmi:id="_NMzn4BHtEe-mUutTEp414w">
-    <ownedElement id="_ikUwIBHOEe-a5N2Bmj_oXQ" label="_2LIS_18_I3HDR" name="2LIS_18_I3HDR" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_NMzn4RHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTable">
-      <feature businessName="ROCANCEL" comment="Indicator: Cancel Data Record" label="ROCANCEL" length="1" name="ROCANCEL" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn4hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn4xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="AUART" comment="Order Type" label="AUART" length="4" name="AUART" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn5BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn5RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="AUFNR" comment="Order Number" label="AUFNR" length="12" name="AUFNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn5hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn5xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="BAUTL_HD" comment="Assembly" label="BAUTL_HD" length="18" name="BAUTL_HD" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn6BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn6RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="DLZBRUTTO" comment="Order Run-time in Calendar Days (Gross)" label="DLZBRUTTO" length="16" name="DLZBRUTTO" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="DOUBLE" talendType="id_Double" xmi:id="_NMzn6hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn6xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="DLZNETTO" comment="Order Lead Time/Working Days Acc. to Factory Calendar(Net)" label="DLZNETTO" length="16" name="DLZNETTO" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="DOUBLE" talendType="id_Double" xmi:id="_NMzn7BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn7RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="EHTAG" comment="Lead Time Unit (Day)" label="EHTAG" length="3" name="EHTAG" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn7hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn7xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="EQUNR" comment="Equipment Number" label="EQUNR" length="18" name="EQUNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn8BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn8RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ERDAT" comment="Date on Which Record Was Created" label="ERDAT" length="8" name="ERDAT" pattern="&quot;yyyy-MM-dd&quot;" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="DATE" talendType="id_Date" xmi:id="_NMzn8hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn8xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ILART" comment="Maintenance activity type" label="ILART" length="3" name="ILART" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn9BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn9RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="INGRP" comment="Planner Group for Customer Service and Plant Maintenance" label="INGRP" length="3" name="INGRP" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn9hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn9xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="IWERK" comment="Maintenance Planning Plant" label="IWERK" length="4" name="IWERK" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn-BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn-RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="KUNUM" comment="Customer Number" label="KUNUM" length="10" name="KUNUM" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn-hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn-xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="SPART" comment="Division" label="SPART" length="2" name="SPART" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn_BHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn_RHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="TPLNR" comment="Functional Location" label="TPLNR" length="30" name="TPLNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzn_hHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzn_xHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="VKORG" comment="Sales Organization" label="VKORG" length="4" name="VKORG" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzoABHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoARHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="VTWEG" comment="Distribution Channel" label="VTWEG" length="2" name="VTWEG" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzoAhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoAxHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH" comment="Number of orders" label="ZHLAFIH" length="10" name="ZHLAFIH" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoBBHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoBRHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_ABGS" comment="Number of Closed Orders" label="ZHLAFIH_ABGS" length="10" name="ZHLAFIH_ABGS" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoBhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoBxHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_GEPL" comment="Number of Planned Orders" label="ZHLAFIH_GEPL" length="10" name="ZHLAFIH_GEPL" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoCBHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoCRHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_NDGEF" comment="Number of orders not to be run" label="ZHLAFIH_NDGEF" length="10" name="ZHLAFIH_NDGEF" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoChHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoCxHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_OFFEN" comment="Number of Open Orders" label="ZHLAFIH_OFFEN" length="10" name="ZHLAFIH_OFFEN" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoDBHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoDRHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_SOF" comment="Number of Immediate Orders" label="ZHLAFIH_SOF" length="10" name="ZHLAFIH_SOF" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoDhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoDxHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_TGERL" comment="Number of On-time Closed Orders" label="ZHLAFIH_TGERL" length="10" name="ZHLAFIH_TGERL" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoEBHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoERHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ZHLAFIH_UNGPL" comment="Number of Unscheduled Orders" label="ZHLAFIH_UNGPL" length="10" name="ZHLAFIH_UNGPL" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="INTEGER" talendType="id_Integer" xmi:id="_NMzoEhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoExHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ODQ_CHANGEMODE" comment="Change Mode for a Data Record in the Delta" label="ODQ_CHANGEMODE" length="1" name="ODQ_CHANGEMODE" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_NMzoFBHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoFRHtEe-mUutTEp414w"/>
-      </feature>
-      <feature businessName="ODQ_ENTITYCNTR" comment="Number of Data Units (Data Records for Example)" label="ODQ_ENTITYCNTR" length="19" name="ODQ_ENTITYCNTR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_NMzoFhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
-        <initialValue xmi:id="_NMzoFxHtEe-mUutTEp414w"/>
-      </feature>
-      <additionalProperties key="CONTENT_TYPE" value="METADATA_SAP_CONTENT_EXTRACTOR" xmi:id="_NMzoGBHtEe-mUutTEp414w"/>
-    </ownedElement>
     <ownedElement id="_H-XNEBHtEe-mUutTEp414w" label="MARA" name="MARA" tableSearchType="TRANSPARENT" tableType="TABLE" xmi:id="_NMzoGRHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTable">
       <feature businessName="Client" comment="Client" key="true" label="MANDT" length="3" name="MANDT" sourceType="STRING" talendType="id_String" xmi:id="_NMzoGhHtEe-mUutTEp414w" xsi:type="TalendMetadata:SAPTableField">
         <initialValue xmi:id="_NMzoGxHtEe-mUutTEp414w"/>
@@ -903,13 +819,13 @@
       </feature>
     </ownedElement>
   </TalendMetadata:GenericPackage>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ed6698f3-7380-496d-9bae-2af1e0c5cf52"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RC++fpPHcEW/EODa4BTkFlN5GpnqkLVvp4ViXrpoYicsVZZC7wiV2uzM1VvKCT1OIxgUpAE39yTG&#13;
-NKGfDWvD3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2a5cc693-7d44-4a13-8398-e413b5171219"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FGBxBVSjGYxFp2IWcfUEEohcAvtFgx/qXTgxK5DKtLUzrMxjksE1Ot/avhTP9Vib5ljELQ8m8Jdp&#13;
-x3RW/L4ntQ==</DigestValue></Reference></SignedInfo><SignatureValue>LDHonoal1OMMdEPODzIGIlwbpOaqaAGMtd2r9bTxB41xf3ybzL6P1tU270z8QMR17VVmC+hfJwEa&#13;
-jRm1gHSbRVjrjV8tQSyexGd150xDQ3NJTV1ftuWWx+AC8VhneNcT3+/SrrsDQFxHOsSVcNfsKpFI&#13;
-zGxdmXmndo4qxReKsX1G/sngw0rWhXajFhNX227yTAILuUQUhgHoxzOkXtIKeFfkARvgfA3nXuLT&#13;
-QF+yEqmr0VgicMl9f82sZvjE+t6Ws1KJWuEyIYzsSrQ0zvVS9LSm7bwf54aC6P2Lq1agWBS4Q74A&#13;
-GdGib1fqJx8nwL6oaVWcvb6XS4yxXFh4TBEtQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4cc06888-d204-4ca7-8708-6aadaec9f458"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zfTAl+f/18pI2+6ozzI2YxIRNC/JabMpxtph+gcTyMLTGG7tYbsYs0MsJ76sbcCFDjLZEE7rvSrU&#13;
+JcuvLmH/1A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bbd73493-fcdd-48c1-97d6-cc3abcaf7265"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IzKUkFmB9LWwWMQChryQYXD2pgWkL2pmAqh5Niyim00ZE/2pYhb49fxiQC0kGpQNbLdCHRiVqJ6S&#13;
+OFYghbaqpg==</DigestValue></Reference></SignedInfo><SignatureValue>CqJxczqwY7CBynHoHuCtoBDSTYo7AQc0aJ8IriGfvRRSBOReJfOh5OO7RG7ATutrkoUNfDZnWDqH&#13;
+Yd2jK0iWc37ks4Xv3/jY2ZVJoVnNqIEGgYO4K0zR3aNRV1V9blR/uX/yxJyV3Gw+hqsQiX4IIHXR&#13;
+vlV7aIWh/ZJmhBMNYd7EYUFuKIKeMad+3b56Vj9IZJiaV2rBvydqqMEGFA7qYc2QZzLTIxo0dGqs&#13;
+pKP8HjySYCsa4Y/CzAEImT7mMkZlaWEqryao+XVcT0RJ1z0hYBh9FyylPHOhutAl65/nZJ6WZFT9&#13;
+7fgCRKIdoPbujMulx1cQTFKZe0nlgwooWcq/bA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -931,4 +847,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2a5cc693-7d44-4a13-8398-e413b5171219" Target="#_ed6698f3-7380-496d-9bae-2af1e0c5cf52"><Timestamp>2024-05-14 12:26:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bbd73493-fcdd-48c1-97d6-cc3abcaf7265" Target="#_4cc06888-d204-4ca7-8708-6aadaec9f458"><Timestamp>2024-06-06 13:53:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
