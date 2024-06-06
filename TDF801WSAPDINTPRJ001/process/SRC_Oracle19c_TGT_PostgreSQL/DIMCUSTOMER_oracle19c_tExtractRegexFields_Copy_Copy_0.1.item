@@ -242,7 +242,6 @@
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -263,7 +262,6 @@
         <mapperTableEntries expression="StringHandling.TRIM(row5.ADDRESSLINE1) " name="ADDRESSLINE1" type="id_String"/>
         <mapperTableEntries expression="StringHandling.TRIM(row5.ADDRESSLINE2) " name="ADDRESSLINE2" type="id_String"/>
         <mapperTableEntries expression="StringHandling.TRIM(row6.PHONENUMBER) " name="PHONENUMBER" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.EREPLACE(row1.DEMOGRAPHICS,&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?(?:&lt;TotalPurchaseYTD&gt;[^&lt;]*&lt;/TotalPurchaseYTD&gt;).*?(?:&lt;DateFirstPurchase&gt;[^&lt;]*&lt;/DateFirstPurchase&gt;).*?(?:&lt;BirthDate&gt;[^&lt;]*&lt;/BirthDate&gt;).*?(?:&lt;MaritalStatus&gt;[^&lt;]*&lt;/MaritalStatus&gt;).*?(?:&lt;YearlyIncome&gt;[^&lt;]*&lt;/YearlyIncome&gt;).*?(?:&lt;Gender&gt;[^&lt;]*&lt;/Gender&gt;).*?\(?:&lt;TotalChildren&gt;[^&lt;]*&lt;/TotalChildren&gt;).*?(?:&lt;NumberChildrenAtHome&gt;[^&lt;]*&lt;/NumberChildrenAtHome&gt;).*?(?:&lt;Education&gt;[^&lt;]*&lt;/Education&gt;).*?(?:&lt;Occupation&gt;[^&lt;]*&lt;/Occupation&gt;).*?(?:&lt;HomeOwnerFlag&gt;[^&lt;]*&lt;/HomeOwnerFlag&gt;).*?(?:&lt;NumberCarsOwned&gt;[^&lt;]*&lt;/NumberCarsOwned&gt;).*?(?:&lt;CommuteDistance&gt;[^&lt;]*&lt;/CommuteDistance&gt;).*?&lt;/IndividualSurvey&gt;&quot;,&quot;XXXXX&quot;) " name="processedDEMOGRAPHICS" type="id_String"/>
       </varTables>
       <outputTables name="extCLOBXML" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" nullable="true" type="id_BigDecimal"/>
@@ -282,7 +280,6 @@
         <mapperTableEntries expression="Var.ADDRESSLINE1 " name="ADDRESSLINE1" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.ADDRESSLINE2 " name="ADDRESSLINE2" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.PHONENUMBER " name="PHONENUMBER" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="Var.processedDEMOGRAPHICS " name="processedDEMOGRAPHICS" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="BUSINESSENTITYID" type="id_BigDecimal"/>
@@ -815,7 +812,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractRegexFields_1"/>
     <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="DEMOGRAPHICS"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#10;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#10;&#9;  "/>
-    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?(?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;)?.*?(?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;)?.*?(?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;)?.*?(?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;)?.*?(?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;)?.*?(?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;)?.*?(?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;)?.*?(?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;)?.*?(?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;)?.*?(?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;)?.*?(?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;)?.*?(?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;)?.*?&lt;/IndividualSurvey&gt;&quot;"/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?(?:&lt;TotalPurchaseYTD&gt;[^&lt;]*&lt;/TotalPurchaseYTD&gt;).*?(?:&lt;DateFirstPurchase&gt;[^&lt;]*&lt;/DateFirstPurchase&gt;).*?(?:&lt;BirthDate&gt;[^&lt;]*&lt;/BirthDate&gt;).*?(?:&lt;MaritalStatus&gt;[^&lt;]*&lt;/MaritalStatus&gt;).*?(?:&lt;YearlyIncome&gt;[^&lt;]*&lt;/YearlyIncome&gt;).*?(?:&lt;Gender&gt;[^&lt;]*&lt;/Gender&gt;).*?\(?:&lt;TotalChildren&gt;[^&lt;]*&lt;/TotalChildren&gt;).*?(?:&lt;NumberChildrenAtHome&gt;[^&lt;]*&lt;/NumberChildrenAtHome&gt;).*?(?:&lt;Education&gt;[^&lt;]*&lt;/Education&gt;).*?(?:&lt;Occupation&gt;[^&lt;]*&lt;/Occupation&gt;).*?(?:&lt;HomeOwnerFlag&gt;[^&lt;]*&lt;/HomeOwnerFlag&gt;).*?(?:&lt;NumberCarsOwned&gt;[^&lt;]*&lt;/NumberCarsOwned&gt;).*?(?:&lt;CommuteDistance&gt;[^&lt;]*&lt;/CommuteDistance&gt;).*?&lt;/IndividualSurvey&gt;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1093,13 +1090,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_926b2f97-ad5e-470b-af06-b05856c89e02"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ypVCkeB7kEpsqXBJ/hHxRHN4GyPYZ0mslzYWxdCwi+bRYM6zTCZKir2bOaG3UtEd1jq97zhEspX4&#13;
-g1YkqNhWeA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_73d0cb5c-e19e-402a-b3a7-046b7bdb392f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ibh48E+bfwCtp3uVPqDwhhL+mDCPhiCUlluAVs5rfhNXm1AwmapKNTHiobgxmH5YDGj1nNOUZh5f&#13;
-4tl2RpHh+A==</DigestValue></Reference></SignedInfo><SignatureValue>CTpN5ItfosnA9dIgYDELkiEpqeqeMaR/BrfBCuH/b2ZLYl86VdFhYLSN/Eq/8TWMTjmxGVnhDPzq&#13;
-MwwzA6lYeZUHfCL4M0hYPVsN71Quq2UFEg1oQd4YWSunDLtNsO3xQJ1dfyWr2CAd03xFrHW4UVyG&#13;
-O/jY8XG+/3CGAYLWtiIaSqDqtgbvRwZ+B8hY9glysynu8hlgXdzxSGxTyBlKdY1g9haxeDW+6uLq&#13;
-0m66DcDrJODSZ2obj3iknMvEVjKC531GPO24PB++/YC9n3ixGq7C93CXrysrESS9/oaoi1DHnBbN&#13;
-O136mxXLJOO5ndJ+F6oMAQBboVfa/vtp5XDapQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_40389955-b180-42f1-bfed-42a11e5e0db2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WCAtyEt53VCpcGvzNzmk4FYHz39D34/HJgWzjtyCvPtb7DYPU/AdIeGwf/leqULdNJHoMN2niLG9&#13;
+1IwPM4Y/Pw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_080ca4cd-1b2e-4b8c-b0c4-609d99832334"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cox61S+gQit5B4gP5g+uKnFmMyAJO0/I/AWEPuATpPDZDvbuVU5uv9qkf3uKf8InqipSx3J0bKt0&#13;
+S7uyZOUBsg==</DigestValue></Reference></SignedInfo><SignatureValue>BRgnyqYdOwz/ifnQikEvprjDJzPyhFHq8mBJiq+TwOGkVcM+wjmSeeH6j+lpmpIS3myKOBHXMRoR&#13;
+ELp5aOAGTftDDCctT/5FHLlDv54FWwMo6ou+g9Ve0jxHydafYlJmvkzzRrkLUsHfgEYg8dnuSDYz&#13;
+AiDHQLkByXaFJdIVM5ot7e1aTrM8Jdh4EV30a5wKNugtQJyJBSz4F8QkKcfdSTAmQJLNTMvrOmuS&#13;
+D3WiDN3D1dpRyjm0mRaz9r5J4BHjiT91nnrz+qd/oN7epRxX7LpToH68SQ+XpYlzoTXeINO16TZD&#13;
+b1M2VW1yGZOCKSfs8z53P6ubyFFKWp91nPNObw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1121,4 +1118,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_73d0cb5c-e19e-402a-b3a7-046b7bdb392f" Target="#_926b2f97-ad5e-470b-af06-b05856c89e02"><Timestamp>2024-06-06 08:08:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_080ca4cd-1b2e-4b8c-b0c4-609d99832334" Target="#_40389955-b180-42f1-bfed-42a11e5e0db2"><Timestamp>2024-06-06 08:09:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
