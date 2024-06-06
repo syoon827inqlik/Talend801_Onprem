@@ -833,7 +833,7 @@
       <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -879,31 +879,7 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PHONENUMBER"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TotalPurchaseYTD"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateFirstPurchase"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BirthDate"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MaritalStatus"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="YearlyIncome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TotalChildren"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NumberChildrenAtHome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Education"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Occupation"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HomeOwnerFlag"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NumberCarsOwned"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CommuteDistance"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="processedDEMOGRAPHICS"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -926,19 +902,7 @@
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalPurchaseYTD" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateFirstPurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="MaritalStatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="YearlyIncome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalChildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberChildrenAtHome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="Education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="HomeOwnerFlag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberCarsOwned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="CommuteDistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="50" offsetLabelY="-15" source="tDBInput_1" target="tMap_1">
@@ -990,13 +954,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3c30c240-cdce-40ac-9198-72dee64cb0a3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0WwVgefoHeTOeImcKcLfG1qhGSyMzD7BADTX8qDHSVPdPDn39+swhaE3osmQDXv528+vDQXyA6hR&#13;
-WbIjf+er3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6de56da1-0483-4754-aa1f-dc5690e870ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UhqpPu+mkWrqsFjLlnVFlVddzJ/AHbNMQvd2Nb+Uh0r/KTbujvfaOJfL4I4Jqa3WWOdzk/iyfaye&#13;
-dqgaS4AgnA==</DigestValue></Reference></SignedInfo><SignatureValue>KaQqSO8TJKS7huf+kibh543+8vI1RLkzMhcfzYDY79YDOSQQw3aNvsEtn91j8FOTlbe+MmaU+CzZ&#13;
-mVvLv+N6lV0xUf4hQOL0s1jPtOCZ/IDuksIMebHBOyl/Qe6lDGcunQn6L7tkiJoSe89r8xi50djs&#13;
-oEN41wVGhNhON01ck+9E04Tl6R8d7suuEn3yNusRbPupceNVdw+en9a8mvfXrWMdXgZfjBHeVZ7B&#13;
-HOaykAQT9iGI2UmbJ7tGay8OhA/VnBkN/3TF4ZvoTXyrxpxqr//vvsUL/Fz1Jm2nSFhcRNRm1S5s&#13;
-9Z8giWYUcpwpSAyJ2gEYXAeGwJ80oPsBCkFiaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_953dd344-8721-42e9-a084-5bab9dc9bc75"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wawVgI2OePWTu69aEiy/vH6oo2DtaEwoBodFXBAUz0YytKv80TOMaEaknQKoUjXcdWm9XYogC4xm&#13;
+Dtp5mxd2vg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_22bb3847-db48-4400-93e1-3cc81966b9d5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YEgJWjuZtqMZPpTU3MA0YLwVkunvLsbS1zq/P2f8kKCMtUUUI+kSMu9IE3OtghKLoUXyJEMrs5V3&#13;
+JSrPLW/XLA==</DigestValue></Reference></SignedInfo><SignatureValue>m7tX1G42cU4Cyvu2XXs9Gl5ZURvqYzz7DsZ1SdXoNg+6nEVGwFFs69cpMUw5OOwyoPObMKPS074c&#13;
+lu3aITVkfU9RUuVWOYctgkiY21JI0lpXQ4os8Hae3O9O/1iDdo0J2CVeEhrE6uNjHF3xy24xAUmJ&#13;
+42m8YDw0vn7QnP3FR6dUKaBxV3IqzT4E1bfyQZM8DEFM0NeVa0mU0nifeZ/lTkmGotRaZiShBXS/&#13;
+fE+zYG7howJWvAaVLW8Lpo0YwdoKxKpeVMXX952FXI6PWMO8z7uakh7yi+wOmWw2cRN9CIvu8vWQ&#13;
+0zwvHH4FKZoac6AEbXfutRW52HyekEE2PxQKig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1018,4 +982,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6de56da1-0483-4754-aa1f-dc5690e870ea" Target="#_3c30c240-cdce-40ac-9198-72dee64cb0a3"><Timestamp>2024-06-06 06:36:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_22bb3847-db48-4400-93e1-3cc81966b9d5" Target="#_953dd344-8721-42e9-a084-5bab9dc9bc75"><Timestamp>2024-06-06 06:38:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
