@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="147"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -226,22 +226,22 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="extCLOBXML">
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TITLE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIDDLENAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LASTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NAMESTYLE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DEMOGRAPHICS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SUFFIX" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EMAILADDRESS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TITLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MIDDLENAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LASTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NAMESTYLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUFFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EMAILADDRESS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -264,22 +264,22 @@
         <mapperTableEntries expression="StringHandling.TRIM(row6.PHONENUMBER) " name="PHONENUMBER" type="id_String"/>
       </varTables>
       <outputTables name="extCLOBXML" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.PERSONID " name="PERSONID" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.ACCOUNTNUMBER " name="ACCOUNTNUMBER" type="id_String"/>
-        <mapperTableEntries expression="Var.TITLE " name="TITLE" type="id_String"/>
-        <mapperTableEntries expression="Var.FIRSTNAME " name="FIRSTNAME" type="id_String"/>
-        <mapperTableEntries expression="Var.MIDDLENAME " name="MIDDLENAME" type="id_String"/>
-        <mapperTableEntries expression="Var.LASTNAME " name="LASTNAME" type="id_String"/>
-        <mapperTableEntries expression="Var.NAMESTYLE " name="NAMESTYLE" type="id_BigDecimal"/>
-        <mapperTableEntries expression="Var.DEMOGRAPHICS " name="DEMOGRAPHICS" type="id_String"/>
-        <mapperTableEntries expression="Var.SUFFIX " name="SUFFIX" type="id_String"/>
-        <mapperTableEntries expression="Var.EMAILADDRESS " name="EMAILADDRESS" type="id_String"/>
-        <mapperTableEntries expression="Var.ADDRESSLINE1 " name="ADDRESSLINE1" type="id_String"/>
-        <mapperTableEntries expression="Var.ADDRESSLINE2 " name="ADDRESSLINE2" type="id_String"/>
-        <mapperTableEntries expression="Var.PHONENUMBER " name="PHONENUMBER" type="id_String"/>
+        <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.PERSONID " name="PERSONID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.CUSTOMERID " name="CUSTOMERID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.TERRITORYID " name="TERRITORYID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.ACCOUNTNUMBER " name="ACCOUNTNUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.TITLE " name="TITLE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.FIRSTNAME " name="FIRSTNAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.MIDDLENAME " name="MIDDLENAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.LASTNAME " name="LASTNAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.NAMESTYLE " name="NAMESTYLE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.DEMOGRAPHICS " name="DEMOGRAPHICS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.SUFFIX " name="SUFFIX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.EMAILADDRESS " name="EMAILADDRESS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.ADDRESSLINE1 " name="ADDRESSLINE1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.ADDRESSLINE2 " name="ADDRESSLINE2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.PHONENUMBER " name="PHONENUMBER" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="BUSINESSENTITYID" type="id_BigDecimal"/>
@@ -808,36 +808,11 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;output_row.BUSINESSENTITYID = input_row.BUSINESSENTITYID;&#13;&#10;output_row.PERSONID = input_row.PERSONID;&#13;&#10;output_row.CUSTOMERID = input_row.CUSTOMERID;&#13;&#10;output_row.TERRITORYID = input_row.TERRITORYID;&#13;&#10;output_row.ACCOUNTNUMBER = input_row.ACCOUNTNUMBER;&#13;&#10;output_row.TITLE = input_row.TITLE;&#13;&#10;output_row.FIRSTNAME = input_row.FIRSTNAME;&#13;&#10;output_row.MIDDLENAME = input_row.MIDDLENAME;&#13;&#10;output_row.LASTNAME = input_row.LASTNAME;&#13;&#10;output_row.NAMESTYLE = input_row.NAMESTYLE;&#13;&#10;output_row.DEMOGRAPHICS = input_row.DEMOGRAPHICS;&#13;&#10;output_row.SUFFIX = input_row.SUFFIX;&#13;&#10;output_row.EMAILADDRESS = input_row.EMAILADDRESS;&#13;&#10;output_row.ADDRESSLINE1 = input_row.ADDRESSLINE1;&#13;&#10;output_row.ADDRESSLINE2 = input_row.ADDRESSLINE2;&#13;&#10;output_row.PHONENUMBER = input_row.PHONENUMBER;&#13;&#10;output_row.processedDEMOGRAPHICS = input_row.DEMOGRAPHICS&#10;  .replaceAll(&quot;(&lt;DateFirstPurchase&gt;[^&lt;]*&lt;/DateFirstPurchase&gt;)?&quot;, &quot;&lt;DateFirstPurchase&gt;&lt;/DateFirstPurchase&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;BirthDate&gt;[^&lt;]*&lt;/BirthDate&gt;)?&quot;, &quot;&lt;BirthDate&gt;&lt;/BirthDate&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;MaritalStatus&gt;[^&lt;]*&lt;/MaritalStatus&gt;)?&quot;, &quot;&lt;MaritalStatus&gt;&lt;/MaritalStatus&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;YearlyIncome&gt;[^&lt;]*&lt;/YearlyIncome&gt;)?&quot;, &quot;&lt;YearlyIncome&gt;&lt;/YearlyIncome&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;Gender&gt;[^&lt;]*&lt;/Gender&gt;)?&quot;, &quot;&lt;Gender&gt;&lt;/Gender&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;TotalChildren&gt;[^&lt;]*&lt;/TotalChildren&gt;)?&quot;, &quot;&lt;TotalChildren&gt;&lt;/TotalChildren&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;NumberChildrenAtHome&gt;[^&lt;]*&lt;/NumberChildrenAtHome&gt;)?&quot;, &quot;&lt;NumberChildrenAtHome&gt;&lt;/NumberChildrenAtHome&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;Education&gt;[^&lt;]*&lt;/Education&gt;)?&quot;, &quot;&lt;Education&gt;&lt;/Education&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;Occupation&gt;[^&lt;]*&lt;/Occupation&gt;)?&quot;, &quot;&lt;Occupation&gt;&lt;/Occupation&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;HomeOwnerFlag&gt;[^&lt;]*&lt;/HomeOwnerFlag&gt;)?&quot;, &quot;&lt;HomeOwnerFlag&gt;&lt;/HomeOwnerFlag&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;NumberCarsOwned&gt;[^&lt;]*&lt;/NumberCarsOwned&gt;)?&quot;, &quot;&lt;NumberCarsOwned&gt;&lt;/NumberCarsOwned&gt;&quot;)&#10;  .replaceAll(&quot;(&lt;CommuteDistance&gt;[^&lt;]*&lt;/CommuteDistance&gt;)?&quot;, &quot;&lt;CommuteDistance&gt;&lt;/CommuteDistance&gt;&quot;);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="extCLOBXML" name="tJavaRow_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TITLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIDDLENAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LASTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NAMESTYLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SUFFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EMAILADDRESS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tExtractRegexFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractRegexFields_1"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="processedDEMOGRAPHICS"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="BUSINESSENTITYID"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#10;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#10;&#9;  "/>
-    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?(?:&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;)?.*?(?:&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;)?.*?(?:&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;)?.*?(?:&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;)?.*?(?:&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;)?.*?(?:&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;)?.*?(?:&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;)?.*?(?:&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;)?.*?(?:&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;)?.*?(?:&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;)?.*?(?:&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;)?.*?(?:&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;)?.*?&lt;/IndividualSurvey&gt;&quot;&#13;&#10;&#13;&#10;&quot;&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;&quot;&#13;&#10;"/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey xmlns=&quot;http://adventure-works.com/IndividualSurvey&quot;&gt;.*?&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;.*?&lt;/IndividualSurvey&gt;&quot;&#13;&#10;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1018,15 +993,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="extCLOBXML" lineStyle="0" metaname="extCLOBXML" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="BUSINESSENTITYID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PERSONID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="extCLOBXML" lineStyle="0" metaname="extCLOBXML" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tExtractRegexFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="extCLOBXML"/>
   </connection>
@@ -1053,10 +1020,6 @@
   <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tDBInput_7" offsetLabelX="50" offsetLabelY="50" source="tDBInput_7" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
-  </connection>
-  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tExtractRegexFields_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tExtractRegexFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractRegexFields_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1114,13 +1077,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d5d522c-df08-4eb2-b7e4-d68cbe11beb2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>advMN+YqvM3ie2ixnjcczXLF9UZ3sXVdAcz1gjkecGiwax0BfbxVL0Yu3mkAo8RRBa8xNGF9l8oO&#13;
-4FxU3uYTUg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dc385bfd-54cd-4e2f-93b7-24c38b81d3ad"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fy4B37SdBjBVoy+qAwDgm2W1Rlj3gjTKIqv40dBXts4l+gdE8BBCLu4fTOAjmKwUVtMW5nE3Zgvf&#13;
-s/gE+9nODQ==</DigestValue></Reference></SignedInfo><SignatureValue>kkNK+F58Ovf98es16TuWh6E16jCOq2IHLkjp51LDn5UctStkdTzcWd2NYhXW++2SZxhZxjCNMXuL&#13;
-8UPVGRAxC4ZDwVTuyPwpWRti1MWTxRclRB3qVqD3G866guxth52hvKa64rHoUkBZqA7Td0RCSdez&#13;
-srGL7ftCw/NdkCkYcMDp+dIKCd5/AoZy3qngduyhHMPAybKl2KXDQ0s2qEXP+qeYiKa+pr02D46W&#13;
-epJz+Jbf3Tee4Z7751Io/ijs8j7488VCqt86IAfxpwSMf5N+cBmSu837ITvWGaEHJ7+4fvgNaqFV&#13;
-pfYQI8mPAyy0S+AMbuMmaL7V01DoS0SAedI4eg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_73008708-b1cf-4a4a-9062-69447e586534"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lfw9vXyoZsmenmUOcjK0cAwaIoyRoF2IPoiA6I57HG+M9mHoB4gYSYEfhccXkX+fLymtSa2frVou&#13;
+KK+Mx/Ay+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_00672ecd-e00b-4576-923a-3b27277d893a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Q/qgO7+DScTcR1IhA//QQgFaPOJnhwjY4tfrXsHglmfh59XXXh5J8iqs5l20dVNafQWGyV2e05Wm&#13;
+gYronuLDxA==</DigestValue></Reference></SignedInfo><SignatureValue>UDVj2VxqSRbldS4mWZVZwp3kjugdtx+p09bLVwpOh2lpy6s94WPSqfyOg10r7iWlB9IDoUMFmNPG&#13;
+acbB8HDhaeNRx7AiTpXohzlWRy3ZmIJ7/odq6DfjN1lJ8T+1tbi7g+cQ1yjtXgSUO92ujc+sYXDu&#13;
+VSps09+Np/9vIKtz8L3p+jOybEM4ngcA/dfvfTdBawgVg+M2k8u4MMj9mCX7cZ7z1HDDX6RRf4CX&#13;
+jyl3+SLG4fKuRMxFPFU0NmdnqUEsBP18DTj1Ei+CGrsVfvlgaxWQqZ8Dy2UrSfMg+kuNXh1u4JaK&#13;
+p0xElytXSUwXbQ5+8TSt2Q6y4Psw0GOJ/p94qQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1142,4 +1105,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dc385bfd-54cd-4e2f-93b7-24c38b81d3ad" Target="#_0d5d522c-df08-4eb2-b7e4-d68cbe11beb2"><Timestamp>2024-06-06 06:22:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_00672ecd-e00b-4576-923a-3b27277d893a" Target="#_73008708-b1cf-4a4a-9062-69447e586534"><Timestamp>2024-06-06 07:09:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
