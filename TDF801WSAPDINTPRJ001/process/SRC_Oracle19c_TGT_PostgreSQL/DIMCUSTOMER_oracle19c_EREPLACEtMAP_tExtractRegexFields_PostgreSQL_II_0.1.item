@@ -3,7 +3,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="4"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -887,6 +887,146 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iiabACPqEe-GdfabmPVZ1w-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="extCLOBXML" name="output">
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="geographkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customeralternatekey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="middlename" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="namestyle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="birthdate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="maritalstatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="suffix" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="emailaddress" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="commutedistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row8.BUSINESSENTITYID " name="BUSINESSENTITYID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row8.PERSONID " name="PERSONID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row8.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row8.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row8.ACCOUNTNUMBER " name="ACCOUNTNUMBER" type="id_String"/>
+        <mapperTableEntries expression="row8.TITLE " name="TITLE" type="id_String"/>
+        <mapperTableEntries expression="row8.FIRSTNAME " name="FIRSTNAME" type="id_String"/>
+        <mapperTableEntries expression="row8.MIDDLENAME " name="MIDDLENAME" type="id_String"/>
+        <mapperTableEntries expression="row8.LASTNAME " name="LASTNAME" type="id_String"/>
+        <mapperTableEntries expression="row8.NAMESTYLE " name="NAMESTYLE" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row8.DEMOGRAPHICS " name="DEMOGRAPHICS" type="id_String"/>
+        <mapperTableEntries expression="row8.SUFFIX " name="SUFFIX" type="id_String"/>
+        <mapperTableEntries expression="row8.EMAILADDRESS " name="EMAILADDRESS" type="id_String"/>
+        <mapperTableEntries expression="row8.ADDRESSLINE1 " name="ADDRESSLINE1" type="id_String"/>
+        <mapperTableEntries expression="row8.ADDRESSLINE2 " name="ADDRESSLINE2" type="id_String"/>
+        <mapperTableEntries expression="row8.PHONENUMBER " name="PHONENUMBER" type="id_String"/>
+        <mapperTableEntries expression="row8.TotalPurchaseYTD " name="TotalPurchaseYTD" type="id_String"/>
+        <mapperTableEntries expression="row8.DateFirstPurchase " name="DateFirstPurchase" type="id_Date"/>
+        <mapperTableEntries expression="row8.BirthDate " name="BirthDate" type="id_Date"/>
+        <mapperTableEntries expression="row8.MaritalStatus " name="MaritalStatus" type="id_Character"/>
+        <mapperTableEntries expression="row8.YearlyIncome " name="YearlyIncome" type="id_String"/>
+        <mapperTableEntries expression="row8.Gender " name="Gender" type="id_Character"/>
+        <mapperTableEntries expression="row8.TotalChildren " name="TotalChildren" type="id_Integer"/>
+        <mapperTableEntries expression="row8.NumberChildrenAtHome " name="NumberChildrenAtHome" type="id_Integer"/>
+        <mapperTableEntries expression="row8.Education " name="Education" type="id_Character"/>
+        <mapperTableEntries expression="row8.Occupation " name="Occupation" type="id_Character"/>
+        <mapperTableEntries expression="row8.HomeOwnerFlag " name="HomeOwnerFlag" type="id_Character"/>
+        <mapperTableEntries expression="row8.NumberCarsOwned " name="NumberCarsOwned" type="id_Integer"/>
+        <mapperTableEntries expression="row8.CommuteDistance " name="CommuteDistance" type="id_Character"/>
+        <mapperTableEntries expression="row8.processedDEMOGRAPHICS " name="processedDEMOGRAPHICS" type="id_String"/>
+      </varTables>
+      <outputTables name="output" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.BUSINESSENTITYID " name="BUSINESSENTITYID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.PERSONID " name="PERSONID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.CUSTOMERID " name="customerkey" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.TERRITORYID " name="geographkey" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.ACCOUNTNUMBER " name="customeralternatekey" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.TITLE " name="title" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.FIRSTNAME " name="firstname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.MIDDLENAME " name="middlename" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.LASTNAME " name="lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.NAMESTYLE " name="namestyle" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.BirthDate " name="birthdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.MaritalStatus " name="maritalstatus" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.SUFFIX " name="suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Gender " name="gender" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.EMAILADDRESS " name="emailaddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.YearlyIncome " name="yearlyincome" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.TotalChildren " name="totalchildren" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.NumberChildrenAtHome " name="numberchildrenathome" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.Education " name="education" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.Occupation " name="occupation" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.HomeOwnerFlag " name="houseownerflag" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.NumberCarsOwned " name="numbercarsowned" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.ADDRESSLINE1 " name="addressline1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.ADDRESSLINE2 " name="addressline2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.PHONENUMBER " name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.CommuteDistance " name="commutedistance" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="Var.DateFirstPurchase " name="datefirstpurchase" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row8" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="BUSINESSENTITYID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="PERSONID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CUSTOMERID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TERRITORYID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ACCOUNTNUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TITLE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIRSTNAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MIDDLENAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LASTNAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NAMESTYLE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DEMOGRAPHICS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUFFIX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EMAILADDRESS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ADDRESSLINE1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ADDRESSLINE2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PHONENUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TotalPurchaseYTD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DateFirstPurchase" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="BirthDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="MaritalStatus" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="YearlyIncome" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Gender" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="TotalChildren" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="NumberChildrenAtHome" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Education" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="Occupation" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="HomeOwnerFlag" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="NumberCarsOwned" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommuteDistance" nullable="true" type="id_Character"/>
+        <mapperTableEntries name="processedDEMOGRAPHICS" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tPostgresqlOutput"/>
@@ -910,7 +1050,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TBs1QcM9RG/H7QxsaE814qGXF9OZdvj14epOdCKFRrBE+PcDmeuB"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;processed_demo&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimcustomer_byTalend&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
@@ -941,142 +1081,127 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customerkey"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TERRITORYID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geographkey"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCOUNTNUMBER"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customeralternatekey"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TITLE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FIRSTNAME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstname"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIDDLENAME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="middlename"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LASTNAME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lastname"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NAMESTYLE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="namestyle"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEMOGRAPHICS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="birthdate"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SUFFIX"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="maritalstatus"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EMAILADDRESS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="suffix"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESSLINE1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESSLINE2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="emailaddress"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHONENUMBER"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="yearlyincome"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TotalPurchaseYTD"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalchildren"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateFirstPurchase"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numberchildrenathome"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BirthDate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="education"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MaritalStatus"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="occupation"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="YearlyIncome"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="houseownerflag"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numbercarsowned"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TotalChildren"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="addressline1"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NumberChildrenAtHome"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="addressline2"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Education"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Occupation"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commutedistance"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HomeOwnerFlag"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NumberCarsOwned"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CommuteDistance"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="processedDEMOGRAPHICS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datefirstpurchase"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1087,70 +1212,65 @@
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="DIMCUSTOMER"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tDBOutput_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TITLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIDDLENAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LASTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NAMESTYLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SUFFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EMAILADDRESS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalPurchaseYTD" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateFirstPurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="MaritalStatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="YearlyIncome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalChildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberChildrenAtHome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="Education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="HomeOwnerFlag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberCarsOwned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="CommuteDistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="geographkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customeralternatekey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="middlename" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="namestyle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="birthdate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="maritalstatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="suffix" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="emailaddress" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="commutedistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="extCLOBXML" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TITLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIDDLENAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LASTNAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NAMESTYLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SUFFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EMAILADDRESS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ADDRESSLINE2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PHONENUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalPurchaseYTD" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateFirstPurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="MaritalStatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="YearlyIncome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TotalChildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberChildrenAtHome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="Education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="HomeOwnerFlag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumberCarsOwned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="CommuteDistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PERSONID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="geographkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customeralternatekey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="middlename" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="namestyle" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="birthdate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="maritalstatus" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="suffix" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="gender" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="emailaddress" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="addressline2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="commutedistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1192,7 +1312,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
-  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tExtractRegexFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractRegexFields_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tExtractRegexFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractRegexFields_1" target="tMap_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="MaritalStatus"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1246,18 +1366,96 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="totalchildren"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="commutedistance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="customerkey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="firstname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="numbercarsowned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="namestyle"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="birthdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="education"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="occupation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="geographkey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="middlename"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="emailaddress"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="yearlyincome"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="suffix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lastname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="numberchildrenathome"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="maritalstatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addressline2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="houseownerflag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addressline1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="customeralternatekey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_59e1fef2-eda2-44d7-b5a5-80555dce5926"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JWV/FU5qRVlGLMyy5L/eVGcqO9fS6Ass5vKyY/0m4YZT5sKTOrP022N2O7pcxGxRI0ONcK11qSSH&#13;
-H+Ts5NPfLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2000bfef-db24-454f-8718-2f705ad2d1db"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ysp4JTMvxHvkKv8x2msQmcw6LOwcmeKWyrdnX9y25bbrxc28hSGEm2XE1Nm1Vnx6ddUw67ZzGpCJ&#13;
-zo3aN2SoPA==</DigestValue></Reference></SignedInfo><SignatureValue>Yl9t3YcptIg7Ou3PNopqyxTVGTgmq8p40iK3lOKcorQam06VQnMb/3q1dv9KBmkuOrcj3RSUtyHw&#13;
-VlIUUY6qk7tDSPwSV1YfrLf8wSQnkjCKXGIS5xzoUtFlEN8Be2z+/6FkBrU5+pCymoROTFsdcDuC&#13;
-f8JrgH+FNCe/eQk0rXik8Zeem2X00mEsB6GDbuPPA2AcoEk7D7CYG8a5u1+S80Gjgqg+XoJ+zhwy&#13;
-uOIwkensSJRcUfIL+pd914n/uYL/5V5CC5jWgh6D/m4vJ7XJcN4iQ3NeRzjAWMITWd/JfwE806td&#13;
-cyM/yRNwW2taPprVmcOCm4TDRKliSIVIJVXx1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b3bcb8b5-8326-4daf-a7d2-f4bf3143c61f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4WonrtzxLvi4m0SBG+1DNtv/kjivqBAH7ccANAFX+6BXI4fxjxstFKJ1AKqWg90rPF4EobRuDOgS&#13;
+dF2BQEdpwA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9f08d0b4-037d-4122-a7ef-a1f4c70af6ae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X2guZtatdmn025CIkuu+cpvLfeG1TOZ9K3P9GAHjhUoRtg3DFOmeq444U/gkLlPE+IizYvo87BKB&#13;
+1AmTeRrn5Q==</DigestValue></Reference></SignedInfo><SignatureValue>BeEH4khrIs347Pfh/Xy4TkYLfVBMNgLlftwblwsOtwz44bVV25n0svOCHlACFEFcldqp27HWIHgs&#13;
+XoK/OkVG4MFdDQja4n+DtBiZtH0X6SjIdnsxyf96EaM6NaLxNmLLR3qKzautnq3mZ6zSuFamtjBg&#13;
+0sxuaoBFgiOD7xtNfy6gLhEbLwJcc0xMjLoMwprX2jWd8NB9G3axMRPOZqG1/tBJxTeLs/GywspQ&#13;
+KlMOq+Rw0z9MZPwuaRpPN50RmWiQBua8b+u7itstsbqM4yUYqBsOl+JU4p1Kr2cWPksvF8YscK2d&#13;
+ifyIPTGjsbgy2UHHNQHM+OjXvfg2RdArsPGBfw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1279,4 +1477,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2000bfef-db24-454f-8718-2f705ad2d1db" Target="#_59e1fef2-eda2-44d7-b5a5-80555dce5926"><Timestamp>2024-06-06 10:13:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9f08d0b4-037d-4122-a7ef-a1f4c70af6ae" Target="#_b3bcb8b5-8326-4daf-a7d2-f4bf3143c61f"><Timestamp>2024-06-06 10:24:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
