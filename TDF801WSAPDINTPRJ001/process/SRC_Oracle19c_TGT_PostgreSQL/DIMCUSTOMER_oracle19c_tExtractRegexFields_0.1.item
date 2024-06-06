@@ -814,6 +814,7 @@
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tExtractRegexFields_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -843,6 +844,7 @@
       <column comment="" key="false" length="15" name="CommuteDistance" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="extCLOBXML" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -888,6 +890,8 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUSINESSENTITYID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERID"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TERRITORYID"/>
@@ -947,6 +951,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSINESSENTITYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TERRITORYID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACCOUNTNUMBER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1054,6 +1059,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="TotalPurchaseYTD"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BUSINESSENTITYID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
@@ -1063,13 +1071,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f5f29575-a0b5-481c-a59a-3c0bed4e7268"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WVRUIzypYMmTqUm32xdZgYnFmKjBLWFJLrWFOFKNWIFV/ZWlXFuI7zD2llUYhuMc97CxyTqQEDxF&#13;
-cpy0zrIcQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aeea5fd8-e67f-4a1e-afb8-24c08f7a73f7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XGgYEjkUUVdMfaOaYOAOeERKHog0T+wizhomsh0Q3ymtw4mQkIwn4kPHvNcaAAaTf/LqlTCEn+6O&#13;
-16VaoRliaw==</DigestValue></Reference></SignedInfo><SignatureValue>EN2Y4jOvKWA+esUtHRUQNeoFY4Ri+FIf4oeGTxUa4U0qBzVeVzT690LvT7UKssgIIFmFJ6nxpUl2&#13;
-n5ENHuJ1zovXNSdjylDzjnYCv0GoqRy/iskE5pBVKjVNXkV9OF3SvbeV5RW/cI2jO9Wu3WetktHA&#13;
-ANq1IH6fEFaL7CvesX5sulw25ayCgds5b5bV+XPxhwz55fwBE9TvorX0uxm8m95RXKmO3aPa7TXt&#13;
-02aYgfxdCer05iQ2ua0TCZ8o33WRbbA7hPr7z+H6VoVqxJciqKK3sezhmepQyhcjS4VV0yOb9Rwh&#13;
-Tiw/3TfDalEnD7aUVvxJlHiYKx1B7LFPTyTIWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0e2cbbe5-90a2-4762-891d-f701698e5aad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X957czWVighnFuVT5DaUUCSjR8jhwObg2VwIqCoO039tWwrXX3MTInKT1p9kVKYkAB9FzU5GuCJR&#13;
+otfQrpx7vg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe4dcdba-de32-47c4-b580-0bea983c66d8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xtk8qzE+I3E19ExCx0h1e4WJtj/3hombIQfDbGfnlFDzxNFt6mmeYaWdvPJoBJgCJpQxMSe1gxrv&#13;
+C8I8R6zvVg==</DigestValue></Reference></SignedInfo><SignatureValue>VK+Ur1shrueUONj8S/UEd4/gUmVowPgTzZi+PjJ+aabvkeaTlmm4PX8weiWc4cIjyDRVaCSJgs6y&#13;
+WKcCuYwtcktl79Dgkv/jlL6kPQ3ITGQ0zZ9TEN4srhwJfjXTBvq8mC6qSCWB+szOHIb1UOnF1SIn&#13;
+BnWmlk/XO/OU7enUN4Ku58LjSHcpSM09bCQrUyVGcmif69CxwqclYSjn4KhjC9T+yp9ZAIgw4O2G&#13;
+GPKcHf6+k84sLP1FDj/+RhkwbZQhyKgksUgs74Pj9Zln8YnAk6Xe2n+GtzbYOn0qMkr/nef4RCSc&#13;
+zSHj1rrxrTYhV8iNMK2AdfzrAiLZrtpuzApYTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1091,4 +1099,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aeea5fd8-e67f-4a1e-afb8-24c08f7a73f7" Target="#_f5f29575-a0b5-481c-a59a-3c0bed4e7268"><Timestamp>2024-06-06 04:49:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe4dcdba-de32-47c4-b580-0bea983c66d8" Target="#_0e2cbbe5-90a2-4762-891d-f701698e5aad"><Timestamp>2024-06-06 04:52:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
