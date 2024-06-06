@@ -806,7 +806,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractRegexFields_1"/>
     <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="DEMOGRAPHICS"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#10;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#10;&#9;  "/>
-    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;TotalPurchaseYTD&gt;([^&lt;]+)&lt;\\/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]+)&lt;\\/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]+)&lt;\\/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]+)&lt;\\/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]+)&lt;\\/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]+)&lt;\\/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]+)&lt;\\/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]+)&lt;\\/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]+)&lt;\\/Education&gt;.*?&lt;Occupation&gt;([^&lt;]+)&lt;\\/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]+)&lt;\\/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]+)&lt;\\/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]+)&lt;\\/CommuteDistance&gt;&quot;&#13;&#10;"/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;&quot;&#13;&#10;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1055,13 +1055,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9c5a8c58-a83a-4961-9fa5-e53bd8c69b8b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ku5fUiyT16wj1M2KlNyNMeDtGeRaNiZtc3Kqw5U+bLvK+uSrNGdQ7M3Ice0ZgbdhcBZXmbw8oSap&#13;
-ppfRdc8ygw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0c6b0cfc-cf28-4aa5-aa1a-8ae0f144feee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>enVU0XBMM2pQCILgA9kLCzhoSau4el9Xl4ZNWkwuFU1MV0EQzj3pCj07s1F/dcgFaGU0MIFc8HwQ&#13;
-qlzHsZvzdw==</DigestValue></Reference></SignedInfo><SignatureValue>l7r6jzihViqoad76LxH89rRfSjL9leXeq6JKuukIdNNjWlGqVBUtPjR8iQQmr3WLygTPoNyMRgA3&#13;
-4kl239LTb8xzMI/xA17kWALEh+jcCbdQuByFwUES+NS59qt81aXs/t3nTkPv52vIIOuwDR0zuBRI&#13;
-GF+UPtUEJDMHJ6wnWlelfHITWHsQ2pzRuI8T7nw17vxsKFzh/C3Mb9EOcFkPotVnVdhQfnngdVmP&#13;
-KERtM5G2q0NDS2+1kwI+BoBA5EC8W7zKuHn4MZtf0LFvNs8lEEMw8pkB5VM/SGo3QznTuoZa0YuX&#13;
-QBHYmk5Kwh5y6OjNkcJByX4ajmBY9l03EsHi6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ee3c9c9e-c8dc-4cfb-a1bd-89798f08d2fd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MgSOtoE8qUPJI0FGxWhwT2pEZSUE7uz8n000HcrZkr12QOF/OsIJPhjnN0rAELOWEapds2pYIRSN&#13;
+Umcd8QcuEw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3a0cb59a-1772-45e6-baf1-ebde5bec6a9f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pfEYNtuRiVxl0IqsubvfE9LW+wpjBIivNfvrabtMYJaxv5VGm/oTvCMBY2mXAGI3rTtC9xZn5shT&#13;
+X6Vl2vAUpA==</DigestValue></Reference></SignedInfo><SignatureValue>m5CrXtCHRwzmMePSYS8bQ16NUgTa8F+mTT5Krs2bm/pLGT1Q0l7lMQSiASCd8SB4WCRs/ikCQqXt&#13;
+iJsSnYgOTA6VETsw2mZEnZHEVDjBbPNOefc3tFz+vtkPE8tSZYidGnthv2jyhIOYrBhZ+KqBJDTI&#13;
+BpGo11Jdj/UuVHBDjHql2kZR8TzSQ+BkHf1hvQApi37mQ4/VToti9UgV5J9Tzkv/AnjyT9onFKri&#13;
+bOPIbAvY/SHUjFsDt9VnBpqaqIJIVYTs4ScODYTs/2jWR3r9noTYHluRqw9OZkr2OsAZ8nBuAYsA&#13;
+QXHDwcCZrv2iyTQkRJOr9RUVcCVN99MayNjn0Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1083,4 +1083,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0c6b0cfc-cf28-4aa5-aa1a-8ae0f144feee" Target="#_9c5a8c58-a83a-4961-9fa5-e53bd8c69b8b"><Timestamp>2024-06-06 04:38:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3a0cb59a-1772-45e6-baf1-ebde5bec6a9f" Target="#_ee3c9c9e-c8dc-4cfb-a1bd-89798f08d2fd"><Timestamp>2024-06-06 04:46:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
