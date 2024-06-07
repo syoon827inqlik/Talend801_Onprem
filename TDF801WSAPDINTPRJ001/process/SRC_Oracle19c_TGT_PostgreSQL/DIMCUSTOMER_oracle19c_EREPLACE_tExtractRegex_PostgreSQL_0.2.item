@@ -478,9 +478,9 @@
         <mapperTableEntries expression="Var.TotalChildren " name="totalchildren" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.NumberChildrenAtHome " name="numberchildrenathome" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.Education " name="englisheducation" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.CHANGE(row8.Education,&quot;Graduate Degree&quot;,&quot;석사&quot;) ||StringHandling.CHANGE(row8.Education,&quot;Bachelors&quot;,&quot;학사&quot;) ||StringHandling.CHANGE(row8.Education,&quot;Partial College&quot;,&quot;전문학사&quot;) || StringHandling.CHANGE(row8.Education,&quot;High School&quot;,&quot;고졸&quot;) ||StringHandling.CHANGE(row8.Education,&quot;Partial High School&quot;,&quot;검고&quot;) " name="koreaneducation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(row8.Occupation,&quot;Management&quot;,&quot;관리직&quot;),&quot;Clerical&quot;,&quot;사무직&quot;),&quot;Manual&quot;,&quot;단순 노무직&quot;),&quot;Skilled Manual&quot;,&quot;숙련 노무직&quot;),&quot;Professional&quot;,&quot;전문직&quot;) " name="koreaneducation" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.Occupation " name="englishoccupation" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.CHANGE(row8.Occupation,&quot;Management&quot;,&quot;관리직&quot;) ||StringHandling.CHANGE(row8.Occupation,&quot;Clerical&quot;,&quot;사무직&quot;) ||StringHandling.CHANGE(row8.Occupation,&quot;Manual&quot;,&quot;단순 노무직&quot;) ||StringHandling.CHANGE(row8.Occupation,&quot;Skilled Manual&quot;,&quot;숙련 노무직&quot;) || StringHandling.CHANGE(row8.Occupation,&quot;Professional&quot;,&quot;전문직&quot;) " name="koreanoccupation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(StringHandling.CHANGE(row8.Occupation,&quot;Management&quot;,&quot;관리직&quot;),&quot;Clerical&quot;,&quot;사무직&quot;),&quot;Manual&quot;,&quot;단순 노무직&quot;),&quot;Skilled Manual&quot;,&quot;숙련 노무직&quot;),&quot;Professional&quot;,&quot;전문직&quot;) " name="koreanoccupation" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.HomeOwnerFlag " name="houseownerflag" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="Var.NumberCarsOwned " name="numbercarsowned" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.ADDRESSLINE1 " name="addressline1" nullable="true" type="id_String"/>
@@ -1442,13 +1442,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_801999bf-aaa7-46ea-9d83-fdf5383029a6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MeqAHhCMUXGtMNxvksVrErjIE4iqGyMjtHVAnmwDzrdDShtPGBpRCDGnvQm1x/K+JjCIPYkLqLz4&#13;
-4k/j07Iw4A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5770e090-84d9-4a05-b42d-9ec769cba258"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pKL7InCk0pYpPX4TLSFu9Bmb6dqbWM89y/2pTidDhjqFbYotl4XsiazrThJDwgDTnF1F6WwCPeQW&#13;
-wTfSBGkxVQ==</DigestValue></Reference></SignedInfo><SignatureValue>RdktCNFJXFUJg8m4Ltd0gNCud0kP10zuFBVgAFdyvJyyFb7gUOH97+5rKTs/noMn8K+N6uoY4XcG&#13;
-HMetBzAVw5G0c1Xpsrn8xr41lQya5KISXJTQrPOpQOQY6wwqsqdMHR/FQu+hVFjW+fKfEc3XHXpe&#13;
-V1GzWfOTJ4YlQ2IdWBTmC3QrhzjSFz1vnG2DRBttsQbQqTkGSDzts/Q0pmBpJp+A754C2f1ybjPh&#13;
-S72K49+WdFxXP/ke2gTBGUvFjNbjteGd1L8Be006HmzXR2N2DFdxo3eWk3unr+Zx9X7EIZLFqlo3&#13;
-jrikrCTT29TE5hEqN4OlffZ8cXolElMShNCxng==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e07e7af6-94a8-4f52-a839-dd156c20a187"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hjqLfDvzape/n7oPXZbo50b60sesEmzyvu38CdQKvu6rewBcI+XvBPN+lVo9MMKpDrpT4xtLVm8v&#13;
+SDwuXSih4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6af1c0a2-bb96-43de-a98a-a98d76691cd5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EkS6fY9+wRc+FyXOT+2JphI4viQa4i+8N5qSld6FSqLCuL+wTAwCdpreYoq7dU54vTeewVWAWJ0K&#13;
+nY/xbmviNw==</DigestValue></Reference></SignedInfo><SignatureValue>ogxz5JrJnqBqSQLeUlhnE/GO7s5E9/YaDDbNeA54YjyNLK1OJQ6sWUo6BwLTId244OniIAGojQ8f&#13;
+qwMuq32DD3sYYLhY5ElFua7o0QUOvA1wdma/qCOfaGTiyNKiGQV5f0/KOOMFC8tlLLZDggz8vP88&#13;
+tWsndQt5vQZNUBNRbzp/drsVEF00vuMXMHROLnHJveBuhzmpSkjULBR0S4ktpsZs6xNXacaj/CCc&#13;
+UMFjosmBNJhrplHfRTwelZALqkganlrin18izXC7mSo3Idm8xacV3MKrmy9jpbkzKHC15cxr4gI5&#13;
+KZO5I4xhzS6TFlsBxO50daTMqcUHhWKMuizmDQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1470,4 +1470,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5770e090-84d9-4a05-b42d-9ec769cba258" Target="#_801999bf-aaa7-46ea-9d83-fdf5383029a6"><Timestamp>2024-06-07 05:15:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6af1c0a2-bb96-43de-a98a-a98d76691cd5" Target="#_e07e7af6-94a8-4f52-a839-dd156c20a187"><Timestamp>2024-06-07 05:19:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
