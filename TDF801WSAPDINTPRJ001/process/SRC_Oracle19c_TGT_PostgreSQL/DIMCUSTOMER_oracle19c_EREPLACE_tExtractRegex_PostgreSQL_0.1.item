@@ -194,7 +194,7 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="EREPLACEtMap"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_ereplace"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="extCLOBXML">
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
@@ -320,6 +320,7 @@
     <elementParameter field="MEMO" name="REGEX" value="&quot;&lt;IndividualSurvey[^&gt;]*&gt;.*?&lt;TotalPurchaseYTD&gt;([^&lt;]*)&lt;/TotalPurchaseYTD&gt;.*?&lt;DateFirstPurchase&gt;([^&lt;]*)&lt;/DateFirstPurchase&gt;.*?&lt;BirthDate&gt;([^&lt;]*)&lt;/BirthDate&gt;.*?&lt;MaritalStatus&gt;([^&lt;]*)&lt;/MaritalStatus&gt;.*?&lt;YearlyIncome&gt;([^&lt;]*)&lt;/YearlyIncome&gt;.*?&lt;Gender&gt;([^&lt;]*)&lt;/Gender&gt;.*?&lt;TotalChildren&gt;([^&lt;]*)&lt;/TotalChildren&gt;.*?&lt;NumberChildrenAtHome&gt;([^&lt;]*)&lt;/NumberChildrenAtHome&gt;.*?&lt;Education&gt;([^&lt;]*)&lt;/Education&gt;.*?&lt;Occupation&gt;([^&lt;]*)&lt;/Occupation&gt;.*?&lt;HomeOwnerFlag&gt;([^&lt;]*)&lt;/HomeOwnerFlag&gt;.*?&lt;NumberCarsOwned&gt;([^&lt;]*)&lt;/NumberCarsOwned&gt;.*?&lt;CommuteDistance&gt;([^&lt;]*)&lt;/CommuteDistance&gt;.*?&lt;/IndividualSurvey&gt;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tExtractRegex_parsingXML"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="tExtractRegexFields_1">
       <column comment="" defaultValue="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
@@ -397,6 +398,7 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_justmap"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="extCLOBXML" name="output">
       <column comment="" defaultValue="" key="false" length="-1" name="customerkey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
@@ -426,7 +428,7 @@
       <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row8.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row8.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
@@ -1410,13 +1412,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0baa03bc-2bbc-4494-9049-9358d7e792ac"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cWOSqOP9j3FrK5/tpPHHhgdr66r3O3Iblrly3HNSBybLexKM2VrwadQ2DtSfn+PpUoP/c5Rnv450&#13;
-rwoBfqnyIQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_09a8fa54-bcb5-4c69-9e3a-000543565cae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GpMZ0gwiVvPq5Mm+Io3DeP69BThpi9fb89SuG0Blo/MFE1bJ3CYGIQ+wMwDvm+cpt2Na3cPwdfNN&#13;
-2Y/OvbTgDw==</DigestValue></Reference></SignedInfo><SignatureValue>URGzkgqqHgY+jiK0Ygl74KYoF+La1bbsD+diZJQfwO5YEjWi27Uh7SGy8aAUyR9LOWFtYPB/CJ7/&#13;
-V7x3f76xOO8J2AwxEwGcd68Apk64zJS36Fm831yob6uEZ5CQZJp3Upi0DFByrZaGgXPs9BTCcJgT&#13;
-skRJkW/hJjj8MMXuuB2Y5m3w9JHWSLTqXmXvZE/p7kjaUOJrtrFcXgUaM3fmQ7BO37pSzR17lJ8O&#13;
-IpDYJa5gZ5u6SgVZ8WEobLJpx2CN7umngSduMJkWLWcuChbZyAkLu1ahd6RHceh4ENd2UIihiGkC&#13;
-moCNtY62Zhp12aFujxHepVwzN8lTSxIXp0A+DQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a221cfbf-4e9d-4007-a19e-5cb52f81deb6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rFjjSzcX+QtYq7JFEMNRihn3vv4PY6Z4cGWRePegg9F4p71wHYUwZczxOzZ+OOVELIY1hFIlx5XV&#13;
+gMGgwGXB/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3f6288e0-a19d-48a1-b602-f4b08eb50a74"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QCfzl6/Fk/Pqf9Pp12DfNne79xfnoAAaSekmkjPY20q3oBCh1pYakDc0MYd7kL/SbU6+TRjlE2Wp&#13;
+wPfiPdVhnQ==</DigestValue></Reference></SignedInfo><SignatureValue>MsY5CXzt9ntiDG7LblSyyzJMhNprBjNgy0bLcQrTATfiFXOyvKx0WSkTga0uRrL4qN/4KSFhNGxY&#13;
+OBn2j2ceEtbkrYfAd0XGyvQEWe8QEjVXd1zBl3qK4Ams/rKbk91u3PXGnG8nL8y5qjPkKgVaLXsK&#13;
+Nf3E/M3ggJScB60RyY9cnVkQ4NtbpOPh544kFR4waHEo+vSFa8pJWKFfYMr6bGrIixziyaICR+pg&#13;
+0S2ZK+kJxUhMShfOfP+E279oOKKex8IbZTws3GdleuxpK1Pl/uEcGldA6ZBNEs0Mltqns7isJ1oU&#13;
+SCoE1y3CMV7Lkdpd8WcEudZgtNoKxs5Dtt1Y/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1438,4 +1440,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_09a8fa54-bcb5-4c69-9e3a-000543565cae" Target="#_0baa03bc-2bbc-4494-9049-9358d7e792ac"><Timestamp>2024-06-06 13:53:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3f6288e0-a19d-48a1-b602-f4b08eb50a74" Target="#_a221cfbf-4e9d-4007-a19e-5cb52f81deb6"><Timestamp>2024-06-07 01:28:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
