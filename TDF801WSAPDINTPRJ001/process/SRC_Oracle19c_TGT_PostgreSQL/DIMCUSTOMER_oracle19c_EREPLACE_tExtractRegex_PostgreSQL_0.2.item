@@ -214,7 +214,7 @@
       <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.CUSTOMERID" name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.TERRITORYID" name="TERRITORYID" type="id_BigDecimal"/>
@@ -417,8 +417,10 @@
       <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englisheducation" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreaneducation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englishoccupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreanoccupation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -428,7 +430,7 @@
       <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row8.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row8.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
@@ -475,8 +477,10 @@
         <mapperTableEntries expression="Var.YearlyIncome " name="yearlyincome" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.TotalChildren " name="totalchildren" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.NumberChildrenAtHome " name="numberchildrenathome" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Var.Education " name="education" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="Var.Occupation " name="occupation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Education " name="englisheducation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.CHANGE(row8.Education,&quot;Graduate Degree&quot;,&quot;석사&quot;)&#13;&#10;StringHandling.CHANGE(row8.Education,&quot;Bachelors&quot;,&quot;학사&quot;)&#13;&#10;StringHandling.CHANGE(row8.Education,&quot;Partial College&quot;,&quot;전문학사&quot;)&#13;&#10;StringHandling.CHANGE(row8.Education,&quot;High School&quot;,&quot;고졸&quot;)&#13;&#10;StringHandling.CHANGE(row8.Education,&quot;Partial High School&quot;,&quot;검고&quot;) " name="koreaneducation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Occupation " name="englishoccupation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.CHANGE(row8.Occupation,&quot;Management&quot;,&quot;관리직&quot;)&#13;&#10;StringHandling.CHANGE(row8.Occupation,&quot;Clerical&quot;,&quot;사무직&quot;)&#13;&#10;StringHandling.CHANGE(row8.Occupation,&quot;Manual&quot;,&quot;단순 노무직&quot;)&#13;&#10;StringHandling.CHANGE(row8.Occupation,&quot;Skilled Manual&quot;,&quot;숙련 노무직&quot;)&#13;&#10;StringHandling.CHANGE(row8.Occupation,&quot;Professional&quot;,&quot;전문직&quot;) " name="koreanoccupation" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.HomeOwnerFlag " name="houseownerflag" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="Var.NumberCarsOwned " name="numbercarsowned" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.ADDRESSLINE1 " name="addressline1" nullable="true" type="id_String"/>
@@ -531,7 +535,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TBs1QcM9RG/H7QxsaE814qGXF9OZdvj14epOdCKFRrBE+PcDmeuB"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimcustomer_byTalend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimcustomer_bytalend&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
@@ -632,12 +636,22 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="education"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="englisheducation"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="occupation"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="koreaneducation"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="englishoccupation"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="koreanoccupation"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -702,8 +716,10 @@
       <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englisheducation" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreaneducation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englishoccupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreanoccupation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -729,8 +745,10 @@
       <column comment="" key="false" length="-1" name="yearlyincome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="totalchildren" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numberchildrenathome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="education" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="occupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englisheducation" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreaneducation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="englishoccupation" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="koreanoccupation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="houseownerflag" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numbercarsowned" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="addressline1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1379,6 +1397,18 @@
       <elementValue elementRef="TRACE_COLUMN" value="processedDEMOGRAPHICS"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="koreanoccupation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="koreaneducation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="englisheducation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="englishoccupation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
@@ -1412,13 +1442,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e801bbc9-74f9-4604-8914-ad609ed28b5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rFjjSzcX+QtYq7JFEMNRihn3vv4PY6Z4cGWRePegg9F4p71wHYUwZczxOzZ+OOVELIY1hFIlx5XV&#13;
-gMGgwGXB/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_912aea29-7daa-4f4a-b7f6-9611cfca8535"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jxr+lIEGoANOZhl2TDwEQzuY2vx9W+oq1LKOTbJu6MSBaDV/3HCjwSAQl517l6F6kisNihRw66By&#13;
-aSre5QMBsw==</DigestValue></Reference></SignedInfo><SignatureValue>jmpwMYygpr97GpCPSfztBPaMVmqnEY3SSI+SUGaVLtu4iW4la8P7PrkrSDFjkew/YvnEE7NOQPYw&#13;
-fpTnF4JkL9/KPHJiO4zUXwZ6Xa02B7Eo9GgpkKsMNrt9B2jaq6xtl8A5pcv97a1AesBVMd+w3jTB&#13;
-zsUEP+6PHeC1Ftu4a5+JfvCQkBLwabM27Hj/K6BCoWG6vbjVqONMJHh5X8QD9O+TptsvNYP9wp1Z&#13;
-2Vb6GkFABlayLdFA+qIPWInzd/uu6uZJzi2FkI80o/c991ToVzyiaYu62KZwvj/kFYa2fUmzyQjZ&#13;
-VQB3ry+8wXGyqdKkmGrnq9eTB0BIxdbk833GwQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5da674b4-7716-4c4d-9efa-aa9c0e065262"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wp1+znXn3DizRBaV4DZAhbvvCFxyISZV1pJpmWelscQBDCV8+GmG8/4yZ4s4JwtJmMzC997z+PJT&#13;
+OFjFPB8xWg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_130526ac-0f41-48b6-93b6-de37d0d4aacb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hKukOTt0qKrn8inhGVtFbB+WIcbW3vEJWPdiGPSL31U+3mprtZJ5pInPgqA0F7OwSXt1F+nMUNaw&#13;
++7iWTibA8w==</DigestValue></Reference></SignedInfo><SignatureValue>XCbSyB4josUHD4agdc3BdgScAUGpNR9GlMdQ6SnKUhe4v718G8QlSq8i+LjdVPxggAj7yvB89/R6&#13;
+WI/PwTYxS6dqpiFggxzc+Jyb7OCVTrHHZ61trpri98BDVWs4497KmF+Nbyrs5pJ3TUyVPXIG6uMR&#13;
+eI4S/yhMB1Vh3C7TMjdC2BnHn/+O5hJFsd7ffOD2fcB34zxCiKK7Oo/GrYiJaVElOrsT3edVvepS&#13;
+AyTa+0Cindc35r1qHMo4A/ydCMtXv8dXnvYvpwqRdHCnV3+GIMXcoTP5km6Lj10w1mpIvO0AXVzn&#13;
+/w5aZ9COSyi/Ha18HQvyRkbYehsp+lq87+59/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1440,4 +1470,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_912aea29-7daa-4f4a-b7f6-9611cfca8535" Target="#_e801bbc9-74f9-4604-8914-ad609ed28b5f"><Timestamp>2024-06-07 04:53:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_130526ac-0f41-48b6-93b6-de37d0d4aacb" Target="#_5da674b4-7716-4c4d-9efa-aa9c0e065262"><Timestamp>2024-06-07 05:05:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
