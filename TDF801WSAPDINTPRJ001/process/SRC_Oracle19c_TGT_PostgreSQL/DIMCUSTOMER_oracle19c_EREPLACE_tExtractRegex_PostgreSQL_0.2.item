@@ -1,8 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="test" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_TE0WYCpSEe-IGvidxhTwXA" name="oracle19csrc_host" prompt="oracle19csrc_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_TE0WYSpSEe-IGvidxhTwXA" name="oracle19csrc_port" prompt="oracle19csrc_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_TE0WYipSEe-IGvidxhTwXA" name="pgsql16target_host" prompt="pgsql16target_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_TE0WYypSEe-IGvidxhTwXA" name="pgsql16target_port" prompt="pgsql16target_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="prod">
+    <contextParameter comment="" internalId="_TE0WZCpSEe-IGvidxhTwXA" name="oracle19csrc_host" prompt="oracle19csrc_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="172.18.0.7"/>
+    <contextParameter comment="" internalId="_TE0WZSpSEe-IGvidxhTwXA" name="oracle19csrc_port" prompt="oracle19csrc_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="5521"/>
+    <contextParameter comment="" internalId="_TE0WZipSEe-IGvidxhTwXA" name="pgsql16target_host" prompt="pgsql16target_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="172.18.0.6"/>
+    <contextParameter comment="" internalId="_TE0WZypSEe-IGvidxhTwXA" name="pgsql16target_port" prompt="pgsql16target_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="6432"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="test">
+    <contextParameter comment="" internalId="_TE0WaCpSEe-IGvidxhTwXA" name="oracle19csrc_host" prompt="oracle19csrc_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_TE0WaSpSEe-IGvidxhTwXA" name="oracle19csrc_port" prompt="oracle19csrc_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="7521"/>
+    <contextParameter comment="" internalId="_TE0WaipSEe-IGvidxhTwXA" name="pgsql16target_host" prompt="pgsql16target_host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_TE0WaypSEe-IGvidxhTwXA" name="pgsql16target_port" prompt="pgsql16target_port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="5432"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="36"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -214,7 +231,7 @@
       <column comment="" key="false" length="-1" name="processedDEMOGRAPHICS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.CUSTOMERID" name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.TERRITORYID" name="TERRITORYID" type="id_BigDecimal"/>
@@ -430,7 +447,7 @@
       <column comment="" key="false" length="-1" name="datefirstpurchase" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row8.CUSTOMERID " name="CUSTOMERID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row8.TERRITORYID " name="TERRITORYID" type="id_BigDecimal"/>
@@ -1442,13 +1459,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a77b42a7-2bb9-4d97-96f7-8d2b97d5a6b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HYlhIq4zzjD+tDknSQqRpK8DPhUv8lHawLuny6rO7kqPXqPzd5KvjNtYfHIsQ4bKozkBW1eeJbXc&#13;
-6bb7FliCaA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b17f3429-1814-4bc5-a652-65b072e889c2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+vV/nmOB0AOHf7kq+/pFzKm/QIpBedE19fYS+W4ph+luiAzekXAQxP950A9l+7rc5pgBfBqbUCGu&#13;
-8ogEPERRaw==</DigestValue></Reference></SignedInfo><SignatureValue>QNTKLBvUxZIYSLlrPoRHT1mOwYtt8i8GcHuCGvfSGhudQqB81/OhbZf3PgraPcbOI7Vz/Fi95PTm&#13;
-0CAfyONtazIP66oOJKMkaUrbgyhPt0q0CcTecwRN59D6eE729kPsTwjKi1HEB9MFA/twe9hH3uH0&#13;
-7N/p8SKiybUFeBzkbZqC+qMBJ7IjLQ/Lksk35QehlINoA8Pob0eSTbMBrmeDXM2SifHLihFmy+/g&#13;
-TODmurlu75P9Z2vux1QTKBpQFJQM/tvErRG7J8tQasOeb2uAa5Xmmb1R+tdgaiOZqftV0MA+9mbu&#13;
-HTMj+cSluvhDMZ0XGSq72TW+3xdCYzhxeBEsvg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d5a19a67-8e39-43ab-946d-16f5e3f93cc3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u5n9EZanV7Arv8wVidS88/BbDhOfWVEcwVj4Sbam+jjqfWorJtSNvoojzJwXs7Z+YiayNixPTxBb&#13;
+M5uIInkhqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5adee005-3638-450e-af97-2b6da8ce3ca0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>he1cvJYqjMZgdqtMBiU/ktvRy1HdRzxJzllTgF6uGDScc0HWVHl7d9Gt2KuN9jz0qD/PDWGn0pwK&#13;
+IxdJugmcfQ==</DigestValue></Reference></SignedInfo><SignatureValue>FNr+1Ce8qlH0aUXQFCbrQj4Ju6nFmD7H8F6ymrHqb9pvG9jFI5yXDMHwGM8GTHtbDoRiLaAw04TY&#13;
+I13CS4aUMLfVL2A/yCNFMIyPQl9kR+otJtP1wBXCGzMtsbFP1Bdjm+Gs4gm6u3cmuirGX9/+jak/&#13;
+mve/v5JLvL1T/yK8Gp37tdFlVS7OLaOh0MB3pCUpndIWA+SvkWmtpF8E0ALa7YLPrQr80oJTmVZC&#13;
+eptuXUWCb4z5aKvytyxUNMT20ZeU19DQdp9O+37+Jlm4Ff2CxDUL6f4G6ycMiXOx8tXVL3ySxiOW&#13;
+6HJWB6iz9+lR1fVFaOCgUXZBmiVkTZahINbomA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1470,4 +1487,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b17f3429-1814-4bc5-a652-65b072e889c2" Target="#_a77b42a7-2bb9-4d97-96f7-8d2b97d5a6b9"><Timestamp>2024-06-07 05:54:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5adee005-3638-450e-af97-2b6da8ce3ca0" Target="#_d5a19a67-8e39-43ab-946d-16f5e3f93cc3"><Timestamp>2024-06-14 13:30:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
