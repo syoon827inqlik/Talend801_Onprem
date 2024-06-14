@@ -100,8 +100,6 @@
   </parameters>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
@@ -109,7 +107,7 @@
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;7521&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5521&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
@@ -296,7 +294,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.PRODUCTID " name="productkey" type="id_BigDecimal"/>
         <mapperTableEntries expression="Integer.parseInt(TalendDate.TO_CHAR(row2.ORDERDATE,&quot;yyyyMMdd&quot;)) " name="orderdatekey" type="id_Integer"/>
@@ -431,8 +429,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
@@ -440,7 +436,7 @@
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;7521&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5521&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
@@ -609,8 +605,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
@@ -618,7 +612,7 @@
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;7521&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5521&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
@@ -782,8 +776,6 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0oiKQCImEe-o9a_mba3d9g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
@@ -791,7 +783,7 @@
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;7521&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5521&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;ORCLCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
@@ -850,13 +842,11 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7FopMCIpEe-jfs5uxoVCzw"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;6432&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorksDW&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
@@ -1209,13 +1199,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e5d49cd4-58cc-478c-8acc-df67d5af0273"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>izniVqFNaNqbpfZ0Q9Uyi5DVt5rGCyKMW02sU1VUALFNdt1U+vAxDy0zXhKKa6/Z34RiV0kCd1+t&#13;
-Fm9YND3OiA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c8182a63-b66c-4ead-ab53-0c7678db11b7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GgYMXFPzesbkPVQekfI7brC8BUx/d2EgREZMTYsGexW80do74PE69HajHrF9IH3IbMkcBahcB+7+&#13;
-/3W7US5Z6g==</DigestValue></Reference></SignedInfo><SignatureValue>FeE0ef0MedtxeYXLwn9eiCauIkD3t54h7dHvS2pYcqXtTjXJh0gF3Bg8BWQV0H7iFEAJsnDfwjsm&#13;
-PcT+0M44uopq8hx6CfizAaB4LN0vt/1iptk3QO1wYPp2J2XlTbaSDLg5zddbbSbdEUMhmR2Pqd5T&#13;
-D8EaaOFtIwmVZH+yvZFqZL/HsEfbmm9+AQeEfN/j9lS9pDonJzni28BoHRdmEJ9JrJ+8pT9L7KpW&#13;
-iEEyeW36Lv5BbSe0v0TnxeJuWsB6xSv2v50Eikho9UV8k8Q7ZbraWUbmMY8LpAO7eWFY7TDSwvx4&#13;
-7xt07VNycHqtVAyRxrZJCKmgKozO3aFdhwPAEA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5e1cdcd3-d92e-41be-b450-67e4bb8ae8c8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/xnzDI2kKIH3x3w1/Po7MQCxGCLETTCmAqOzvUlBb3UtOnf8jVu1gfiXhibaj5QwWZvhIedKhyBF&#13;
+pS4/L6s7gg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_79b58799-82a6-44e0-b719-86b1f87ebf13"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VJzRVUCX39kyWHe59Z32lH1rtk83+ui5zkVDQUttTyPtXFKDMZDkcKbil1yQTVuW+oPp8dOI97Ap&#13;
+vHXDv4Mh2Q==</DigestValue></Reference></SignedInfo><SignatureValue>kJEg/BEB33VBFYqmQw0YIY86OxjkH84jwDq54fC8+6TyGcizuousXFqS0sXwckvHXT0Ym1DCqs3P&#13;
+Lu8SsquPv2lDcazhnbszsFb+7iAX4CF5gLuXKdf0vTgdtgUQ8qpOlB8orDeiG4NkM7KUS5cKb/L6&#13;
+mIBrcx6fuaC5nY/STUBVwFrOJ5lqWJQ6PIU+qoRgin1r7p1x1gv0/RwIIhnc9DRNq4A+LIq+h3Nb&#13;
+wvy/Pye9Nq4Xg1OfWc1dKcvUueTXk4J29YVNAn2PBZSvGduYteshEYuKrxxwfnAUhwky+PQ0q4if&#13;
+kOpNaCtVw4VEfTUbU4uLfRmcsqE8tTY48/BQ9g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1237,4 +1227,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c8182a63-b66c-4ead-ab53-0c7678db11b7" Target="#_e5d49cd4-58cc-478c-8acc-df67d5af0273"><Timestamp>2024-06-12 13:32:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_79b58799-82a6-44e0-b719-86b1f87ebf13" Target="#_5e1cdcd3-d92e-41be-b450-67e4bb8ae8c8"><Timestamp>2024-06-14 12:20:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
