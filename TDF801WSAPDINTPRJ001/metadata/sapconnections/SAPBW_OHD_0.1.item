@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:SAPConnection Client="800" Host="172.20.16.11" Language="EN" Password="enc:system.encryption.key.v1:hM8HrVnwqRVGo97ro4CgORSDgEPeeEoAazkhMfzTvsDiYHH8" SystemNumber="00" Username="qlik" dataPackage="_pNdCgDqaEe-1M5CAm0Q-XA" jcoVersion="SAP2" xmi:id="_sTBwgDqTEe-YItYbWxnZdA">
+    <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_sTBwgTqTEe-YItYbWxnZdA"/>
+    <Funtions connection="_sTBwgDqTEe-YItYbWxnZdA" description="_wGAdcDqUEe-YItYbWxnZdA" id="_oZpOsDqUEe-YItYbWxnZdA" label="RSPC_API_CHAIN_START" name="RSPC_API_CHAIN_START" xmi:id="_wF6W0DqUEe-YItYbWxnZdA">
+      <tables id="_pDxw0DqUEe-YItYbWxnZdA" label="SINGLE_PARAM" name="SINGLE_PARAM" tableType="OUTPUT" xmi:id="_wF6W0TqUEe-YItYbWxnZdA">
+        <feature label="E_LOGID" length="25" name="E_LOGID" sourceType="string" talendType="id_String" xmi:id="_wF694DqUEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </tables>
+      <inputTables id="_pDxJwTqUEe-YItYbWxnZdA" label="I_CHAIN" name="I_CHAIN" tableType="INPUT" xmi:id="_wF694TqUEe-YItYbWxnZdA">
+        <feature label="I_CHAIN" length="25" name="I_CHAIN" sourceType="string" talendType="id_String" xmi:id="_wF694jqUEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </inputTables>
+      <paramData xmi:id="_wF694zqUEe-YItYbWxnZdA">
+        <inputRoot name="Input" xmi:id="_wF695DqUEe-YItYbWxnZdA">
+          <children length="25" name="I_CHAIN" tableResideInTables="false" type="string" xmi:id="_wF695TqUEe-YItYbWxnZdA"/>
+          <children length="1" name="I_DONT_WAIT" tableResideInTables="false" type="string" xmi:id="_wF695jqUEe-YItYbWxnZdA"/>
+          <children length="1" name="I_NOPLAN" tableResideInTables="false" type="string" xmi:id="_wF695zqUEe-YItYbWxnZdA"/>
+          <children length="1" name="I_POLL" tableResideInTables="false" type="string" xmi:id="_wF696DqUEe-YItYbWxnZdA"/>
+          <children length="1" name="I_SIMULATE" tableResideInTables="false" type="string" xmi:id="_wF696TqUEe-YItYbWxnZdA"/>
+          <children length="1" name="I_SYNCHRONOUS" tableResideInTables="false" type="string" xmi:id="_wF696jqUEe-YItYbWxnZdA"/>
+          <children name="I_T_FOR_PROCESS" tableResideInTables="false" type="table" xmi:id="_wF696zqUEe-YItYbWxnZdA">
+            <children length="10" name="TYPE" tableResideInTables="false" type="string" xmi:id="_wF697DqUEe-YItYbWxnZdA"/>
+            <children length="30" name="VARIANTE" tableResideInTables="false" type="string" xmi:id="_wF697TqUEe-YItYbWxnZdA"/>
+          </children>
+          <children name="I_T_VARIABLES" tableResideInTables="false" type="table" xmi:id="_wF697jqUEe-YItYbWxnZdA">
+            <children length="30" name="FNAM" tableResideInTables="false" type="string" xmi:id="_wF697zqUEe-YItYbWxnZdA"/>
+            <children length="1" name="SIGN" tableResideInTables="false" type="string" xmi:id="_wF698DqUEe-YItYbWxnZdA"/>
+            <children length="2" name="OPT" tableResideInTables="false" type="string" xmi:id="_wF698TqUEe-YItYbWxnZdA"/>
+            <children length="45" name="LOW" tableResideInTables="false" type="string" xmi:id="_wF698jqUEe-YItYbWxnZdA"/>
+            <children length="45" name="HIGH" tableResideInTables="false" type="string" xmi:id="_wF698zqUEe-YItYbWxnZdA"/>
+          </children>
+        </inputRoot>
+        <outputRoot name="Output" xmi:id="_wF699DqUEe-YItYbWxnZdA">
+          <children length="25" name="E_LOGID" tableResideInTables="false" type="string" xmi:id="_wF699TqUEe-YItYbWxnZdA"/>
+          <children name="E_T_PROCESS_FAILED" tableResideInTables="false" type="table" xmi:id="_wF699jqUEe-YItYbWxnZdA">
+            <children length="10" name="TYPE" tableResideInTables="false" type="string" xmi:id="_wF699zqUEe-YItYbWxnZdA"/>
+            <children length="30" name="VARIANTE" tableResideInTables="false" type="string" xmi:id="_wF69-DqUEe-YItYbWxnZdA"/>
+          </children>
+        </outputRoot>
+      </paramData>
+    </Funtions>
+    <Funtions connection="_sTBwgDqTEe-YItYbWxnZdA" description="_HDaNczqVEe-YItYbWxnZdA" id="_-JKPIDqUEe-YItYbWxnZdA" label="RSPC_API_CHAIN_GET_STATUS" name="RSPC_API_CHAIN_GET_STATUS" xmi:id="_HDaNUDqVEe-YItYbWxnZdA">
+      <tables id="_AczFsTqVEe-YItYbWxnZdA" label="SINGLE_PARAM" name="SINGLE_PARAM" tableType="OUTPUT" xmi:id="_HDaNUTqVEe-YItYbWxnZdA">
+        <feature label="E_MANUAL_ABORT" length="1" name="E_MANUAL_ABORT" sourceType="string" talendType="id_String" xmi:id="_HDaNUjqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="E_MESSAGE" length="255" name="E_MESSAGE" sourceType="string" talendType="id_String" xmi:id="_HDaNUzqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="E_STATUS" length="1" name="E_STATUS" sourceType="string" talendType="id_String" xmi:id="_HDaNVDqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </tables>
+      <tables id="_AczFsjqVEe-YItYbWxnZdA" label="E_S_MESSAGE" name="E_S_MESSAGE" tableType="OUTPUT" xmi:id="_HDaNVTqVEe-YItYbWxnZdA">
+        <feature label="MSGID" length="20" name="MSGID" sourceType="string" talendType="id_String" xmi:id="_HDaNVjqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGNO" name="MSGNO" sourceType="long" talendType="id_String" xmi:id="_HDaNVzqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGTY" length="1" name="MSGTY" sourceType="string" talendType="id_String" xmi:id="_HDaNWDqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV1" length="50" name="MSGV1" sourceType="string" talendType="id_String" xmi:id="_HDaNWTqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV2" length="50" name="MSGV2" sourceType="string" talendType="id_String" xmi:id="_HDaNWjqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV3" length="50" name="MSGV3" sourceType="string" talendType="id_String" xmi:id="_HDaNWzqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV4" length="50" name="MSGV4" sourceType="string" talendType="id_String" xmi:id="_HDaNXDqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </tables>
+      <inputTables id="_AcyeoTqVEe-YItYbWxnZdA" label="I_CHAIN" name="I_CHAIN" tableType="INPUT" xmi:id="_HDaNXTqVEe-YItYbWxnZdA">
+        <feature label="I_CHAIN" length="25" name="I_CHAIN" sourceType="string" talendType="id_String" xmi:id="_HDaNXjqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </inputTables>
+      <inputTables id="_AczFsDqVEe-YItYbWxnZdA" label="I_LOGID" name="I_LOGID" tableType="INPUT" xmi:id="_HDaNXzqVEe-YItYbWxnZdA">
+        <feature label="I_LOGID" length="25" name="I_LOGID" sourceType="string" talendType="id_String" xmi:id="_HDaNYDqVEe-YItYbWxnZdA" xsi:type="TalendMetadata:MetadataColumn"/>
+      </inputTables>
+      <paramData xmi:id="_HDaNYTqVEe-YItYbWxnZdA">
+        <inputRoot name="Input" xmi:id="_HDaNYjqVEe-YItYbWxnZdA">
+          <children length="25" name="I_CHAIN" tableResideInTables="false" type="string" xmi:id="_HDaNYzqVEe-YItYbWxnZdA"/>
+          <children length="1" name="I_DONT_POLL" tableResideInTables="false" type="string" xmi:id="_HDaNZDqVEe-YItYbWxnZdA"/>
+          <children length="1" name="I_DONT_UPDATE" tableResideInTables="false" type="string" xmi:id="_HDaNZTqVEe-YItYbWxnZdA"/>
+          <children length="25" name="I_LOGID" tableResideInTables="false" type="string" xmi:id="_HDaNZjqVEe-YItYbWxnZdA"/>
+        </inputRoot>
+        <outputRoot name="Output" xmi:id="_HDaNZzqVEe-YItYbWxnZdA">
+          <children length="1" name="E_MANUAL_ABORT" tableResideInTables="false" type="string" xmi:id="_HDaNaDqVEe-YItYbWxnZdA"/>
+          <children length="255" name="E_MESSAGE" tableResideInTables="false" type="string" xmi:id="_HDaNaTqVEe-YItYbWxnZdA"/>
+          <children length="1" name="E_STATUS" tableResideInTables="false" type="string" xmi:id="_HDaNajqVEe-YItYbWxnZdA"/>
+          <children name="E_S_MESSAGE" tableResideInTables="false" type="structure" xmi:id="_HDaNazqVEe-YItYbWxnZdA">
+            <children length="20" name="MSGID" tableResideInTables="false" type="string" xmi:id="_HDaNbDqVEe-YItYbWxnZdA"/>
+            <children name="MSGNO" tableResideInTables="false" type="long" xmi:id="_HDaNbTqVEe-YItYbWxnZdA"/>
+            <children length="1" name="MSGTY" tableResideInTables="false" type="string" xmi:id="_HDaNbjqVEe-YItYbWxnZdA"/>
+            <children length="50" name="MSGV1" tableResideInTables="false" type="string" xmi:id="_HDaNbzqVEe-YItYbWxnZdA"/>
+            <children length="50" name="MSGV2" tableResideInTables="false" type="string" xmi:id="_HDaNcDqVEe-YItYbWxnZdA"/>
+            <children length="50" name="MSGV3" tableResideInTables="false" type="string" xmi:id="_HDaNcTqVEe-YItYbWxnZdA"/>
+            <children length="50" name="MSGV4" tableResideInTables="false" type="string" xmi:id="_HDaNcjqVEe-YItYbWxnZdA"/>
+          </children>
+        </outputRoot>
+      </paramData>
+    </Funtions>
+  </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage dataManager="_sTBwgDqTEe-YItYbWxnZdA" name="SAPBW_OHD" xmi:id="_pNdCgDqaEe-1M5CAm0Q-XA">
+    <ownedElement id="_bSFT0DqaEe-1M5CAm0Q-XA" label="Z_ZTRCO2" name="Z_ZTRCO2" tableSearchType="STRUCTURE" tableType="TABLE" xmi:id="_pNdCgTqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTable">
+      <feature businessName="Client" comment="Client" key="true" label="MANDT" length="3" name="MANDT" sourceType="STRING" talendType="id_String" xmi:id="_pNdCgjqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_pNdCgzqaEe-1M5CAm0Q-XA"/>
+        <refTable>T000</refTable>
+      </feature>
+      <feature businessName="Plant" comment="Plant" key="true" label="WERKS" length="4" name="WERKS" sourceType="STRING" talendType="id_String" xmi:id="_pNdChDqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_pNdChTqaEe-1M5CAm0Q-XA"/>
+        <refTable>T001W</refTable>
+      </feature>
+      <feature businessName="Whse operation" comment="Warehouse Activity (Operation in Warehouse)" key="true" label="ARBVG" length="2" name="ARBVG" sourceType="STRING" talendType="id_String" xmi:id="_pNdChjqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_pNdChzqaEe-1M5CAm0Q-XA"/>
+        <refTable>TAVG</refTable>
+      </feature>
+      <feature businessName="Cost Center" comment="Cost Center" key="true" label="KOSTL" length="10" name="KOSTL" sourceType="STRING" talendType="id_String" xmi:id="_pNdCiDqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_pNdCiTqaEe-1M5CAm0Q-XA"/>
+        <refTable>CSKS</refTable>
+      </feature>
+      <feature businessName="Wt. factor: Cost ctr" comment="RIS/ABC Weighting factor: Cost center for storage process" label="LGGWF" length="10" name="LGGWF" sourceType="INTEGER" talendType="id_Integer" xmi:id="_pNdCijqaEe-1M5CAm0Q-XA" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_pNdCizqaEe-1M5CAm0Q-XA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+  <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_wF6W0DqUEe-YItYbWxnZdA" xmi:id="_wGAdcDqUEe-YItYbWxnZdA"/>
+  <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_HDaNUDqVEe-YItYbWxnZdA" xmi:id="_HDaNczqVEe-YItYbWxnZdA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_daf0e374-960d-4ca0-8246-0af2247f9859"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j2PtoHaJ/hZLZTD+EoQ+rKWGuLiz0uu5F0GI5xAkG8q101Lj8ox+MyS0Dm2xYsDw1Gs0Hw4sKOyi&#13;
+CAvF5PK6RQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fd747d24-dc4a-4ec1-ab50-d0f0bdff20e6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GFKF7Vol0+JnvfBm2lvmjC0cea5IvP9qZ0LqJHQmPyObe2Jj8GHOrQlBl2sGSH5sO2E3TZ6t4SDh&#13;
+M7BLEivJZQ==</DigestValue></Reference></SignedInfo><SignatureValue>i8/qpDJnWKRQeWB3bRdUm12xLJ/ElvM/lnh9H8+GFa4JPVFC/qTz28qbTuAH78yse7k0hReNDPd3&#13;
+vVE4/yOl7YVDqEewgIPd2ZMeBxSz0BT2olymA7lOsI20gE4dR8OYR5qSJKU1dMqtIFPRIwFaxJG8&#13;
+/MhflogIcCTcd1GbW+caP4jJLOvFcw4j6fK6ZeNysKvfymgqFx3Xnt3UKr6Lovfb5THr4obohTwa&#13;
+9sYaFPWJcQok7lQq9+eVajnk/8E/GRrfLkrZbfb0Wl8VduheCd+jCRBbSUJvuHHmWNjLs8xTA/Yx&#13;
+xGgh+iPmSLaTQCwmWkWzhMAh7hpshkzu50K+2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fd747d24-dc4a-4ec1-ab50-d0f0bdff20e6" Target="#_daf0e374-960d-4ca0-8246-0af2247f9859"><Timestamp>2024-07-09 06:56:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
