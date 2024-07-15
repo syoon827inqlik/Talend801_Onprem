@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendMetadata:SAPConnection Client="200" Host="vhlgrb4dcs.sap.lge.com" Language="EN" Password="enc:system.encryption.key.v1:KAEOK2K6ImHMfxiwAyDDqbLgDK04UPdnQEuksycZ8zZmMo1E8hUkNrXCa6s=" SystemNumber="00" Username="qliktest01" jcoVersion="SAP2" xmi:id="_ONae0EJJEe-IHs245fJtvg">
+  <TalendMetadata:SAPConnection Client="200" Host="vhlgrb4dcs.sap.lge.com" Language="EN" Password="enc:system.encryption.key.v1:KAEOK2K6ImHMfxiwAyDDqbLgDK04UPdnQEuksycZ8zZmMo1E8hUkNrXCa6s=" SystemNumber="00" Username="qliktest01" dataPackage="_uIIUsEJZEe-IHs245fJtvg" jcoVersion="SAP2" xmi:id="_ONae0EJJEe-IHs245fJtvg">
     <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_ONae0UJJEe-IHs245fJtvg"/>
     <Funtions connection="_ONae0EJJEe-IHs245fJtvg" description="_eLpdIEJJEe-IHs245fJtvg" id="_a8jD4EJJEe-IHs245fJtvg" label="RSPC_API_CHAIN_START" name="RSPC_API_CHAIN_START" xmi:id="_eLVUEEJJEe-IHs245fJtvg">
       <tables id="_bnWUYEJJEe-IHs245fJtvg" label="SINGLE_PARAM" name="SINGLE_PARAM" tableType="OUTPUT" xmi:id="_eLVUEUJJEe-IHs245fJtvg">
@@ -83,15 +83,670 @@
       </paramData>
     </Funtions>
   </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage dataManager="_ONae0EJJEe-IHs245fJtvg" name="SRC_SAPBW" xmi:id="_uIIUsEJZEe-IHs245fJtvg">
+    <ownedElement id="_skcUYEJZEe-IHs245fJtvg" label="_BIC_OHY_TALND01" name="/BIC/OHY_TALND01" tableSearchType="TRANSPARENT" tableType="TABLE" xmi:id="_uIIUsUJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTable">
+      <feature businessName="" key="true" label="REQTSN" length="23" name="REQTSN" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_uIIUskJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUs0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" key="true" label="DATAPAKID" length="10" name="DATAPAKID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_uIIUtEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUtUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" key="true" label="RECORD" length="10" name="RECORD" sourceType="INTEGER" talendType="id_Integer" xmi:id="_uIIUtkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUt0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CONSLD_BIZ_CAT_CD" label="_BIC_YCSBCCD" length="30" name="/BIC/YCSBCCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUuEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUuUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CSMS_CHNL_TYPE_CD" label="_BIC_YCCTPCD" length="5" name="/BIC/YCCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUukJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUu0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CONTR_TYPE_CD" label="_BIC_YCTPCD" length="1" name="/BIC/YCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUvEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUvUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="LEASE_TYPE_CD" label="_BIC_YLTPCD" length="3" name="/BIC/YLTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUvkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUv0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="EXP_ORIG_AU_TYPE_CD" label="_BIC_YEOATPCD" length="30" name="/BIC/YEOATPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUwEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUwUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VIRT_MDL_FLAG" label="_BIC_YVMLLAG" length="1" name="/BIC/YVMLLAG" sourceType="STRING" talendType="id_String" xmi:id="_uIIUwkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUw0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PROD_MDL_SFFX_CD" label="_BIC_YPMSCD" length="50" name="/BIC/YPMSCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUxEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUxUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MGT_FCTRY_CD" label="_BIC_YMFRCD" length="10" name="/BIC/YMFRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUxkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUx0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FCTRY_CD" label="_BIC_YFRCD" length="10" name="/BIC/YFRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUyEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUyUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SET_MDL_SFFX_CD" label="_BIC_YSMSFCD" length="50" name="/BIC/YSMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUykJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUy0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_SUBSDR_RNR_CD" label="_BIC_YSSRNRCD" length="8" name="/BIC/YSSRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIUzEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUzUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="RRP_FLAG" label="_BIC_YRRP_FLAG" length="1" name="/BIC/YRRP_FLAG" sourceType="STRING" talendType="id_String" xmi:id="_uIIUzkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIUz0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIN_BILLTO_CUST_CD" label="_BIC_YFBTCCD" length="40" name="/BIC/YFBTCCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU0EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU0UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIN_BILLTO_CUST_SUBSDR_CD" label="_BIC_YFBTCSDCD" length="8" name="/BIC/YFBTCSDCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU0kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU00JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SPCL_SALES_TYPE_CD" label="_BIC_YSPSATPCD" length="50" name="/BIC/YSPSATPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU1EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU1UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MKT_CD" label="_BIC_YMKT_CD" length="1" name="/BIC/YMKT_CD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU1kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU10JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="DIV_BIZ_TYPE_CD" label="_BIC_YDBIZTPCD" length="30" name="/BIC/YDBIZTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU2EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU2UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="LAST_UPD_USR_ID" label="_BIC_YLUPUSRID" length="30" name="/BIC/YLUPUSRID" sourceType="STRING" talendType="id_String" xmi:id="_uIIU2kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU20JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="LAST_UPD_DATE" label="_BIC_YLUPDT" length="21" name="/BIC/YLUPDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_uIIU3EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU3UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CREATION_USR_ID" label="_BIC_YCRUSRID" length="30" name="/BIC/YCRUSRID" sourceType="STRING" talendType="id_String" xmi:id="_uIIU3kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU30JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CREATION_DATE" label="_BIC_YCRDT" length="21" name="/BIC/YCRDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_uIIU4EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU4UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="ACCTG_YYYYMM" label="_BIC_YACYYYYMM" length="6" name="/BIC/YACYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_uIIU4kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU40JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PLN_YYYYMM" label="_BIC_YPLYYYYMM" length="6" name="/BIC/YPLYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_uIIU5EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU5UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SCENARIO_TYPE_CD" label="_BIC_YSRTPNM" length="30" name="/BIC/YSRTPNM" sourceType="STRING" talendType="id_String" xmi:id="_uIIU5kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU50JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="DIV_CD" label="_BIC_YDIV_CD" length="5" name="/BIC/YDIV_CD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU6EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU6UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SUBSDR_CD" label="_BIC_YSBDRCD" length="8" name="/BIC/YSBDRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU6kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU60JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MGT_TYPE_CD" label="_BIC_YMTPCD" length="5" name="/BIC/YMTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU7EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU7UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="AU_CD" label="_BIC_YAU_CD" length="3" name="/BIC/YAU_CD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU7kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU70JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_DEPT_CD" label="_BIC_YSDEPTCD" length="10" name="/BIC/YSDEPTCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU8EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU8UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MDL_SFFX_CD" label="_BIC_YMSFCD" length="50" name="/BIC/YMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU8kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU80JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="ACTUAL_MDL_SFFX_CD" label="_BIC_YACMSFCD" length="50" name="/BIC/YACMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU9EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU9UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="BILLTO_CUST_CD" label="_BIC_YBTCUSTCD" length="40" name="/BIC/YBTCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU9kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU90JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SHIPTO_CUST_CD" label="_BIC_YSHCUSTCD" length="40" name="/BIC/YSHCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU-EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU-UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="BIZ_TYPE_CD" label="_BIC_YBTYPCD" length="30" name="/BIC/YBTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU-kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU-0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PJT_CD" label="_BIC_YPJTCD" length="30" name="/BIC/YPJTCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU_EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU_UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SPLYR_CD" label="_BIC_YSPLYRCD" length="20" name="/BIC/YSPLYRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIU_kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIU_0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PRODUCTION_SUBSDR_CD" label="_BIC_YPRDSDRCD" length="8" name="/BIC/YPRDSDRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVAEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVAUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="EXP_ORIG_TYPE_CD" label="_BIC_YEOTYPECD" length="30" name="/BIC/YEOTYPECD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVAkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVA0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CONSLD_SALES_MDL_FLAG" label="_BIC_YCLSAMFLG" length="30" name="/BIC/YCLSAMFLG" sourceType="STRING" talendType="id_String" xmi:id="_uIIVBEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVBUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="OUTSRC_MDL_FLAG" label="_BIC_YOTMFLG" length="1" name="/BIC/YOTMFLG" sourceType="STRING" talendType="id_String" xmi:id="_uIIVBkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVB0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MDL_MAPP_TYPE_CD" label="_BIC_YMMPTYPCD" length="30" name="/BIC/YMMPTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVCEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVCUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="Production AU" label="_BIC_YPRDAUCD" length="3" name="/BIC/YPRDAUCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVCkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVC0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_MDL_SFFX_CD" label="_BIC_YSMDSFCD" length="50" name="/BIC/YSMDSFCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVDEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVDUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PRODUCTION_MDL_SFFX_CD" label="_BIC_YPRDMSFCD" length="50" name="/BIC/YPRDMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVDkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVD0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="COST_APPLY_YYYYMM" label="_BIC_YCAYYYYMM" length="6" name="/BIC/YCAYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_uIIVEEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVEUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="ZONE_RNR_CD" label="_BIC_YORNRCD" length="10" name="/BIC/YORNRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVEkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVE0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SUBSDR_RNR_CD" label="_BIC_YSBRNRCD" length="8" name="/BIC/YSBRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVFEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVFUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CNTRY_RNR_CD" label="_BIC_YCRRNRCD" length="2" name="/BIC/YCRRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVFkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVF0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="LNDED_CNTRY_RNR_CD" label="_BIC_YLCTRNRCD" length="2" name="/BIC/YLCTRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVGEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVGUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CURRENCY_CD" label="_BIC_YCRCYCD" length="15" name="/BIC/YCRCYCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVGkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVG0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CURRM_ACCUM_TYPE_CD" label="_BIC_YCRACTPCD" length="30" name="/BIC/YCRACTPCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVHEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVHUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VRNC_ALC_INCL_EXCL_CD" label="_BIC_YVAINEXCD" length="30" name="/BIC/YVAINEXCD" sourceType="STRING" talendType="id_String" xmi:id="_uIIVHkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVH0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="BW Delta Process: Update Mode" label="RECORDMODE" length="1" name="RECORDMODE" sourceType="STRING" talendType="id_String" xmi:id="_uIIVIEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVIUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MIN_ALLWN_AMT" label="_BIC_YMNAWAMT" length="16" name="/BIC/YMNAWAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVIkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVI0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_MFG_EXP_GLOB_COST_AMT" label="_BIC_YVMEGCAMT" length="16" name="/BIC/YVMEGCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVJEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVJUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_MFG_EXP_GLOB_COST_AMT" label="_BIC_YFMEGCAMT" length="16" name="/BIC/YFMEGCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVJkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVJ0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_MFG_EXP_GEN_AMT" label="_BIC_YVMEGAMT" length="16" name="/BIC/YVMEGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVKEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVKUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_MFG_EXP_GEN_AMT" label="_BIC_YFMEGAMT" length="16" name="/BIC/YFMEGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVKkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVK0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_LBR_COST_GLOB_COST_AMT" label="_BIC_YVLCGCAMT" length="16" name="/BIC/YVLCGCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVLEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVLUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_LBR_COST_GLOB_COST_AMT" label="_BIC_YFLCGCAMT" length="16" name="/BIC/YFLCGCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVLkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVL0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_LBR_COST_GEN_AMT" label="_BIC_YVLCCAMT" length="16" name="/BIC/YVLCCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVMEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVMUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_LBR_COST_GEN_AMT" label="_BIC_YFLCGAMT" length="16" name="/BIC/YFLCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVMkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVM0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_RTN_ALLWN_AMT" label="_BIC_YSRALAMT" length="16" name="/BIC/YSRALAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVNEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVNUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_FX_GAIN_LOSS_AMT" label="_BIC_YVFGLAMT" length="16" name="/BIC/YVFGLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVNkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVN0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_FX_GAIN_LOSS_AMT" label="_BIC_YFFGLAMT" length="16" name="/BIC/YFFGLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVOEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVOUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RI_GAP_AMT" label="_BIC_YVRGAMT" length="16" name="/BIC/YVRGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVOkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVO0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RI_GAP_AMT" label="_BIC_YFRGAMT" length="16" name="/BIC/YFRGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVPEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVPUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="RNR_SALES_EXCL_AMT" label="_BIC_YRRSEAMT" length="16" name="/BIC/YRRSEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVPkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVP0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="RNR_SALES_AMT" label="_BIC_YRRSAMT" length="16" name="/BIC/YRRSAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVQEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVQUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="RETAIL_SALES_TAX_EXCL_AMT" label="_BIC_YRSTEXAMT" length="16" name="/BIC/YRSTEXAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVQkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVQ0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="ORDIN_PRF_AMT" label="_BIC_YORPRAMT" length="16" name="/BIC/YORPRAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVREJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVRUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FI_EXP_AMT" label="_BIC_YFIEXPAMT" length="16" name="/BIC/YFIEXPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVRkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVR0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FI_INC_AMT" label="_BIC_YFFIINCAT" length="16" name="/BIC/YFFIINCAT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVSEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVSUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CONTRB_PRF_AMT" label="_BIC_YOI_AMT" length="16" name="/BIC/YOI_AMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVSkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVS0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="OI_AMT" label="_BIC_YMPFAMT" length="16" name="/BIC/YMPFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVTEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVTUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="MGNL_PRF_AMT" label="_BIC_YMGPFAMT" length="16" name="/BIC/YMGPFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVTkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVT0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_EXP_OTH_AMT" label="_BIC_YFSEOTAT" length="16" name="/BIC/YFSEOTAT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVUEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVUUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_EXP_OTH_AMT" label="_BIC_YFSVEOAMT" length="16" name="/BIC/YFSVEOAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVUkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVU0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YVSSWRAMT" length="16" name="/BIC/YVSSWRAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVVEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVVUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YFSSWRAMT" length="16" name="/BIC/YFSSWRAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVVkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVV0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_DOM_OVSEA_AMT" label="_BIC_YVSDOSAMT" length="16" name="/BIC/YVSDOSAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVWEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVWUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_DOM_OVSEA_AMT" label="_BIC_YFSDOVAMT" length="16" name="/BIC/YFSDOVAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVWkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVW0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_COMMS_CHRG_AMT" label="_BIC_YVSCCGAMT" length="16" name="/BIC/YVSCCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVXEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVXUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_COMMS_CHRG_AMT" label="_BIC_YFSCCGAMT" length="16" name="/BIC/YFSCCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVXkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVX0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_TRANSP_EXP_AMT" label="_BIC_YVSCTEAMT" length="16" name="/BIC/YVSCTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVYEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVYUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_TRANSP_EXP_AMT" label="_BIC_YFSCTEAMT" length="16" name="/BIC/YFSCTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVYkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVY0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_LBR_EXP_AMT" label="_BIC_YVSCLEAMT" length="16" name="/BIC/YVSCLEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVZEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVZUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_LBR_EXP_AMT" label="_BIC_YFSCLEAMT" length="16" name="/BIC/YFSCLEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVZkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVZ0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SVC_EXP_AMT" label="_BIC_YVSCEPAMT" length="16" name="/BIC/YVSCEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVaEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVaUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SVC_EXP_AMT" label="_BIC_YFSVEPAMT" length="16" name="/BIC/YFSVEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVakJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVa0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_EXP_OTH_AMT" label="_BIC_YVREOTAMT" length="16" name="/BIC/YVREOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVbEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVbUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_EXP_OTH_AMT" label="_BIC_YFREOTAMT" length="16" name="/BIC/YFREOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVbkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVb0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_ORDIN_DEVLM_AMT" label="_BIC_YVRODLAMT" length="16" name="/BIC/YVRODLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVcEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVcUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_ORDIN_DEVLM_AMT" label="_BIC_YFRODLAMT" length="16" name="/BIC/YFRODLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVckJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVc0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_COMMS_CHRG_AMT" label="_BIC_YVRCCGAMT" length="16" name="/BIC/YVRCCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVdEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVdUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_COMMS_CHRG_AMT" label="_BIC_YFRCCGAMT" length="16" name="/BIC/YFRCCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVdkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVd0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_TRANSP_EXP_AMT" label="_BIC_YVRTEPAMT" length="16" name="/BIC/YVRTEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVeEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVeUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_TRANSP_EXP_AMT" label="_BIC_YFRTEPAMT" length="16" name="/BIC/YFRTEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVekJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVe0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_LBR_EXP_AMT" label="_BIC_YVRLEPAMT" length="16" name="/BIC/YVRLEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVfEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVfUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_LBR_EXP_AMT" label="_BIC_YFRLEPAMT" length="16" name="/BIC/YFRLEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVfkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVf0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RND_EXP_AMT" label="_BIC_YVREPAMT" length="16" name="/BIC/YVREPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVgEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVgUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RND_EXP_AMT" label="_BIC_YFREPAMT" length="16" name="/BIC/YFREPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVgkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVg0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_ADM_EXP_OTH_AMT" label="_BIC_YVAEOTAMT" length="16" name="/BIC/YVAEOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVhEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVhUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_ADM_EXP_OTH_AMT" label="_BIC_YFAEOTAMT" length="16" name="/BIC/YFAEOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVhkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVh0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_ADM_COMMS_CHRG_AMT" label="_BIC_YVACCGAMT" length="16" name="/BIC/YVACCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIViEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIViUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_ADM_COMMS_CHRG_AMT" label="_BIC_YFACCGAMT" length="16" name="/BIC/YFACCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVikJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVi0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_ADM_TRANSP_EXP_AMT" label="_BIC_YVATEPAMT" length="16" name="/BIC/YVATEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVjEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVjUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_ADM_TRANSP_EXP_AMT" label="_BIC_YFATEPAMT" length="16" name="/BIC/YFATEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVjkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVj0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_ADM_LBR_EXP_AMT" label="_BIC_YVALEPAMT" length="16" name="/BIC/YVALEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVkEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVkUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_ADM_LBR_EXP_AMT" label="_BIC_YFALEPAMT" length="16" name="/BIC/YFALEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVkkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVk0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_ADM_EXP_AMT" label="_BIC_YVAEPAMT" length="16" name="/BIC/YVAEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVlEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVlUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_ADM_EXP_AMT" label="_BIC_YFAEPAMT" length="16" name="/BIC/YFAEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVlkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVl0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_EXP_OTH_AMT" label="_BIC_YVSEOTAMT" length="16" name="/BIC/YVSEOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVmEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVmUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_EXP_OTH_AMT" label="_BIC_YFSLEOAMT" length="16" name="/BIC/YFSLEOAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVmkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVm0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_BDDT_EXP_AMT" label="_BIC_YVSBEPAMT" length="16" name="/BIC/YVSBEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVnEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVnUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_BDDT_EXP_AMT" label="_BIC_YFSBEPAMT" length="16" name="/BIC/YFSBEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVnkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVn0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_PR_EXP_AMT" label="_BIC_YVSPEPAMT" length="16" name="/BIC/YVSPEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVoEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVoUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_PR_EXP_AMT" label="_BIC_YFSPEPAMT" length="16" name="/BIC/YFSPEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVokJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVo0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_ADV_EXP_AMT" label="_BIC_YVSAVEAMT" length="16" name="/BIC/YVSAVEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVpEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVpUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_ADV_EXP_AMT" label="_BIC_YFSAVEAMT" length="16" name="/BIC/YFSAVEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVpkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVp0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_COMMS_CHRG_AMT" label="_BIC_YVSCCRAMT" length="16" name="/BIC/YVSCCRAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVqEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVqUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_COMMS_CHRG_AMT" label="_BIC_YFSCCRAMT" length="16" name="/BIC/YFSCCRAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVqkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVq0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YVSETEAMT" length="16" name="/BIC/YVSETEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVrEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVrUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YFSETEAMT" length="16" name="/BIC/YFSETEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVrkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVr0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YVSDTEAMT" length="16" name="/BIC/YVSDTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVsEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVsUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YFSDTEAMT" length="16" name="/BIC/YFSDTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVskJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVs0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_TRANSP_EXP_AMT" label="_BIC_YVSLTEAMT" length="16" name="/BIC/YVSLTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVtEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVtUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_TRANSP_EXP_AMT" label="_BIC_YFSLTEAMT" length="16" name="/BIC/YFSLTEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVtkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVt0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_LBR_EXP_AMT" label="_BIC_YVSLLEAMT" length="16" name="/BIC/YVSLLEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVuEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVuUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_LBR_EXP_AMT" label="_BIC_YFSLLEAMT" length="16" name="/BIC/YFSLLEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVukJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVu0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_EXP_AMT" label="_BIC_YVSLEAMT" length="16" name="/BIC/YVSLEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVvEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVvUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_EXP_AMT" label="_BIC_YFSEPAMT" length="16" name="/BIC/YFSEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVvkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVv0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_SELL_ADM_EXP_AMT" label="_BIC_YVSAMEAMT" length="16" name="/BIC/YVSAMEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVwEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVwUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_SELL_ADM_EXP_AMT" label="_BIC_YFSAMEAMT" length="16" name="/BIC/YFSAMEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVwkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVw0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_COGS_OTH_AMT" label="_BIC_YVCOTAMT" length="16" name="/BIC/YVCOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVxEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVxUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_COGS_OTH_AMT" label="_BIC_YFCOTAMT" length="16" name="/BIC/YFCOTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVxkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVx0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INTRNL_EXP_FUND_AMT" label="_BIC_YVIEPFAMT" length="16" name="/BIC/YVIEPFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVyEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVyUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INTRNL_EXP_FUND_AMT" label="_BIC_YFIEPFAMT" length="16" name="/BIC/YFIEPFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVykJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVy0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INTRNL_EXP_PENL_AMT" label="_BIC_YVIEPPAMT" length="16" name="/BIC/YVIEPPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVzEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVzUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INTRNL_EXP_PENL_AMT" label="_BIC_YFIEPPAMT" length="16" name="/BIC/YFIEPPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIVzkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIVz0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INTRNL_EXP_NORM_AMT" label="_BIC_YVIEPNAMT" length="16" name="/BIC/YVIEPNAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV0EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV0UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INTRNL_EXP_NORM_AMT" label="_BIC_YFIEPNAMT" length="16" name="/BIC/YFIEPNAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV0kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV00JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INTRNL_EXP_AMT" label="_BIC_YVIREPAMT" length="16" name="/BIC/YVIREPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV1EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV1UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INTRNL_EXP_AMT" label="_BIC_YFIXPAMT" length="16" name="/BIC/YFIXPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV1kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV10JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_OTH_COGS_AMT" label="_BIC_YVOTCGMT" length="16" name="/BIC/YVOTCGMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV2EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV2UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_OTH_COGS_AMT" label="_BIC_YFOTCGAMT" length="16" name="/BIC/YFOTCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV2kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV20JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PART_COGS_AMT" label="_BIC_YVPCGAMT" length="16" name="/BIC/YVPCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV3EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV3UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PART_COGS_AMT" label="_BIC_YFPCGAMT" length="16" name="/BIC/YFPCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV3kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV30JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PART_OTH_COGS_AMT" label="_BIC_YVPOTCAMT" length="16" name="/BIC/YVPOTCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV4EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV4UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PART_OTH_COGS_AMT" label="_BIC_YFPOTCAMT" length="16" name="/BIC/YFPOTCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV4kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV40JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RENTAL_COGS_AMT" label="_BIC_YVRTCGAMT" length="16" name="/BIC/YVRTCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV5EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV5UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RENTAL_COGS_AMT" label="_BIC_YFRTCGAMT" length="16" name="/BIC/YFRTCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV5kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV50JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INSTL_EXP_AMT" label="_BIC_YVIEPAMT" length="16" name="/BIC/YVIEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV6EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV6UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INSTL_EXP_AMT" label="_BIC_YFIEPAMT" length="16" name="/BIC/YFIEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV6kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV60JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_COGS_GAP_AMT" label="_BIC_YVCGPAMT" length="16" name="/BIC/YVCGPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV7EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV7UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_COGS_GAP_AMT" label="_BIC_YFGGPAMT" length="16" name="/BIC/YFGGPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV7kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV70JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PL_GAP_AMT" label="_BIC_YVPGPAMT" length="16" name="/BIC/YVPGPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV8EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV8UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PL_GAP_AMT" label="_BIC_YFPGPAT" length="16" name="/BIC/YFPGPAT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV8kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV80JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RTN_ALLWN_AMT" label="_BIC_YVRALAMT" length="16" name="/BIC/YVRALAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV9EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV9UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RTN_ALLWN_AMT" label="_BIC_YFRALAMT" length="16" name="/BIC/YFRALAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV9kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV90JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_COGS_DIFF_ADJ_AMT" label="_BIC_YVCDADAMT" length="16" name="/BIC/YVCDADAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV-EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV-UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_COGS_DIFF_ADJ_AMT" label="_BIC_YFCDADAMT" length="16" name="/BIC/YFCDADAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV-kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV-0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INV_DVL_AMT" label="_BIC_YVIDLAMT" length="16" name="/BIC/YVIDLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV_EJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV_UJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INV_DVL_AMT" label="_BIC_YFIDLAMT" length="16" name="/BIC/YFIDLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIV_kJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIV_0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INV_SCRAP_AMT" label="_BIC_YVISPAMT" length="16" name="/BIC/YVISPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWAEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWAUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INV_SCRAP_AMT" label="_BIC_YFISPAMT" length="16" name="/BIC/YFISPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWAkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWA0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_CUSTOMS_RFND_AMT" label="_BIC_YVCRFAMT" length="16" name="/BIC/YVCRFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWBEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWBUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_CUSTOMS_RFND_AMT" label="_BIC_YFCRFAMT" length="16" name="/BIC/YFCRFAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWBkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWB0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RYLTY_OTH_AMT" label="_BIC_YVROTAMT" length="16" name="/BIC/YVROTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWCEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWCUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RYLTY_OTH_AMT" label="_BIC_YFROTAMT" length="16" name="/BIC/YFROTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWCkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWC0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_TECH_RUNGRYLTY_AMT" label="_BIC_YVTRTAMT" length="16" name="/BIC/YVTRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWDEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWDUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_TECH_RUNGRYLTY_AMT" label="_BIC_YFTRTAMT" length="16" name="/BIC/YFTRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWDkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWD0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PTNT_RUNGRYLTY_AMT" label="_BIC_YVPRTAMT" length="16" name="/BIC/YVPRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWEEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWEUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PTNT_RUNGRYLTY_AMT" label="_BIC_YFPRTAMT" length="16" name="/BIC/YFPRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWEkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWE0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YVTLRTAMT" length="16" name="/BIC/YVTLRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWFEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWFUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YFTLRTAMT" length="16" name="/BIC/YFTLRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWFkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWF0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YVPLRTAMT" length="16" name="/BIC/YVPLRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWGEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWGUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YFPLRTAMT" length="16" name="/BIC/YFPLRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWGkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWG0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_QTY" label="_BIC_YSALESQTY" length="16" name="/BIC/YSALESQTY" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWHEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWHUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="NSALES_AMT" label="_BIC_YNSALEAMT" length="16" name="/BIC/YNSALEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWHkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWH0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="RETAIL_SALES_AMT" label="_BIC_YRSALEAMT" length="16" name="/BIC/YRSALEAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWIEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWIUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="TAX_AMT" label="_BIC_YTAXAMT" length="16" name="/BIC/YTAXAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWIkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWI0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="DEALER_MARG_AMT" label="_BIC_YDLMGAMT" length="16" name="/BIC/YDLMGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWJEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWJUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SELLIN_BASE_SALES_AMT" label="_BIC_YSLBSAAMT" length="16" name="/BIC/YSLBSAAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWJkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWJ0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="ADDTNL_DC_AMT" label="_BIC_YATDCAMT" length="16" name="/BIC/YATDCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWKEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWKUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="GROSS_SALES_AMT" label="_BIC_YGRSAAMT" length="16" name="/BIC/YGRSAAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWKkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWK0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="SALES_DEDUCT_AMT" label="_BIC_YSADTAMT" length="16" name="/BIC/YSADTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWLEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWLUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="TRDTM_SELLIN_AMT" label="_BIC_YTDSLAMT" length="16" name="/BIC/YTDSLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWLkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWL0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="NTRDTM_SELLIN_AMT" label="_BIC_YNRSLAMT" length="16" name="/BIC/YNRSLAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWMEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWMUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="NTRDTM_SELLOUT_AMT" label="_BIC_YNRSOAMT" length="16" name="/BIC/YNRSOAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWMkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWM0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CASH_DC_AMT" label="_BIC_YCADCAMT" length="16" name="/BIC/YCADCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWNEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWNUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="CHRGBK_AMT" label="_BIC_YCRBKAMT" length="16" name="/BIC/YCRBKAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWNkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWN0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="OTH_SALES_DEDUCT_AMT" label="_BIC_YOHSDTAMT" length="16" name="/BIC/YOHSDTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWOEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWOUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PART_OTH_SALES_AMT" label="_BIC_YPTOSAAMT" length="16" name="/BIC/YPTOSAAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWOkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWO0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="PART_SALES_AMT" label="_BIC_YPTSAAMT" length="16" name="/BIC/YPTSAAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWPEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWPUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="OTH_SALES_AMT" label="_BIC_YOTSAAMT" length="16" name="/BIC/YOTSAAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWPkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWP0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_COGS_AMT" label="_BIC_YFXCGAMT" length="16" name="/BIC/YFXCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWQEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWQUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_COGS_AMT" label="_BIC_YVRCGAMT" length="16" name="/BIC/YVRCGAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWQkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWQ0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_MTL_COST_AMT" label="_BIC_YARMCAMT" length="16" name="/BIC/YARMCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWREJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWRUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_NET_MTL_COST_AMT" label="_BIC_YVRNMCAMT" length="16" name="/BIC/YVRNMCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWRkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWR0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INCD_COST_AMT" label="_BIC_YVRICTAMT" length="16" name="/BIC/YVRICTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWSEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWSUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_DEFECT_MTL_COST_AMT" label="_BIC_YVRDMCAMT" length="16" name="/BIC/YVRDMCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWSkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWS0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_CONV_COST_AMT" label="_BIC_YFCVCTAMT" length="16" name="/BIC/YFCVCTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWTEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWTUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_CONV_COST_AMT" label="_BIC_YVRCCTAMT" length="16" name="/BIC/YVRCCTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWTkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWT0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_LBR_COST_AMT" label="_BIC_YFXLCTAMT" length="16" name="/BIC/YFXLCTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWUEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWUUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_LBR_COST_AMT" label="_BIC_YVRLCTAMT" length="16" name="/BIC/YVRLCTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWUkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWU0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_MFG_EXP_AMT" label="_BIC_YFXMEPAMT" length="16" name="/BIC/YFXMEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWVEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWVUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_MFG_EXP_AMT" label="_BIC_YVRMEPAMT" length="16" name="/BIC/YVRMEPAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWVkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWV0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_INLND_COST_AMT" label="_BIC_YFIDCTAMT" length="16" name="/BIC/YFIDCTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWWEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWWUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_INLND_COST_AMT" label="_BIC_YVRIDCAMT" length="16" name="/BIC/YVRIDCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWWkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWW0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_PUR_MD_COGS_AMT" label="_BIC_YFXPMCAMT" length="16" name="/BIC/YFXPMCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWXEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWXUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_PUR_MD_COGS_AMT" label="_BIC_YVRPMCAMT" length="16" name="/BIC/YVRPMCAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWXkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWX0JZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="FIX_RYLTY_AMT" label="_BIC_YFRTAMT" length="16" name="/BIC/YFRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWYEJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWYUJZEe-IHs245fJtvg"/>
+      </feature>
+      <feature businessName="" comment="VAR_RYLTY_AMT" label="_BIC_YVRRTAMT" length="16" name="/BIC/YVRRTAMT" sourceType="DOUBLE" talendType="id_Double" xmi:id="_uIIWYkJZEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_uIIWY0JZEe-IHs245fJtvg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
   <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
   <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_eLVUEEJJEe-IHs245fJtvg" xmi:id="_eLpdIEJJEe-IHs245fJtvg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_307f6a7e-9d63-4a4d-a580-e212a09a2fe4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QzeulZMU4g6SveMFpx1E853ovMCwyQC1NWmkkLpi7/M2S0vQkGMLgNlgH/XQPB6QrWT7ceNBZTc9&#13;
-XRAiwwqYWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_41afa12e-ff71-4c3d-94c5-af25d44f761d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aasxbGmMnimczZJuF3Uw9MIFuboU3UvxGLG0Adajv1ZsigfR0nrNBYqK3VlGbrILl1bv6IHBOcD1&#13;
-twqvo8spKA==</DigestValue></Reference></SignedInfo><SignatureValue>X1yCOI0cUPUGZCWxDtICUDLbZ6rsLqENWFJi50KhbfKkASfq2kPC8g2yCBQcbUdDwr3hy410Ai0A&#13;
-mMulKjlHYM2pHI3BTnpnPrhfzFsiyA93e4SDQsMI5m+hi9o6RdcdzpUygJ/ngNCxUbSoq9ycOdrA&#13;
-vgsKldDfe2o5k2tUR6h3VFHt6Z0etn2br8IzlnpK1fe9QxH3c+clPZCaEcb0/nNTGeuh/jZ8ewWi&#13;
-hzvkE+5xBxlsGOyGO7qqA9NlN+m/b58OwMmql/0QwAkz6GerGTyqWDvNkENtq3DzK662rdkGi7N5&#13;
-v4gkdM7T5lgtua3eoHVyNX09wjTGLbr+qE0GPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_10d28b27-bbae-4542-92b6-03b4413e7c6a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6iAbivJ8QdP3CaAy8xOOVPo0pJXdvzqpqixo+X2gQwdpPlt1EtrnH/VFPHz6iHwv/YoQAjJAsIbm&#13;
+GWFlJO1Vgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_72dc4567-7dcd-4c15-a78d-f3497ede5e97"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jnD4L7UUIFYVcI53qhy/mixViDHXQUlxa9j6PUOXcPyNhiQaAlsnUZCkqZtlSfyW02Z+ynj9EFjc&#13;
+Emr9lcYTfA==</DigestValue></Reference></SignedInfo><SignatureValue>HCLN8tpGCCO/ONsDXcq/UAnTS2A0Pv0kIJzS1yDbitZ/7JyGArYijIoejBI4RzfiAC27olCSfuKd&#13;
+NaRh5ohvYiPKaJIheEA/DDqtXVtGIcgnrqPNrSnO/BS1JKGhRSu4vf4jn+J4rBCFltg/Zu5uCrSD&#13;
+fQWKb+y0MCUKeLokJB6+nPCUPAdPRSN3TNNK0UyaorR0vXeU5bIgCEGylfGROrI4LPN9iLgIrYXW&#13;
+CSsL0tIMmnFZSuyb03pKe6AUlt0mGurOmfgRpKxbE2vHnd7bfzJZo2DxEUIw/L3rRsESAft/Px2x&#13;
+SZ/RrFMgxl3qLl5XzBBVlrSiUo1sb5mSV/gKJw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -113,4 +768,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_41afa12e-ff71-4c3d-94c5-af25d44f761d" Target="#_307f6a7e-9d63-4a4d-a580-e212a09a2fe4"><Timestamp>2024-07-15 01:28:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_72dc4567-7dcd-4c15-a78d-f3497ede5e97" Target="#_10d28b27-bbae-4542-92b6-03b4413e7c6a"><Timestamp>2024-07-15 03:24:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
