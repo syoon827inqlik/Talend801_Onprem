@@ -235,6 +235,132 @@
       <column comment="" key="false" length="25" name="E_LOGID" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_1"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value=""/>
+    <elementParameter field="TEXT" name="CONDITION" value="context.pcstat_flag &lt; 1"/>
+    <elementParameter field="TEXT" name="ITERATION" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_2"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPBapi"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.101 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Business/SAP"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPBapi"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;qliktest01&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:HxH1jExYnbvB8z26Dl4bKj5PZEcpc7JM+XDRcZrqOtln4819xCVzWr+EGfwGmA=="/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
+    <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
+    <elementParameter field="TEXT" name="SAP_FUNCTION" value="&quot;RSPC_API_CHAIN_GET_STATUS&quot;"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
+    <elementParameter field="TABLE" name="MAPPING_INPUT">
+      <elementValue elementRef="NAME" value="&quot;I_CHAIN&quot;"/>
+      <elementValue elementRef="TYPE" value="SINGLE"/>
+      <elementValue elementRef="SCHEMA" value="row_I_CHAIN_2"/>
+      <elementValue elementRef="PARENT_ROW" value=""/>
+      <elementValue elementRef="PARAMETER_TYPE" value="IMPORT"/>
+      <elementValue elementRef="NAME" value="&quot;I_LOGID&quot;"/>
+      <elementValue elementRef="TYPE" value="SINGLE"/>
+      <elementValue elementRef="SCHEMA" value="row_I_LOGIN_1"/>
+      <elementValue elementRef="PARENT_ROW" value=""/>
+      <elementValue elementRef="PARAMETER_TYPE" value="IMPORT"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="NAME" value="&quot;SINGLE_PARAM&quot;"/>
+      <elementValue elementRef="TYPE" value="SINGLE"/>
+      <elementValue elementRef="SCHEMA" value="row_SINGLE_PARAM_2"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSAPBapi_2"/>
+    <metadata label="row_I_CHAIN_2" name="row_I_CHAIN_2">
+      <column comment="" defaultValue="context.pchain" key="false" length="-1" name="I_CHAIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="isinput" value="true"/>
+    </metadata>
+    <metadata label="row_I_LOGIN_1" name="row_I_LOGIN_1">
+      <column comment="" defaultValue="(String)globalMap.get(&quot;logid&quot;)" key="false" length="-1" name="I_LOGID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="isinput" value="true"/>
+    </metadata>
+    <metadata comment="" connector="FLOW" label="row_SINGLE_PARAM_2" name="row_SINGLE_PARAM_2" type="OUTPUT">
+      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="E_MANUAL_ABORT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="E_MESSAGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="E_STATUS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="row_SINGLE_PARAM_2" name="tLogRow_2">
+      <column comment="" key="false" length="1" name="E_MANUAL_ABORT" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="E_MESSAGE" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#10;//&#10;// multiply by 2 the row identifier&#10;// output_row.id = input_row.id * 2;&#10;//&#10;// lowercase the name&#10;// output_row.name = input_row.name.toLowerCase();&#10;&#10;&#10;//Code erstellt anhand des Eingabe- und Ausgabeschemas&#10;//output_row.E_STATUS = input_row.E_STATUS;&#10;&#10;//context.pstat_flag = &quot;A&quot;.equals(input_row.E_STATUS) ? 0 : 1;&#10;//context.pstat = input_row.E_STATUS;&#10;&#10;row3.E_STATUS = row2.E_STATUS;&#10;&#10;context.pstat_flag = &quot;A&quot;.equals(row2.E_STATUS) ? 0 : 1;&#10;context.pstat = row2.E_STATUS;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_2"/>
+  </node>
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSleep_1"/>
+    <elementParameter field="TEXT" name="PAUSE" value="1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSleep_1"/>
+  </node>
+  <node componentName="tSAPCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSAPCommit_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -242,9 +368,32 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_1"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" mergeOrder="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPBapi_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row_SINGLE_PARAM_2" lineStyle="0" metaname="row_SINGLE_PARAM_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tSleep_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -258,17 +407,29 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Start SAPBW Process Chain"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fa819ade-286e-4f41-b863-f5b96527c63b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>78AfbPWFcGciBpxT6vowQu6DZTv9IUpHciKnt7w0sJFHIvD//t8c5kLjBJ6YUOgtzXYNh7PovpYB&#13;
-A4j4WnhSBw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_01272d02-628b-4036-9ddd-46f70b7bcca3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mtF8bN25i+A1INNX7p1i+z71K4zqou7Vi68h8Zc3YpYWO5x4gRrwbVd2hr2n3/TuaLMbOvPkJ9r8&#13;
-wyjGZ3G2Xw==</DigestValue></Reference></SignedInfo><SignatureValue>hP27e4vox/8PRZt8fPNM5MbIoB+QKhC/uOCpgW3CE7g1rzboUW4Xsl8qcUxGUbMvSQgy2cCBOD1b&#13;
-9cQClETMRFfcvqGWM1+ATDWtAkdxhEZ7wZ1/0QOT+TQm1TlJidw0ETs1UzWuT23BwdPm+kIH7LKu&#13;
-k2AF3/HOxjmejmosixzomYG07gLjf7cJ4jldqxHwrA7hiBUUVuSQWaCA3nKX1SAuAHVT96R+OD9W&#13;
-ZuHG+6A3/w2aaI2PGvm2RlXG41YLim/HUvXrRjG9zfOO+7z8r6ljRNnP9e1X4l4wMgDPLhvRFv9i&#13;
-3f3pcl8o3ZSlmVfJwC2+EzLSGvfrMvnzvg/zsA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9203ee31-14ba-47b8-90c6-d40646f372bb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uMvQn0BQz7rmiPrnDYaY9b2cXTKrOaO4dbfRPmC6G4NLM5KjYGlKmJsVbzsE9c0yPhPCHt0+6YMo&#13;
+xrht8FydKg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_81596927-2b3a-4bb5-90c5-561e2c5f3606"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SO8qOjznEqxXijghyRdK6csF3b9RVb4yopZxH5PorrP5wKM63I9KMXKI/hwBsnSriWqbHVcvQdBf&#13;
+waf3lhip6w==</DigestValue></Reference></SignedInfo><SignatureValue>BoRATYBNeldxO7ZVZ2golHd5GOaarQEYJkJrNTxr0zd7MK6zJFMXO4QDrfCEfmohpWudgrGTMPEC&#13;
+eOX/kT8EH7foc8DdH7Dv6O4UKq8zRaKHs9bMPpa8vEueCYFBKPee8IPBroKC4IIyidAGi6rF5s9X&#13;
+EokaolfyKjMZM7M1VQOvSkTn5QAvfvx8Dr/+g9R4x789E/f3iK4bf8+yeVsz/lRi5KEb5bbibMTk&#13;
+r2rfnqbmyG2D8up2hX26zbsOb25aUjb3BBoNHdqEOPi7C0ZUwwZvxsaCG7eP9xpiYk1nwB0gLhcD&#13;
+qU2N3rx6qxiVAdKKP69CpkS8AvbTdE3whbd4sg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -290,4 +451,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_01272d02-628b-4036-9ddd-46f70b7bcca3" Target="#_fa819ade-286e-4f41-b863-f5b96527c63b"><Timestamp>2024-07-15 01:52:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_81596927-2b3a-4bb5-90c5-561e2c5f3606" Target="#_9203ee31-14ba-47b8-90c6-d40646f372bb"><Timestamp>2024-07-15 02:25:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
