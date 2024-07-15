@@ -38,15 +38,60 @@
         </outputRoot>
       </paramData>
     </Funtions>
+    <Funtions connection="_ONae0EJJEe-IHs245fJtvg" description="_lzFIkEJJEe-IHs245fJtvg" id="_jcC_wEJJEe-IHs245fJtvg" label="RSPC_API_CHAIN_GET_STATUS" name="RSPC_API_CHAIN_GET_STATUS" xmi:id="_lzEhgEJJEe-IHs245fJtvg">
+      <tables id="_kemo8kJJEe-IHs245fJtvg" label="SINGLE_PARAM" name="SINGLE_PARAM" tableType="OUTPUT" xmi:id="_lzEhgUJJEe-IHs245fJtvg">
+        <feature label="E_MANUAL_ABORT" length="1" name="E_MANUAL_ABORT" sourceType="string" talendType="id_String" xmi:id="_lzEhgkJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="E_MESSAGE" length="255" name="E_MESSAGE" sourceType="string" talendType="id_String" xmi:id="_lzEhg0JJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="E_STATUS" length="1" name="E_STATUS" sourceType="string" talendType="id_String" xmi:id="_lzEhhEJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+      </tables>
+      <tables id="_kemo80JJEe-IHs245fJtvg" label="E_S_MESSAGE" name="E_S_MESSAGE" tableType="OUTPUT" xmi:id="_lzEhhUJJEe-IHs245fJtvg">
+        <feature label="MSGID" length="20" name="MSGID" sourceType="string" talendType="id_String" xmi:id="_lzEhhkJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGNO" name="MSGNO" sourceType="long" talendType="id_String" xmi:id="_lzEhh0JJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGTY" length="1" name="MSGTY" sourceType="string" talendType="id_String" xmi:id="_lzEhiEJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV1" length="50" name="MSGV1" sourceType="string" talendType="id_String" xmi:id="_lzEhiUJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV2" length="50" name="MSGV2" sourceType="string" talendType="id_String" xmi:id="_lzEhikJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV3" length="50" name="MSGV3" sourceType="string" talendType="id_String" xmi:id="_lzEhi0JJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+        <feature label="MSGV4" length="50" name="MSGV4" sourceType="string" talendType="id_String" xmi:id="_lzEhjEJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+      </tables>
+      <inputTables id="_kemB4UJJEe-IHs245fJtvg" label="I_CHAIN" name="I_CHAIN" tableType="INPUT" xmi:id="_lzEhjUJJEe-IHs245fJtvg">
+        <feature label="I_CHAIN" length="25" name="I_CHAIN" sourceType="string" talendType="id_String" xmi:id="_lzEhjkJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+      </inputTables>
+      <inputTables id="_kemo8UJJEe-IHs245fJtvg" label="I_LOGID" name="I_LOGID" tableType="INPUT" xmi:id="_lzEhj0JJEe-IHs245fJtvg">
+        <feature label="I_LOGID" length="25" name="I_LOGID" sourceType="string" talendType="id_String" xmi:id="_lzEhkEJJEe-IHs245fJtvg" xsi:type="TalendMetadata:MetadataColumn"/>
+      </inputTables>
+      <paramData xmi:id="_lzEhkUJJEe-IHs245fJtvg">
+        <inputRoot name="Input" xmi:id="_lzEhkkJJEe-IHs245fJtvg">
+          <children length="25" name="I_CHAIN" tableResideInTables="false" type="string" xmi:id="_lzEhk0JJEe-IHs245fJtvg"/>
+          <children length="1" name="I_DONT_POLL" tableResideInTables="false" type="string" xmi:id="_lzEhlEJJEe-IHs245fJtvg"/>
+          <children length="1" name="I_DONT_UPDATE" tableResideInTables="false" type="string" xmi:id="_lzEhlUJJEe-IHs245fJtvg"/>
+          <children length="25" name="I_LOGID" tableResideInTables="false" type="string" xmi:id="_lzEhlkJJEe-IHs245fJtvg"/>
+        </inputRoot>
+        <outputRoot name="Output" xmi:id="_lzEhl0JJEe-IHs245fJtvg">
+          <children length="1" name="E_MANUAL_ABORT" tableResideInTables="false" type="string" xmi:id="_lzEhmEJJEe-IHs245fJtvg"/>
+          <children length="255" name="E_MESSAGE" tableResideInTables="false" type="string" xmi:id="_lzEhmUJJEe-IHs245fJtvg"/>
+          <children length="1" name="E_STATUS" tableResideInTables="false" type="string" xmi:id="_lzEhmkJJEe-IHs245fJtvg"/>
+          <children name="E_S_MESSAGE" tableResideInTables="false" type="structure" xmi:id="_lzEhm0JJEe-IHs245fJtvg">
+            <children length="20" name="MSGID" tableResideInTables="false" type="string" xmi:id="_lzEhnEJJEe-IHs245fJtvg"/>
+            <children name="MSGNO" tableResideInTables="false" type="long" xmi:id="_lzEhnUJJEe-IHs245fJtvg"/>
+            <children length="1" name="MSGTY" tableResideInTables="false" type="string" xmi:id="_lzEhnkJJEe-IHs245fJtvg"/>
+            <children length="50" name="MSGV1" tableResideInTables="false" type="string" xmi:id="_lzEhn0JJEe-IHs245fJtvg"/>
+            <children length="50" name="MSGV2" tableResideInTables="false" type="string" xmi:id="_lzEhoEJJEe-IHs245fJtvg"/>
+            <children length="50" name="MSGV3" tableResideInTables="false" type="string" xmi:id="_lzEhoUJJEe-IHs245fJtvg"/>
+            <children length="50" name="MSGV4" tableResideInTables="false" type="string" xmi:id="_lzEhokJJEe-IHs245fJtvg"/>
+          </children>
+        </outputRoot>
+      </paramData>
+    </Funtions>
   </TalendMetadata:SAPConnection>
+  <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
   <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_eLVUEEJJEe-IHs245fJtvg" xmi:id="_eLpdIEJJEe-IHs245fJtvg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1925ef91-2246-4d46-9a6d-887ebfaf90ba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5Fqbpaja+ouJJfg2mA0pLRxlslppAPTQJPiOFRhCG9yXDOVjJU6a0WC3oLUm4T1KR/+7Hv+O/M1q&#13;
-tzlUOgy+Fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02207140-be70-4f78-ade8-a91576e82f70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LiOhdxrnknBbApLtFIYTI/W0GVHlejxjo3KFj7Ys3CA94bGJBbDZb1lVcNmD1mB1pyq3aNTu3UvY&#13;
-WekGIagbXg==</DigestValue></Reference></SignedInfo><SignatureValue>ewaZxAizYV7pulQr92dAjlqauRbQ2mGhzjCgUkZ3axBJ9oLj6k3vD5NpRE9UiUSwQ2m5Oe1yMkAQ&#13;
-U0g9F64qGa3R+tUTtdMGMoeuFS2wDAmdZtob6kfuQoNV1pZS9ZmAwNdvK9HnzPqkx4EoIDVkxX/x&#13;
-VBtfxqQj12kNEFlr/PeOEEeGpvMVkZD9wHVDcibEcJfdiHtGsd3X1ZmeenRvIioJvFLT1vru4yn0&#13;
-6PwRc2P0ioYoO2ehXnABGKFbrB/a3T5PXlqFpRDCrcl75Jsi0qjwElTvk9bZLeaXtVt65lfdiZJU&#13;
-Tdi86Hj7QZkb0JTVB/kN/BjdZIJmNROSnGy+dw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_307f6a7e-9d63-4a4d-a580-e212a09a2fe4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QzeulZMU4g6SveMFpx1E853ovMCwyQC1NWmkkLpi7/M2S0vQkGMLgNlgH/XQPB6QrWT7ceNBZTc9&#13;
+XRAiwwqYWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_41afa12e-ff71-4c3d-94c5-af25d44f761d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aasxbGmMnimczZJuF3Uw9MIFuboU3UvxGLG0Adajv1ZsigfR0nrNBYqK3VlGbrILl1bv6IHBOcD1&#13;
+twqvo8spKA==</DigestValue></Reference></SignedInfo><SignatureValue>X1yCOI0cUPUGZCWxDtICUDLbZ6rsLqENWFJi50KhbfKkASfq2kPC8g2yCBQcbUdDwr3hy410Ai0A&#13;
+mMulKjlHYM2pHI3BTnpnPrhfzFsiyA93e4SDQsMI5m+hi9o6RdcdzpUygJ/ngNCxUbSoq9ycOdrA&#13;
+vgsKldDfe2o5k2tUR6h3VFHt6Z0etn2br8IzlnpK1fe9QxH3c+clPZCaEcb0/nNTGeuh/jZ8ewWi&#13;
+hzvkE+5xBxlsGOyGO7qqA9NlN+m/b58OwMmql/0QwAkz6GerGTyqWDvNkENtq3DzK662rdkGi7N5&#13;
+v4gkdM7T5lgtua3eoHVyNX09wjTGLbr+qE0GPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -68,4 +113,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02207140-be70-4f78-ade8-a91576e82f70" Target="#_1925ef91-2246-4d46-9a6d-887ebfaf90ba"><Timestamp>2024-07-15 01:27:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_41afa12e-ff71-4c3d-94c5-af25d44f761d" Target="#_307f6a7e-9d63-4a4d-a580-e212a09a2fe4"><Timestamp>2024-07-15 01:28:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
