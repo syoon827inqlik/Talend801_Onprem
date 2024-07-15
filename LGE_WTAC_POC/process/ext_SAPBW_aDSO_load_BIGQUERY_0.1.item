@@ -638,9 +638,9 @@
         <mapperTableEntries expression="row1._BIC_YMKT_CD " name="_BIC_YMKT_CD" type="id_String"/>
         <mapperTableEntries expression="row1._BIC_YDBIZTPCD " name="_BIC_YDBIZTPCD" type="id_String"/>
         <mapperTableEntries expression="row1._BIC_YLUPUSRID " name="_BIC_YLUPUSRID" type="id_String"/>
-        <mapperTableEntries expression="row1._BIC_YLUPDT " name="_BIC_YLUPDT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._BIC_YLUPDT " name="_BIC_YLUPDT" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1._BIC_YCRUSRID " name="_BIC_YCRUSRID" type="id_String"/>
-        <mapperTableEntries expression="row1._BIC_YCRDT " name="_BIC_YCRDT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._BIC_YCRDT " name="_BIC_YCRDT" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1._BIC_YACYYYYMM " name="_BIC_YACYYYYMM" type="id_String"/>
         <mapperTableEntries expression="row1._BIC_YPLYYYYMM " name="_BIC_YPLYYYYMM" type="id_String"/>
         <mapperTableEntries expression="row1._BIC_YSRTPNM " name="_BIC_YSRTPNM" type="id_String"/>
@@ -673,169 +673,169 @@
         <mapperTableEntries expression="row1._BIC_YCRACTPCD " name="_BIC_YCRACTPCD" type="id_String"/>
         <mapperTableEntries expression="row1._BIC_YVAINEXCD " name="_BIC_YVAINEXCD" type="id_String"/>
         <mapperTableEntries expression="row1.RECORDMODE " name="RECORDMODE" type="id_String"/>
-        <mapperTableEntries expression="row1._BIC_YMNAWAMT " name="_BIC_YMNAWAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVMEGCAMT " name="_BIC_YVMEGCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFMEGCAMT " name="_BIC_YFMEGCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVMEGAMT " name="_BIC_YVMEGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFMEGAMT " name="_BIC_YFMEGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVLCGCAMT " name="_BIC_YVLCGCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFLCGCAMT " name="_BIC_YFLCGCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVLCCAMT " name="_BIC_YVLCCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFLCGAMT " name="_BIC_YFLCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YSRALAMT " name="_BIC_YSRALAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVFGLAMT " name="_BIC_YVFGLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFFGLAMT " name="_BIC_YFFGLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRGAMT " name="_BIC_YVRGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRGAMT " name="_BIC_YFRGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YRRSEAMT " name="_BIC_YRRSEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YRRSAMT " name="_BIC_YRRSAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YRSTEXAMT " name="_BIC_YRSTEXAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YORPRAMT " name="_BIC_YORPRAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIEXPAMT " name="_BIC_YFIEXPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFFIINCAT " name="_BIC_YFFIINCAT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YOI_AMT " name="_BIC_YOI_AMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YMPFAMT " name="_BIC_YMPFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YMGPFAMT " name="_BIC_YMGPFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSEOTAT " name="_BIC_YFSEOTAT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSVEOAMT " name="_BIC_YFSVEOAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSSWRAMT " name="_BIC_YVSSWRAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSSWRAMT " name="_BIC_YFSSWRAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSDOSAMT " name="_BIC_YVSDOSAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSDOVAMT " name="_BIC_YFSDOVAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSCCGAMT " name="_BIC_YVSCCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSCCGAMT " name="_BIC_YFSCCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSCTEAMT " name="_BIC_YVSCTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSCTEAMT " name="_BIC_YFSCTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSCLEAMT " name="_BIC_YVSCLEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSCLEAMT " name="_BIC_YFSCLEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSCEPAMT " name="_BIC_YVSCEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSVEPAMT " name="_BIC_YFSVEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVREOTAMT " name="_BIC_YVREOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFREOTAMT " name="_BIC_YFREOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRODLAMT " name="_BIC_YVRODLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRODLAMT " name="_BIC_YFRODLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRCCGAMT " name="_BIC_YVRCCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRCCGAMT " name="_BIC_YFRCCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRTEPAMT " name="_BIC_YVRTEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRTEPAMT " name="_BIC_YFRTEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRLEPAMT " name="_BIC_YVRLEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRLEPAMT " name="_BIC_YFRLEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVREPAMT " name="_BIC_YVREPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFREPAMT " name="_BIC_YFREPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVAEOTAMT " name="_BIC_YVAEOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFAEOTAMT " name="_BIC_YFAEOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVACCGAMT " name="_BIC_YVACCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFACCGAMT " name="_BIC_YFACCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVATEPAMT " name="_BIC_YVATEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFATEPAMT " name="_BIC_YFATEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVALEPAMT " name="_BIC_YVALEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFALEPAMT " name="_BIC_YFALEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVAEPAMT " name="_BIC_YVAEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFAEPAMT " name="_BIC_YFAEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSEOTAMT " name="_BIC_YVSEOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSLEOAMT " name="_BIC_YFSLEOAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSBEPAMT " name="_BIC_YVSBEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSBEPAMT " name="_BIC_YFSBEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSPEPAMT " name="_BIC_YVSPEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSPEPAMT " name="_BIC_YFSPEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSAVEAMT " name="_BIC_YVSAVEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSAVEAMT " name="_BIC_YFSAVEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSCCRAMT " name="_BIC_YVSCCRAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSCCRAMT " name="_BIC_YFSCCRAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSETEAMT " name="_BIC_YVSETEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSETEAMT " name="_BIC_YFSETEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSDTEAMT " name="_BIC_YVSDTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSDTEAMT " name="_BIC_YFSDTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSLTEAMT " name="_BIC_YVSLTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSLTEAMT " name="_BIC_YFSLTEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSLLEAMT " name="_BIC_YVSLLEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSLLEAMT " name="_BIC_YFSLLEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSLEAMT " name="_BIC_YVSLEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSEPAMT " name="_BIC_YFSEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVSAMEAMT " name="_BIC_YVSAMEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFSAMEAMT " name="_BIC_YFSAMEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVCOTAMT " name="_BIC_YVCOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFCOTAMT " name="_BIC_YFCOTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIEPFAMT " name="_BIC_YVIEPFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIEPFAMT " name="_BIC_YFIEPFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIEPPAMT " name="_BIC_YVIEPPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIEPPAMT " name="_BIC_YFIEPPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIEPNAMT " name="_BIC_YVIEPNAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIEPNAMT " name="_BIC_YFIEPNAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIREPAMT " name="_BIC_YVIREPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIXPAMT " name="_BIC_YFIXPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVOTCGMT " name="_BIC_YVOTCGMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFOTCGAMT " name="_BIC_YFOTCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVPCGAMT " name="_BIC_YVPCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFPCGAMT " name="_BIC_YFPCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVPOTCAMT " name="_BIC_YVPOTCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFPOTCAMT " name="_BIC_YFPOTCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRTCGAMT " name="_BIC_YVRTCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRTCGAMT " name="_BIC_YFRTCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIEPAMT " name="_BIC_YVIEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIEPAMT " name="_BIC_YFIEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVCGPAMT " name="_BIC_YVCGPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFGGPAMT " name="_BIC_YFGGPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVPGPAMT " name="_BIC_YVPGPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFPGPAT " name="_BIC_YFPGPAT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRALAMT " name="_BIC_YVRALAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRALAMT " name="_BIC_YFRALAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVCDADAMT " name="_BIC_YVCDADAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFCDADAMT " name="_BIC_YFCDADAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVIDLAMT " name="_BIC_YVIDLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIDLAMT " name="_BIC_YFIDLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVISPAMT " name="_BIC_YVISPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFISPAMT " name="_BIC_YFISPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVCRFAMT " name="_BIC_YVCRFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFCRFAMT " name="_BIC_YFCRFAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVROTAMT " name="_BIC_YVROTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFROTAMT " name="_BIC_YFROTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVTRTAMT " name="_BIC_YVTRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFTRTAMT " name="_BIC_YFTRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVPRTAMT " name="_BIC_YVPRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFPRTAMT " name="_BIC_YFPRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVTLRTAMT " name="_BIC_YVTLRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFTLRTAMT " name="_BIC_YFTLRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVPLRTAMT " name="_BIC_YVPLRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFPLRTAMT " name="_BIC_YFPLRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YSALESQTY " name="_BIC_YSALESQTY" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YNSALEAMT " name="_BIC_YNSALEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YRSALEAMT " name="_BIC_YRSALEAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YTAXAMT " name="_BIC_YTAXAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YDLMGAMT " name="_BIC_YDLMGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YSLBSAAMT " name="_BIC_YSLBSAAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YATDCAMT " name="_BIC_YATDCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YGRSAAMT " name="_BIC_YGRSAAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YSADTAMT " name="_BIC_YSADTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YTDSLAMT " name="_BIC_YTDSLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YNRSLAMT " name="_BIC_YNRSLAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YNRSOAMT " name="_BIC_YNRSOAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YCADCAMT " name="_BIC_YCADCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YCRBKAMT " name="_BIC_YCRBKAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YOHSDTAMT " name="_BIC_YOHSDTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YPTOSAAMT " name="_BIC_YPTOSAAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YPTSAAMT " name="_BIC_YPTSAAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YOTSAAMT " name="_BIC_YOTSAAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFXCGAMT " name="_BIC_YFXCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRCGAMT " name="_BIC_YVRCGAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YARMCAMT " name="_BIC_YARMCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRNMCAMT " name="_BIC_YVRNMCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRICTAMT " name="_BIC_YVRICTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRDMCAMT " name="_BIC_YVRDMCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFCVCTAMT " name="_BIC_YFCVCTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRCCTAMT " name="_BIC_YVRCCTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFXLCTAMT " name="_BIC_YFXLCTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRLCTAMT " name="_BIC_YVRLCTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFXMEPAMT " name="_BIC_YFXMEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRMEPAMT " name="_BIC_YVRMEPAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFIDCTAMT " name="_BIC_YFIDCTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRIDCAMT " name="_BIC_YVRIDCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFXPMCAMT " name="_BIC_YFXPMCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRPMCAMT " name="_BIC_YVRPMCAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YFRTAMT " name="_BIC_YFRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1._BIC_YVRRTAMT " name="_BIC_YVRRTAMT" type="id_Double"/>
-        <mapperTableEntries expression="row1.ODQ_CHANGEMODE " name="ODQ_CHANGEMODE" type="id_String"/>
-        <mapperTableEntries expression="row1.ODQ_ENTITYCNTR " name="ODQ_ENTITYCNTR" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._BIC_YMNAWAMT " name="_BIC_YMNAWAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVMEGCAMT " name="_BIC_YVMEGCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFMEGCAMT " name="_BIC_YFMEGCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVMEGAMT " name="_BIC_YVMEGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFMEGAMT " name="_BIC_YFMEGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVLCGCAMT " name="_BIC_YVLCGCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFLCGCAMT " name="_BIC_YFLCGCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVLCCAMT " name="_BIC_YVLCCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFLCGAMT " name="_BIC_YFLCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YSRALAMT " name="_BIC_YSRALAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVFGLAMT " name="_BIC_YVFGLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFFGLAMT " name="_BIC_YFFGLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRGAMT " name="_BIC_YVRGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRGAMT " name="_BIC_YFRGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YRRSEAMT " name="_BIC_YRRSEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YRRSAMT " name="_BIC_YRRSAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YRSTEXAMT " name="_BIC_YRSTEXAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YORPRAMT " name="_BIC_YORPRAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIEXPAMT " name="_BIC_YFIEXPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFFIINCAT " name="_BIC_YFFIINCAT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YOI_AMT " name="_BIC_YOI_AMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YMPFAMT " name="_BIC_YMPFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YMGPFAMT " name="_BIC_YMGPFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSEOTAT " name="_BIC_YFSEOTAT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSVEOAMT " name="_BIC_YFSVEOAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSSWRAMT " name="_BIC_YVSSWRAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSSWRAMT " name="_BIC_YFSSWRAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSDOSAMT " name="_BIC_YVSDOSAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSDOVAMT " name="_BIC_YFSDOVAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSCCGAMT " name="_BIC_YVSCCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSCCGAMT " name="_BIC_YFSCCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSCTEAMT " name="_BIC_YVSCTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSCTEAMT " name="_BIC_YFSCTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSCLEAMT " name="_BIC_YVSCLEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSCLEAMT " name="_BIC_YFSCLEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSCEPAMT " name="_BIC_YVSCEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSVEPAMT " name="_BIC_YFSVEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVREOTAMT " name="_BIC_YVREOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFREOTAMT " name="_BIC_YFREOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRODLAMT " name="_BIC_YVRODLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRODLAMT " name="_BIC_YFRODLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRCCGAMT " name="_BIC_YVRCCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRCCGAMT " name="_BIC_YFRCCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRTEPAMT " name="_BIC_YVRTEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRTEPAMT " name="_BIC_YFRTEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRLEPAMT " name="_BIC_YVRLEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRLEPAMT " name="_BIC_YFRLEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVREPAMT " name="_BIC_YVREPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFREPAMT " name="_BIC_YFREPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVAEOTAMT " name="_BIC_YVAEOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFAEOTAMT " name="_BIC_YFAEOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVACCGAMT " name="_BIC_YVACCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFACCGAMT " name="_BIC_YFACCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVATEPAMT " name="_BIC_YVATEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFATEPAMT " name="_BIC_YFATEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVALEPAMT " name="_BIC_YVALEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFALEPAMT " name="_BIC_YFALEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVAEPAMT " name="_BIC_YVAEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFAEPAMT " name="_BIC_YFAEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSEOTAMT " name="_BIC_YVSEOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSLEOAMT " name="_BIC_YFSLEOAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSBEPAMT " name="_BIC_YVSBEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSBEPAMT " name="_BIC_YFSBEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSPEPAMT " name="_BIC_YVSPEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSPEPAMT " name="_BIC_YFSPEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSAVEAMT " name="_BIC_YVSAVEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSAVEAMT " name="_BIC_YFSAVEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSCCRAMT " name="_BIC_YVSCCRAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSCCRAMT " name="_BIC_YFSCCRAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSETEAMT " name="_BIC_YVSETEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSETEAMT " name="_BIC_YFSETEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSDTEAMT " name="_BIC_YVSDTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSDTEAMT " name="_BIC_YFSDTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSLTEAMT " name="_BIC_YVSLTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSLTEAMT " name="_BIC_YFSLTEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSLLEAMT " name="_BIC_YVSLLEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSLLEAMT " name="_BIC_YFSLLEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSLEAMT " name="_BIC_YVSLEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSEPAMT " name="_BIC_YFSEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVSAMEAMT " name="_BIC_YVSAMEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFSAMEAMT " name="_BIC_YFSAMEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVCOTAMT " name="_BIC_YVCOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFCOTAMT " name="_BIC_YFCOTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIEPFAMT " name="_BIC_YVIEPFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIEPFAMT " name="_BIC_YFIEPFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIEPPAMT " name="_BIC_YVIEPPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIEPPAMT " name="_BIC_YFIEPPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIEPNAMT " name="_BIC_YVIEPNAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIEPNAMT " name="_BIC_YFIEPNAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIREPAMT " name="_BIC_YVIREPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIXPAMT " name="_BIC_YFIXPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVOTCGMT " name="_BIC_YVOTCGMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFOTCGAMT " name="_BIC_YFOTCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVPCGAMT " name="_BIC_YVPCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFPCGAMT " name="_BIC_YFPCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVPOTCAMT " name="_BIC_YVPOTCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFPOTCAMT " name="_BIC_YFPOTCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRTCGAMT " name="_BIC_YVRTCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRTCGAMT " name="_BIC_YFRTCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIEPAMT " name="_BIC_YVIEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIEPAMT " name="_BIC_YFIEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVCGPAMT " name="_BIC_YVCGPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFGGPAMT " name="_BIC_YFGGPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVPGPAMT " name="_BIC_YVPGPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFPGPAT " name="_BIC_YFPGPAT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRALAMT " name="_BIC_YVRALAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRALAMT " name="_BIC_YFRALAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVCDADAMT " name="_BIC_YVCDADAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFCDADAMT " name="_BIC_YFCDADAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVIDLAMT " name="_BIC_YVIDLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIDLAMT " name="_BIC_YFIDLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVISPAMT " name="_BIC_YVISPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFISPAMT " name="_BIC_YFISPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVCRFAMT " name="_BIC_YVCRFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFCRFAMT " name="_BIC_YFCRFAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVROTAMT " name="_BIC_YVROTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFROTAMT " name="_BIC_YFROTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVTRTAMT " name="_BIC_YVTRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFTRTAMT " name="_BIC_YFTRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVPRTAMT " name="_BIC_YVPRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFPRTAMT " name="_BIC_YFPRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVTLRTAMT " name="_BIC_YVTLRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFTLRTAMT " name="_BIC_YFTLRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVPLRTAMT " name="_BIC_YVPLRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFPLRTAMT " name="_BIC_YFPLRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YSALESQTY " name="_BIC_YSALESQTY" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YNSALEAMT " name="_BIC_YNSALEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YRSALEAMT " name="_BIC_YRSALEAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YTAXAMT " name="_BIC_YTAXAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YDLMGAMT " name="_BIC_YDLMGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YSLBSAAMT " name="_BIC_YSLBSAAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YATDCAMT " name="_BIC_YATDCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YGRSAAMT " name="_BIC_YGRSAAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YSADTAMT " name="_BIC_YSADTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YTDSLAMT " name="_BIC_YTDSLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YNRSLAMT " name="_BIC_YNRSLAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YNRSOAMT " name="_BIC_YNRSOAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YCADCAMT " name="_BIC_YCADCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YCRBKAMT " name="_BIC_YCRBKAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YOHSDTAMT " name="_BIC_YOHSDTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YPTOSAAMT " name="_BIC_YPTOSAAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YPTSAAMT " name="_BIC_YPTSAAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YOTSAAMT " name="_BIC_YOTSAAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFXCGAMT " name="_BIC_YFXCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRCGAMT " name="_BIC_YVRCGAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YARMCAMT " name="_BIC_YARMCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRNMCAMT " name="_BIC_YVRNMCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRICTAMT " name="_BIC_YVRICTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRDMCAMT " name="_BIC_YVRDMCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFCVCTAMT " name="_BIC_YFCVCTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRCCTAMT " name="_BIC_YVRCCTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFXLCTAMT " name="_BIC_YFXLCTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRLCTAMT " name="_BIC_YVRLCTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFXMEPAMT " name="_BIC_YFXMEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRMEPAMT " name="_BIC_YVRMEPAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFIDCTAMT " name="_BIC_YFIDCTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRIDCAMT " name="_BIC_YVRIDCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFXPMCAMT " name="_BIC_YFXPMCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRPMCAMT " name="_BIC_YVRPMCAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YFRTAMT " name="_BIC_YFRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1._BIC_YVRRTAMT " name="_BIC_YVRRTAMT" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1.ODQ_CHANGEMODE " name="ODQ_CHANGEMODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ODQ_ENTITYCNTR " name="ODQ_ENTITYCNTR" nullable="true" type="id_BigDecimal"/>
       </varTables>
       <outputTables name="aDSO_out" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var._BIC_YCSBCCD " name="_BIC_YCSBCCD" nullable="true" type="id_String"/>
@@ -2577,13 +2577,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a9e6ed21-20ff-4813-a322-5eeda0f78e1d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Rk2t8AeqGFs5lTtQOTPBV4YecjJupkEoiRjAr+9JnRFv8fdumw5qoAy9pf5ZBuA402hczL0OG9BR&#13;
-df879gWjbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f0c7b6f1-a271-436f-af56-6c37ca8a4240"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zwxbro8oSQUTSOX5zepYi2+abOxL0Po/J5AE8AzpJ+qXDMEDDUtn8D7x8xB/ZQhos/U/OJbzsqs/&#13;
-IbK7LYW7mA==</DigestValue></Reference></SignedInfo><SignatureValue>DkpBYQSQ+uV7Xf/6Ri79lVEEyQmPmTjw/knJL1lVEdd0nbnqYiqg1N/Zg00suPa6CvNT7jKr2p76&#13;
-xaJ1/EF+NbNOQvTQMGsWtWXGofHg6o8MAcg3o8T5rzZ/nus+pWEo5x87Wbq8Hn+1cg3+XU6g8dzS&#13;
-Gdo6EvxoAqcceRxm90tN+8IjjiLPv1NksBYP6gaDW7AyR9KFsJHwMyeobwr7kj6aEf0Bo3s4HCvv&#13;
-i38vcl/K/UqhK+9HUPYz6HEUu4XiJzfrxEs1Yi+5ZWW6DDncQIDGmxejKASxWxCREVl76Vm+uBz+&#13;
-KmhefBlMnAeb2TpGuXNscwDWZNnV82WNKUqyug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4bbae07a-5ef8-4517-851a-31e8597a5c87"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8RDZ7OxcM0nyKDxM/bZcNEdsMTUhAEjtfFpJk9qgo0XZMql36jPfewfhAYvkeGNcjYn3kDkRWyO6&#13;
+mog85pw5UA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_54c6119f-34d9-4135-9800-ae6206028404"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hbDmHbZIqnxFLmbWf0JjBxYolPCnrk2QN2/+SENWPoNBKcwQZfKx5OMThqsIh6fXPTkW4VLoLm2o&#13;
+npvUhA0zHQ==</DigestValue></Reference></SignedInfo><SignatureValue>Lu4SqOSlTeZPPOPwosI6z1SssctnF8VWT5APNNM/MKPpAQQzvT/lxAjK38MZZrOyRAxyvIBsLsz3&#13;
+hJ/xAAV8cRVVSu4TqDgjNpixvUfz654Iv/Nr08pwoYa8eQbLXVyNHezc3OPiutOvi1LiEUrLm/VL&#13;
+Rw+wneFb6f78Y9NDG3XUFwhdPjlrifLHwpyg2IBaKTWebp0Q4GLi5ilRcdPbRPwK+6pTMd9A5j0G&#13;
+oT84F55u5A9nrjRPRdJf/JgnhbkvCs6yJRtFM4Zh46ksiYzXBxpPb60vr503OpGymaV3Z0vOutfQ&#13;
+lhxUPOUrjQ6e63zbHCmXUGjUZWVQvne+risKIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2605,4 +2605,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f0c7b6f1-a271-436f-af56-6c37ca8a4240" Target="#_a9e6ed21-20ff-4813-a322-5eeda0f78e1d"><Timestamp>2024-07-15 10:21:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_54c6119f-34d9-4135-9800-ae6206028404" Target="#_4bbae07a-5ef8-4517-851a-31e8597a5c87"><Timestamp>2024-07-15 10:25:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
