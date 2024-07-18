@@ -1101,127 +1101,428 @@
         <refTable>ODQ_ENTITYCNTR</refTable>
       </feature>
     </BWAdvancedDataStoreObjects>
-    <BWInfoObjects id="_V7vkAUJrEe-IHs245fJtvg" innerIOType="ATTRIBUTE" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Wpzj4EJrEe-IHs245fJtvg">
-      <feature businessName="Division" comment="Division" key="true" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj4UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Distribution Channel" comment="Distribution Channel" key="true" label="_DISTR_CHAN" length="2" name="0DISTR_CHAN" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj4kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales Organization" comment="Sales Organization" key="true" label="_SALESORG" length="4" name="0SALESORG" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj40JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer" comment="Customer number (sales view)" key="true" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj5EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AcctAssgGr" comment="Customer Account Assignment Group" label="_ACCNT_ASGN" length="2" name="0ACCNT_ASGN" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj5UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS Customer Grp 10" comment="AFS Customer Group 10" label="_AF_CGR10" length="3" name="0AF_CGR10" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj5kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS Customer Group 6" comment="AFS Customer Group 6" label="_AF_CGR6" length="3" name="0AF_CGR6" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj50JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS Customer Group 7" comment="AFS Customer Group 7" label="_AF_CGR7" length="3" name="0AF_CGR7" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj6EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS Customer Group 8" comment="AFS Customer Group 8" label="_AF_CGR8" length="3" name="0AF_CGR8" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj6UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS Customer Group 9" comment="AFS Customer Group 9" label="_AF_CGR9" length="3" name="0AF_CGR9" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj6kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="AFS VAS Customer Grp" comment="AFS VAS Customer Group" label="_AF_VASCG" length="3" name="0AF_VASCG" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj60JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="BP: CRM Sales View" comment="Business Partner: CRM Sales View" label="_CRM_BP_SAL" length="10" name="0CRM_BP_SAL" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj7EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="CRM Sales Org." comment="Sales Organization CRM" label="_CRM_SALORG" length="8" name="0CRM_SALORG" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Wpzj7UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ABC class" comment="Customer classification (ABC analysis)" label="_CUST_CLA" length="2" name="0CUST_CLA" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj7kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group" comment="Customer Group" label="_CUST_GROUP" length="2" name="0CUST_GROUP" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj70JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group 1" comment="Customer Group 1" label="_CUST_GRP1" length="3" name="0CUST_GRP1" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj8EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group 2" comment="Customer Group 2" label="_CUST_GRP2" length="3" name="0CUST_GRP2" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj8UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group 3" comment="Customer Group 3" label="_CUST_GRP3" length="3" name="0CUST_GRP3" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj8kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group 4" comment="Customer Group 4" label="_CUST_GRP4" length="3" name="0CUST_GRP4" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj80JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Group 5" comment="Customer Group 5" label="_CUST_GRP5" length="3" name="0CUST_GRP5" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj9EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Credit Control Area" comment="Credit Control Area" label="_C_CTR_AREA" length="4" name="0C_CTR_AREA" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj9UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Incoterms" comment="Incoterms part 1" label="_INCOTERMS" length="3" name="0INCOTERMS" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj9kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Incoterms 2" comment="Incoterms part 2" label="_IMOINCOTM2" length="28" name="0IMOINCOTM2" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj90JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant" comment="Plant" label="_PLANT" length="4" name="0PLANT" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj-EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Terms of Payment" comment="Terms of Payment Key" label="_PMNTTRMS" length="4" name="0PMNTTRMS" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj-UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales District" comment="Sales District" label="_SALES_DIST" length="6" name="0SALES_DIST" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj-kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales Group" comment="Sales Group" label="_SALES_GRP" length="3" name="0SALES_GRP" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj-0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales Office" comment="Sales Office" label="_SALES_OFF" length="4" name="0SALES_OFF" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj_EJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ID: Object Deleted" comment="Indicator: Object Deleted from Source System" label="_FLGDELETED" length="1" name="0FLGDELETED" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj_UJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales Channel" comment="Sales Channel" label="_BIC_ZCHCODE" length="10" name="/BIC/ZCHCODE" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj_kJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK1_CSA" length="4" name="/BIC/ZWRK1_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Wpzj_0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK2_CSA" length="4" name="/BIC/ZWRK2_CSA" sourceType="STRING" talendType="id_String" xmi:id="_WpzkAEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK3_CSA" length="4" name="/BIC/ZWRK3_CSA" sourceType="STRING" talendType="id_String" xmi:id="_WpzkAUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK4_CSA" length="4" name="/BIC/ZWRK4_CSA" sourceType="STRING" talendType="id_String" xmi:id="_WpzkAkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK5_CSA" length="4" name="/BIC/ZWRK5_CSA" sourceType="STRING" talendType="id_String" xmi:id="_WpzkA0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Origin Price flag" comment="Origin Price flag" label="_BIC_ZOPRIFG" length="1" name="/BIC/ZOPRIFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkBEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ASC Group ID/Code (S" comment="ASC Group ID/Code (Ship-to)" label="_BIC_ZASC_GROU" length="20" name="/BIC/ZASC_GROU" sourceType="STRING" talendType="id_String" xmi:id="_WpzkBUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ASN Transmission" comment="ASN Transmission" label="_BIC_ZASN_TRAN" length="20" name="/BIC/ZASN_TRAN" sourceType="STRING" talendType="id_String" xmi:id="_WpzkBkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Carrier" comment="Carrier" label="_BIC_ZCARRIER" length="30" name="/BIC/ZCARRIER" sourceType="STRING" talendType="id_String" xmi:id="_WpzkB0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="City Type" comment="City Type" label="_BIC_ZCITY_TYP" length="20" name="/BIC/ZCITY_TYP" sourceType="STRING" talendType="id_String" xmi:id="_WpzkCEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Commercial Biz." comment="Commercial Biz." label="_BIC_ZCOMMERCI" length="20" name="/BIC/ZCOMMERCI" sourceType="STRING" talendType="id_String" xmi:id="_WpzkCUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Serial Flag" comment="Customer Serial Flag" label="_BIC_ZCUSTSFG" length="1" name="/BIC/ZCUSTSFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkCkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Allowance H" comment="Customer Allowance Hour" label="_BIC_ZCUSTAH" length="10" name="/BIC/ZCUSTAH" sourceType="STRING" talendType="id_String" xmi:id="_WpzkC0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Allowance M" comment="Customer Allowance Minute" label="_BIC_ZCUSTAM" length="10" name="/BIC/ZCUSTAM" sourceType="STRING" talendType="id_String" xmi:id="_WpzkDEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Clearance F" comment="Customer Clearance Flag" label="_BIC_ZCUSTCFG" length="1" name="/BIC/ZCUSTCFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkDUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer PO Duplicat" comment="Customer PO Duplication Check Flag" label="_BIC_ZCUSTPDFG" length="1" name="/BIC/ZCUSTPDFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkDkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Digital Sales Expert" comment="Digital Sales Expert Flag" label="_BIC_ZDGSEFG" length="1" name="/BIC/ZDGSEFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkD0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Drop Ship Flag" comment="Drop Ship Flag" label="_BIC_ZDROPSFG" length="1" name="/BIC/ZDROPSFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkEEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Environmental Fee Fl" comment="Environmental Fee Flag" label="_BIC_ZEVFEEFG" length="1" name="/BIC/ZEVFEEFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkEUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Environmental Fee Co" comment="Environmental Fee Country" label="_BIC_ZEVFECNTY" length="3" name="/BIC/ZEVFECNTY" sourceType="STRING" talendType="id_String" xmi:id="_WpzkEkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Free Zone Order Type" comment="Free Zone Order Type" label="_BIC_ZFREE_ZON" length="20" name="/BIC/ZFREE_ZON" sourceType="STRING" talendType="id_String" xmi:id="_WpzkE0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Hertz Type" comment="Hertz Type" label="_BIC_ZHERTZ_TY" length="20" name="/BIC/ZHERTZ_TY" sourceType="STRING" talendType="id_String" xmi:id="_WpzkFEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Inspection Type" comment="Inspection Type" label="_BIC_ZINSPECTI" length="20" name="/BIC/ZINSPECTI" sourceType="STRING" talendType="id_String" xmi:id="_WpzkFUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Installation Flag" comment="Installation Flag" label="_BIC_ZINSTFG" length="1" name="/BIC/ZINSTFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkFkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Invoice Print Flag" comment="Invoice Print Flag" label="_BIC_ZINVPFG" length="1" name="/BIC/ZINVPFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkF0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Max Order Quantity" comment="Max Order Quantity" label="_BIC_ZMAX_ORDE" length="10" name="/BIC/ZMAX_ORDE" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_WpzkGEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Minimum Amount" comment="Minimum Amount" label="_BIC_ZMINIMUM" length="10" name="/BIC/ZMINIMUM" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_WpzkGUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Old Warranty Grade C" comment="Old Warranty Grade Code (Ship-to)" label="_BIC_ZOLD_WTY" length="20" name="/BIC/ZOLD_WTY" sourceType="STRING" talendType="id_String" xmi:id="_WpzkGkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Original Item Price" comment="Original Item Price Apply Flag" label="_BIC_ZORGAFG" length="1" name="/BIC/ZORGAFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkG0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Palletizaton Flag" comment="Palletizaton Flag" label="_BIC_ZPALFG" length="1" name="/BIC/ZPALFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkHEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Part Return Days" comment="Part Return Days" label="_BIC_ZPART_RET" length="5" name="/BIC/ZPART_RET" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkHUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Place" comment="Customer Place" label="_BIC_ZPLACE" length="30" name="/BIC/ZPLACE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkHkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Previous Subsidiary" comment="Previous Subsidiary (Ship-to)" label="_BIC_ZPREVIOUS" length="20" name="/BIC/ZPREVIOUS" sourceType="STRING" talendType="id_String" xmi:id="_WpzkH0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Profile (Bill-to)" comment="Profile (Bill-to)" label="_BIC_ZPROFILE" length="20" name="/BIC/ZPROFILE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkIEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Purchase Subsidiary" comment="Purchase Subsidiary AU (Bill-to)" label="_BIC_ZPURCHASE" length="10" name="/BIC/ZPURCHASE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkIUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Selling Price Roundi" comment="Selling Price Rounding Rule (Bill-to)" label="_BIC_ZSELLING" length="20" name="/BIC/ZSELLING" sourceType="STRING" talendType="id_String" xmi:id="_WpzkIkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Ship Booking Flag" comment="Ship Booking Flag" label="_BIC_ZSHIPBFG" length="1" name="/BIC/ZSHIPBFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkI0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Ship Method Code" comment="Ship Method Code" label="_BIC_ZSHIPMCD" length="20" name="/BIC/ZSHIPMCD" sourceType="STRING" talendType="id_String" xmi:id="_WpzkJEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Shipping Method" comment="Shipping Method" label="_BIC_ZSHIPM" length="20" name="/BIC/ZSHIPM" sourceType="STRING" talendType="id_String" xmi:id="_WpzkJUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="SO Expiry Calculate" comment="SO Expiry Calculate Type" label="_BIC_ZSEXPIRTP" length="10" name="/BIC/ZSEXPIRTP" sourceType="STRING" talendType="id_String" xmi:id="_WpzkJkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Expiry Days (Bill-to" comment="Expiry Days (Bill-to)" label="_BIC_ZEXPIRBT" length="10" name="/BIC/ZEXPIRBT" sourceType="STRING" talendType="id_String" xmi:id="_WpzkJ0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="STK Rcv Ratio Calcul" comment="STK Rcv Ratio Calculate Day (Bill-to)" label="_BIC_ZSTK_RCV" length="5" name="/BIC/ZSTK_RCV" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkKEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer Store Numbe" comment="Customer Store Number" label="_BIC_ZCSTORENM" length="50" name="/BIC/ZCSTORENM" sourceType="STRING" talendType="id_String" xmi:id="_WpzkKUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Software Version Fla" comment="Software Version Flag" label="_BIC_ZSVFG" length="1" name="/BIC/ZSVFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkKkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Swedish Chemical Tax" comment="Swedish Chemical Tax" label="_BIC_ZSWEDISH" length="20" name="/BIC/ZSWEDISH" sourceType="STRING" talendType="id_String" xmi:id="_WpzkK0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Tallgate Flag" comment="Tallgate Flag" label="_BIC_ZTALFG" length="1" name="/BIC/ZTALFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkLEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Territory Code" comment="Territory Code" label="_BIC_ZTERRITOR" length="20" name="/BIC/ZTERRITOR" sourceType="STRING" talendType="id_String" xmi:id="_WpzkLUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="TMS Interface Flag" comment="TMS Interface Flag" label="_BIC_ZTMSIFG" length="1" name="/BIC/ZTMSIFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkLkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Trans Shipment Flag" comment="Trans Shipment Flag (Ship-to)" label="_BIC_ZTRNSHFG" length="1" name="/BIC/ZTRNSHFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkL0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="TV License" comment="TV License" label="_BIC_ZTVLICEN" length="20" name="/BIC/ZTVLICEN" sourceType="STRING" talendType="id_String" xmi:id="_WpzkMEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Usage" comment="Usage" label="_BIC_ZUSAGE" length="20" name="/BIC/ZUSAGE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkMUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Warranty Claim Hold" comment="Warranty Claim Hold Flag (Ship-to)" label="_BIC_ZWARCHFG" length="1" name="/BIC/ZWARCHFG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkMkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Warranty Grade Code" comment="Warranty Grade Code (Ship-to)" label="_BIC_ZWTY_GRAD" length="20" name="/BIC/ZWTY_GRAD" sourceType="STRING" talendType="id_String" xmi:id="_WpzkM0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Warranty Reference S" comment="Warranty Reference Ship-to" label="_BIC_ZWTY_REFE" length="20" name="/BIC/ZWTY_REFE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkNEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Bill-to Organization" comment="Bill-to Organization" label="_BIC_ZBILLTOO" length="10" name="/BIC/ZBILLTOO" sourceType="STRING" talendType="id_String" xmi:id="_WpzkNUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Legal Department" comment="Legal Department" label="_BIC_ZDEPARTME" length="20" name="/BIC/ZDEPARTME" sourceType="STRING" talendType="id_String" xmi:id="_WpzkNkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Shipping Type" comment="Shipping Type" label="_BIC_ZVSART" length="2" name="/BIC/ZVSART" sourceType="STRING" talendType="id_String" xmi:id="_WpzkN0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Special Proc. Indica" comment="Special Processing Indicator" label="_BIC_ZSDABW" length="4" name="/BIC/ZSDABW" sourceType="STRING" talendType="id_String" xmi:id="_WpzkOEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Department Code" comment="Department Code" label="_BIC_ZZDEPT" length="5" name="/BIC/ZZDEPT" sourceType="STRING" talendType="id_String" xmi:id="_WpzkOUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Ship Group" comment="Ship Group" label="_BIC_ZSHIPG" length="10" name="/BIC/ZSHIPG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkOkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Ship Group Default" comment="Ship Group Default" label="_BIC_ZSHIPGD" length="10" name="/BIC/ZSHIPGD" sourceType="STRING" talendType="id_String" xmi:id="_WpzkO0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Same Address Code" comment="Same Address Code" label="_BIC_ZSAMEADD" length="10" name="/BIC/ZSAMEADD" sourceType="STRING" talendType="id_String" xmi:id="_WpzkPEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Company Code" comment="Company Code" label="_COMP_CODE" length="4" name="0COMP_CODE" sourceType="STRING" talendType="id_String" xmi:id="_WpzkPUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
+    <BWInfoObjects id="_V7vkAUJrEe-IHs245fJtvg" innerIOType="ATTRIBUTE" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2nQETIEe-9oMPNevfcRQ">
+      <feature businessName="Division" comment="Division" key="true" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nQUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nQkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Distribution Channel" comment="Distribution Channel" key="true" label="_DISTR_CHAN" length="2" name="0DISTR_CHAN" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nQ0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nRETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales Organization" comment="Sales Organization" key="true" label="_SALESORG" length="4" name="0SALESORG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nRUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nRkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer" comment="Customer number (sales view)" key="true" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nR0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nSETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AcctAssgGr" comment="Customer Account Assignment Group" label="_ACCNT_ASGN" length="2" name="0ACCNT_ASGN" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nSUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nSkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS Customer Grp 10" comment="AFS Customer Group 10" label="_AF_CGR10" length="3" name="0AF_CGR10" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nS0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nTETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS Customer Group 6" comment="AFS Customer Group 6" label="_AF_CGR6" length="3" name="0AF_CGR6" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nTUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nTkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS Customer Group 7" comment="AFS Customer Group 7" label="_AF_CGR7" length="3" name="0AF_CGR7" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nT0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nUETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS Customer Group 8" comment="AFS Customer Group 8" label="_AF_CGR8" length="3" name="0AF_CGR8" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nUUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nUkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS Customer Group 9" comment="AFS Customer Group 9" label="_AF_CGR9" length="3" name="0AF_CGR9" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nU0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nVETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="AFS VAS Customer Grp" comment="AFS VAS Customer Group" label="_AF_VASCG" length="3" name="0AF_VASCG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nVUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nVkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="BP: CRM Sales View" comment="Business Partner: CRM Sales View" label="_CRM_BP_SAL" length="10" name="0CRM_BP_SAL" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nV0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nWETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="CRM Sales Org." comment="Sales Organization CRM" label="_CRM_SALORG" length="8" name="0CRM_SALORG" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2nWUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nWkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ABC class" comment="Customer classification (ABC analysis)" label="_CUST_CLA" length="2" name="0CUST_CLA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nW0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nXETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group" comment="Customer Group" label="_CUST_GROUP" length="2" name="0CUST_GROUP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nXUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nXkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group 1" comment="Customer Group 1" label="_CUST_GRP1" length="3" name="0CUST_GRP1" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nX0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nYETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group 2" comment="Customer Group 2" label="_CUST_GRP2" length="3" name="0CUST_GRP2" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nYUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nYkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group 3" comment="Customer Group 3" label="_CUST_GRP3" length="3" name="0CUST_GRP3" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nY0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nZETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group 4" comment="Customer Group 4" label="_CUST_GRP4" length="3" name="0CUST_GRP4" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nZUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nZkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Group 5" comment="Customer Group 5" label="_CUST_GRP5" length="3" name="0CUST_GRP5" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nZ0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2naETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Credit Control Area" comment="Credit Control Area" label="_C_CTR_AREA" length="4" name="0C_CTR_AREA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2naUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nakTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Incoterms" comment="Incoterms part 1" label="_INCOTERMS" length="3" name="0INCOTERMS" sourceType="STRING" talendType="id_String" xmi:id="_Ip2na0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nbETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Incoterms 2" comment="Incoterms part 2" label="_IMOINCOTM2" length="28" name="0IMOINCOTM2" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nbUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nbkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant" comment="Plant" label="_PLANT" length="4" name="0PLANT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nb0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ncETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Terms of Payment" comment="Terms of Payment Key" label="_PMNTTRMS" length="4" name="0PMNTTRMS" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ncUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nckTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales District" comment="Sales District" label="_SALES_DIST" length="6" name="0SALES_DIST" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nc0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ndETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales Group" comment="Sales Group" label="_SALES_GRP" length="3" name="0SALES_GRP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ndUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ndkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales Office" comment="Sales Office" label="_SALES_OFF" length="4" name="0SALES_OFF" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nd0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2neETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ID: Object Deleted" comment="Indicator: Object Deleted from Source System" label="_FLGDELETED" length="1" name="0FLGDELETED" sourceType="STRING" talendType="id_String" xmi:id="_Ip2neUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nekTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales Channel" comment="Sales Channel" label="_BIC_ZCHCODE" length="10" name="/BIC/ZCHCODE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ne0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nfETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK1_CSA" length="4" name="/BIC/ZWRK1_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nfUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nfkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK2_CSA" length="4" name="/BIC/ZWRK2_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nf0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ngETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK3_CSA" length="4" name="/BIC/ZWRK3_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ngUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ngkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK4_CSA" length="4" name="/BIC/ZWRK4_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ng0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nhETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Plant (Own or Extern" comment="Plant (Own or External)" label="_BIC_ZWRK5_CSA" length="4" name="/BIC/ZWRK5_CSA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nhUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nhkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Origin Price flag" comment="Origin Price flag" label="_BIC_ZOPRIFG" length="1" name="/BIC/ZOPRIFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nh0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2niETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ASC Group ID/Code (S" comment="ASC Group ID/Code (Ship-to)" label="_BIC_ZASC_GROU" length="20" name="/BIC/ZASC_GROU" sourceType="STRING" talendType="id_String" xmi:id="_Ip2niUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nikTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ASN Transmission" comment="ASN Transmission" label="_BIC_ZASN_TRAN" length="20" name="/BIC/ZASN_TRAN" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ni0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2njETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Carrier" comment="Carrier" label="_BIC_ZCARRIER" length="30" name="/BIC/ZCARRIER" sourceType="STRING" talendType="id_String" xmi:id="_Ip2njUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2njkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="City Type" comment="City Type" label="_BIC_ZCITY_TYP" length="20" name="/BIC/ZCITY_TYP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nj0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nkETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Commercial Biz." comment="Commercial Biz." label="_BIC_ZCOMMERCI" length="20" name="/BIC/ZCOMMERCI" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nkUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nkkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Serial Flag" comment="Customer Serial Flag" label="_BIC_ZCUSTSFG" length="1" name="/BIC/ZCUSTSFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nk0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nlETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Allowance H" comment="Customer Allowance Hour" label="_BIC_ZCUSTAH" length="10" name="/BIC/ZCUSTAH" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nlUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nlkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Allowance M" comment="Customer Allowance Minute" label="_BIC_ZCUSTAM" length="10" name="/BIC/ZCUSTAM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nl0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nmETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Clearance F" comment="Customer Clearance Flag" label="_BIC_ZCUSTCFG" length="1" name="/BIC/ZCUSTCFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nmUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nmkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer PO Duplicat" comment="Customer PO Duplication Check Flag" label="_BIC_ZCUSTPDFG" length="1" name="/BIC/ZCUSTPDFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nm0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nnETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Digital Sales Expert" comment="Digital Sales Expert Flag" label="_BIC_ZDGSEFG" length="1" name="/BIC/ZDGSEFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nnUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nnkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Drop Ship Flag" comment="Drop Ship Flag" label="_BIC_ZDROPSFG" length="1" name="/BIC/ZDROPSFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nn0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2noETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Environmental Fee Fl" comment="Environmental Fee Flag" label="_BIC_ZEVFEEFG" length="1" name="/BIC/ZEVFEEFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2noUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nokTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Environmental Fee Co" comment="Environmental Fee Country" label="_BIC_ZEVFECNTY" length="3" name="/BIC/ZEVFECNTY" sourceType="STRING" talendType="id_String" xmi:id="_Ip2no0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2npETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Free Zone Order Type" comment="Free Zone Order Type" label="_BIC_ZFREE_ZON" length="20" name="/BIC/ZFREE_ZON" sourceType="STRING" talendType="id_String" xmi:id="_Ip2npUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2npkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Hertz Type" comment="Hertz Type" label="_BIC_ZHERTZ_TY" length="20" name="/BIC/ZHERTZ_TY" sourceType="STRING" talendType="id_String" xmi:id="_Ip2np0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nqETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Inspection Type" comment="Inspection Type" label="_BIC_ZINSPECTI" length="20" name="/BIC/ZINSPECTI" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nqUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nqkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Installation Flag" comment="Installation Flag" label="_BIC_ZINSTFG" length="1" name="/BIC/ZINSTFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nq0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nrETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Invoice Print Flag" comment="Invoice Print Flag" label="_BIC_ZINVPFG" length="1" name="/BIC/ZINVPFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nrUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nrkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Max Order Quantity" comment="Max Order Quantity" label="_BIC_ZMAX_ORDE" length="10" name="/BIC/ZMAX_ORDE" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_Ip2nr0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nsETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Minimum Amount" comment="Minimum Amount" label="_BIC_ZMINIMUM" length="10" name="/BIC/ZMINIMUM" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_Ip2nsUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nskTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Old Warranty Grade C" comment="Old Warranty Grade Code (Ship-to)" label="_BIC_ZOLD_WTY" length="20" name="/BIC/ZOLD_WTY" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ns0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ntETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Original Item Price" comment="Original Item Price Apply Flag" label="_BIC_ZORGAFG" length="1" name="/BIC/ZORGAFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ntUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2ntkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Palletizaton Flag" comment="Palletizaton Flag" label="_BIC_ZPALFG" length="1" name="/BIC/ZPALFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nt0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nuETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Part Return Days" comment="Part Return Days" label="_BIC_ZPART_RET" length="5" name="/BIC/ZPART_RET" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2nuUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nukTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Place" comment="Customer Place" label="_BIC_ZPLACE" length="30" name="/BIC/ZPLACE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nu0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nvETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Previous Subsidiary" comment="Previous Subsidiary (Ship-to)" label="_BIC_ZPREVIOUS" length="20" name="/BIC/ZPREVIOUS" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nvUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nvkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Profile (Bill-to)" comment="Profile (Bill-to)" label="_BIC_ZPROFILE" length="20" name="/BIC/ZPROFILE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nv0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nwETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Purchase Subsidiary" comment="Purchase Subsidiary AU (Bill-to)" label="_BIC_ZPURCHASE" length="10" name="/BIC/ZPURCHASE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nwUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nwkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Selling Price Roundi" comment="Selling Price Rounding Rule (Bill-to)" label="_BIC_ZSELLING" length="20" name="/BIC/ZSELLING" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nw0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nxETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Ship Booking Flag" comment="Ship Booking Flag" label="_BIC_ZSHIPBFG" length="1" name="/BIC/ZSHIPBFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nxUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nxkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Ship Method Code" comment="Ship Method Code" label="_BIC_ZSHIPMCD" length="20" name="/BIC/ZSHIPMCD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nx0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nyETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Shipping Method" comment="Shipping Method" label="_BIC_ZSHIPM" length="20" name="/BIC/ZSHIPM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nyUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nykTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="SO Expiry Calculate" comment="SO Expiry Calculate Type" label="_BIC_ZSEXPIRTP" length="10" name="/BIC/ZSEXPIRTP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2ny0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nzETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Expiry Days (Bill-to" comment="Expiry Days (Bill-to)" label="_BIC_ZEXPIRBT" length="10" name="/BIC/ZEXPIRBT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nzUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2nzkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="STK Rcv Ratio Calcul" comment="STK Rcv Ratio Calculate Day (Bill-to)" label="_BIC_ZSTK_RCV" length="5" name="/BIC/ZSTK_RCV" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2nz0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n0ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer Store Numbe" comment="Customer Store Number" label="_BIC_ZCSTORENM" length="50" name="/BIC/ZCSTORENM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n0UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n0kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Software Version Fla" comment="Software Version Flag" label="_BIC_ZSVFG" length="1" name="/BIC/ZSVFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n00TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n1ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Swedish Chemical Tax" comment="Swedish Chemical Tax" label="_BIC_ZSWEDISH" length="20" name="/BIC/ZSWEDISH" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n1UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n1kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Tallgate Flag" comment="Tallgate Flag" label="_BIC_ZTALFG" length="1" name="/BIC/ZTALFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n10TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n2ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Territory Code" comment="Territory Code" label="_BIC_ZTERRITOR" length="20" name="/BIC/ZTERRITOR" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n2UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n2kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="TMS Interface Flag" comment="TMS Interface Flag" label="_BIC_ZTMSIFG" length="1" name="/BIC/ZTMSIFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n20TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n3ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Trans Shipment Flag" comment="Trans Shipment Flag (Ship-to)" label="_BIC_ZTRNSHFG" length="1" name="/BIC/ZTRNSHFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n3UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n3kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="TV License" comment="TV License" label="_BIC_ZTVLICEN" length="20" name="/BIC/ZTVLICEN" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n30TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n4ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Usage" comment="Usage" label="_BIC_ZUSAGE" length="20" name="/BIC/ZUSAGE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n4UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n4kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Warranty Claim Hold" comment="Warranty Claim Hold Flag (Ship-to)" label="_BIC_ZWARCHFG" length="1" name="/BIC/ZWARCHFG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n40TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n5ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Warranty Grade Code" comment="Warranty Grade Code (Ship-to)" label="_BIC_ZWTY_GRAD" length="20" name="/BIC/ZWTY_GRAD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n5UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n5kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Warranty Reference S" comment="Warranty Reference Ship-to" label="_BIC_ZWTY_REFE" length="20" name="/BIC/ZWTY_REFE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n50TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n6ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Bill-to Organization" comment="Bill-to Organization" label="_BIC_ZBILLTOO" length="10" name="/BIC/ZBILLTOO" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n6UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n6kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Legal Department" comment="Legal Department" label="_BIC_ZDEPARTME" length="20" name="/BIC/ZDEPARTME" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n60TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n7ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Shipping Type" comment="Shipping Type" label="_BIC_ZVSART" length="2" name="/BIC/ZVSART" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n7UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n7kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Special Proc. Indica" comment="Special Processing Indicator" label="_BIC_ZSDABW" length="4" name="/BIC/ZSDABW" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n70TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n8ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Department Code" comment="Department Code" label="_BIC_ZZDEPT" length="5" name="/BIC/ZZDEPT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n8UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n8kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Ship Group" comment="Ship Group" label="_BIC_ZSHIPG" length="10" name="/BIC/ZSHIPG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n80TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n9ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Ship Group Default" comment="Ship Group Default" label="_BIC_ZSHIPGD" length="10" name="/BIC/ZSHIPGD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n9UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n9kTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Same Address Code" comment="Same Address Code" label="_BIC_ZSAMEADD" length="10" name="/BIC/ZSAMEADD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n90TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n-ETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Company Code" comment="Company Code" label="_COMP_CODE" length="4" name="0COMP_CODE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2n-UTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n-kTIEe-9oMPNevfcRQ"/>
+      </feature>
     </BWInfoObjects>
-    <BWInfoObjects id="_V7vkAkJrEe-IHs245fJtvg" innerIOType="HIERARCHY" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_WpzkPkJrEe-IHs245fJtvg">
-      <feature businessName="ID of Child Node" comment="Child ID of Hierarchy Node" label="CHILDID" length="8" name="CHILDID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkP0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Valid From" comment="Valid From" label="DATEFROM" length="8" name="DATEFROM" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_WpzkQEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Valid from" comment="Valid-From Date" label="DATEFROM1" length="8" name="DATEFROM" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_WpzkQUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Valid To" comment="Valid To" label="DATETO" length="8" name="DATETO" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_WpzkQkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="To" comment="Valid-to date" label="DATETO1" length="8" name="DATETO" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_WpzkQ0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Internal hierarchy ID" comment="Internal hierarchy ID (unique ID)" key="true" label="HIEID" length="25" name="HIEID" sourceType="STRING" talendType="id_String" xmi:id="_WpzkREJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Hierarchy name" comment="Hierarchy name" label="HIENM" length="30" name="HIENM" sourceType="STRING" talendType="id_String" xmi:id="_WpzkRUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="InfoObject" comment="InfoObject" label="IOBJNM" length="30" name="IOBJNM" sourceType="STRING" talendType="id_String" xmi:id="_WpzkRkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Link ID" comment="Link indicator for a hierarchy node" label="LINK" length="1" name="LINK" sourceType="STRING" talendType="id_String" xmi:id="_WpzkR0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ID of the next node" comment="Next ID of a hierarchy node" label="NEXTID" length="8" name="NEXTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkSEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Hierarchy node no." comment="Internal ID number of a hierarchy node" key="true" label="NODEID" length="8" name="NODEID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkSUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Node Name" comment="Name of the Hierarchy Node (String)" label="NODENAME" length="1333" name="NODENAME" sourceType="STRING" talendType="id_String" xmi:id="_WpzkSkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="ID of the superior node" comment="Parent ID for a hierarchy node" label="PARENTID" length="8" name="PARENTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkS0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Level of a node in the hierarchy" comment="Level of a hierarchy node" label="TLEVEL" length="2" name="TLEVEL" sourceType="INTEGER" talendType="id_Integer" xmi:id="_WpzkTEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Hierarchy version" comment="Hierarchy version" label="VERSION" length="3" name="VERSION" sourceType="STRING" talendType="id_String" xmi:id="_WpzkTUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
+    <BWInfoObjects id="_V7vkAkJrEe-IHs245fJtvg" innerIOType="HIERARCHY" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2n-0TIEe-9oMPNevfcRQ">
+      <feature businessName="ID of Child Node" comment="Child ID of Hierarchy Node" label="CHILDID" length="8" name="CHILDID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2n_ETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n_UTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Valid From" comment="Valid From" label="DATEFROM" length="8" name="DATEFROM" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2n_kTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2n_0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Valid from" comment="Valid-From Date" label="DATEFROM1" length="8" name="DATEFROM" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oAETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oAUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Valid To" comment="Valid To" label="DATETO" length="8" name="DATETO" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oAkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oA0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="To" comment="Valid-to date" label="DATETO1" length="8" name="DATETO" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oBETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oBUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Internal hierarchy ID" comment="Internal hierarchy ID (unique ID)" key="true" label="HIEID" length="25" name="HIEID" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oBkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oB0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Hierarchy name" comment="Hierarchy name" label="HIENM" length="30" name="HIENM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oCETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oCUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="InfoObject" comment="InfoObject" label="IOBJNM" length="30" name="IOBJNM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oCkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oC0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Link ID" comment="Link indicator for a hierarchy node" label="LINK" length="1" name="LINK" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oDETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oDUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ID of the next node" comment="Next ID of a hierarchy node" label="NEXTID" length="8" name="NEXTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oDkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oD0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Hierarchy node no." comment="Internal ID number of a hierarchy node" key="true" label="NODEID" length="8" name="NODEID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oEETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oEUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Node Name" comment="Name of the Hierarchy Node (String)" label="NODENAME" length="1333" name="NODENAME" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oEkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oE0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="ID of the superior node" comment="Parent ID for a hierarchy node" label="PARENTID" length="8" name="PARENTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oFETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oFUTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Level of a node in the hierarchy" comment="Level of a hierarchy node" label="TLEVEL" length="2" name="TLEVEL" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oFkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oF0TIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Hierarchy version" comment="Hierarchy version" label="VERSION" length="3" name="VERSION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oGETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oGUTIEe-9oMPNevfcRQ"/>
+      </feature>
     </BWInfoObjects>
-    <BWInfoObjects id="_V7vkA0JrEe-IHs245fJtvg" innerIOType="TEXT" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_WpzkTkJrEe-IHs245fJtvg">
-      <feature businessName="Division" comment="Division" key="true" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_WpzkT0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Distribution Channel" comment="Distribution Channel" key="true" label="_DISTR_CHAN" length="2" name="0DISTR_CHAN" sourceType="STRING" talendType="id_String" xmi:id="_WpzkUEJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Sales Organization" comment="Sales Organization" key="true" label="_SALESORG" length="4" name="0SALESORG" sourceType="STRING" talendType="id_String" xmi:id="_WpzkUUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Customer" comment="Customer number (sales view)" key="true" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_WpzkUkJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
-      <feature businessName="Medium description" comment="Medium description" label="_TXTMD" length="40" name="0TXTMD" sourceType="STRING" talendType="id_String" xmi:id="_WpzkU0JrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
+    <BWInfoObjects id="_V7vkA0JrEe-IHs245fJtvg" innerIOType="TEXT" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oGkTIEe-9oMPNevfcRQ">
+      <feature businessName="Division" comment="Division" key="true" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oG0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oHETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Distribution Channel" comment="Distribution Channel" key="true" label="_DISTR_CHAN" length="2" name="0DISTR_CHAN" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oHUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oHkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Sales Organization" comment="Sales Organization" key="true" label="_SALESORG" length="4" name="0SALESORG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oH0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oIETIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Customer" comment="Customer number (sales view)" key="true" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oIUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oIkTIEe-9oMPNevfcRQ"/>
+      </feature>
+      <feature businessName="Medium description" comment="Medium description" label="_TXTMD" length="40" name="0TXTMD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oI0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oJETIEe-9oMPNevfcRQ"/>
+      </feature>
     </BWInfoObjects>
-    <BWInfoObjects id="_V7vkAEJrEe-IHs245fJtvg" innerIOType="BASIC" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_WpzkVEJrEe-IHs245fJtvg">
-      <feature businessName="" comment="Customer number (sales view)" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_WpzkVUJrEe-IHs245fJtvg" xsi:type="TalendMetadata:SAPBWTableField"/>
+    <BWInfoObjects id="_V7vkAEJrEe-IHs245fJtvg" innerIOType="BASIC" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oJUTIEe-9oMPNevfcRQ">
+      <feature businessName="" comment="Customer number (sales view)" label="_CUST_SALES" length="10" name="0CUST_SALES" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oJkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_Ip2oJ0TIEe-9oMPNevfcRQ"/>
+      </feature>
+    </BWInfoObjects>
+    <BWInfoObjects id="_IAfhMUTIEe-9oMPNevfcRQ" innerIOType="ATTRIBUTE" label="_0MATERIAL" modelType="InfoObject" name="0MATERIAL" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oKETIEe-9oMPNevfcRQ">
+      <feature businessName="Material" comment="Material" key="true" label="_MATERIAL" length="40" name="0MATERIAL" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oKUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Base Unit of Measure" comment="Base Unit of Measure" label="_BASE_UOM" length="3" name="0BASE_UOM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oKkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Created On" comment="Date on which the record was created" label="_CREATEDON" length="8" name="0CREATEDON" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oK0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="EAN/UPC" comment="European Article Number/Universal Product Code" label="_EANUPC" length="18" name="0EANUPC" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oLETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Gross Weight" comment="Gross Weight" label="_GROSS_WT" length="17" name="0GROSS_WT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_Ip2oLUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Weight unit" comment="Weight unit" label="_UNIT_OF_WT" length="3" name="0UNIT_OF_WT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oLkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Material Category" comment="Material Category" label="_MATL_CAT" length="2" name="0MATL_CAT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oL0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Material Group" comment="Material Group" label="_MATL_GROUP" length="9" name="0MATL_GROUP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oMETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Net Weight" comment="Net Weight of Item" label="_NET_WEIGHT" length="17" name="0NET_WEIGHT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_Ip2oMUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Prod.hierarchy" comment="Product Hierarchy" label="_PROD_HIER" length="18" name="0PROD_HIER" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oMkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Size/Dimension" comment="Size/Dimension" label="_SIZE_DIM" length="32" name="0SIZE_DIM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oM0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Volume" comment="Volume" label="_VOLUME" length="17" name="0VOLUME" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_Ip2oNETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Volume unit" comment="Volume unit" label="_VOLUMEUNIT" length="3" name="0VOLUMEUNIT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oNUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Mat.Specification" comment="Material Specification" label="_BIC_ZSPECIPRD" length="150" name="/BIC/ZSPECIPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oNkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Air-con. Separation" comment="Air-con. Separation Type" label="_BIC_ZAIRSEPRT" length="1" name="/BIC/ZAIRSEPRT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oN0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Brand Type" comment="Brand Type" label="_BIC_ZBRTYEPRD" length="1" name="/BIC/ZBRTYEPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oOETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="CP Unit Cd." comment="CP Unit Code" label="_BIC_ZCPUNC" length="10" name="/BIC/ZCPUNC" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oOUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="FA Type" comment="FA Type" label="_BIC_ZFATP_PRD" length="1" name="/BIC/ZFATP_PRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oOkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Feature" comment="Feature" label="_BIC_ZFETURPRD" length="20" name="/BIC/ZFETURPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oO0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Company Code" comment="Company Code" label="_COMP_CODE" length="4" name="0COMP_CODE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oPETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="HQ BA" comment="HQ BA" label="_BIC_ZBA_HQ" length="4" name="/BIC/ZBA_HQ" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oPUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Logistics Barcode ID" comment="Logistics Barcode ID" label="_BIC_ZLEANDPRD" length="5" name="/BIC/ZLEANDPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oPkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Mapping Model" comment="Mapping Model" label="_BIC_ZMAPMO" length="40" name="/BIC/ZMAPMO" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oP0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Old material number" comment="Old material number" label="_BIC_ZOLDMAT" length="40" name="/BIC/ZOLDMAT" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oQETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Pack Code" comment="Pack Code" label="_BIC_ZPACKCDPR" length="10" name="/BIC/ZPACKCDPR" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oQUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Previous Model" comment="Previous Model" label="_BIC_ZPMATNPRD" length="40" name="/BIC/ZPMATNPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oQkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Product Type" comment="Product Type" label="_BIC_ZPRODTYPE" length="4" name="/BIC/ZPRODTYPE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oQ0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Sales Model Code" comment="Sales Model Code" label="_BIC_ZMODELPRD" length="20" name="/BIC/ZMODELPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oRETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Set Part No" comment="Set Part No" label="_BIC_ZSPTNOPRD" length="15" name="/BIC/ZSPTNOPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oRUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Sales Model Suffix C" comment="Sales Model Suffix CD" label="_BIC_ZSMDLSFFX" length="20" name="/BIC/ZSMDLSFFX" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oRkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="UPC Code" comment="UPC Code" label="_BIC_ZUPCCDPRD" length="30" name="/BIC/ZUPCCDPRD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oR0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Packaging Mat. Type" comment="Packaging Material Type" label="_BIC_ZVHART" length="4" name="/BIC/ZVHART" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oSETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Division" comment="Division" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oSUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Product" comment="Product" label="_CRM_PROD" length="32" name="0CRM_PROD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oSkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Material Type" comment="Material Type" label="_MATL_TYPE" length="4" name="0MATL_TYPE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oS0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Gen. item cat. grp" comment="General item category group" label="_BIC_ZMTPOS" length="4" name="/BIC/ZMTPOS" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oTETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="EAN category" comment="Category of International Article Number (EAN)" label="_BIC_ZNUMTP" length="2" name="/BIC/ZNUMTP" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oTUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="DChain-spec. status" comment="DChain-spec. status" label="_BIC_ZVMSTA" length="2" name="/BIC/ZVMSTA" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oTkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Product hier.lev. 1" comment="Product hierarchy level 1" label="_PRODH1" length="18" name="0PRODH1" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oT0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Prod. hier. level 2" comment="Product hierarchy level 2" label="_PRODH2" length="18" name="0PRODH2" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oUETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Prod. hier. level 3" comment="Product hierarchy level 3" label="_PRODH3" length="18" name="0PRODH3" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oUUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Prod. hier. level 4" comment="Product hierarchy level 4" label="_PRODH4" length="18" name="0PRODH4" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oUkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Sales Model Flag(C)" comment="Sales Model Flag(C)" label="_BIC_ZD_SAFLG" length="1" name="/BIC/ZD_SAFLG" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oU0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Quotation Item" comment="Quotation Item" label="_BIC_ZQUTITMPR" length="40" name="/BIC/ZQUTITMPR" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oVETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="X-Plant Status" comment="Cross-Plant Material Status" label="_BIC_ZMSTAE" length="2" name="/BIC/ZMSTAE" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oVUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Last Change" comment="Date of Last Change" label="_BIC_ZLAEDA" length="8" name="/BIC/ZLAEDA" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oVkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Time of Last Change" comment="Last Chgd. Time" label="_BIC_ZLASTCHTM" length="6" name="/BIC/ZLASTCHTM" pattern="&quot;HH:mm:ss&quot;" sourceType="TIME" talendType="id_Date" xmi:id="_Ip2oV0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Changed By" comment="Name of Person Who Changed Object" label="_BIC_ZAENAM" length="12" name="/BIC/ZAENAM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oWETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+    </BWInfoObjects>
+    <BWInfoObjects id="_IAfhMkTIEe-9oMPNevfcRQ" innerIOType="HIERARCHY" label="_0MATERIAL" modelType="InfoObject" name="0MATERIAL" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oWUTIEe-9oMPNevfcRQ">
+      <feature businessName="ID of Child Node" comment="Child ID of Hierarchy Node" label="CHILDID" length="8" name="CHILDID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oWkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Valid from" comment="Valid-From Date" label="DATEFROM" length="8" name="DATEFROM" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oW0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="To" comment="Valid-to date" label="DATETO" length="8" name="DATETO" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Ip2oXETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Internal hierarchy ID" comment="Internal hierarchy ID (unique ID)" key="true" label="HIEID" length="25" name="HIEID" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oXUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Hierarchy name" comment="Hierarchy name" label="HIENM" length="30" name="HIENM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oXkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="InfoObject" comment="InfoObject" label="IOBJNM" length="30" name="IOBJNM" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oX0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Link ID" comment="Link indicator for a hierarchy node" label="LINK" length="1" name="LINK" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oYETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="ID of the next node" comment="Next ID of a hierarchy node" label="NEXTID" length="8" name="NEXTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oYUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Hierarchy node no." comment="Internal ID number of a hierarchy node" key="true" label="NODEID" length="8" name="NODEID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oYkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Node Name" comment="Name of the Hierarchy Node (String)" label="NODENAME" length="1333" name="NODENAME" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oY0TIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="ID of the superior node" comment="Parent ID for a hierarchy node" label="PARENTID" length="8" name="PARENTID" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oZETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Level of a node in the hierarchy" comment="Level of a hierarchy node" label="TLEVEL" length="2" name="TLEVEL" sourceType="INTEGER" talendType="id_Integer" xmi:id="_Ip2oZUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Hierarchy version" comment="Hierarchy version" label="VERSION" length="3" name="VERSION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oZkTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+    </BWInfoObjects>
+    <BWInfoObjects id="_IAfhM0TIEe-9oMPNevfcRQ" innerIOType="TEXT" label="_0MATERIAL" modelType="InfoObject" name="0MATERIAL" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oZ0TIEe-9oMPNevfcRQ">
+      <feature businessName="Material" comment="Material" key="true" label="_MATERIAL" length="40" name="0MATERIAL" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oaETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Language Key" comment="Language Key" key="true" label="_LANGU" length="1" name="0LANGU" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oaUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+      <feature businessName="Medium description" comment="Medium description" label="_TXTMD" length="40" name="0TXTMD" sourceType="STRING" talendType="id_String" xmi:id="_Ip2oakTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
+    </BWInfoObjects>
+    <BWInfoObjects id="_IAfhMETIEe-9oMPNevfcRQ" innerIOType="BASIC" label="_0MATERIAL" modelType="InfoObject" name="0MATERIAL" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2oa0TIEe-9oMPNevfcRQ">
+      <feature businessName="" comment="Material" label="_MATERIAL" length="40" name="0MATERIAL" sourceType="STRING" talendType="id_String" xmi:id="_Ip2obETIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField"/>
     </BWInfoObjects>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage dataManager="_ONae0EJJEe-IHs245fJtvg" name="SRC_SAPBW" xmi:id="_m9fz0EJ2Ee-IHs245fJtvg">
@@ -2166,15 +2467,15 @@
       </feature>
     </ownedElement>
   </TalendMetadata:GenericPackage>
-  <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
   <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_eLVUEEJJEe-IHs245fJtvg" xmi:id="_eLpdIEJJEe-IHs245fJtvg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a3139d6c-70e6-4a99-9c06-0c824e65020d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a2XQKJ0HRzgoGSVIQ1pRnNNZNDWcy3wv9oge1DZ86Po7Kb5SkHSEVzIhV6C8UEE4Td6XJuMwOW15&#13;
-PH9N9gqHyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cd7bd9e9-907b-4b85-845a-3d0d99e4d8de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fEwqNH1g5CG7Y+u0Q8bRrD3viCc4f/xy1MhmgSnLEUJ+b0Y6m70l+b/hMlBQ9A6rtHnZ0QSkZU+7&#13;
-IR3aEQ0Bag==</DigestValue></Reference></SignedInfo><SignatureValue>av+VBKs6ObRP/vvncPQ9JNjuu3JCCd7Ms1zjtnG0tLRDIjZAn9NK4srYawSyzEbVWN9ly5pkhpkW&#13;
-Q9Vvb/pJQrkhGBuiSUYfPEgTyuCdeHMYYqoeVgVyrGkSrJh07Jh5xPWHIn7teZmMtw7WSyg93qQs&#13;
-jAuqUMEraHCZIoF1dv5sNHH7zBV6V0l5ojdACFicCapsohRbp2Mr9aIH0nZpBukgY9X95BNo0V4z&#13;
-hv/qkmhHGuQxi6yoTmXYrFnh1xCBgfzLcsm4282loQ5krCDhtNE1jpS3U4tIQPTPSWoqK+jU0tDQ&#13;
-wDcAc2xPKz3Nr9qEsQgXR7Gc30F9GR7LQwAe3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7aa642ca-e600-4fae-81fa-2c5017d39788"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cLn3Vzjo4lCn1b2wT7I67Umv7MYnotjS6HJxuKRlO8MHudFSm3MDa0L2QVba9dcMQEETIA/fHT4N&#13;
+IO4FOz2Aww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_81ab4a9b-3bf4-4556-9814-84390575bfe1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g6Kv8A/7jzUcvVNb1Js/lJpduE8e8qHXOYzCe4LO34avAsa3D+txmE4qJyqExAXuV6UWzEzYIxS0&#13;
+xxQf+X1NwQ==</DigestValue></Reference></SignedInfo><SignatureValue>pHut7MoJq4aaR6Fv5ZC/LiFJD6nrhJjP7d0gdFetjEXlBBuSS3GsJwmZB19ljadBuQ8PeTR3bZ5X&#13;
+Hwp0EcgiSbD4h4IYA3iVAjZ9LyINgRPJRPR1Vgw70cWWU1I9yu9EXOnxRUBKqQhcdp+U5nyfXEZ7&#13;
+4rArx4H9HHgvWw/6k2Dhksjb46+OlwahPtTX855ZhHpVVJlpkV2R45gJ2UMGQpsA40UvxP2Z159E&#13;
+eQqOmgli5txaqdUyuyDgDA0Z7fRDqxpQp/cxQYGuCxeg9vazPTVFjY14DgqAFXimyi9xjjy4Ya67&#13;
+9CN4XjHoL8lh3KZ0w8XMCO5Ijg0fYx1eHyXKBg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2196,4 +2497,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cd7bd9e9-907b-4b85-845a-3d0d99e4d8de" Target="#_a3139d6c-70e6-4a99-9c06-0c824e65020d"><Timestamp>2024-07-18 05:38:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_81ab4a9b-3bf4-4556-9814-84390575bfe1" Target="#_7aa642ca-e600-4fae-81fa-2c5017d39788"><Timestamp>2024-07-18 05:39:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
