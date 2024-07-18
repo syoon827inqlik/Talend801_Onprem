@@ -123,9 +123,7 @@
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
     <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - _0CUST_SALES"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;0CUST_SALES&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;0MATERIAL&quot;"/>
     <elementParameter field="CLOSED_LIST" name="INFO_OBJECT_TYPE" value="ATTRIBUTE"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -136,100 +134,55 @@
       <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="_0CUST_SALES" name="tSAPInfoObjectInput_1">
-      <column comment="Division" key="true" length="2" name="_DIVISION" nullable="true" originalDbColumnName="0DIVISION" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Distribution Channel" key="true" length="2" name="_DISTR_CHAN" nullable="true" originalDbColumnName="0DISTR_CHAN" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales Organization" key="true" length="4" name="_SALESORG" nullable="true" originalDbColumnName="0SALESORG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer number (sales view)" key="true" length="10" name="_CUST_SALES" nullable="true" originalDbColumnName="0CUST_SALES" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Account Assignment Group" key="false" length="2" name="_ACCNT_ASGN" nullable="true" originalDbColumnName="0ACCNT_ASGN" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS Customer Group 10" key="false" length="3" name="_AF_CGR10" nullable="true" originalDbColumnName="0AF_CGR10" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS Customer Group 6" key="false" length="3" name="_AF_CGR6" nullable="true" originalDbColumnName="0AF_CGR6" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS Customer Group 7" key="false" length="3" name="_AF_CGR7" nullable="true" originalDbColumnName="0AF_CGR7" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS Customer Group 8" key="false" length="3" name="_AF_CGR8" nullable="true" originalDbColumnName="0AF_CGR8" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS Customer Group 9" key="false" length="3" name="_AF_CGR9" nullable="true" originalDbColumnName="0AF_CGR9" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="AFS VAS Customer Group" key="false" length="3" name="_AF_VASCG" nullable="true" originalDbColumnName="0AF_VASCG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Business Partner: CRM Sales View" key="false" length="10" name="_CRM_BP_SAL" nullable="true" originalDbColumnName="0CRM_BP_SAL" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales Organization CRM" key="false" length="8" name="_CRM_SALORG" nullable="true" originalDbColumnName="0CRM_SALORG" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
-      <column comment="Customer classification (ABC analysis)" key="false" length="2" name="_CUST_CLA" nullable="true" originalDbColumnName="0CUST_CLA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group" key="false" length="2" name="_CUST_GROUP" nullable="true" originalDbColumnName="0CUST_GROUP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group 1" key="false" length="3" name="_CUST_GRP1" nullable="true" originalDbColumnName="0CUST_GRP1" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group 2" key="false" length="3" name="_CUST_GRP2" nullable="true" originalDbColumnName="0CUST_GRP2" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group 3" key="false" length="3" name="_CUST_GRP3" nullable="true" originalDbColumnName="0CUST_GRP3" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group 4" key="false" length="3" name="_CUST_GRP4" nullable="true" originalDbColumnName="0CUST_GRP4" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Group 5" key="false" length="3" name="_CUST_GRP5" nullable="true" originalDbColumnName="0CUST_GRP5" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Credit Control Area" key="false" length="4" name="_C_CTR_AREA" nullable="true" originalDbColumnName="0C_CTR_AREA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Incoterms part 1" key="false" length="3" name="_INCOTERMS" nullable="true" originalDbColumnName="0INCOTERMS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Incoterms part 2" key="false" length="28" name="_IMOINCOTM2" nullable="true" originalDbColumnName="0IMOINCOTM2" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant" key="false" length="4" name="_PLANT" nullable="true" originalDbColumnName="0PLANT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Terms of Payment Key" key="false" length="4" name="_PMNTTRMS" nullable="true" originalDbColumnName="0PMNTTRMS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales District" key="false" length="6" name="_SALES_DIST" nullable="true" originalDbColumnName="0SALES_DIST" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales Group" key="false" length="3" name="_SALES_GRP" nullable="true" originalDbColumnName="0SALES_GRP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales Office" key="false" length="4" name="_SALES_OFF" nullable="true" originalDbColumnName="0SALES_OFF" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Indicator: Object Deleted from Source System" key="false" length="1" name="_FLGDELETED" nullable="true" originalDbColumnName="0FLGDELETED" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Sales Channel" key="false" length="10" name="_BIC_ZCHCODE" nullable="true" originalDbColumnName="/BIC/ZCHCODE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant (Own or External)" key="false" length="4" name="_BIC_ZWRK1_CSA" nullable="true" originalDbColumnName="/BIC/ZWRK1_CSA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant (Own or External)" key="false" length="4" name="_BIC_ZWRK2_CSA" nullable="true" originalDbColumnName="/BIC/ZWRK2_CSA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant (Own or External)" key="false" length="4" name="_BIC_ZWRK3_CSA" nullable="true" originalDbColumnName="/BIC/ZWRK3_CSA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant (Own or External)" key="false" length="4" name="_BIC_ZWRK4_CSA" nullable="true" originalDbColumnName="/BIC/ZWRK4_CSA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Plant (Own or External)" key="false" length="4" name="_BIC_ZWRK5_CSA" nullable="true" originalDbColumnName="/BIC/ZWRK5_CSA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Origin Price flag" key="false" length="1" name="_BIC_ZOPRIFG" nullable="true" originalDbColumnName="/BIC/ZOPRIFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ASC Group ID/Code (Ship-to)" key="false" length="20" name="_BIC_ZASC_GROU" nullable="true" originalDbColumnName="/BIC/ZASC_GROU" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ASN Transmission" key="false" length="20" name="_BIC_ZASN_TRAN" nullable="true" originalDbColumnName="/BIC/ZASN_TRAN" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Carrier" key="false" length="30" name="_BIC_ZCARRIER" nullable="true" originalDbColumnName="/BIC/ZCARRIER" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="City Type" key="false" length="20" name="_BIC_ZCITY_TYP" nullable="true" originalDbColumnName="/BIC/ZCITY_TYP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Commercial Biz." key="false" length="20" name="_BIC_ZCOMMERCI" nullable="true" originalDbColumnName="/BIC/ZCOMMERCI" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Serial Flag" key="false" length="1" name="_BIC_ZCUSTSFG" nullable="true" originalDbColumnName="/BIC/ZCUSTSFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Allowance Hour" key="false" length="10" name="_BIC_ZCUSTAH" nullable="true" originalDbColumnName="/BIC/ZCUSTAH" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Allowance Minute" key="false" length="10" name="_BIC_ZCUSTAM" nullable="true" originalDbColumnName="/BIC/ZCUSTAM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer Clearance Flag" key="false" length="1" name="_BIC_ZCUSTCFG" nullable="true" originalDbColumnName="/BIC/ZCUSTCFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Customer PO Duplication Check Flag" key="false" length="1" name="_BIC_ZCUSTPDFG" nullable="true" originalDbColumnName="/BIC/ZCUSTPDFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Digital Sales Expert Flag" key="false" length="1" name="_BIC_ZDGSEFG" nullable="true" originalDbColumnName="/BIC/ZDGSEFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Drop Ship Flag" key="false" length="1" name="_BIC_ZDROPSFG" nullable="true" originalDbColumnName="/BIC/ZDROPSFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Environmental Fee Flag" key="false" length="1" name="_BIC_ZEVFEEFG" nullable="true" originalDbColumnName="/BIC/ZEVFEEFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Environmental Fee Country" key="false" length="3" name="_BIC_ZEVFECNTY" nullable="true" originalDbColumnName="/BIC/ZEVFECNTY" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Free Zone Order Type" key="false" length="20" name="_BIC_ZFREE_ZON" nullable="true" originalDbColumnName="/BIC/ZFREE_ZON" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Hertz Type" key="false" length="20" name="_BIC_ZHERTZ_TY" nullable="true" originalDbColumnName="/BIC/ZHERTZ_TY" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Inspection Type" key="false" length="20" name="_BIC_ZINSPECTI" nullable="true" originalDbColumnName="/BIC/ZINSPECTI" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Installation Flag" key="false" length="1" name="_BIC_ZINSTFG" nullable="true" originalDbColumnName="/BIC/ZINSTFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Invoice Print Flag" key="false" length="1" name="_BIC_ZINVPFG" nullable="true" originalDbColumnName="/BIC/ZINVPFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Max Order Quantity" key="false" length="10" name="_BIC_ZMAX_ORDE" nullable="true" originalDbColumnName="/BIC/ZMAX_ORDE" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="Minimum Amount" key="false" length="10" name="_BIC_ZMINIMUM" nullable="true" originalDbColumnName="/BIC/ZMINIMUM" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="Old Warranty Grade Code (Ship-to)" key="false" length="20" name="_BIC_ZOLD_WTY" nullable="true" originalDbColumnName="/BIC/ZOLD_WTY" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Original Item Price Apply Flag" key="false" length="1" name="_BIC_ZORGAFG" nullable="true" originalDbColumnName="/BIC/ZORGAFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Palletizaton Flag" key="false" length="1" name="_BIC_ZPALFG" nullable="true" originalDbColumnName="/BIC/ZPALFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Part Return Days" key="false" length="5" name="_BIC_ZPART_RET" nullable="true" originalDbColumnName="/BIC/ZPART_RET" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
-      <column comment="Customer Place" key="false" length="30" name="_BIC_ZPLACE" nullable="true" originalDbColumnName="/BIC/ZPLACE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Previous Subsidiary (Ship-to)" key="false" length="20" name="_BIC_ZPREVIOUS" nullable="true" originalDbColumnName="/BIC/ZPREVIOUS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Profile (Bill-to)" key="false" length="20" name="_BIC_ZPROFILE" nullable="true" originalDbColumnName="/BIC/ZPROFILE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Purchase Subsidiary AU (Bill-to)" key="false" length="10" name="_BIC_ZPURCHASE" nullable="true" originalDbColumnName="/BIC/ZPURCHASE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Selling Price Rounding Rule (Bill-to)" key="false" length="20" name="_BIC_ZSELLING" nullable="true" originalDbColumnName="/BIC/ZSELLING" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Ship Booking Flag" key="false" length="1" name="_BIC_ZSHIPBFG" nullable="true" originalDbColumnName="/BIC/ZSHIPBFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Ship Method Code" key="false" length="20" name="_BIC_ZSHIPMCD" nullable="true" originalDbColumnName="/BIC/ZSHIPMCD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Shipping Method" key="false" length="20" name="_BIC_ZSHIPM" nullable="true" originalDbColumnName="/BIC/ZSHIPM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="SO Expiry Calculate Type" key="false" length="10" name="_BIC_ZSEXPIRTP" nullable="true" originalDbColumnName="/BIC/ZSEXPIRTP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Expiry Days (Bill-to)" key="false" length="10" name="_BIC_ZEXPIRBT" nullable="true" originalDbColumnName="/BIC/ZEXPIRBT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="STK Rcv Ratio Calculate Day (Bill-to)" key="false" length="5" name="_BIC_ZSTK_RCV" nullable="true" originalDbColumnName="/BIC/ZSTK_RCV" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
-      <column comment="Customer Store Number" key="false" length="50" name="_BIC_ZCSTORENM" nullable="true" originalDbColumnName="/BIC/ZCSTORENM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Software Version Flag" key="false" length="1" name="_BIC_ZSVFG" nullable="true" originalDbColumnName="/BIC/ZSVFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Swedish Chemical Tax" key="false" length="20" name="_BIC_ZSWEDISH" nullable="true" originalDbColumnName="/BIC/ZSWEDISH" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Tallgate Flag" key="false" length="1" name="_BIC_ZTALFG" nullable="true" originalDbColumnName="/BIC/ZTALFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Territory Code" key="false" length="20" name="_BIC_ZTERRITOR" nullable="true" originalDbColumnName="/BIC/ZTERRITOR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="TMS Interface Flag" key="false" length="1" name="_BIC_ZTMSIFG" nullable="true" originalDbColumnName="/BIC/ZTMSIFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Trans Shipment Flag (Ship-to)" key="false" length="1" name="_BIC_ZTRNSHFG" nullable="true" originalDbColumnName="/BIC/ZTRNSHFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="TV License" key="false" length="20" name="_BIC_ZTVLICEN" nullable="true" originalDbColumnName="/BIC/ZTVLICEN" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Usage" key="false" length="20" name="_BIC_ZUSAGE" nullable="true" originalDbColumnName="/BIC/ZUSAGE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Warranty Claim Hold Flag (Ship-to)" key="false" length="1" name="_BIC_ZWARCHFG" nullable="true" originalDbColumnName="/BIC/ZWARCHFG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Warranty Grade Code (Ship-to)" key="false" length="20" name="_BIC_ZWTY_GRAD" nullable="true" originalDbColumnName="/BIC/ZWTY_GRAD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Warranty Reference Ship-to" key="false" length="20" name="_BIC_ZWTY_REFE" nullable="true" originalDbColumnName="/BIC/ZWTY_REFE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Bill-to Organization" key="false" length="10" name="_BIC_ZBILLTOO" nullable="true" originalDbColumnName="/BIC/ZBILLTOO" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Legal Department" key="false" length="20" name="_BIC_ZDEPARTME" nullable="true" originalDbColumnName="/BIC/ZDEPARTME" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Shipping Type" key="false" length="2" name="_BIC_ZVSART" nullable="true" originalDbColumnName="/BIC/ZVSART" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Special Processing Indicator" key="false" length="4" name="_BIC_ZSDABW" nullable="true" originalDbColumnName="/BIC/ZSDABW" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Department Code" key="false" length="5" name="_BIC_ZZDEPT" nullable="true" originalDbColumnName="/BIC/ZZDEPT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Ship Group" key="false" length="10" name="_BIC_ZSHIPG" nullable="true" originalDbColumnName="/BIC/ZSHIPG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Ship Group Default" key="false" length="10" name="_BIC_ZSHIPGD" nullable="true" originalDbColumnName="/BIC/ZSHIPGD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="Same Address Code" key="false" length="10" name="_BIC_ZSAMEADD" nullable="true" originalDbColumnName="/BIC/ZSAMEADD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="_0MATERIAL" name="tSAPInfoObjectInput_1">
+      <column comment="Material" key="true" length="40" name="_MATERIAL" nullable="true" originalDbColumnName="0MATERIAL" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Base Unit of Measure" key="false" length="3" name="_BASE_UOM" nullable="true" originalDbColumnName="0BASE_UOM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which the record was created" key="false" length="8" name="_CREATEDON" nullable="true" originalDbColumnName="0CREATEDON" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="European Article Number/Universal Product Code" key="false" length="18" name="_EANUPC" nullable="true" originalDbColumnName="0EANUPC" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Gross Weight" key="false" length="17" name="_GROSS_WT" nullable="true" originalDbColumnName="0GROSS_WT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Weight unit" key="false" length="3" name="_UNIT_OF_WT" nullable="true" originalDbColumnName="0UNIT_OF_WT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Category" key="false" length="2" name="_MATL_CAT" nullable="true" originalDbColumnName="0MATL_CAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="_MATL_GROUP" nullable="true" originalDbColumnName="0MATL_GROUP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Net Weight of Item" key="false" length="17" name="_NET_WEIGHT" nullable="true" originalDbColumnName="0NET_WEIGHT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Product Hierarchy" key="false" length="18" name="_PROD_HIER" nullable="true" originalDbColumnName="0PROD_HIER" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Size/Dimension" key="false" length="32" name="_SIZE_DIM" nullable="true" originalDbColumnName="0SIZE_DIM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Volume" key="false" length="17" name="_VOLUME" nullable="true" originalDbColumnName="0VOLUME" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Volume unit" key="false" length="3" name="_VOLUMEUNIT" nullable="true" originalDbColumnName="0VOLUMEUNIT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Specification" key="false" length="150" name="_BIC_ZSPECIPRD" nullable="true" originalDbColumnName="/BIC/ZSPECIPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Air-con. Separation Type" key="false" length="1" name="_BIC_ZAIRSEPRT" nullable="true" originalDbColumnName="/BIC/ZAIRSEPRT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Brand Type" key="false" length="1" name="_BIC_ZBRTYEPRD" nullable="true" originalDbColumnName="/BIC/ZBRTYEPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="CP Unit Code" key="false" length="10" name="_BIC_ZCPUNC" nullable="true" originalDbColumnName="/BIC/ZCPUNC" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="FA Type" key="false" length="1" name="_BIC_ZFATP_PRD" nullable="true" originalDbColumnName="/BIC/ZFATP_PRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Feature" key="false" length="20" name="_BIC_ZFETURPRD" nullable="true" originalDbColumnName="/BIC/ZFETURPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="Company Code" key="false" length="4" name="_COMP_CODE" nullable="true" originalDbColumnName="0COMP_CODE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="HQ BA" key="false" length="4" name="_BIC_ZBA_HQ" nullable="true" originalDbColumnName="/BIC/ZBA_HQ" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Logistics Barcode ID" key="false" length="5" name="_BIC_ZLEANDPRD" nullable="true" originalDbColumnName="/BIC/ZLEANDPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Mapping Model" key="false" length="40" name="_BIC_ZMAPMO" nullable="true" originalDbColumnName="/BIC/ZMAPMO" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Old material number" key="false" length="40" name="_BIC_ZOLDMAT" nullable="true" originalDbColumnName="/BIC/ZOLDMAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Pack Code" key="false" length="10" name="_BIC_ZPACKCDPR" nullable="true" originalDbColumnName="/BIC/ZPACKCDPR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Previous Model" key="false" length="40" name="_BIC_ZPMATNPRD" nullable="true" originalDbColumnName="/BIC/ZPMATNPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product Type" key="false" length="4" name="_BIC_ZPRODTYPE" nullable="true" originalDbColumnName="/BIC/ZPRODTYPE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Code" key="false" length="20" name="_BIC_ZMODELPRD" nullable="true" originalDbColumnName="/BIC/ZMODELPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Set Part No" key="false" length="15" name="_BIC_ZSPTNOPRD" nullable="true" originalDbColumnName="/BIC/ZSPTNOPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Suffix CD" key="false" length="20" name="_BIC_ZSMDLSFFX" nullable="true" originalDbColumnName="/BIC/ZSMDLSFFX" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="UPC Code" key="false" length="30" name="_BIC_ZUPCCDPRD" nullable="true" originalDbColumnName="/BIC/ZUPCCDPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Packaging Material Type" key="false" length="4" name="_BIC_ZVHART" nullable="true" originalDbColumnName="/BIC/ZVHART" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="_DIVISION" nullable="true" originalDbColumnName="0DIVISION" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product" key="false" length="32" name="_CRM_PROD" nullable="true" originalDbColumnName="0CRM_PROD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Type" key="false" length="4" name="_MATL_TYPE" nullable="true" originalDbColumnName="0MATL_TYPE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="General item category group" key="false" length="4" name="_BIC_ZMTPOS" nullable="true" originalDbColumnName="/BIC/ZMTPOS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Category of International Article Number (EAN)" key="false" length="2" name="_BIC_ZNUMTP" nullable="true" originalDbColumnName="/BIC/ZNUMTP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="DChain-spec. status" key="false" length="2" name="_BIC_ZVMSTA" nullable="true" originalDbColumnName="/BIC/ZVMSTA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 1" key="false" length="18" name="_PRODH1" nullable="true" originalDbColumnName="0PRODH1" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 2" key="false" length="18" name="_PRODH2" nullable="true" originalDbColumnName="0PRODH2" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 3" key="false" length="18" name="_PRODH3" nullable="true" originalDbColumnName="0PRODH3" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 4" key="false" length="18" name="_PRODH4" nullable="true" originalDbColumnName="0PRODH4" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Flag(C)" key="false" length="1" name="_BIC_ZD_SAFLG" nullable="true" originalDbColumnName="/BIC/ZD_SAFLG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Quotation Item" key="false" length="40" name="_BIC_ZQUTITMPR" nullable="true" originalDbColumnName="/BIC/ZQUTITMPR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cross-Plant Material Status" key="false" length="2" name="_BIC_ZMSTAE" nullable="true" originalDbColumnName="/BIC/ZMSTAE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date of Last Change" key="false" length="8" name="_BIC_ZLAEDA" nullable="true" originalDbColumnName="/BIC/ZLAEDA" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Last Chgd. Time" key="false" length="6" name="_BIC_ZLASTCHTM" nullable="true" originalDbColumnName="/BIC/ZLASTCHTM" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person Who Changed Object" key="false" length="12" name="_BIC_ZAENAM" nullable="true" originalDbColumnName="/BIC/ZAENAM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <additionalProperties key="innerIOType" value="ATTRIBUTE"/>
     </metadata>
   </node>
@@ -248,291 +201,246 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="out">
-      <column comment="" key="false" length="-1" name="_DIVISION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_DISTR_CHAN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALESORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_SALES" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_ACCNT_ASGN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR10" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR6" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR7" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR8" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR9" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_VASCG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CRM_BP_SAL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="_CRM_SALORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_CLA" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GROUP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP3" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP4" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP5" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_C_CTR_AREA" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_INCOTERMS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_IMOINCOTM2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_PLANT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_PMNTTRMS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALES_DIST" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALES_GRP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATERIAL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BASE_UOM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_CREATEDON" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_EANUPC" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_GROSS_WT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_UNIT_OF_WT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATL_CAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATL_GROUP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_NET_WEIGHT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_PROD_HIER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_SIZE_DIM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_VOLUME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_VOLUMEUNIT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZSPECIPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZAIRSEPRT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZBRTYEPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZCPUNC" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZFATP_PRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZFETURPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_COMP_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZBA_HQ" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZLEANDPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZMAPMO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZOLDMAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPACKCDPR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPMATNPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPRODTYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1._DIVISION " name="_DIVISION" type="id_String"/>
-        <mapperTableEntries expression="row1._DISTR_CHAN " name="_DISTR_CHAN" type="id_String"/>
-        <mapperTableEntries expression="row1._SALESORG " name="_SALESORG" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_SALES " name="_CUST_SALES" type="id_String"/>
-        <mapperTableEntries expression="row1._ACCNT_ASGN " name="_ACCNT_ASGN" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_CGR10 " name="_AF_CGR10" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_CGR6 " name="_AF_CGR6" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_CGR7 " name="_AF_CGR7" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_CGR8 " name="_AF_CGR8" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_CGR9 " name="_AF_CGR9" type="id_String"/>
-        <mapperTableEntries expression="row1._AF_VASCG " name="_AF_VASCG" type="id_String"/>
-        <mapperTableEntries expression="row1._CRM_BP_SAL " name="_CRM_BP_SAL" type="id_String"/>
-        <mapperTableEntries expression="row1._CRM_SALORG " name="_CRM_SALORG" type="id_Integer"/>
-        <mapperTableEntries expression="row1._CUST_CLA " name="_CUST_CLA" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GROUP " name="_CUST_GROUP" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GRP1 " name="_CUST_GRP1" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GRP2 " name="_CUST_GRP2" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GRP3 " name="_CUST_GRP3" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GRP4 " name="_CUST_GRP4" type="id_String"/>
-        <mapperTableEntries expression="row1._CUST_GRP5 " name="_CUST_GRP5" type="id_String"/>
-        <mapperTableEntries expression="row1._C_CTR_AREA " name="_C_CTR_AREA" type="id_String"/>
-        <mapperTableEntries expression="row1._INCOTERMS " name="_INCOTERMS" type="id_String"/>
-        <mapperTableEntries expression="row1._IMOINCOTM2 " name="_IMOINCOTM2" type="id_String"/>
-        <mapperTableEntries expression="row1._PLANT " name="_PLANT" type="id_String"/>
-        <mapperTableEntries expression="row1._PMNTTRMS " name="_PMNTTRMS" type="id_String"/>
-        <mapperTableEntries expression="row1._SALES_DIST " name="_SALES_DIST" type="id_String"/>
-        <mapperTableEntries expression="row1._SALES_GRP " name="_SALES_GRP" type="id_String"/>
+        <mapperTableEntries expression="row1._MATERIAL " name="_MATERIAL" type="id_String"/>
+        <mapperTableEntries expression="row1._BASE_UOM " name="_BASE_UOM" type="id_String"/>
+        <mapperTableEntries expression="row1._CREATEDON " name="_CREATEDON" type="id_Date"/>
+        <mapperTableEntries expression="row1._EANUPC " name="_EANUPC" type="id_String"/>
+        <mapperTableEntries expression="row1._GROSS_WT " name="_GROSS_WT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._UNIT_OF_WT " name="_UNIT_OF_WT" type="id_String"/>
+        <mapperTableEntries expression="row1._MATL_CAT " name="_MATL_CAT" type="id_String"/>
+        <mapperTableEntries expression="row1._MATL_GROUP " name="_MATL_GROUP" type="id_String"/>
+        <mapperTableEntries expression="row1._NET_WEIGHT " name="_NET_WEIGHT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._PROD_HIER " name="_PROD_HIER" type="id_String"/>
+        <mapperTableEntries expression="row1._SIZE_DIM " name="_SIZE_DIM" type="id_String"/>
+        <mapperTableEntries expression="row1._VOLUME " name="_VOLUME" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._VOLUMEUNIT " name="_VOLUMEUNIT" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZSPECIPRD " name="_BIC_ZSPECIPRD" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZAIRSEPRT " name="_BIC_ZAIRSEPRT" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZBRTYEPRD " name="_BIC_ZBRTYEPRD" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZCPUNC " name="_BIC_ZCPUNC" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZFATP_PRD " name="_BIC_ZFATP_PRD" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZFETURPRD " name="_BIC_ZFETURPRD" type="id_String"/>
+        <mapperTableEntries expression="row1._COMP_CODE " name="_COMP_CODE" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZBA_HQ " name="_BIC_ZBA_HQ" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZLEANDPRD " name="_BIC_ZLEANDPRD" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZMAPMO " name="_BIC_ZMAPMO" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZOLDMAT " name="_BIC_ZOLDMAT" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPACKCDPR " name="_BIC_ZPACKCDPR" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPMATNPRD " name="_BIC_ZPMATNPRD" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPRODTYPE " name="_BIC_ZPRODTYPE" type="id_String"/>
       </varTables>
       <outputTables name="out" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var._DIVISION " name="_DIVISION" type="id_String"/>
-        <mapperTableEntries expression="Var._DISTR_CHAN " name="_DISTR_CHAN" type="id_String"/>
-        <mapperTableEntries expression="Var._SALESORG " name="_SALESORG" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_SALES " name="_CUST_SALES" type="id_String"/>
-        <mapperTableEntries expression="Var._ACCNT_ASGN " name="_ACCNT_ASGN" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_CGR10 " name="_AF_CGR10" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_CGR6 " name="_AF_CGR6" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_CGR7 " name="_AF_CGR7" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_CGR8 " name="_AF_CGR8" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_CGR9 " name="_AF_CGR9" type="id_String"/>
-        <mapperTableEntries expression="Var._AF_VASCG " name="_AF_VASCG" type="id_String"/>
-        <mapperTableEntries expression="Var._CRM_BP_SAL " name="_CRM_BP_SAL" type="id_String"/>
-        <mapperTableEntries expression="Var._CRM_SALORG " name="_CRM_SALORG" type="id_Integer"/>
-        <mapperTableEntries expression="Var._CUST_CLA " name="_CUST_CLA" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GROUP " name="_CUST_GROUP" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GRP1 " name="_CUST_GRP1" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GRP2 " name="_CUST_GRP2" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GRP3 " name="_CUST_GRP3" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GRP4 " name="_CUST_GRP4" type="id_String"/>
-        <mapperTableEntries expression="Var._CUST_GRP5 " name="_CUST_GRP5" type="id_String"/>
-        <mapperTableEntries expression="Var._C_CTR_AREA " name="_C_CTR_AREA" type="id_String"/>
-        <mapperTableEntries expression="Var._INCOTERMS " name="_INCOTERMS" type="id_String"/>
-        <mapperTableEntries expression="Var._IMOINCOTM2 " name="_IMOINCOTM2" type="id_String"/>
-        <mapperTableEntries expression="Var._PLANT " name="_PLANT" type="id_String"/>
-        <mapperTableEntries expression="Var._PMNTTRMS " name="_PMNTTRMS" type="id_String"/>
-        <mapperTableEntries expression="Var._SALES_DIST " name="_SALES_DIST" type="id_String"/>
-        <mapperTableEntries expression="Var._SALES_GRP " name="_SALES_GRP" type="id_String"/>
+        <mapperTableEntries expression="Var._MATERIAL " name="_MATERIAL" type="id_String"/>
+        <mapperTableEntries expression="Var._BASE_UOM " name="_BASE_UOM" type="id_String"/>
+        <mapperTableEntries expression="Var._CREATEDON " name="_CREATEDON" type="id_Date"/>
+        <mapperTableEntries expression="Var._EANUPC " name="_EANUPC" type="id_String"/>
+        <mapperTableEntries expression="Var._GROSS_WT " name="_GROSS_WT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var._UNIT_OF_WT " name="_UNIT_OF_WT" type="id_String"/>
+        <mapperTableEntries expression="Var._MATL_CAT " name="_MATL_CAT" type="id_String"/>
+        <mapperTableEntries expression="Var._MATL_GROUP " name="_MATL_GROUP" type="id_String"/>
+        <mapperTableEntries expression="Var._NET_WEIGHT " name="_NET_WEIGHT" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var._PROD_HIER " name="_PROD_HIER" type="id_String"/>
+        <mapperTableEntries expression="Var._SIZE_DIM " name="_SIZE_DIM" type="id_String"/>
+        <mapperTableEntries expression="Var._VOLUME " name="_VOLUME" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var._VOLUMEUNIT " name="_VOLUMEUNIT" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZSPECIPRD " name="_BIC_ZSPECIPRD" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZAIRSEPRT " name="_BIC_ZAIRSEPRT" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZBRTYEPRD " name="_BIC_ZBRTYEPRD" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZCPUNC " name="_BIC_ZCPUNC" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZFATP_PRD " name="_BIC_ZFATP_PRD" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZFETURPRD " name="_BIC_ZFETURPRD" type="id_String"/>
+        <mapperTableEntries expression="Var._COMP_CODE " name="_COMP_CODE" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZBA_HQ " name="_BIC_ZBA_HQ" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZLEANDPRD " name="_BIC_ZLEANDPRD" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZMAPMO " name="_BIC_ZMAPMO" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZOLDMAT " name="_BIC_ZOLDMAT" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZPACKCDPR " name="_BIC_ZPACKCDPR" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZPMATNPRD " name="_BIC_ZPMATNPRD" type="id_String"/>
+        <mapperTableEntries expression="Var._BIC_ZPRODTYPE " name="_BIC_ZPRODTYPE" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="_DIVISION" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_DISTR_CHAN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_SALESORG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_SALES" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_ACCNT_ASGN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_CGR10" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_CGR6" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_CGR7" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_CGR8" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_CGR9" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_AF_VASCG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CRM_BP_SAL" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CRM_SALORG" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="_CUST_CLA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GROUP" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GRP1" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GRP2" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GRP3" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GRP4" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_CUST_GRP5" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_C_CTR_AREA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_INCOTERMS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_IMOINCOTM2" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_PLANT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_PMNTTRMS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_SALES_DIST" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_SALES_GRP" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_SALES_OFF" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_FLGDELETED" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCHCODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWRK1_CSA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWRK2_CSA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWRK3_CSA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWRK4_CSA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWRK5_CSA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZOPRIFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZASC_GROU" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZASN_TRAN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCARRIER" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCITY_TYP" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCOMMERCI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCUSTSFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCUSTAH" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCUSTAM" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCUSTCFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZCUSTPDFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZDGSEFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZDROPSFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZEVFEEFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZEVFECNTY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZFREE_ZON" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZHERTZ_TY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZINSPECTI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZINSTFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZINVPFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZMAX_ORDE" nullable="true" type="id_BigDecimal"/>
-        <mapperTableEntries name="_BIC_ZMINIMUM" nullable="true" type="id_BigDecimal"/>
-        <mapperTableEntries name="_BIC_ZOLD_WTY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZORGAFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZPALFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZPART_RET" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="_BIC_ZPLACE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZPREVIOUS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZPROFILE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZPURCHASE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSELLING" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSHIPBFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSHIPMCD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSHIPM" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSEXPIRTP" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZEXPIRBT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSTK_RCV" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="_BIC_ZCSTORENM" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSVFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSWEDISH" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZTALFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZTERRITOR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZTMSIFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZTRNSHFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZTVLICEN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZUSAGE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWARCHFG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWTY_GRAD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZWTY_REFE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZBILLTOO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZDEPARTME" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZVSART" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSDABW" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZZDEPT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSHIPG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSHIPGD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="_BIC_ZSAMEADD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATERIAL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BASE_UOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_CREATEDON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_EANUPC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_GROSS_WT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_UNIT_OF_WT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_CAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_NET_WEIGHT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_PROD_HIER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_SIZE_DIM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_VOLUME" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_VOLUMEUNIT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSPECIPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZAIRSEPRT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZBRTYEPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZCPUNC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZFATP_PRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZFETURPRD" nullable="true" type="id_String"/>
         <mapperTableEntries name="_COMP_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZBA_HQ" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZLEANDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMAPMO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZOLDMAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPACKCDPR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPMATNPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPRODTYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMODELPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSPTNOPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSMDLSFFX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZUPCCDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZVHART" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_DIVISION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_CRM_PROD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMTPOS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZNUMTP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZVMSTA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZD_SAFLG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZQUTITMPR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMSTAE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZLAEDA" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_BIC_ZLASTCHTM" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_BIC_ZAENAM" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="_DIVISION"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_MATERIAL"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_DISTR_CHAN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BASE_UOM"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_SALESORG"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_CREATEDON"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_SALES"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_EANUPC"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_ACCNT_ASGN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_GROSS_WT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_CGR10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_UNIT_OF_WT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_CGR6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_MATL_CAT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_CGR7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_MATL_GROUP"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_CGR8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_NET_WEIGHT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_CGR9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_PROD_HIER"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_AF_VASCG"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_SIZE_DIM"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CRM_BP_SAL"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_VOLUME"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CRM_SALORG"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_VOLUMEUNIT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_CLA"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZSPECIPRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GROUP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZAIRSEPRT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GRP1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZBRTYEPRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GRP2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZCPUNC"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GRP3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZFATP_PRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GRP4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZFETURPRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CUST_GRP5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_COMP_CODE"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_C_CTR_AREA"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZBA_HQ"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_INCOTERMS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZLEANDPRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_IMOINCOTM2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZMAPMO"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_PLANT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZOLDMAT"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_PMNTTRMS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZPACKCDPR"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_SALES_DIST"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZPMATNPRD"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_SALES_GRP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_BIC_ZPRODTYPE"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="_DIVISION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_DISTR_CHAN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALESORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_SALES" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_ACCNT_ASGN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR10" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR6" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR7" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR8" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_CGR9" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_AF_VASCG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CRM_BP_SAL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="_CRM_SALORG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_CLA" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GROUP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP3" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP4" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_CUST_GRP5" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_C_CTR_AREA" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_INCOTERMS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_IMOINCOTM2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_PLANT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_PMNTTRMS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALES_DIST" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_SALES_GRP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATERIAL" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BASE_UOM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_CREATEDON" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_EANUPC" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_GROSS_WT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_UNIT_OF_WT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATL_CAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_MATL_GROUP" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_NET_WEIGHT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_PROD_HIER" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_SIZE_DIM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_VOLUME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_VOLUMEUNIT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZSPECIPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZAIRSEPRT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZBRTYEPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZCPUNC" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZFATP_PRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZFETURPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_COMP_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZBA_HQ" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZLEANDPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZMAPMO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZOLDMAT" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPACKCDPR" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPMATNPRD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="_BIC_ZPRODTYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPInfoObjectInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPInfoObjectInput_1" target="tMap_1">
@@ -540,6 +448,89 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZOLDMAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_EANUPC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_SIZE_DIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_VOLUME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZBA_HQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZAIRSEPRT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_MATERIAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_COMP_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_UNIT_OF_WT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZCPUNC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZFETURPRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_PROD_HIER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZSPECIPRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_MATL_CAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZPACKCDPR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BASE_UOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_GROSS_WT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZFATP_PRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZPMATNPRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_CREATEDON"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_VOLUMEUNIT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZPRODTYPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_MATL_GROUP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZBRTYEPRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZMAPMO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_BIC_ZLEANDPRD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_NET_WEIGHT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
   </connection>
@@ -548,13 +539,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dc6895da-859a-42d8-9d21-f3321cbc1be5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/S9iG71BjC19zwOD2jWqaNHUQdOB7LcF7+t0yekpApjMHdzSACSOkIprFlxJD2+4FWgU6/ryr9uy&#13;
-7mwpnImQEA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7f230aa7-a889-4a36-93d9-842d79ad715e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nxezaKjYyojVenH/Cq7ra+3hsEo2mj0j6nReeDWN5OprQoh1zQMX4qO4cRqvTLJCKMEceu2VeJVw&#13;
-sGqdlWvUaQ==</DigestValue></Reference></SignedInfo><SignatureValue>fiQST4HQrSUoZ2Kuyyapg9hpBebAkg00+knCnZHOP6youlabfPJol+GfHGNayDP7tkRYUpkP0ugT&#13;
-LVtea3jlIin3tqDVJMOz2DBrGQMdvMChTsUlmtUvW6LcaW3sW8o4XjiQ53POE3IZhv4EJmoCX3OT&#13;
-kkNeuJDU7SDXY5I9AHECIAp8/Y4iKqS+NFmJG0KbstZ4QCu8aXz2dzk07gDJsZrSkVY2GNYRyuI8&#13;
-+kyYX3uiz4dBy/HV+EkNIAVmxC6OzvUW92M3aSVf70C2xZyctv3dA4HgUybEJzyrffHs7OyN01FD&#13;
-tItZ7ea92AUcyB+Mxi22Y3/l+iZYE4COyyn6rA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_13080958-e6e8-4e12-bb52-40772ee37d86"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AxOcuhDhfaAfoA4BXKwjanLV+hSMkZdgB3N2c2GIqVIIn+DYdnx4I/RZqm0iK6urc1DzInDC4E5L&#13;
+9FEc6qGZrw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d135495-8b22-4caa-afde-848ba54ee524"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>928G1KLGIbXa53VbFprwDoWcPplJxXyg9887fDIxkF1mi0kv1monODkucmmWSDzBwJzeXhrF+pty&#13;
+4PyJG5W2Uw==</DigestValue></Reference></SignedInfo><SignatureValue>fl2wyvYtwR6MyljRYBhuOXdaVxsyB1MAGKTomhKSSO2lfVwNRXEWEUMJrDOAkmLzy8i2gw4r+XIN&#13;
+0ihOKVhagg5X6fh5DdnsqjqWTytW7jbntDQNwOmVhm4W4DIggvHMs/j5MT41MX3Euxg7bgv70GbC&#13;
+IBdYov0PW+zTfzgWee+V36COMExAp+g8qNNKQ1l1aDdPdcZty8ueqjqiUquwYLmgkD2oMQqsrSKT&#13;
+NVkd/Wx9KkJaA7HFnY4yMQYjfDxl++m8zNs9xmRzNp+E0zc4Mf6h9CLaqHjKciM1EkGKB/1otYD4&#13;
+OviNC+LX5reEotlDDRe5Wk/pJMzAaUyFhfpXJQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -576,4 +567,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7f230aa7-a889-4a36-93d9-842d79ad715e" Target="#_dc6895da-859a-42d8-9d21-f3321cbc1be5"><Timestamp>2024-07-18 05:35:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d135495-8b22-4caa-afde-848ba54ee524" Target="#_13080958-e6e8-4e12-bb52-40772ee37d86"><Timestamp>2024-07-18 05:41:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
