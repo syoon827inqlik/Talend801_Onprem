@@ -139,7 +139,7 @@
     <elementParameter field="CHECK" name="FTP_HTTP_FUNCTION" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSAPADSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+  <node componentName="tSAPADSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_1"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPADSOInput"/>
     <elementParameter field="TEXT" name="VERSION" show="false" value="0.101 (ALPHA)"/>
@@ -148,6 +148,7 @@
     <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
     <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
     <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPODPInput"/>
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
@@ -427,6 +428,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1098,8 +1100,9 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240">
+  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/hbin_test.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
@@ -1326,16 +1329,91 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" value="&quot;X:/04_EAP구축 2차/97.Talend+BW PoC/from_EAP응용_양재영총괄/svcac-edl-dev-etl.json&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:aX8BIC5+Dq3sCvt2a71OBX/ybLSRRDXw2jzRtClC"/>
+    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGSConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SERVICE_ACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/key.json&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:fhYJipU/JYZdkHBdqcF4MaZYgfEGcy0I9E7VUZI0"/>
+    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/hbin_test.parquet&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
+    <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
+    <elementParameter field="TABLE" name="FILES" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
+    <elementParameter field="TEXT" name="PART_SIZE" value="50"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tBigQuerySQLRow"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Big Data/Google BigQuery"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tBigQuerySQLRow"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1ZnOIEWiEe-0A4PCgSr1vg"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="PASSWORD" name="ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:sdDsYsr4DGJYOjLFMIkquvDTNsrcN7f/I1x5J3xq"/>
+    <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;X:/04_EAP구축 2차/97.Talend+BW PoC/from_EAP응용_양재영총괄/svcac-edl-dev-etl.json&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:+U57dg/QUM8SLan71YF3V35ePPmFNuNPs/0/14vt"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;pj-lge-edl-dev&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee&quot;"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_BQ" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="CHECK" name="FORCE_SINGLE_QUERY_EXEC" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Google_Bigquery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPADSOInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out_parquet_1" lineStyle="0" metaname="out_parquet_1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputParquet_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGSConnection_1" target="tGSPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -1353,13 +1431,28 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ec4858ae-b24d-484c-bc7d-563c0eab2737"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2RE+JRjWzQxE+QPozasblbqZDgSB+7BZDJKbOjVVQ3aYEuszo+usXYzAjj9kv43xKcN2/fOJrL88&#13;
-yXLOXwIaLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5c80a1f0-eebc-48be-86cd-303ed8eff490"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CVuJ9uChr9Je6GSbKKSXAyJlt61HzRQOQLkJE12i59Tpeez3TDAGLjPfCBIISpc0ov7GM/j8+Ln1&#13;
-HqxGEinQ7Q==</DigestValue></Reference></SignedInfo><SignatureValue>fzRWKJGtpc89Szvo4NS0u9hZYp1lvooGxAFnjioGOMR8l+4jjz+O6FiZ1UqPtHGPHCJkZY084XNf&#13;
-x/qHriHRRmDAz4BSIaDTJXYzF4RKd5/R656gDH2dwsCQJ3iBzBYKvKU5SPn6JFbjXfF67mN7N9q6&#13;
-vIbfsv7B9jVJazEHs/TdhtMJOqbzEnJ/jjrDPS7XjwGUEmo7x54LJI2QSJDtbVtFpho28e2Hi65u&#13;
-5D1kGRo4Buqvin/k9oXF99kVGitQlXegzoaJxcjdzJrVRudUfkdJQvYPnBMo0izjhzyuiRkqoh0Y&#13;
-YjxMHklqXDDeDVeX3xFPRahy7qeXNs8SGe87pw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e9a2892-da58-41fd-9dab-cc0e295ee33e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lKQlki+vb7ZChjYaZTPm3yI50nJ6XoCkVBIbttocQTJSUoObh7VjPwdEbCHWSf4Jw3ySLZb39fH4&#13;
+kkL00wf6sg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8bdfe9fa-ede0-4060-b813-bc17d8fc2f4e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xb63VOdzNnevkI1FABNGRJHLA3hOKwRE2E4YbvNGz1f7r7T2S32ib2FGTBDRqvytetk0HmyEt9eZ&#13;
+3nh38oloIA==</DigestValue></Reference></SignedInfo><SignatureValue>bp+H2KOKMyhzK8B4ochB8vO5Rav2fVyGs/HCN1LenZwENGrAbly7+qJR2SfNX0lTa2ShX5Dgh11x&#13;
+PVoaJleUd5nY9RpzOGHibbVIuQf1dNVYveQgGsnZFQzbc2Z2cAVm7e9h+qUI5Hh62JZQlTWS4th7&#13;
+SuGuFSClps2Tyv3STEMfTsfneZgtREs2i+eY8b52tHjYdpvIjvTpE7144oP4bYRc3ixewNS5d3nv&#13;
+3YqYN14kLTLkinmDfAw/qwLEy23Xr9e/sSkEp2WGbBPoEaCI4dJ2+7PDDkfIiGggCAGUHIkUz5cU&#13;
+iMYfE8PLb2ASFEdYz+fd5OdketvHefA7NHIcTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1381,4 +1474,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5c80a1f0-eebc-48be-86cd-303ed8eff490" Target="#_ec4858ae-b24d-484c-bc7d-563c0eab2737"><Timestamp>2024-07-19 07:31:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8bdfe9fa-ede0-4060-b813-bc17d8fc2f4e" Target="#_3e9a2892-da58-41fd-9dab-cc0e295ee33e"><Timestamp>2024-07-19 07:46:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
