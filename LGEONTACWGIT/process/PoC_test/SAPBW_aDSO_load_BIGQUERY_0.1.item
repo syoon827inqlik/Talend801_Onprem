@@ -131,7 +131,6 @@
   </node>
   <node componentName="tSAPADSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="SAP_JCO"/>
@@ -155,8 +154,8 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE3_F"/>
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE3$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE3$F&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;Talend_TAC&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;TEST01&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;Talend_TAC_YD_CASE3_F&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN01&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE">
@@ -164,6 +163,181 @@
       <elementValue elementRef="SIGN" value="INCLUDE"/>
       <elementValue elementRef="OPERATOR" value="EQUAL"/>
       <elementValue elementRef="LOWVALUE" value="&quot;ANT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CCT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CDT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CNT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CVT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CWT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DFT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DGT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DHT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DKT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DLT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DMT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DQT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DTT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DVT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;EOT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;ESA&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;EVT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;GET&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;GJT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;GLT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;GNT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;GTT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;KMT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PBT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PCT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PGT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PJT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PNT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PST&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;SDT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;SQT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;SRT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;VBT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;VFT&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;VST&quot;"/>
       <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
     </elementParameter>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -408,7 +582,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1082,8 +1255,7 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/hbin_test.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -1330,7 +1502,7 @@
     <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/hbin_test.parquet&quot;"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/YD_CASE3_F.parquet&quot;"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
@@ -1342,6 +1514,7 @@
   </node>
   <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="PASSWORD" name="ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:sdDsYsr4DGJYOjLFMIkquvDTNsrcN7f/I1x5J3xq"/>
     <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
@@ -1366,23 +1539,40 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
   </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F.parquet&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPADSOInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out_parquet_1" lineStyle="0" metaname="out_parquet_1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputParquet_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_1" target="tGSConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGSConnection_1" target="tGSPut_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSPut_1" offsetLabelX="0" offsetLabelY="0" source="tGSPut_1" target="tBigQuerySQLRow_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSPut_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tGSPut_1" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSPut_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tGSPut_1" target="tBigQuerySQLRow_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <subjob>
@@ -1416,13 +1606,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_36e9a159-a468-4f69-be63-75fd446537fa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kWnHU7EwLFgyGjWyPGsd0gvkbLbQw2BZPDYjStZBW3srl+APxr4HW1pLGb/f2QAivegUbJIydH8W&#13;
-OOfGitoJ6g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c056a7f6-ee7c-4f94-b6bd-c608d28e16f5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AsDj+aqBNNhdWtic5ZISsajlnP1APIRGpgb1ht6/WdhxZHskJKPaZamfFrFgfs3oBSqvwO+5YTb7&#13;
-Vkh6/Y+iqw==</DigestValue></Reference></SignedInfo><SignatureValue>bD5+ubD/xFAAXOsj9Fta+X57S36ED2/cxVFObVxk699n6oyY8WNHvNYI6e4Vm+I7/yKVHwBAWvlH&#13;
-c3Yg1rSYu7pPRFRtsXGifwu1aWZBOHZl70AWevpWrAbsQR/pjdFONVG3bEp/36LekF3UJAgHUOBv&#13;
-TOVvP0QBZT/kkCRAdREYTU55nSCC+jqJNDKHv5GacoIZeMDlo8y9+daUyGvYAtlE/0UGiwpGse/6&#13;
-1DvhIId4HYPA2sdt+YrJqKDpI3f689ls717XnNek6BnJKmDuw1NM45uMBdvZMbPTEQIA0xtfbph8&#13;
-41/xE2NTPu4IaHYpZqxTIGv6vKuUggAtYTSc/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f057aa1a-2d36-44a7-be5a-ac1f1cb6125e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XjHXi96RwH8Hkw6rB9W8bHOtwDskRMAz2pBSIVMi6hxPwfVq36P5nV1mbhmeXWf+vv5mGUnvQUZV&#13;
+VIfiuaBXYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_72879125-e9ad-48c0-a28c-577985889fc8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8DZTOjdfnrPgUTeN5o/DN6jYSWSiroR4dL2P/zZCUEztM1qdSgtYovDIAIFOWLao6v7PSwi9/bgV&#13;
+0FM+8/JzoQ==</DigestValue></Reference></SignedInfo><SignatureValue>I1qUrFt2Lk3DMvRsDytnlR/aZ1ZHqLC2YcrEYyMwqIDdK7pV7yhXLPwj/NOiPc+juKFCJmsfT48a&#13;
+GbH3o/O0cSBNEj+fdY+UTUEQjPQMRVTTZ+NKDsyfHEIGXNuRWTz4gc1MYvlQi+OaH1WK3Zo50sQ6&#13;
+gn3yNzFFAuDyo+ZFdyu2vXDoFZ8blQ6v6s4RpFx725G40j05MChXA3dQxHzk4NEK4HazncclfsDJ&#13;
+crcJb0VcvVSc/KKzJCseVE1n30Vtqb27Urj9u/2oMVUI6ZY68ShVjSVM8I2QWyCjWUwpo4TzCHSB&#13;
+F5ma7rW+Mpq/d70sY3DnAKKIxbamYmvSTAxVQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1444,4 +1639,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c056a7f6-ee7c-4f94-b6bd-c608d28e16f5" Target="#_36e9a159-a468-4f69-be63-75fd446537fa"><Timestamp>2024-07-19 08:22:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_72879125-e9ad-48c0-a28c-577985889fc8" Target="#_f057aa1a-2d36-44a7-be5a-ac1f1cb6125e"><Timestamp>2024-07-19 08:29:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
