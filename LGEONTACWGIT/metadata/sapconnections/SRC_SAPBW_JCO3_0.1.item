@@ -949,158 +949,6 @@
         <refTable>ODQ_ENTITYCNTR</refTable>
       </feature>
     </BWAdvancedDataStoreObjects>
-    <BWAdvancedDataStoreObjects category="Input" id="_8_dcsETHEe-9oMPNevfcRQ" label="_0MATERIAL_P" modelType="AdvancedDataStoreObject" name="0MATERIAL$P" properties="deleted&#10;&#10;true&#10;&#10;" tableSearchType="MASTER_DATA_ATTRIBUTES" tableType="TABLE" xmi:id="_9-lZEUTHEe-9oMPNevfcRQ">
-      <feature businessName="MATERIAL" comment="Material" key="true" label="MATERIAL" length="40" name="MATERIAL" sourceType="STRING" talendType="id_String" xmi:id="_9-lZEkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>MATERIAL</refTable>
-      </feature>
-      <feature businessName="BASE_UOM" comment="Base Unit of Measure" label="BASE_UOM" length="3" name="BASE_UOM" sourceType="STRING" talendType="id_String" xmi:id="_9-lZE0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>BASE_UOM</refTable>
-      </feature>
-      <feature businessName="CREATEDON" comment="Date on which the record was created" label="CREATEDON" length="8" name="CREATEDON" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_9-lZFETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>CREATEDON</refTable>
-      </feature>
-      <feature businessName="EANUPC" comment="European Article Number/Universal Product Code" label="EANUPC" length="18" name="EANUPC" sourceType="STRING" talendType="id_String" xmi:id="_9-lZFUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>EANUPC</refTable>
-      </feature>
-      <feature businessName="GROSS_WT" comment="Gross Weight" label="GROSS_WT" length="17" name="GROSS_WT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_9-lZFkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>GROSS_WT</refTable>
-      </feature>
-      <feature businessName="UNIT_OF_WT" comment="Weight unit" label="UNIT_OF_WT" length="3" name="UNIT_OF_WT" sourceType="STRING" talendType="id_String" xmi:id="_9-lZF0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>UNIT_OF_WT</refTable>
-      </feature>
-      <feature businessName="MATL_CAT" comment="Material Category" label="MATL_CAT" length="2" name="MATL_CAT" sourceType="STRING" talendType="id_String" xmi:id="_9-lZGETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>MATL_CAT</refTable>
-      </feature>
-      <feature businessName="MATL_GROUP" comment="Material Group" label="MATL_GROUP" length="9" name="MATL_GROUP" sourceType="STRING" talendType="id_String" xmi:id="_9-lZGUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>MATL_GROUP</refTable>
-      </feature>
-      <feature businessName="NET_WEIGHT" comment="Net Weight of Item" label="NET_WEIGHT" length="17" name="NET_WEIGHT" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_9-lZGkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>NET_WEIGHT</refTable>
-      </feature>
-      <feature businessName="PROD_HIER" comment="Product Hierarchy" label="PROD_HIER" length="18" name="PROD_HIER" sourceType="STRING" talendType="id_String" xmi:id="_9-lZG0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>PROD_HIER</refTable>
-      </feature>
-      <feature businessName="SIZE_DIM" comment="Size/Dimension" label="SIZE_DIM" length="32" name="SIZE_DIM" sourceType="STRING" talendType="id_String" xmi:id="_9-lZHETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>SIZE_DIM</refTable>
-      </feature>
-      <feature businessName="VOLUME" comment="Volume" label="VOLUME" length="17" name="VOLUME" precision="3" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_9-lZHUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>VOLUME</refTable>
-      </feature>
-      <feature businessName="VOLUMEUNIT" comment="Volume unit" label="VOLUMEUNIT" length="3" name="VOLUMEUNIT" sourceType="STRING" talendType="id_String" xmi:id="_9-lZHkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>VOLUMEUNIT</refTable>
-      </feature>
-      <feature businessName="/BIC/ZSPECIPRD" comment="Material Specification" label="_BIC_ZSPECIPRD" length="150" name="/BIC/ZSPECIPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZH0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZSPECIPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZAIRSEPRT" comment="Air-con. Separation Type" label="_BIC_ZAIRSEPRT" length="1" name="/BIC/ZAIRSEPRT" sourceType="STRING" talendType="id_String" xmi:id="_9-lZIETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZAIRSEPRT</refTable>
-      </feature>
-      <feature businessName="/BIC/ZBRTYEPRD" comment="Brand Type" label="_BIC_ZBRTYEPRD" length="1" name="/BIC/ZBRTYEPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZIUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZBRTYEPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZCPUNC" comment="CP Unit Code" label="_BIC_ZCPUNC" length="10" name="/BIC/ZCPUNC" sourceType="STRING" talendType="id_String" xmi:id="_9-lZIkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZCPUNC</refTable>
-      </feature>
-      <feature businessName="/BIC/ZFATP_PRD" comment="FA Type" label="_BIC_ZFATP_PRD" length="1" name="/BIC/ZFATP_PRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZI0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZFATP_PRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZFETURPRD" comment="Feature" label="_BIC_ZFETURPRD" length="20" name="/BIC/ZFETURPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZJETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZFETURPRD</refTable>
-      </feature>
-      <feature businessName="COMP_CODE" comment="Company Code" label="COMP_CODE" length="4" name="COMP_CODE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZJUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>COMP_CODE</refTable>
-      </feature>
-      <feature businessName="/BIC/ZBA_HQ" comment="HQ BA" label="_BIC_ZBA_HQ" length="4" name="/BIC/ZBA_HQ" sourceType="STRING" talendType="id_String" xmi:id="_9-lZJkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZBA_HQ</refTable>
-      </feature>
-      <feature businessName="/BIC/ZLEANDPRD" comment="Logistics Barcode ID" label="_BIC_ZLEANDPRD" length="5" name="/BIC/ZLEANDPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZJ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZLEANDPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZMAPMO" comment="Mapping Model" label="_BIC_ZMAPMO" length="40" name="/BIC/ZMAPMO" sourceType="STRING" talendType="id_String" xmi:id="_9-lZKETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZMAPMO</refTable>
-      </feature>
-      <feature businessName="/BIC/ZOLDMAT" comment="Old material number" label="_BIC_ZOLDMAT" length="40" name="/BIC/ZOLDMAT" sourceType="STRING" talendType="id_String" xmi:id="_9-lZKUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZOLDMAT</refTable>
-      </feature>
-      <feature businessName="/BIC/ZPACKCDPR" comment="Pack Code" label="_BIC_ZPACKCDPR" length="10" name="/BIC/ZPACKCDPR" sourceType="STRING" talendType="id_String" xmi:id="_9-lZKkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZPACKCDPR</refTable>
-      </feature>
-      <feature businessName="/BIC/ZPMATNPRD" comment="Previous Model" label="_BIC_ZPMATNPRD" length="40" name="/BIC/ZPMATNPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZK0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZPMATNPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZPRODTYPE" comment="Product Type" label="_BIC_ZPRODTYPE" length="4" name="/BIC/ZPRODTYPE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZLETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZPRODTYPE</refTable>
-      </feature>
-      <feature businessName="/BIC/ZMODELPRD" comment="Sales Model Code" label="_BIC_ZMODELPRD" length="20" name="/BIC/ZMODELPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZLUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZMODELPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZSPTNOPRD" comment="Set Part No" label="_BIC_ZSPTNOPRD" length="15" name="/BIC/ZSPTNOPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZLkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZSPTNOPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZSMDLSFFX" comment="Sales Model Suffix CD" label="_BIC_ZSMDLSFFX" length="20" name="/BIC/ZSMDLSFFX" sourceType="STRING" talendType="id_String" xmi:id="_9-lZL0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZSMDLSFFX</refTable>
-      </feature>
-      <feature businessName="/BIC/ZUPCCDPRD" comment="UPC Code" label="_BIC_ZUPCCDPRD" length="30" name="/BIC/ZUPCCDPRD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZMETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZUPCCDPRD</refTable>
-      </feature>
-      <feature businessName="/BIC/ZVHART" comment="Packaging Material Type" label="_BIC_ZVHART" length="4" name="/BIC/ZVHART" sourceType="STRING" talendType="id_String" xmi:id="_9-lZMUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZVHART</refTable>
-      </feature>
-      <feature businessName="DIVISION" comment="Division" label="DIVISION" length="2" name="DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_9-lZMkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>DIVISION</refTable>
-      </feature>
-      <feature businessName="CRM_PROD" comment="Product" label="CRM_PROD" length="32" name="CRM_PROD" sourceType="STRING" talendType="id_String" xmi:id="_9-lZM0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>CRM_PROD</refTable>
-      </feature>
-      <feature businessName="MATL_TYPE" comment="Material Type" label="MATL_TYPE" length="4" name="MATL_TYPE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZNETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>MATL_TYPE</refTable>
-      </feature>
-      <feature businessName="/BIC/ZMTPOS" comment="General item category group" label="_BIC_ZMTPOS" length="4" name="/BIC/ZMTPOS" sourceType="STRING" talendType="id_String" xmi:id="_9-lZNUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZMTPOS</refTable>
-      </feature>
-      <feature businessName="/BIC/ZNUMTP" comment="Category of International Article Number (EAN)" label="_BIC_ZNUMTP" length="2" name="/BIC/ZNUMTP" sourceType="STRING" talendType="id_String" xmi:id="_9-lZNkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZNUMTP</refTable>
-      </feature>
-      <feature businessName="/BIC/ZVMSTA" comment="DChain-spec. status" label="_BIC_ZVMSTA" length="2" name="/BIC/ZVMSTA" sourceType="STRING" talendType="id_String" xmi:id="_9-lZN0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZVMSTA</refTable>
-      </feature>
-      <feature businessName="PRODH1" comment="Product hierarchy level 1" label="PRODH1" length="18" name="PRODH1" sourceType="STRING" talendType="id_String" xmi:id="_9-lZOETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>PRODH1</refTable>
-      </feature>
-      <feature businessName="PRODH2" comment="Product hierarchy level 2" label="PRODH2" length="18" name="PRODH2" sourceType="STRING" talendType="id_String" xmi:id="_9-lZOUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>PRODH2</refTable>
-      </feature>
-      <feature businessName="PRODH3" comment="Product hierarchy level 3" label="PRODH3" length="18" name="PRODH3" sourceType="STRING" talendType="id_String" xmi:id="_9-lZOkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>PRODH3</refTable>
-      </feature>
-      <feature businessName="PRODH4" comment="Product hierarchy level 4" label="PRODH4" length="18" name="PRODH4" sourceType="STRING" talendType="id_String" xmi:id="_9-lZO0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>PRODH4</refTable>
-      </feature>
-      <feature businessName="/BIC/ZD_SAFLG" comment="Sales Model Flag(C)" label="_BIC_ZD_SAFLG" length="1" name="/BIC/ZD_SAFLG" sourceType="STRING" talendType="id_String" xmi:id="_9-lZPETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZD_SAFLG</refTable>
-      </feature>
-      <feature businessName="/BIC/ZQUTITMPR" comment="Quotation Item" label="_BIC_ZQUTITMPR" length="40" name="/BIC/ZQUTITMPR" sourceType="STRING" talendType="id_String" xmi:id="_9-lZPUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZQUTITMPR</refTable>
-      </feature>
-      <feature businessName="/BIC/ZMSTAE" comment="Cross-Plant Material Status" label="_BIC_ZMSTAE" length="2" name="/BIC/ZMSTAE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZPkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZMSTAE</refTable>
-      </feature>
-      <feature businessName="/BIC/ZLAEDA" comment="Date of Last Change" label="_BIC_ZLAEDA" length="8" name="/BIC/ZLAEDA" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_9-lZP0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZLAEDA</refTable>
-      </feature>
-      <feature businessName="/BIC/ZLASTCHTM" comment="Last Chgd. Time" label="_BIC_ZLASTCHTM" length="6" name="/BIC/ZLASTCHTM" pattern="&quot;HH:mm:ss&quot;" sourceType="TIME" talendType="id_Date" xmi:id="_9-lZQETHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZLASTCHTM</refTable>
-      </feature>
-      <feature businessName="/BIC/ZAENAM" comment="Name of Person Who Changed Object" label="_BIC_ZAENAM" length="12" name="/BIC/ZAENAM" sourceType="STRING" talendType="id_String" xmi:id="_9-lZQUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>/BIC/ZAENAM</refTable>
-      </feature>
-      <feature businessName="ODQ_CHANGEMODE" comment="Change Mode for a Data Record in the Delta" label="ODQ_CHANGEMODE" length="1" name="ODQ_CHANGEMODE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZQkTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>ODQ_CHANGEMODE</refTable>
-      </feature>
-      <feature businessName="ODQ_ENTITYCNTR" comment="Number of Data Units (Data Records for Example)" label="ODQ_ENTITYCNTR" length="19" name="ODQ_ENTITYCNTR" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_9-lZQ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <refTable>ODQ_ENTITYCNTR</refTable>
-      </feature>
-    </BWAdvancedDataStoreObjects>
     <BWInfoObjects id="_V7vkAUJrEe-IHs245fJtvg" innerIOType="ATTRIBUTE" label="_0CUST_SALES" modelType="InfoObject" name="0CUST_SALES" tableSearchType="CHARACTERISTIC" tableType="TABLE" xmi:id="_Ip2nQETIEe-9oMPNevfcRQ">
       <feature businessName="Division" comment="Division" key="true" label="_DIVISION" length="2" name="0DIVISION" sourceType="STRING" talendType="id_String" xmi:id="_Ip2nQUTIEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
         <initialValue xmi:id="_Ip2nQkTIEe-9oMPNevfcRQ"/>
@@ -2469,13 +2317,13 @@
   </TalendMetadata:GenericPackage>
   <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
   <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_eLVUEEJJEe-IHs245fJtvg" xmi:id="_eLpdIEJJEe-IHs245fJtvg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5e5f6b11-763f-4200-99df-2c3f5c2fcab3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JZ/QAUGkXq/UcpoLQ5RZTAUULxyU1v/G6/AchBannXEPgw9hCoqGYDLGmifxVYG5GUf7n/WkQZUI&#13;
-0Eqo/AdrkA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7e477245-4140-47cb-a262-847c5c591df9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>alcAmGEEs2AbXjVxztgQf2lnVIgvJzpvdvaOFOF99ir4APDnT3ETPdqNN2iTtFNRp4vPYqIPZkV0&#13;
-q6Jt06jsUQ==</DigestValue></Reference></SignedInfo><SignatureValue>INmZrmq8FEoPAsiYb+aE51YIOLT0QXTRLpm6lZVKb5cK1tWByDpjZxq4d3d5r2qGu3lba2Mqr4H4&#13;
-4zVtBLc8QoWbFlFZX8Spy8GAyWeNZePqWEav43WXYqTZfgdOgKHGXdKK7vfm2lLdhVL+tKqchos2&#13;
-w8IaUayWrzsK7AWqLQ16Np7xQKdhPB4Ha68hSSpDVsnAMi+FoynCcylDlkh6aBioEmQXuvxqEKpK&#13;
-+aB3HQETaaMl3zEJpzYWg1N2HE1eu+VhhOQgUjw6rtmjNWtvipHQULgEZEnLC1NhJEuL3vCVMFVf&#13;
-lyiR9LNz8NRSM0mwnNqKNQzZmXyPIwbakjFcsQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d15b17e1-c5a4-43c9-b042-c185bb461407"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y97FwzU6TJeH+wd759aX8snGHG0dKMyZaijzmesKf6WUGItcckbedfOXgWJ3VRlc6ZZxJj9Pc1Zl&#13;
+8OGJri7FpQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03196abb-2575-4f16-8aa5-b6eee78faad0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IX9kjoufLtDEPSDMEEw8ymyPzgmI4FZ/r4/O5VMUaVmqev9zN93C8qPjaiSyRm5hgX/ESi5f4tzO&#13;
+rRUFP/xOeA==</DigestValue></Reference></SignedInfo><SignatureValue>RH3vZo86Pyewq+72LSg5kyYDChqHyTxSmTgrLYYDfmgj0xFtrHPL6n5r+yR40D0dwJXwc6G9QLmm&#13;
+VHuq7EiCVpAWWObWyzlzH6w6emPU2U55x6FbfCgfOYcK5pOEr29+UQKv8Ysw248wtj5snpimCfPy&#13;
+9Ric5bz1r0petmWE+pNhT0FW/93QxPjLz4VHxcmyoL+Mn8mZM8WebnCZOtw0tdn68N5noL9QzaES&#13;
+emPk+yif/mKH96DYnjzvrbdb2kDw72DmuUfhbEAvTvE/jhwKZj2BZKtEJUc+Ln6ECna9wH7yAh0Y&#13;
+eeKjG7vUsLp0jEP/wRUJ5FBe45uVKVQDbxdtRg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2497,4 +2345,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7e477245-4140-47cb-a262-847c5c591df9" Target="#_5e5f6b11-763f-4200-99df-2c3f5c2fcab3"><Timestamp>2024-07-19 03:10:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03196abb-2575-4f16-8aa5-b6eee78faad0" Target="#_d15b17e1-c5a4-43c9-b042-c185bb461407"><Timestamp>2024-07-22 01:33:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
