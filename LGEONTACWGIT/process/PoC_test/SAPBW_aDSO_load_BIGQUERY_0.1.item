@@ -106,9 +106,19 @@
   </node>
   <node componentName="tSAPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="80" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPConnection_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPConnection"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Business/SAP"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPConnection"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="LABEL" name="NOTE3" show="false" value="The selected SAP JCO version allows you to share this SAP connection only with tSAPInput and tSAPOutput"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IWvLAEWZEe-0A4PCgSr1vg"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="TALENDSAP"/>
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
@@ -131,7 +141,6 @@
   </node>
   <node componentName="tSAPADSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="SAP_JCO"/>
@@ -583,7 +592,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1257,7 +1265,6 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
@@ -1562,12 +1569,10 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPADSOInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out_parquet_1" lineStyle="0" metaname="out_parquet_1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputParquet_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_1" target="tGSConnection_1">
@@ -1622,13 +1627,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_081a8105-2413-4cfe-a50b-10252a6bd9d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oZ66/LnM4+ntUsZhxMDwHJoOVKZl0Z4gYEW5fDhstmcW44Gsn4Tuehq2sjlrMFhTtMWyDahA8m7/&#13;
-ppJ1M/yHOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_50999151-9616-4bee-a07f-02b45cad5fa1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mPC8kL3VEWnp4Tb4nQZS5wXh2aPh2a5mE+ksnbh9MgcbX1jhHNM8ZyJRwR64sC4zq58i6CzbqfqO&#13;
-0q30ZaZAuA==</DigestValue></Reference></SignedInfo><SignatureValue>ZifPwJm0E6my8LSMW3/xc/+I/Tjh1FowaKqa+Yqpu8fokY3SDyDMh2W03nQfoltz3y1EAQeVNzee&#13;
-DNh3IlDNe3eeiOLzwEGo/lKGuoJzsQJ0rdWMgGOr+GxYPAxuk5x1O9x8L4LYDpKQwcV87VlqcGfN&#13;
-ATcwHLi9V6ZCHc06S+d5D0eAX0CMemSiAtlhyF5QMyv6dgvfKWYtBCtT5nnjVurF0KRyaTgfGRKt&#13;
-LtbEA7Ddks58o/rS5JDVVJf0bVGF+ejZJpZ0lY3JSq0NPew22uRNZTmbEe0vCOzq52MrYz4q0IPA&#13;
-lGbO0LENARZyZehUpLnNjMtGGPhHvI5YqXDaTA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0ecbc8f0-1c7c-4837-83e5-3881f2449423"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oEBWIWWHH7aYpwHP/cUNd+DXFU/dccFwAUf4hyI9rHkPeC38+6ueLkLLEufhg0jjFESO95Kt/X3h&#13;
+yGTvZ7ZVkQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5136bf5c-e571-4365-893e-c21d3495594c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XsJBlvQZcDcphKxOH9t6xybEKXGR7dwTu9skryvLKAzSm1uW4SKSIdBw3NrbVZYdTFinHsnftjLM&#13;
+hJixoY6X5A==</DigestValue></Reference></SignedInfo><SignatureValue>dEBNNtfMRLs6yyF0hTpdIgXXKVus694XSJ9IgMi7W6dB+3OkKD5HXYWoSaASEs4N5Uklbc0oTjyJ&#13;
+eFlmphtSQFR8dP1qU1KrrhfAJCQwcc1a0sN+RotK0j1WeN3/s7iqhSX9/8lhbNHpXhZa8/aVp2zE&#13;
+v4c1gWM+Lrem/Jn+PwkpzXqVp/VGBtyzKt98Q54QasIYLtFevQYa+ADqdfHKfz9y4pMFJbmN1h1C&#13;
+nobaXID1Mi8FGwbPsm2aD6GtDp6hBc4dm4YVF1hE0BZLG9xhPITS7GtgvtijUlpACxz7IG+eSnnX&#13;
+ZTRWUDwLVFdPsPgUByRir+jIaftdjGHIUYAEXg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1650,4 +1655,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_50999151-9616-4bee-a07f-02b45cad5fa1" Target="#_081a8105-2413-4cfe-a50b-10252a6bd9d6"><Timestamp>2024-07-22 01:51:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5136bf5c-e571-4365-893e-c21d3495594c" Target="#_0ecbc8f0-1c7c-4837-83e5-3881f2449423"><Timestamp>2024-07-22 02:30:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

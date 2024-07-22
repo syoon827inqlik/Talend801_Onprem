@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendMetadata:SAPConnection Client="200" Host="vhlgrb4dcs.sap.lge.com" Language="EN" Password="enc:system.encryption.key.v1:7rLPWujJ1caU4ce2fSmD5JIc7+kmtEJ2tb2MuFhfaUPFsGJrxQk=" SystemNumber="00" Username="qliktest01" dataPackage="_m9fz0EJ2Ee-IHs245fJtvg" id="_ONIK8EJJEe-IHs245fJtvg" jcoVersion="SAP2" xmi:id="_ONae0EJJEe-IHs245fJtvg">
+  <TalendMetadata:SAPConnection Client="200" Host="vhlgrb4dcs.sap.lge.com" Language="EN" Password="enc:system.encryption.key.v1:ltSNwQIZGyU+HGS0nZIKIJ/i0JVmvJK4IijXp0F3zz87mlVyiMw=" SystemNumber="00" Username="qliktest01" dataPackage="_m9fz0EJ2Ee-IHs245fJtvg" id="_ONIK8EJJEe-IHs245fJtvg" jcoVersion="SAP2" xmi:id="_ONae0EJJEe-IHs245fJtvg">
     <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_ONae0UJJEe-IHs245fJtvg"/>
     <Funtions connection="_ONae0EJJEe-IHs245fJtvg" description="_eLpdIEJJEe-IHs245fJtvg" id="_a8jD4EJJEe-IHs245fJtvg" label="RSPC_API_CHAIN_START" name="RSPC_API_CHAIN_START" xmi:id="_eLVUEEJJEe-IHs245fJtvg">
       <tables id="_bnWUYEJJEe-IHs245fJtvg" label="SINGLE_PARAM" name="SINGLE_PARAM" tableType="OUTPUT" xmi:id="_eLVUEUJJEe-IHs245fJtvg">
@@ -82,870 +82,870 @@
         </outputRoot>
       </paramData>
     </Funtions>
-    <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_cl4rEEV8Ee-7Jte1bldzRw"/>
-    <BWAdvancedDataStoreObjects category="Input" id="_LexEQEJqEe-IHs245fJtvg" label="YD_CASE3_F" modelType="AdvancedDataStoreObject" name="YD_CASE3$F" tableSearchType="TRANSACTION_DATA" tableType="TABLE" xmi:id="_9-lXYETHEe-9oMPNevfcRQ">
-      <feature businessName="/BIC/YCSBCCD" comment="CONSLD_BIZ_CAT_CD" label="_BIC_YCSBCCD" length="30" name="/BIC/YCSBCCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXYUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXYkTHEe-9oMPNevfcRQ"/>
+    <additionalProperties Value="true" propertyName="api.use_z_talend_read_table" xmi:id="_2uaOwEfPEe-uBpX1nDvZyw"/>
+    <BWAdvancedDataStoreObjects category="Input" id="_LexEQEJqEe-IHs245fJtvg" label="YD_CASE3_F" modelType="AdvancedDataStoreObject" name="YD_CASE3$F" tableSearchType="TRANSACTION_DATA" tableType="TABLE" xmi:id="_SObqsEfPEe-uBpX1nDvZyw">
+      <feature businessName="/BIC/YCSBCCD" comment="CONSLD_BIZ_CAT_CD" label="_BIC_YCSBCCD" length="30" name="/BIC/YCSBCCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqsUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqskfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCSBCCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCCTPCD" comment="CSMS_CHNL_TYPE_CD" label="_BIC_YCCTPCD" length="5" name="/BIC/YCCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXY0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXZETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCCTPCD" comment="CSMS_CHNL_TYPE_CD" label="_BIC_YCCTPCD" length="5" name="/BIC/YCCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqs0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqtEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCCTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCTPCD" comment="CONTR_TYPE_CD" label="_BIC_YCTPCD" length="1" name="/BIC/YCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXZUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXZkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCTPCD" comment="CONTR_TYPE_CD" label="_BIC_YCTPCD" length="1" name="/BIC/YCTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqtUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqtkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YLTPCD" comment="LEASE_TYPE_CD" label="_BIC_YLTPCD" length="3" name="/BIC/YLTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXZ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXaETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YLTPCD" comment="LEASE_TYPE_CD" label="_BIC_YLTPCD" length="3" name="/BIC/YLTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqt0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObquEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YLTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YEOATPCD" comment="EXP_ORIG_AU_TYPE_CD" label="_BIC_YEOATPCD" length="30" name="/BIC/YEOATPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXaUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXakTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YEOATPCD" comment="EXP_ORIG_AU_TYPE_CD" label="_BIC_YEOATPCD" length="30" name="/BIC/YEOATPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObquUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqukfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YEOATPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YVMLLAG" comment="VIRT_MDL_FLAG" label="_BIC_YVMLLAG" length="1" name="/BIC/YVMLLAG" sourceType="STRING" talendType="id_String" xmi:id="_9-lXa0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXbETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVMLLAG" comment="VIRT_MDL_FLAG" label="_BIC_YVMLLAG" length="1" name="/BIC/YVMLLAG" sourceType="STRING" talendType="id_String" xmi:id="_SObqu0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqvEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVMLLAG</refTable>
       </feature>
-      <feature businessName="/BIC/YPMSCD" comment="PROD_MDL_SFFX_CD" label="_BIC_YPMSCD" length="50" name="/BIC/YPMSCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXbUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXbkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPMSCD" comment="PROD_MDL_SFFX_CD" label="_BIC_YPMSCD" length="50" name="/BIC/YPMSCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqvUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqvkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPMSCD</refTable>
       </feature>
-      <feature businessName="/BIC/YMFRCD" comment="MGT_FCTRY_CD" label="_BIC_YMFRCD" length="10" name="/BIC/YMFRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXb0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXcETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMFRCD" comment="MGT_FCTRY_CD" label="_BIC_YMFRCD" length="10" name="/BIC/YMFRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqv0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqwEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMFRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YFRCD" comment="FCTRY_CD" label="_BIC_YFRCD" length="10" name="/BIC/YFRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXcUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXckTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRCD" comment="FCTRY_CD" label="_BIC_YFRCD" length="10" name="/BIC/YFRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqwUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqwkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSMSFCD" comment="SET_MDL_SFFX_CD" label="_BIC_YSMSFCD" length="50" name="/BIC/YSMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXc0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXdETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSMSFCD" comment="SET_MDL_SFFX_CD" label="_BIC_YSMSFCD" length="50" name="/BIC/YSMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqw0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqxEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSMSFCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSSRNRCD" comment="SALES_SUBSDR_RNR_CD" label="_BIC_YSSRNRCD" length="8" name="/BIC/YSSRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXdUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXdkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSSRNRCD" comment="SALES_SUBSDR_RNR_CD" label="_BIC_YSSRNRCD" length="8" name="/BIC/YSSRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqxUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqxkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSSRNRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YRRP_FLAG" comment="RRP_FLAG" label="_BIC_YRRP_FLAG" length="1" name="/BIC/YRRP_FLAG" sourceType="STRING" talendType="id_String" xmi:id="_9-lXd0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXeETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YRRP_FLAG" comment="RRP_FLAG" label="_BIC_YRRP_FLAG" length="1" name="/BIC/YRRP_FLAG" sourceType="STRING" talendType="id_String" xmi:id="_SObqx0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqyEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YRRP_FLAG</refTable>
       </feature>
-      <feature businessName="/BIC/YFBTCCD" comment="FIN_BILLTO_CUST_CD" label="_BIC_YFBTCCD" length="40" name="/BIC/YFBTCCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXeUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXekTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFBTCCD" comment="FIN_BILLTO_CUST_CD" label="_BIC_YFBTCCD" length="40" name="/BIC/YFBTCCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqyUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqykfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFBTCCD</refTable>
       </feature>
-      <feature businessName="/BIC/YFBTCSDCD" comment="FIN_BILLTO_CUST_SUBSDR_CD" label="_BIC_YFBTCSDCD" length="8" name="/BIC/YFBTCSDCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXe0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXfETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFBTCSDCD" comment="FIN_BILLTO_CUST_SUBSDR_CD" label="_BIC_YFBTCSDCD" length="8" name="/BIC/YFBTCSDCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqy0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqzEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFBTCSDCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSPSATPCD" comment="SPCL_SALES_TYPE_CD" label="_BIC_YSPSATPCD" length="50" name="/BIC/YSPSATPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXfUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXfkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSPSATPCD" comment="SPCL_SALES_TYPE_CD" label="_BIC_YSPSATPCD" length="50" name="/BIC/YSPSATPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObqzUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObqzkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSPSATPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YMKT_CD" comment="MKT_CD" label="_BIC_YMKT_CD" length="1" name="/BIC/YMKT_CD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXf0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXgETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMKT_CD" comment="MKT_CD" label="_BIC_YMKT_CD" length="1" name="/BIC/YMKT_CD" sourceType="STRING" talendType="id_String" xmi:id="_SObqz0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq0EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMKT_CD</refTable>
       </feature>
-      <feature businessName="/BIC/YDBIZTPCD" comment="DIV_BIZ_TYPE_CD" label="_BIC_YDBIZTPCD" length="30" name="/BIC/YDBIZTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXgUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXgkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YDBIZTPCD" comment="DIV_BIZ_TYPE_CD" label="_BIC_YDBIZTPCD" length="30" name="/BIC/YDBIZTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq0UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq0kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YDBIZTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YLUPUSRID" comment="LAST_UPD_USR_ID" label="_BIC_YLUPUSRID" length="30" name="/BIC/YLUPUSRID" sourceType="STRING" talendType="id_String" xmi:id="_9-lXg0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXhETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YLUPUSRID" comment="LAST_UPD_USR_ID" label="_BIC_YLUPUSRID" length="30" name="/BIC/YLUPUSRID" sourceType="STRING" talendType="id_String" xmi:id="_SObq00fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq1EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YLUPUSRID</refTable>
       </feature>
-      <feature businessName="/BIC/YLUPDT" comment="LAST_UPD_DATE" label="_BIC_YLUPDT" length="21" name="/BIC/YLUPDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_9-lXhUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXhkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YLUPDT" comment="LAST_UPD_DATE" label="_BIC_YLUPDT" length="21" name="/BIC/YLUPDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_SObq1UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq1kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YLUPDT</refTable>
       </feature>
-      <feature businessName="/BIC/YCRUSRID" comment="CREATION_USR_ID" label="_BIC_YCRUSRID" length="30" name="/BIC/YCRUSRID" sourceType="STRING" talendType="id_String" xmi:id="_9-lXh0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXiETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRUSRID" comment="CREATION_USR_ID" label="_BIC_YCRUSRID" length="30" name="/BIC/YCRUSRID" sourceType="STRING" talendType="id_String" xmi:id="_SObq10fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq2EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRUSRID</refTable>
       </feature>
-      <feature businessName="/BIC/YCRDT" comment="CREATION_DATE" label="_BIC_YCRDT" length="21" name="/BIC/YCRDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_9-lXiUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXikTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRDT" comment="CREATION_DATE" label="_BIC_YCRDT" length="21" name="/BIC/YCRDT" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_SObq2UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq2kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRDT</refTable>
       </feature>
-      <feature businessName="/BIC/YACYYYYMM" comment="ACCTG_YYYYMM" label="_BIC_YACYYYYMM" length="6" name="/BIC/YACYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_9-lXi0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXjETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YACYYYYMM" comment="ACCTG_YYYYMM" label="_BIC_YACYYYYMM" length="6" name="/BIC/YACYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_SObq20fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq3EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YACYYYYMM</refTable>
       </feature>
-      <feature businessName="/BIC/YPLYYYYMM" comment="PLN_YYYYMM" label="_BIC_YPLYYYYMM" length="6" name="/BIC/YPLYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_9-lXjUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXjkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPLYYYYMM" comment="PLN_YYYYMM" label="_BIC_YPLYYYYMM" length="6" name="/BIC/YPLYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_SObq3UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq3kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPLYYYYMM</refTable>
       </feature>
-      <feature businessName="/BIC/YSRTPNM" comment="SCENARIO_TYPE_CD" label="_BIC_YSRTPNM" length="30" name="/BIC/YSRTPNM" sourceType="STRING" talendType="id_String" xmi:id="_9-lXj0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXkETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSRTPNM" comment="SCENARIO_TYPE_CD" label="_BIC_YSRTPNM" length="30" name="/BIC/YSRTPNM" sourceType="STRING" talendType="id_String" xmi:id="_SObq30fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq4EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSRTPNM</refTable>
       </feature>
-      <feature businessName="/BIC/YDIV_CD" comment="DIV_CD" label="_BIC_YDIV_CD" length="5" name="/BIC/YDIV_CD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXkUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXkkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YDIV_CD" comment="DIV_CD" label="_BIC_YDIV_CD" length="5" name="/BIC/YDIV_CD" sourceType="STRING" talendType="id_String" xmi:id="_SObq4UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq4kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YDIV_CD</refTable>
       </feature>
-      <feature businessName="/BIC/YSBDRCD" comment="SUBSDR_CD" label="_BIC_YSBDRCD" length="8" name="/BIC/YSBDRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXk0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXlETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSBDRCD" comment="SUBSDR_CD" label="_BIC_YSBDRCD" length="8" name="/BIC/YSBDRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq40fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq5EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSBDRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YMTPCD" comment="MGT_TYPE_CD" label="_BIC_YMTPCD" length="5" name="/BIC/YMTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXlUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXlkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMTPCD" comment="MGT_TYPE_CD" label="_BIC_YMTPCD" length="5" name="/BIC/YMTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq5UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq5kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YAU_CD" comment="AU_CD" label="_BIC_YAU_CD" length="3" name="/BIC/YAU_CD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXl0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXmETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YAU_CD" comment="AU_CD" label="_BIC_YAU_CD" length="3" name="/BIC/YAU_CD" sourceType="STRING" talendType="id_String" xmi:id="_SObq50fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq6EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YAU_CD</refTable>
       </feature>
-      <feature businessName="/BIC/YSDEPTCD" comment="SALES_DEPT_CD" label="_BIC_YSDEPTCD" length="10" name="/BIC/YSDEPTCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXmUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXmkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSDEPTCD" comment="SALES_DEPT_CD" label="_BIC_YSDEPTCD" length="10" name="/BIC/YSDEPTCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq6UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq6kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSDEPTCD</refTable>
       </feature>
-      <feature businessName="/BIC/YMSFCD" comment="MDL_SFFX_CD" label="_BIC_YMSFCD" length="50" name="/BIC/YMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXm0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXnETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMSFCD" comment="MDL_SFFX_CD" label="_BIC_YMSFCD" length="50" name="/BIC/YMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq60fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq7EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMSFCD</refTable>
       </feature>
-      <feature businessName="/BIC/YACMSFCD" comment="ACTUAL_MDL_SFFX_CD" label="_BIC_YACMSFCD" length="50" name="/BIC/YACMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXnUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXnkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YACMSFCD" comment="ACTUAL_MDL_SFFX_CD" label="_BIC_YACMSFCD" length="50" name="/BIC/YACMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq7UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq7kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YACMSFCD</refTable>
       </feature>
-      <feature businessName="/BIC/YBTCUSTCD" comment="BILLTO_CUST_CD" label="_BIC_YBTCUSTCD" length="40" name="/BIC/YBTCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXn0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXoETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YBTCUSTCD" comment="BILLTO_CUST_CD" label="_BIC_YBTCUSTCD" length="40" name="/BIC/YBTCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq70fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq8EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YBTCUSTCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSHCUSTCD" comment="SHIPTO_CUST_CD" label="_BIC_YSHCUSTCD" length="40" name="/BIC/YSHCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXoUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXokTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSHCUSTCD" comment="SHIPTO_CUST_CD" label="_BIC_YSHCUSTCD" length="40" name="/BIC/YSHCUSTCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq8UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq8kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSHCUSTCD</refTable>
       </feature>
-      <feature businessName="/BIC/YBTYPCD" comment="BIZ_TYPE_CD" label="_BIC_YBTYPCD" length="30" name="/BIC/YBTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXo0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXpETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YBTYPCD" comment="BIZ_TYPE_CD" label="_BIC_YBTYPCD" length="30" name="/BIC/YBTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq80fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq9EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YBTYPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YPJTCD" comment="PJT_CD" label="_BIC_YPJTCD" length="30" name="/BIC/YPJTCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXpUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXpkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPJTCD" comment="PJT_CD" label="_BIC_YPJTCD" length="30" name="/BIC/YPJTCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq9UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq9kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPJTCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSPLYRCD" comment="SPLYR_CD" label="_BIC_YSPLYRCD" length="20" name="/BIC/YSPLYRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXp0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXqETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSPLYRCD" comment="SPLYR_CD" label="_BIC_YSPLYRCD" length="20" name="/BIC/YSPLYRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq90fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq-EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSPLYRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YPRDSDRCD" comment="PRODUCTION_SUBSDR_CD" label="_BIC_YPRDSDRCD" length="8" name="/BIC/YPRDSDRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXqUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXqkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPRDSDRCD" comment="PRODUCTION_SUBSDR_CD" label="_BIC_YPRDSDRCD" length="8" name="/BIC/YPRDSDRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObq-UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq-kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPRDSDRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YEOTYPECD" comment="EXP_ORIG_TYPE_CD" label="_BIC_YEOTYPECD" length="30" name="/BIC/YEOTYPECD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXq0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXrETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YEOTYPECD" comment="EXP_ORIG_TYPE_CD" label="_BIC_YEOTYPECD" length="30" name="/BIC/YEOTYPECD" sourceType="STRING" talendType="id_String" xmi:id="_SObq-0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq_EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YEOTYPECD</refTable>
       </feature>
-      <feature businessName="/BIC/YCLSAMFLG" comment="CONSLD_SALES_MDL_FLAG" label="_BIC_YCLSAMFLG" length="30" name="/BIC/YCLSAMFLG" sourceType="STRING" talendType="id_String" xmi:id="_9-lXrUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXrkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCLSAMFLG" comment="CONSLD_SALES_MDL_FLAG" label="_BIC_YCLSAMFLG" length="30" name="/BIC/YCLSAMFLG" sourceType="STRING" talendType="id_String" xmi:id="_SObq_UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObq_kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCLSAMFLG</refTable>
       </feature>
-      <feature businessName="/BIC/YOTMFLG" comment="OUTSRC_MDL_FLAG" label="_BIC_YOTMFLG" length="1" name="/BIC/YOTMFLG" sourceType="STRING" talendType="id_String" xmi:id="_9-lXr0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXsETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YOTMFLG" comment="OUTSRC_MDL_FLAG" label="_BIC_YOTMFLG" length="1" name="/BIC/YOTMFLG" sourceType="STRING" talendType="id_String" xmi:id="_SObq_0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrAEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YOTMFLG</refTable>
       </feature>
-      <feature businessName="/BIC/YMMPTYPCD" comment="MDL_MAPP_TYPE_CD" label="_BIC_YMMPTYPCD" length="30" name="/BIC/YMMPTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXsUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXskTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMMPTYPCD" comment="MDL_MAPP_TYPE_CD" label="_BIC_YMMPTYPCD" length="30" name="/BIC/YMMPTYPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrAUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrAkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMMPTYPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YPRDAUCD" comment="Production AU" label="_BIC_YPRDAUCD" length="3" name="/BIC/YPRDAUCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXs0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXtETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPRDAUCD" comment="Production AU" label="_BIC_YPRDAUCD" length="3" name="/BIC/YPRDAUCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrA0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrBEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPRDAUCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSMDSFCD" comment="SALES_MDL_SFFX_CD" label="_BIC_YSMDSFCD" length="50" name="/BIC/YSMDSFCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXtUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXtkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSMDSFCD" comment="SALES_MDL_SFFX_CD" label="_BIC_YSMDSFCD" length="50" name="/BIC/YSMDSFCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrBUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrBkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSMDSFCD</refTable>
       </feature>
-      <feature businessName="/BIC/YPRDMSFCD" comment="PRODUCTION_MDL_SFFX_CD" label="_BIC_YPRDMSFCD" length="50" name="/BIC/YPRDMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXt0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXuETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPRDMSFCD" comment="PRODUCTION_MDL_SFFX_CD" label="_BIC_YPRDMSFCD" length="50" name="/BIC/YPRDMSFCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrB0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrCEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPRDMSFCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCAYYYYMM" comment="COST_APPLY_YYYYMM" label="_BIC_YCAYYYYMM" length="6" name="/BIC/YCAYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_9-lXuUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXukTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCAYYYYMM" comment="COST_APPLY_YYYYMM" label="_BIC_YCAYYYYMM" length="6" name="/BIC/YCAYYYYMM" sourceType="STRING" talendType="id_String" xmi:id="_SObrCUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrCkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCAYYYYMM</refTable>
       </feature>
-      <feature businessName="/BIC/YORNRCD" comment="ZONE_RNR_CD" label="_BIC_YORNRCD" length="10" name="/BIC/YORNRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXu0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXvETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YORNRCD" comment="ZONE_RNR_CD" label="_BIC_YORNRCD" length="10" name="/BIC/YORNRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrC0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrDEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YORNRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YSBRNRCD" comment="SUBSDR_RNR_CD" label="_BIC_YSBRNRCD" length="8" name="/BIC/YSBRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXvUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXvkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSBRNRCD" comment="SUBSDR_RNR_CD" label="_BIC_YSBRNRCD" length="8" name="/BIC/YSBRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrDUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrDkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSBRNRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCRRNRCD" comment="CNTRY_RNR_CD" label="_BIC_YCRRNRCD" length="2" name="/BIC/YCRRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXv0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXwETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRRNRCD" comment="CNTRY_RNR_CD" label="_BIC_YCRRNRCD" length="2" name="/BIC/YCRRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrD0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrEEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRRNRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YLCTRNRCD" comment="LNDED_CNTRY_RNR_CD" label="_BIC_YLCTRNRCD" length="2" name="/BIC/YLCTRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXwUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXwkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YLCTRNRCD" comment="LNDED_CNTRY_RNR_CD" label="_BIC_YLCTRNRCD" length="2" name="/BIC/YLCTRNRCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrEUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrEkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YLCTRNRCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCRCYCD" comment="CURRENCY_CD" label="_BIC_YCRCYCD" length="15" name="/BIC/YCRCYCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXw0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXxETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRCYCD" comment="CURRENCY_CD" label="_BIC_YCRCYCD" length="15" name="/BIC/YCRCYCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrE0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrFEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRCYCD</refTable>
       </feature>
-      <feature businessName="/BIC/YCRACTPCD" comment="CURRM_ACCUM_TYPE_CD" label="_BIC_YCRACTPCD" length="30" name="/BIC/YCRACTPCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXxUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXxkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRACTPCD" comment="CURRM_ACCUM_TYPE_CD" label="_BIC_YCRACTPCD" length="30" name="/BIC/YCRACTPCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrFUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrFkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRACTPCD</refTable>
       </feature>
-      <feature businessName="/BIC/YVAINEXCD" comment="VRNC_ALC_INCL_EXCL_CD" label="_BIC_YVAINEXCD" length="30" name="/BIC/YVAINEXCD" sourceType="STRING" talendType="id_String" xmi:id="_9-lXx0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXyETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVAINEXCD" comment="VRNC_ALC_INCL_EXCL_CD" label="_BIC_YVAINEXCD" length="30" name="/BIC/YVAINEXCD" sourceType="STRING" talendType="id_String" xmi:id="_SObrF0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrGEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVAINEXCD</refTable>
       </feature>
-      <feature businessName="RECORDMODE" comment="BW Delta Process: Update Mode" label="RECORDMODE" length="1" name="RECORDMODE" sourceType="STRING" talendType="id_String" xmi:id="_9-lXyUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXykTHEe-9oMPNevfcRQ"/>
+      <feature businessName="RECORDMODE" comment="BW Delta Process: Update Mode" label="RECORDMODE" length="1" name="RECORDMODE" sourceType="STRING" talendType="id_String" xmi:id="_SObrGUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrGkfPEe-uBpX1nDvZyw"/>
         <refTable>RECORDMODE</refTable>
       </feature>
-      <feature businessName="/BIC/YMNAWAMT" comment="MIN_ALLWN_AMT" label="_BIC_YMNAWAMT" length="16" name="/BIC/YMNAWAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lXy0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXzETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMNAWAMT" comment="MIN_ALLWN_AMT" label="_BIC_YMNAWAMT" length="16" name="/BIC/YMNAWAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrG0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrHEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMNAWAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVMEGCAMT" comment="VAR_MFG_EXP_GLOB_COST_AMT" label="_BIC_YVMEGCAMT" length="16" name="/BIC/YVMEGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lXzUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lXzkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVMEGCAMT" comment="VAR_MFG_EXP_GLOB_COST_AMT" label="_BIC_YVMEGCAMT" length="16" name="/BIC/YVMEGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrHUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrHkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVMEGCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFMEGCAMT" comment="FIX_MFG_EXP_GLOB_COST_AMT" label="_BIC_YFMEGCAMT" length="16" name="/BIC/YFMEGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lXz0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX0ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFMEGCAMT" comment="FIX_MFG_EXP_GLOB_COST_AMT" label="_BIC_YFMEGCAMT" length="16" name="/BIC/YFMEGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrH0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrIEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFMEGCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVMEGAMT" comment="VAR_MFG_EXP_GEN_AMT" label="_BIC_YVMEGAMT" length="16" name="/BIC/YVMEGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX0UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX0kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVMEGAMT" comment="VAR_MFG_EXP_GEN_AMT" label="_BIC_YVMEGAMT" length="16" name="/BIC/YVMEGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrIUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrIkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVMEGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFMEGAMT" comment="FIX_MFG_EXP_GEN_AMT" label="_BIC_YFMEGAMT" length="16" name="/BIC/YFMEGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX00THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX1ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFMEGAMT" comment="FIX_MFG_EXP_GEN_AMT" label="_BIC_YFMEGAMT" length="16" name="/BIC/YFMEGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrI0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrJEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFMEGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVLCGCAMT" comment="VAR_LBR_COST_GLOB_COST_AMT" label="_BIC_YVLCGCAMT" length="16" name="/BIC/YVLCGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX1UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX1kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVLCGCAMT" comment="VAR_LBR_COST_GLOB_COST_AMT" label="_BIC_YVLCGCAMT" length="16" name="/BIC/YVLCGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrJUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrJkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVLCGCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFLCGCAMT" comment="FIX_LBR_COST_GLOB_COST_AMT" label="_BIC_YFLCGCAMT" length="16" name="/BIC/YFLCGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX10THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX2ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFLCGCAMT" comment="FIX_LBR_COST_GLOB_COST_AMT" label="_BIC_YFLCGCAMT" length="16" name="/BIC/YFLCGCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrJ0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrKEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFLCGCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVLCCAMT" comment="VAR_LBR_COST_GEN_AMT" label="_BIC_YVLCCAMT" length="16" name="/BIC/YVLCCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX2UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX2kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVLCCAMT" comment="VAR_LBR_COST_GEN_AMT" label="_BIC_YVLCCAMT" length="16" name="/BIC/YVLCCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrKUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrKkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVLCCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFLCGAMT" comment="FIX_LBR_COST_GEN_AMT" label="_BIC_YFLCGAMT" length="16" name="/BIC/YFLCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX20THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX3ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFLCGAMT" comment="FIX_LBR_COST_GEN_AMT" label="_BIC_YFLCGAMT" length="16" name="/BIC/YFLCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrK0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrLEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFLCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YSRALAMT" comment="SALES_RTN_ALLWN_AMT" label="_BIC_YSRALAMT" length="16" name="/BIC/YSRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX3UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX3kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSRALAMT" comment="SALES_RTN_ALLWN_AMT" label="_BIC_YSRALAMT" length="16" name="/BIC/YSRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrLUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrLkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSRALAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVFGLAMT" comment="VAR_FX_GAIN_LOSS_AMT" label="_BIC_YVFGLAMT" length="16" name="/BIC/YVFGLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX30THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX4ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVFGLAMT" comment="VAR_FX_GAIN_LOSS_AMT" label="_BIC_YVFGLAMT" length="16" name="/BIC/YVFGLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrL0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrMEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVFGLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFFGLAMT" comment="FIX_FX_GAIN_LOSS_AMT" label="_BIC_YFFGLAMT" length="16" name="/BIC/YFFGLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX4UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX4kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFFGLAMT" comment="FIX_FX_GAIN_LOSS_AMT" label="_BIC_YFFGLAMT" length="16" name="/BIC/YFFGLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrMUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrMkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFFGLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRGAMT" comment="VAR_RI_GAP_AMT" label="_BIC_YVRGAMT" length="16" name="/BIC/YVRGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX40THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX5ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRGAMT" comment="VAR_RI_GAP_AMT" label="_BIC_YVRGAMT" length="16" name="/BIC/YVRGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrM0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrNEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRGAMT" comment="FIX_RI_GAP_AMT" label="_BIC_YFRGAMT" length="16" name="/BIC/YFRGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX5UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX5kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRGAMT" comment="FIX_RI_GAP_AMT" label="_BIC_YFRGAMT" length="16" name="/BIC/YFRGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrNUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrNkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YRRSEAMT" comment="RNR_SALES_EXCL_AMT" label="_BIC_YRRSEAMT" length="16" name="/BIC/YRRSEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX50THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX6ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YRRSEAMT" comment="RNR_SALES_EXCL_AMT" label="_BIC_YRRSEAMT" length="16" name="/BIC/YRRSEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrN0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrOEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YRRSEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YRRSAMT" comment="RNR_SALES_AMT" label="_BIC_YRRSAMT" length="16" name="/BIC/YRRSAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX6UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX6kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YRRSAMT" comment="RNR_SALES_AMT" label="_BIC_YRRSAMT" length="16" name="/BIC/YRRSAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrOUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrOkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YRRSAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YRSTEXAMT" comment="RETAIL_SALES_TAX_EXCL_AMT" label="_BIC_YRSTEXAMT" length="16" name="/BIC/YRSTEXAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX60THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX7ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YRSTEXAMT" comment="RETAIL_SALES_TAX_EXCL_AMT" label="_BIC_YRSTEXAMT" length="16" name="/BIC/YRSTEXAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrO0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrPEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YRSTEXAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YORPRAMT" comment="ORDIN_PRF_AMT" label="_BIC_YORPRAMT" length="16" name="/BIC/YORPRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX7UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX7kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YORPRAMT" comment="ORDIN_PRF_AMT" label="_BIC_YORPRAMT" length="16" name="/BIC/YORPRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrPUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrPkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YORPRAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIEXPAMT" comment="FI_EXP_AMT" label="_BIC_YFIEXPAMT" length="16" name="/BIC/YFIEXPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX70THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX8ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIEXPAMT" comment="FI_EXP_AMT" label="_BIC_YFIEXPAMT" length="16" name="/BIC/YFIEXPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrP0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrQEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIEXPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFFIINCAT" comment="FI_INC_AMT" label="_BIC_YFFIINCAT" length="16" name="/BIC/YFFIINCAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX8UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX8kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFFIINCAT" comment="FI_INC_AMT" label="_BIC_YFFIINCAT" length="16" name="/BIC/YFFIINCAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrQUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrQkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFFIINCAT</refTable>
       </feature>
-      <feature businessName="/BIC/YOI_AMT" comment="CONTRB_PRF_AMT" label="_BIC_YOI_AMT" length="16" name="/BIC/YOI_AMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX80THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX9ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YOI_AMT" comment="CONTRB_PRF_AMT" label="_BIC_YOI_AMT" length="16" name="/BIC/YOI_AMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrQ0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrREfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YOI_AMT</refTable>
       </feature>
-      <feature businessName="/BIC/YMPFAMT" comment="OI_AMT" label="_BIC_YMPFAMT" length="16" name="/BIC/YMPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX9UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX9kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMPFAMT" comment="OI_AMT" label="_BIC_YMPFAMT" length="16" name="/BIC/YMPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrRUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrRkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMPFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YMGPFAMT" comment="MGNL_PRF_AMT" label="_BIC_YMGPFAMT" length="16" name="/BIC/YMGPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX90THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX-ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YMGPFAMT" comment="MGNL_PRF_AMT" label="_BIC_YMGPFAMT" length="16" name="/BIC/YMGPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrR0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrSEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YMGPFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSEOTAT" comment="VAR_SVC_EXP_OTH_AMT" label="_BIC_YFSEOTAT" length="16" name="/BIC/YFSEOTAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX-UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX-kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSEOTAT" comment="VAR_SVC_EXP_OTH_AMT" label="_BIC_YFSEOTAT" length="16" name="/BIC/YFSEOTAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrSUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrSkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSEOTAT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSVEOAMT" comment="FIX_SVC_EXP_OTH_AMT" label="_BIC_YFSVEOAMT" length="16" name="/BIC/YFSVEOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX-0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX_ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSVEOAMT" comment="FIX_SVC_EXP_OTH_AMT" label="_BIC_YFSVEOAMT" length="16" name="/BIC/YFSVEOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrS0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrTEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSVEOAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSSWRAMT" comment="VAR_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YVSSWRAMT" length="16" name="/BIC/YVSSWRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX_UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lX_kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSSWRAMT" comment="VAR_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YVSSWRAMT" length="16" name="/BIC/YVSSWRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrTUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrTkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSSWRAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSSWRAMT" comment="FIX_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YFSSWRAMT" length="16" name="/BIC/YFSSWRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lX_0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYAETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSSWRAMT" comment="FIX_SVC_SELL_WTY_RESRV_AMT" label="_BIC_YFSSWRAMT" length="16" name="/BIC/YFSSWRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrT0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrUEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSSWRAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSDOSAMT" comment="VAR_SVC_DOM_OVSEA_AMT" label="_BIC_YVSDOSAMT" length="16" name="/BIC/YVSDOSAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYAUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYAkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSDOSAMT" comment="VAR_SVC_DOM_OVSEA_AMT" label="_BIC_YVSDOSAMT" length="16" name="/BIC/YVSDOSAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrUUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrUkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSDOSAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSDOVAMT" comment="FIX_SVC_DOM_OVSEA_AMT" label="_BIC_YFSDOVAMT" length="16" name="/BIC/YFSDOVAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYA0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYBETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSDOVAMT" comment="FIX_SVC_DOM_OVSEA_AMT" label="_BIC_YFSDOVAMT" length="16" name="/BIC/YFSDOVAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrU0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrVEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSDOVAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSCCGAMT" comment="VAR_SVC_COMMS_CHRG_AMT" label="_BIC_YVSCCGAMT" length="16" name="/BIC/YVSCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYBUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYBkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSCCGAMT" comment="VAR_SVC_COMMS_CHRG_AMT" label="_BIC_YVSCCGAMT" length="16" name="/BIC/YVSCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrVUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrVkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSCCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSCCGAMT" comment="FIX_SVC_COMMS_CHRG_AMT" label="_BIC_YFSCCGAMT" length="16" name="/BIC/YFSCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYB0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYCETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSCCGAMT" comment="FIX_SVC_COMMS_CHRG_AMT" label="_BIC_YFSCCGAMT" length="16" name="/BIC/YFSCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrV0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrWEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSCCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSCTEAMT" comment="VAR_SVC_TRANSP_EXP_AMT" label="_BIC_YVSCTEAMT" length="16" name="/BIC/YVSCTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYCUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYCkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSCTEAMT" comment="VAR_SVC_TRANSP_EXP_AMT" label="_BIC_YVSCTEAMT" length="16" name="/BIC/YVSCTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrWUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrWkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSCTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSCTEAMT" comment="FIX_SVC_TRANSP_EXP_AMT" label="_BIC_YFSCTEAMT" length="16" name="/BIC/YFSCTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYC0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYDETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSCTEAMT" comment="FIX_SVC_TRANSP_EXP_AMT" label="_BIC_YFSCTEAMT" length="16" name="/BIC/YFSCTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrW0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrXEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSCTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSCLEAMT" comment="VAR_SVC_LBR_EXP_AMT" label="_BIC_YVSCLEAMT" length="16" name="/BIC/YVSCLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYDUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYDkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSCLEAMT" comment="VAR_SVC_LBR_EXP_AMT" label="_BIC_YVSCLEAMT" length="16" name="/BIC/YVSCLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrXUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrXkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSCLEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSCLEAMT" comment="FIX_SVC_LBR_EXP_AMT" label="_BIC_YFSCLEAMT" length="16" name="/BIC/YFSCLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYD0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYEETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSCLEAMT" comment="FIX_SVC_LBR_EXP_AMT" label="_BIC_YFSCLEAMT" length="16" name="/BIC/YFSCLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrX0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrYEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSCLEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSCEPAMT" comment="VAR_SVC_EXP_AMT" label="_BIC_YVSCEPAMT" length="16" name="/BIC/YVSCEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYEUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYEkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSCEPAMT" comment="VAR_SVC_EXP_AMT" label="_BIC_YVSCEPAMT" length="16" name="/BIC/YVSCEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrYUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrYkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSCEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSVEPAMT" comment="FIX_SVC_EXP_AMT" label="_BIC_YFSVEPAMT" length="16" name="/BIC/YFSVEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYE0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYFETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSVEPAMT" comment="FIX_SVC_EXP_AMT" label="_BIC_YFSVEPAMT" length="16" name="/BIC/YFSVEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrY0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrZEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSVEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVREOTAMT" comment="VAR_RND_EXP_OTH_AMT" label="_BIC_YVREOTAMT" length="16" name="/BIC/YVREOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYFUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYFkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVREOTAMT" comment="VAR_RND_EXP_OTH_AMT" label="_BIC_YVREOTAMT" length="16" name="/BIC/YVREOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrZUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrZkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVREOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFREOTAMT" comment="FIX_RND_EXP_OTH_AMT" label="_BIC_YFREOTAMT" length="16" name="/BIC/YFREOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYF0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYGETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFREOTAMT" comment="FIX_RND_EXP_OTH_AMT" label="_BIC_YFREOTAMT" length="16" name="/BIC/YFREOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrZ0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObraEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFREOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRODLAMT" comment="VAR_RND_ORDIN_DEVLM_AMT" label="_BIC_YVRODLAMT" length="16" name="/BIC/YVRODLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYGUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYGkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRODLAMT" comment="VAR_RND_ORDIN_DEVLM_AMT" label="_BIC_YVRODLAMT" length="16" name="/BIC/YVRODLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObraUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrakfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRODLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRODLAMT" comment="FIX_RND_ORDIN_DEVLM_AMT" label="_BIC_YFRODLAMT" length="16" name="/BIC/YFRODLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYG0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYHETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRODLAMT" comment="FIX_RND_ORDIN_DEVLM_AMT" label="_BIC_YFRODLAMT" length="16" name="/BIC/YFRODLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObra0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrbEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRODLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRCCGAMT" comment="VAR_RND_COMMS_CHRG_AMT" label="_BIC_YVRCCGAMT" length="16" name="/BIC/YVRCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYHUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYHkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRCCGAMT" comment="VAR_RND_COMMS_CHRG_AMT" label="_BIC_YVRCCGAMT" length="16" name="/BIC/YVRCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrbUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrbkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRCCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRCCGAMT" comment="FIX_RND_COMMS_CHRG_AMT" label="_BIC_YFRCCGAMT" length="16" name="/BIC/YFRCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYH0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYIETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRCCGAMT" comment="FIX_RND_COMMS_CHRG_AMT" label="_BIC_YFRCCGAMT" length="16" name="/BIC/YFRCCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrb0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrcEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRCCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRTEPAMT" comment="VAR_RND_TRANSP_EXP_AMT" label="_BIC_YVRTEPAMT" length="16" name="/BIC/YVRTEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYIUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYIkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRTEPAMT" comment="VAR_RND_TRANSP_EXP_AMT" label="_BIC_YVRTEPAMT" length="16" name="/BIC/YVRTEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrcUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrckfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRTEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRTEPAMT" comment="FIX_RND_TRANSP_EXP_AMT" label="_BIC_YFRTEPAMT" length="16" name="/BIC/YFRTEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYI0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYJETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRTEPAMT" comment="FIX_RND_TRANSP_EXP_AMT" label="_BIC_YFRTEPAMT" length="16" name="/BIC/YFRTEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrc0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrdEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRTEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRLEPAMT" comment="VAR_RND_LBR_EXP_AMT" label="_BIC_YVRLEPAMT" length="16" name="/BIC/YVRLEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYJUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYJkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRLEPAMT" comment="VAR_RND_LBR_EXP_AMT" label="_BIC_YVRLEPAMT" length="16" name="/BIC/YVRLEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrdUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrdkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRLEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRLEPAMT" comment="FIX_RND_LBR_EXP_AMT" label="_BIC_YFRLEPAMT" length="16" name="/BIC/YFRLEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYJ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYKETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRLEPAMT" comment="FIX_RND_LBR_EXP_AMT" label="_BIC_YFRLEPAMT" length="16" name="/BIC/YFRLEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrd0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObreEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRLEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVREPAMT" comment="VAR_RND_EXP_AMT" label="_BIC_YVREPAMT" length="16" name="/BIC/YVREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYKUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYKkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVREPAMT" comment="VAR_RND_EXP_AMT" label="_BIC_YVREPAMT" length="16" name="/BIC/YVREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObreUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrekfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVREPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFREPAMT" comment="FIX_RND_EXP_AMT" label="_BIC_YFREPAMT" length="16" name="/BIC/YFREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYK0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYLETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFREPAMT" comment="FIX_RND_EXP_AMT" label="_BIC_YFREPAMT" length="16" name="/BIC/YFREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObre0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrfEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFREPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVAEOTAMT" comment="VAR_ADM_EXP_OTH_AMT" label="_BIC_YVAEOTAMT" length="16" name="/BIC/YVAEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYLUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYLkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVAEOTAMT" comment="VAR_ADM_EXP_OTH_AMT" label="_BIC_YVAEOTAMT" length="16" name="/BIC/YVAEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrfUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrfkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVAEOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFAEOTAMT" comment="FIX_ADM_EXP_OTH_AMT" label="_BIC_YFAEOTAMT" length="16" name="/BIC/YFAEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYL0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYMETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFAEOTAMT" comment="FIX_ADM_EXP_OTH_AMT" label="_BIC_YFAEOTAMT" length="16" name="/BIC/YFAEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrf0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrgEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFAEOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVACCGAMT" comment="VAR_ADM_COMMS_CHRG_AMT" label="_BIC_YVACCGAMT" length="16" name="/BIC/YVACCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYMUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYMkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVACCGAMT" comment="VAR_ADM_COMMS_CHRG_AMT" label="_BIC_YVACCGAMT" length="16" name="/BIC/YVACCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrgUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrgkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVACCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFACCGAMT" comment="FIX_ADM_COMMS_CHRG_AMT" label="_BIC_YFACCGAMT" length="16" name="/BIC/YFACCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYM0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYNETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFACCGAMT" comment="FIX_ADM_COMMS_CHRG_AMT" label="_BIC_YFACCGAMT" length="16" name="/BIC/YFACCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrg0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrhEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFACCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVATEPAMT" comment="VAR_ADM_TRANSP_EXP_AMT" label="_BIC_YVATEPAMT" length="16" name="/BIC/YVATEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYNUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYNkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVATEPAMT" comment="VAR_ADM_TRANSP_EXP_AMT" label="_BIC_YVATEPAMT" length="16" name="/BIC/YVATEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrhUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrhkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVATEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFATEPAMT" comment="FIX_ADM_TRANSP_EXP_AMT" label="_BIC_YFATEPAMT" length="16" name="/BIC/YFATEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYN0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYOETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFATEPAMT" comment="FIX_ADM_TRANSP_EXP_AMT" label="_BIC_YFATEPAMT" length="16" name="/BIC/YFATEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrh0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObriEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFATEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVALEPAMT" comment="VAR_ADM_LBR_EXP_AMT" label="_BIC_YVALEPAMT" length="16" name="/BIC/YVALEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYOUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYOkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVALEPAMT" comment="VAR_ADM_LBR_EXP_AMT" label="_BIC_YVALEPAMT" length="16" name="/BIC/YVALEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObriUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrikfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVALEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFALEPAMT" comment="FIX_ADM_LBR_EXP_AMT" label="_BIC_YFALEPAMT" length="16" name="/BIC/YFALEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYO0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYPETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFALEPAMT" comment="FIX_ADM_LBR_EXP_AMT" label="_BIC_YFALEPAMT" length="16" name="/BIC/YFALEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObri0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrjEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFALEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVAEPAMT" comment="VAR_ADM_EXP_AMT" label="_BIC_YVAEPAMT" length="16" name="/BIC/YVAEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYPUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYPkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVAEPAMT" comment="VAR_ADM_EXP_AMT" label="_BIC_YVAEPAMT" length="16" name="/BIC/YVAEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrjUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrjkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVAEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFAEPAMT" comment="FIX_ADM_EXP_AMT" label="_BIC_YFAEPAMT" length="16" name="/BIC/YFAEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYP0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYQETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFAEPAMT" comment="FIX_ADM_EXP_AMT" label="_BIC_YFAEPAMT" length="16" name="/BIC/YFAEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrj0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrkEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFAEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSEOTAMT" comment="VAR_SELL_EXP_OTH_AMT" label="_BIC_YVSEOTAMT" length="16" name="/BIC/YVSEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYQUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYQkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSEOTAMT" comment="VAR_SELL_EXP_OTH_AMT" label="_BIC_YVSEOTAMT" length="16" name="/BIC/YVSEOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrkUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrkkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSEOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSLEOAMT" comment="FIX_SELL_EXP_OTH_AMT" label="_BIC_YFSLEOAMT" length="16" name="/BIC/YFSLEOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYQ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYRETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSLEOAMT" comment="FIX_SELL_EXP_OTH_AMT" label="_BIC_YFSLEOAMT" length="16" name="/BIC/YFSLEOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrk0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrlEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSLEOAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSBEPAMT" comment="VAR_SELL_BDDT_EXP_AMT" label="_BIC_YVSBEPAMT" length="16" name="/BIC/YVSBEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYRUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYRkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSBEPAMT" comment="VAR_SELL_BDDT_EXP_AMT" label="_BIC_YVSBEPAMT" length="16" name="/BIC/YVSBEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrlUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrlkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSBEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSBEPAMT" comment="FIX_SELL_BDDT_EXP_AMT" label="_BIC_YFSBEPAMT" length="16" name="/BIC/YFSBEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYR0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYSETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSBEPAMT" comment="FIX_SELL_BDDT_EXP_AMT" label="_BIC_YFSBEPAMT" length="16" name="/BIC/YFSBEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrl0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrmEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSBEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSPEPAMT" comment="VAR_SELL_PR_EXP_AMT" label="_BIC_YVSPEPAMT" length="16" name="/BIC/YVSPEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYSUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYSkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSPEPAMT" comment="VAR_SELL_PR_EXP_AMT" label="_BIC_YVSPEPAMT" length="16" name="/BIC/YVSPEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrmUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrmkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSPEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSPEPAMT" comment="FIX_SELL_PR_EXP_AMT" label="_BIC_YFSPEPAMT" length="16" name="/BIC/YFSPEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYS0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYTETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSPEPAMT" comment="FIX_SELL_PR_EXP_AMT" label="_BIC_YFSPEPAMT" length="16" name="/BIC/YFSPEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrm0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrnEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSPEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSAVEAMT" comment="VAR_SELL_ADV_EXP_AMT" label="_BIC_YVSAVEAMT" length="16" name="/BIC/YVSAVEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYTUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYTkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSAVEAMT" comment="VAR_SELL_ADV_EXP_AMT" label="_BIC_YVSAVEAMT" length="16" name="/BIC/YVSAVEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrnUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrnkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSAVEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSAVEAMT" comment="FIX_SELL_ADV_EXP_AMT" label="_BIC_YFSAVEAMT" length="16" name="/BIC/YFSAVEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYT0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYUETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSAVEAMT" comment="FIX_SELL_ADV_EXP_AMT" label="_BIC_YFSAVEAMT" length="16" name="/BIC/YFSAVEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrn0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObroEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSAVEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSCCRAMT" comment="VAR_SELL_COMMS_CHRG_AMT" label="_BIC_YVSCCRAMT" length="16" name="/BIC/YVSCCRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYUUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYUkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSCCRAMT" comment="VAR_SELL_COMMS_CHRG_AMT" label="_BIC_YVSCCRAMT" length="16" name="/BIC/YVSCCRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObroUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrokfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSCCRAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSCCRAMT" comment="FIX_SELL_COMMS_CHRG_AMT" label="_BIC_YFSCCRAMT" length="16" name="/BIC/YFSCCRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYU0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYVETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSCCRAMT" comment="FIX_SELL_COMMS_CHRG_AMT" label="_BIC_YFSCCRAMT" length="16" name="/BIC/YFSCCRAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObro0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrpEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSCCRAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSETEAMT" comment="VAR_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YVSETEAMT" length="16" name="/BIC/YVSETEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYVUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYVkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSETEAMT" comment="VAR_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YVSETEAMT" length="16" name="/BIC/YVSETEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrpUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrpkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSETEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSETEAMT" comment="FIX_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YFSETEAMT" length="16" name="/BIC/YFSETEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYV0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYWETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSETEAMT" comment="FIX_SELL_EXPORT_TRANSP_EXP_AMT" label="_BIC_YFSETEAMT" length="16" name="/BIC/YFSETEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrp0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrqEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSETEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSDTEAMT" comment="VAR_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YVSDTEAMT" length="16" name="/BIC/YVSDTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYWUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYWkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSDTEAMT" comment="VAR_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YVSDTEAMT" length="16" name="/BIC/YVSDTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrqUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrqkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSDTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSDTEAMT" comment="FIX_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YFSDTEAMT" length="16" name="/BIC/YFSDTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYW0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYXETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSDTEAMT" comment="FIX_SELL_DOM_TRANSP_EXP_AMT" label="_BIC_YFSDTEAMT" length="16" name="/BIC/YFSDTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrq0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrrEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSDTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSLTEAMT" comment="VAR_SELL_TRANSP_EXP_AMT" label="_BIC_YVSLTEAMT" length="16" name="/BIC/YVSLTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYXUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYXkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSLTEAMT" comment="VAR_SELL_TRANSP_EXP_AMT" label="_BIC_YVSLTEAMT" length="16" name="/BIC/YVSLTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrrUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrrkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSLTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSLTEAMT" comment="FIX_SELL_TRANSP_EXP_AMT" label="_BIC_YFSLTEAMT" length="16" name="/BIC/YFSLTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYX0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYYETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSLTEAMT" comment="FIX_SELL_TRANSP_EXP_AMT" label="_BIC_YFSLTEAMT" length="16" name="/BIC/YFSLTEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrr0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrsEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSLTEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSLLEAMT" comment="VAR_SELL_LBR_EXP_AMT" label="_BIC_YVSLLEAMT" length="16" name="/BIC/YVSLLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYYUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYYkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSLLEAMT" comment="VAR_SELL_LBR_EXP_AMT" label="_BIC_YVSLLEAMT" length="16" name="/BIC/YVSLLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrsUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrskfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSLLEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSLLEAMT" comment="FIX_SELL_LBR_EXP_AMT" label="_BIC_YFSLLEAMT" length="16" name="/BIC/YFSLLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYY0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYZETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSLLEAMT" comment="FIX_SELL_LBR_EXP_AMT" label="_BIC_YFSLLEAMT" length="16" name="/BIC/YFSLLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrs0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrtEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSLLEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSLEAMT" comment="VAR_SELL_EXP_AMT" label="_BIC_YVSLEAMT" length="16" name="/BIC/YVSLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYZUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYZkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSLEAMT" comment="VAR_SELL_EXP_AMT" label="_BIC_YVSLEAMT" length="16" name="/BIC/YVSLEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrtUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrtkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSLEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSEPAMT" comment="FIX_SELL_EXP_AMT" label="_BIC_YFSEPAMT" length="16" name="/BIC/YFSEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYZ0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYaETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSEPAMT" comment="FIX_SELL_EXP_AMT" label="_BIC_YFSEPAMT" length="16" name="/BIC/YFSEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrt0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObruEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVSAMEAMT" comment="VAR_SELL_ADM_EXP_AMT" label="_BIC_YVSAMEAMT" length="16" name="/BIC/YVSAMEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYaUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYakTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVSAMEAMT" comment="VAR_SELL_ADM_EXP_AMT" label="_BIC_YVSAMEAMT" length="16" name="/BIC/YVSAMEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObruUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrukfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVSAMEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFSAMEAMT" comment="FIX_SELL_ADM_EXP_AMT" label="_BIC_YFSAMEAMT" length="16" name="/BIC/YFSAMEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYa0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYbETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFSAMEAMT" comment="FIX_SELL_ADM_EXP_AMT" label="_BIC_YFSAMEAMT" length="16" name="/BIC/YFSAMEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObru0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrvEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFSAMEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVCOTAMT" comment="VAR_COGS_OTH_AMT" label="_BIC_YVCOTAMT" length="16" name="/BIC/YVCOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYbUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYbkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVCOTAMT" comment="VAR_COGS_OTH_AMT" label="_BIC_YVCOTAMT" length="16" name="/BIC/YVCOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrvUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrvkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVCOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFCOTAMT" comment="FIX_COGS_OTH_AMT" label="_BIC_YFCOTAMT" length="16" name="/BIC/YFCOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYb0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYcETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFCOTAMT" comment="FIX_COGS_OTH_AMT" label="_BIC_YFCOTAMT" length="16" name="/BIC/YFCOTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrv0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrwEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFCOTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIEPFAMT" comment="VAR_INTRNL_EXP_FUND_AMT" label="_BIC_YVIEPFAMT" length="16" name="/BIC/YVIEPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYcUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYckTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIEPFAMT" comment="VAR_INTRNL_EXP_FUND_AMT" label="_BIC_YVIEPFAMT" length="16" name="/BIC/YVIEPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrwUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrwkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIEPFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIEPFAMT" comment="FIX_INTRNL_EXP_FUND_AMT" label="_BIC_YFIEPFAMT" length="16" name="/BIC/YFIEPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYc0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYdETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIEPFAMT" comment="FIX_INTRNL_EXP_FUND_AMT" label="_BIC_YFIEPFAMT" length="16" name="/BIC/YFIEPFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrw0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrxEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIEPFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIEPPAMT" comment="VAR_INTRNL_EXP_PENL_AMT" label="_BIC_YVIEPPAMT" length="16" name="/BIC/YVIEPPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYdUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYdkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIEPPAMT" comment="VAR_INTRNL_EXP_PENL_AMT" label="_BIC_YVIEPPAMT" length="16" name="/BIC/YVIEPPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrxUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrxkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIEPPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIEPPAMT" comment="FIX_INTRNL_EXP_PENL_AMT" label="_BIC_YFIEPPAMT" length="16" name="/BIC/YFIEPPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYd0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYeETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIEPPAMT" comment="FIX_INTRNL_EXP_PENL_AMT" label="_BIC_YFIEPPAMT" length="16" name="/BIC/YFIEPPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrx0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObryEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIEPPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIEPNAMT" comment="VAR_INTRNL_EXP_NORM_AMT" label="_BIC_YVIEPNAMT" length="16" name="/BIC/YVIEPNAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYeUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYekTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIEPNAMT" comment="VAR_INTRNL_EXP_NORM_AMT" label="_BIC_YVIEPNAMT" length="16" name="/BIC/YVIEPNAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObryUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrykfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIEPNAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIEPNAMT" comment="FIX_INTRNL_EXP_NORM_AMT" label="_BIC_YFIEPNAMT" length="16" name="/BIC/YFIEPNAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYe0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYfETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIEPNAMT" comment="FIX_INTRNL_EXP_NORM_AMT" label="_BIC_YFIEPNAMT" length="16" name="/BIC/YFIEPNAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObry0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrzEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIEPNAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIREPAMT" comment="VAR_INTRNL_EXP_AMT" label="_BIC_YVIREPAMT" length="16" name="/BIC/YVIREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYfUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYfkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIREPAMT" comment="VAR_INTRNL_EXP_AMT" label="_BIC_YVIREPAMT" length="16" name="/BIC/YVIREPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrzUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObrzkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIREPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIXPAMT" comment="FIX_INTRNL_EXP_AMT" label="_BIC_YFIXPAMT" length="16" name="/BIC/YFIXPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYf0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYgETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIXPAMT" comment="FIX_INTRNL_EXP_AMT" label="_BIC_YFIXPAMT" length="16" name="/BIC/YFIXPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObrz0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr0EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIXPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVOTCGMT" comment="VAR_OTH_COGS_AMT" label="_BIC_YVOTCGMT" length="16" name="/BIC/YVOTCGMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYgUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYgkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVOTCGMT" comment="VAR_OTH_COGS_AMT" label="_BIC_YVOTCGMT" length="16" name="/BIC/YVOTCGMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr0UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr0kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVOTCGMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFOTCGAMT" comment="FIX_OTH_COGS_AMT" label="_BIC_YFOTCGAMT" length="16" name="/BIC/YFOTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYg0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYhETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFOTCGAMT" comment="FIX_OTH_COGS_AMT" label="_BIC_YFOTCGAMT" length="16" name="/BIC/YFOTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr00fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr1EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFOTCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVPCGAMT" comment="VAR_PART_COGS_AMT" label="_BIC_YVPCGAMT" length="16" name="/BIC/YVPCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYhUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYhkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVPCGAMT" comment="VAR_PART_COGS_AMT" label="_BIC_YVPCGAMT" length="16" name="/BIC/YVPCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr1UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr1kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVPCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFPCGAMT" comment="FIX_PART_COGS_AMT" label="_BIC_YFPCGAMT" length="16" name="/BIC/YFPCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYh0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYiETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFPCGAMT" comment="FIX_PART_COGS_AMT" label="_BIC_YFPCGAMT" length="16" name="/BIC/YFPCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr10fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr2EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFPCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVPOTCAMT" comment="VAR_PART_OTH_COGS_AMT" label="_BIC_YVPOTCAMT" length="16" name="/BIC/YVPOTCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYiUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYikTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVPOTCAMT" comment="VAR_PART_OTH_COGS_AMT" label="_BIC_YVPOTCAMT" length="16" name="/BIC/YVPOTCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr2UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr2kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVPOTCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFPOTCAMT" comment="FIX_PART_OTH_COGS_AMT" label="_BIC_YFPOTCAMT" length="16" name="/BIC/YFPOTCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYi0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYjETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFPOTCAMT" comment="FIX_PART_OTH_COGS_AMT" label="_BIC_YFPOTCAMT" length="16" name="/BIC/YFPOTCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr20fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr3EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFPOTCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRTCGAMT" comment="VAR_RENTAL_COGS_AMT" label="_BIC_YVRTCGAMT" length="16" name="/BIC/YVRTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYjUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYjkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRTCGAMT" comment="VAR_RENTAL_COGS_AMT" label="_BIC_YVRTCGAMT" length="16" name="/BIC/YVRTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr3UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr3kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRTCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRTCGAMT" comment="FIX_RENTAL_COGS_AMT" label="_BIC_YFRTCGAMT" length="16" name="/BIC/YFRTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYj0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYkETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRTCGAMT" comment="FIX_RENTAL_COGS_AMT" label="_BIC_YFRTCGAMT" length="16" name="/BIC/YFRTCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr30fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr4EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRTCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIEPAMT" comment="VAR_INSTL_EXP_AMT" label="_BIC_YVIEPAMT" length="16" name="/BIC/YVIEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYkUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYkkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIEPAMT" comment="VAR_INSTL_EXP_AMT" label="_BIC_YVIEPAMT" length="16" name="/BIC/YVIEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr4UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr4kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIEPAMT" comment="FIX_INSTL_EXP_AMT" label="_BIC_YFIEPAMT" length="16" name="/BIC/YFIEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYk0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYlETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIEPAMT" comment="FIX_INSTL_EXP_AMT" label="_BIC_YFIEPAMT" length="16" name="/BIC/YFIEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr40fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr5EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVCGPAMT" comment="VAR_COGS_GAP_AMT" label="_BIC_YVCGPAMT" length="16" name="/BIC/YVCGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYlUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYlkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVCGPAMT" comment="VAR_COGS_GAP_AMT" label="_BIC_YVCGPAMT" length="16" name="/BIC/YVCGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr5UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr5kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVCGPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFGGPAMT" comment="FIX_COGS_GAP_AMT" label="_BIC_YFGGPAMT" length="16" name="/BIC/YFGGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYl0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYmETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFGGPAMT" comment="FIX_COGS_GAP_AMT" label="_BIC_YFGGPAMT" length="16" name="/BIC/YFGGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr50fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr6EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFGGPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVPGPAMT" comment="VAR_PL_GAP_AMT" label="_BIC_YVPGPAMT" length="16" name="/BIC/YVPGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYmUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYmkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVPGPAMT" comment="VAR_PL_GAP_AMT" label="_BIC_YVPGPAMT" length="16" name="/BIC/YVPGPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr6UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr6kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVPGPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFPGPAT" comment="FIX_PL_GAP_AMT" label="_BIC_YFPGPAT" length="16" name="/BIC/YFPGPAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYm0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYnETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFPGPAT" comment="FIX_PL_GAP_AMT" label="_BIC_YFPGPAT" length="16" name="/BIC/YFPGPAT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr60fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr7EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFPGPAT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRALAMT" comment="VAR_RTN_ALLWN_AMT" label="_BIC_YVRALAMT" length="16" name="/BIC/YVRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYnUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYnkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRALAMT" comment="VAR_RTN_ALLWN_AMT" label="_BIC_YVRALAMT" length="16" name="/BIC/YVRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr7UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr7kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRALAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRALAMT" comment="FIX_RTN_ALLWN_AMT" label="_BIC_YFRALAMT" length="16" name="/BIC/YFRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYn0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYoETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRALAMT" comment="FIX_RTN_ALLWN_AMT" label="_BIC_YFRALAMT" length="16" name="/BIC/YFRALAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr70fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr8EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRALAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVCDADAMT" comment="VAR_COGS_DIFF_ADJ_AMT" label="_BIC_YVCDADAMT" length="16" name="/BIC/YVCDADAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYoUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYokTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVCDADAMT" comment="VAR_COGS_DIFF_ADJ_AMT" label="_BIC_YVCDADAMT" length="16" name="/BIC/YVCDADAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr8UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr8kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVCDADAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFCDADAMT" comment="FIX_COGS_DIFF_ADJ_AMT" label="_BIC_YFCDADAMT" length="16" name="/BIC/YFCDADAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYo0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYpETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFCDADAMT" comment="FIX_COGS_DIFF_ADJ_AMT" label="_BIC_YFCDADAMT" length="16" name="/BIC/YFCDADAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr80fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr9EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFCDADAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVIDLAMT" comment="VAR_INV_DVL_AMT" label="_BIC_YVIDLAMT" length="16" name="/BIC/YVIDLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYpUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYpkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVIDLAMT" comment="VAR_INV_DVL_AMT" label="_BIC_YVIDLAMT" length="16" name="/BIC/YVIDLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr9UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr9kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVIDLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIDLAMT" comment="FIX_INV_DVL_AMT" label="_BIC_YFIDLAMT" length="16" name="/BIC/YFIDLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYp0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYqETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIDLAMT" comment="FIX_INV_DVL_AMT" label="_BIC_YFIDLAMT" length="16" name="/BIC/YFIDLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr90fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr-EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIDLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVISPAMT" comment="VAR_INV_SCRAP_AMT" label="_BIC_YVISPAMT" length="16" name="/BIC/YVISPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYqUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYqkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVISPAMT" comment="VAR_INV_SCRAP_AMT" label="_BIC_YVISPAMT" length="16" name="/BIC/YVISPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr-UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr-kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVISPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFISPAMT" comment="FIX_INV_SCRAP_AMT" label="_BIC_YFISPAMT" length="16" name="/BIC/YFISPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYq0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYrETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFISPAMT" comment="FIX_INV_SCRAP_AMT" label="_BIC_YFISPAMT" length="16" name="/BIC/YFISPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr-0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr_EfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFISPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVCRFAMT" comment="VAR_CUSTOMS_RFND_AMT" label="_BIC_YVCRFAMT" length="16" name="/BIC/YVCRFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYrUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYrkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVCRFAMT" comment="VAR_CUSTOMS_RFND_AMT" label="_BIC_YVCRFAMT" length="16" name="/BIC/YVCRFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr_UfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObr_kfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVCRFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFCRFAMT" comment="FIX_CUSTOMS_RFND_AMT" label="_BIC_YFCRFAMT" length="16" name="/BIC/YFCRFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYr0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYsETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFCRFAMT" comment="FIX_CUSTOMS_RFND_AMT" label="_BIC_YFCRFAMT" length="16" name="/BIC/YFCRFAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObr_0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsAEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFCRFAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVROTAMT" comment="VAR_RYLTY_OTH_AMT" label="_BIC_YVROTAMT" length="16" name="/BIC/YVROTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYsUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYskTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVROTAMT" comment="VAR_RYLTY_OTH_AMT" label="_BIC_YVROTAMT" length="16" name="/BIC/YVROTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsAUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsAkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVROTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFROTAMT" comment="FIX_RYLTY_OTH_AMT" label="_BIC_YFROTAMT" length="16" name="/BIC/YFROTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYs0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYtETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFROTAMT" comment="FIX_RYLTY_OTH_AMT" label="_BIC_YFROTAMT" length="16" name="/BIC/YFROTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsA0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsBEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFROTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVTRTAMT" comment="VAR_TECH_RUNGRYLTY_AMT" label="_BIC_YVTRTAMT" length="16" name="/BIC/YVTRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYtUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYtkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVTRTAMT" comment="VAR_TECH_RUNGRYLTY_AMT" label="_BIC_YVTRTAMT" length="16" name="/BIC/YVTRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsBUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsBkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVTRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFTRTAMT" comment="FIX_TECH_RUNGRYLTY_AMT" label="_BIC_YFTRTAMT" length="16" name="/BIC/YFTRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYt0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYuETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFTRTAMT" comment="FIX_TECH_RUNGRYLTY_AMT" label="_BIC_YFTRTAMT" length="16" name="/BIC/YFTRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsB0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsCEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFTRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVPRTAMT" comment="VAR_PTNT_RUNGRYLTY_AMT" label="_BIC_YVPRTAMT" length="16" name="/BIC/YVPRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYuUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYukTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVPRTAMT" comment="VAR_PTNT_RUNGRYLTY_AMT" label="_BIC_YVPRTAMT" length="16" name="/BIC/YVPRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsCUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsCkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVPRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFPRTAMT" comment="FIX_PTNT_RUNGRYLTY_AMT" label="_BIC_YFPRTAMT" length="16" name="/BIC/YFPRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYu0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYvETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFPRTAMT" comment="FIX_PTNT_RUNGRYLTY_AMT" label="_BIC_YFPRTAMT" length="16" name="/BIC/YFPRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsC0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsDEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFPRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVTLRTAMT" comment="VAR_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YVTLRTAMT" length="16" name="/BIC/YVTLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYvUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYvkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVTLRTAMT" comment="VAR_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YVTLRTAMT" length="16" name="/BIC/YVTLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsDUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsDkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVTLRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFTLRTAMT" comment="FIX_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YFTLRTAMT" length="16" name="/BIC/YFTLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYv0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYwETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFTLRTAMT" comment="FIX_TECH_LUMPSUM_RYLTY_AMT" label="_BIC_YFTLRTAMT" length="16" name="/BIC/YFTLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsD0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsEEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFTLRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVPLRTAMT" comment="VAR_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YVPLRTAMT" length="16" name="/BIC/YVPLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYwUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYwkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVPLRTAMT" comment="VAR_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YVPLRTAMT" length="16" name="/BIC/YVPLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsEUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsEkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVPLRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFPLRTAMT" comment="FIX_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YFPLRTAMT" length="16" name="/BIC/YFPLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYw0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYxETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFPLRTAMT" comment="FIX_PTNT_LUMPSUM_RYLTY_AMT" label="_BIC_YFPLRTAMT" length="16" name="/BIC/YFPLRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsE0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsFEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFPLRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YSALESQTY" comment="SALES_QTY" label="_BIC_YSALESQTY" length="16" name="/BIC/YSALESQTY" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYxUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYxkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSALESQTY" comment="SALES_QTY" label="_BIC_YSALESQTY" length="16" name="/BIC/YSALESQTY" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsFUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsFkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSALESQTY</refTable>
       </feature>
-      <feature businessName="/BIC/YNSALEAMT" comment="NSALES_AMT" label="_BIC_YNSALEAMT" length="16" name="/BIC/YNSALEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYx0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYyETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YNSALEAMT" comment="NSALES_AMT" label="_BIC_YNSALEAMT" length="16" name="/BIC/YNSALEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsF0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsGEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YNSALEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YRSALEAMT" comment="RETAIL_SALES_AMT" label="_BIC_YRSALEAMT" length="16" name="/BIC/YRSALEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYyUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYykTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YRSALEAMT" comment="RETAIL_SALES_AMT" label="_BIC_YRSALEAMT" length="16" name="/BIC/YRSALEAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsGUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsGkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YRSALEAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YTAXAMT" comment="TAX_AMT" label="_BIC_YTAXAMT" length="16" name="/BIC/YTAXAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYy0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYzETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YTAXAMT" comment="TAX_AMT" label="_BIC_YTAXAMT" length="16" name="/BIC/YTAXAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsG0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsHEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YTAXAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YDLMGAMT" comment="DEALER_MARG_AMT" label="_BIC_YDLMGAMT" length="16" name="/BIC/YDLMGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYzUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lYzkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YDLMGAMT" comment="DEALER_MARG_AMT" label="_BIC_YDLMGAMT" length="16" name="/BIC/YDLMGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsHUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsHkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YDLMGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YSLBSAAMT" comment="SELLIN_BASE_SALES_AMT" label="_BIC_YSLBSAAMT" length="16" name="/BIC/YSLBSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lYz0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY0ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSLBSAAMT" comment="SELLIN_BASE_SALES_AMT" label="_BIC_YSLBSAAMT" length="16" name="/BIC/YSLBSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsH0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsIEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSLBSAAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YATDCAMT" comment="ADDTNL_DC_AMT" label="_BIC_YATDCAMT" length="16" name="/BIC/YATDCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY0UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY0kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YATDCAMT" comment="ADDTNL_DC_AMT" label="_BIC_YATDCAMT" length="16" name="/BIC/YATDCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsIUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsIkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YATDCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YGRSAAMT" comment="GROSS_SALES_AMT" label="_BIC_YGRSAAMT" length="16" name="/BIC/YGRSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY00THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY1ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YGRSAAMT" comment="GROSS_SALES_AMT" label="_BIC_YGRSAAMT" length="16" name="/BIC/YGRSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsI0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsJEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YGRSAAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YSADTAMT" comment="SALES_DEDUCT_AMT" label="_BIC_YSADTAMT" length="16" name="/BIC/YSADTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY1UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY1kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YSADTAMT" comment="SALES_DEDUCT_AMT" label="_BIC_YSADTAMT" length="16" name="/BIC/YSADTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsJUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsJkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YSADTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YTDSLAMT" comment="TRDTM_SELLIN_AMT" label="_BIC_YTDSLAMT" length="16" name="/BIC/YTDSLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY10THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY2ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YTDSLAMT" comment="TRDTM_SELLIN_AMT" label="_BIC_YTDSLAMT" length="16" name="/BIC/YTDSLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsJ0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsKEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YTDSLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YNRSLAMT" comment="NTRDTM_SELLIN_AMT" label="_BIC_YNRSLAMT" length="16" name="/BIC/YNRSLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY2UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY2kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YNRSLAMT" comment="NTRDTM_SELLIN_AMT" label="_BIC_YNRSLAMT" length="16" name="/BIC/YNRSLAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsKUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsKkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YNRSLAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YNRSOAMT" comment="NTRDTM_SELLOUT_AMT" label="_BIC_YNRSOAMT" length="16" name="/BIC/YNRSOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY20THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY3ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YNRSOAMT" comment="NTRDTM_SELLOUT_AMT" label="_BIC_YNRSOAMT" length="16" name="/BIC/YNRSOAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsK0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsLEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YNRSOAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YCADCAMT" comment="CASH_DC_AMT" label="_BIC_YCADCAMT" length="16" name="/BIC/YCADCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY3UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY3kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCADCAMT" comment="CASH_DC_AMT" label="_BIC_YCADCAMT" length="16" name="/BIC/YCADCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsLUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsLkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCADCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YCRBKAMT" comment="CHRGBK_AMT" label="_BIC_YCRBKAMT" length="16" name="/BIC/YCRBKAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY30THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY4ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YCRBKAMT" comment="CHRGBK_AMT" label="_BIC_YCRBKAMT" length="16" name="/BIC/YCRBKAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsL0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsMEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YCRBKAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YOHSDTAMT" comment="OTH_SALES_DEDUCT_AMT" label="_BIC_YOHSDTAMT" length="16" name="/BIC/YOHSDTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY4UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY4kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YOHSDTAMT" comment="OTH_SALES_DEDUCT_AMT" label="_BIC_YOHSDTAMT" length="16" name="/BIC/YOHSDTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsMUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsMkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YOHSDTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YPTOSAAMT" comment="PART_OTH_SALES_AMT" label="_BIC_YPTOSAAMT" length="16" name="/BIC/YPTOSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY40THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY5ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPTOSAAMT" comment="PART_OTH_SALES_AMT" label="_BIC_YPTOSAAMT" length="16" name="/BIC/YPTOSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsM0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsNEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPTOSAAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YPTSAAMT" comment="PART_SALES_AMT" label="_BIC_YPTSAAMT" length="16" name="/BIC/YPTSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY5UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY5kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YPTSAAMT" comment="PART_SALES_AMT" label="_BIC_YPTSAAMT" length="16" name="/BIC/YPTSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsNUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsNkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YPTSAAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YOTSAAMT" comment="OTH_SALES_AMT" label="_BIC_YOTSAAMT" length="16" name="/BIC/YOTSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY50THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY6ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YOTSAAMT" comment="OTH_SALES_AMT" label="_BIC_YOTSAAMT" length="16" name="/BIC/YOTSAAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsN0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsOEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YOTSAAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFXCGAMT" comment="FIX_COGS_AMT" label="_BIC_YFXCGAMT" length="16" name="/BIC/YFXCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY6UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY6kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFXCGAMT" comment="FIX_COGS_AMT" label="_BIC_YFXCGAMT" length="16" name="/BIC/YFXCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsOUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsOkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFXCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRCGAMT" comment="VAR_COGS_AMT" label="_BIC_YVRCGAMT" length="16" name="/BIC/YVRCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY60THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY7ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRCGAMT" comment="VAR_COGS_AMT" label="_BIC_YVRCGAMT" length="16" name="/BIC/YVRCGAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsO0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsPEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRCGAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YARMCAMT" comment="VAR_MTL_COST_AMT" label="_BIC_YARMCAMT" length="16" name="/BIC/YARMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY7UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY7kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YARMCAMT" comment="VAR_MTL_COST_AMT" label="_BIC_YARMCAMT" length="16" name="/BIC/YARMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsPUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsPkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YARMCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRNMCAMT" comment="VAR_NET_MTL_COST_AMT" label="_BIC_YVRNMCAMT" length="16" name="/BIC/YVRNMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY70THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY8ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRNMCAMT" comment="VAR_NET_MTL_COST_AMT" label="_BIC_YVRNMCAMT" length="16" name="/BIC/YVRNMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsP0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsQEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRNMCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRICTAMT" comment="VAR_INCD_COST_AMT" label="_BIC_YVRICTAMT" length="16" name="/BIC/YVRICTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY8UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY8kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRICTAMT" comment="VAR_INCD_COST_AMT" label="_BIC_YVRICTAMT" length="16" name="/BIC/YVRICTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsQUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsQkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRICTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRDMCAMT" comment="VAR_DEFECT_MTL_COST_AMT" label="_BIC_YVRDMCAMT" length="16" name="/BIC/YVRDMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY80THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY9ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRDMCAMT" comment="VAR_DEFECT_MTL_COST_AMT" label="_BIC_YVRDMCAMT" length="16" name="/BIC/YVRDMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsQ0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsREfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRDMCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFCVCTAMT" comment="FIX_CONV_COST_AMT" label="_BIC_YFCVCTAMT" length="16" name="/BIC/YFCVCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY9UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY9kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFCVCTAMT" comment="FIX_CONV_COST_AMT" label="_BIC_YFCVCTAMT" length="16" name="/BIC/YFCVCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsRUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsRkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFCVCTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRCCTAMT" comment="VAR_CONV_COST_AMT" label="_BIC_YVRCCTAMT" length="16" name="/BIC/YVRCCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY90THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY-ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRCCTAMT" comment="VAR_CONV_COST_AMT" label="_BIC_YVRCCTAMT" length="16" name="/BIC/YVRCCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsR0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsSEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRCCTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFXLCTAMT" comment="FIX_LBR_COST_AMT" label="_BIC_YFXLCTAMT" length="16" name="/BIC/YFXLCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY-UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY-kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFXLCTAMT" comment="FIX_LBR_COST_AMT" label="_BIC_YFXLCTAMT" length="16" name="/BIC/YFXLCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsSUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsSkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFXLCTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRLCTAMT" comment="VAR_LBR_COST_AMT" label="_BIC_YVRLCTAMT" length="16" name="/BIC/YVRLCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY-0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY_ETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRLCTAMT" comment="VAR_LBR_COST_AMT" label="_BIC_YVRLCTAMT" length="16" name="/BIC/YVRLCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsS0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsTEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRLCTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFXMEPAMT" comment="FIX_MFG_EXP_AMT" label="_BIC_YFXMEPAMT" length="16" name="/BIC/YFXMEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY_UTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lY_kTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFXMEPAMT" comment="FIX_MFG_EXP_AMT" label="_BIC_YFXMEPAMT" length="16" name="/BIC/YFXMEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsTUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsTkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFXMEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRMEPAMT" comment="VAR_MFG_EXP_AMT" label="_BIC_YVRMEPAMT" length="16" name="/BIC/YVRMEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lY_0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZAETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRMEPAMT" comment="VAR_MFG_EXP_AMT" label="_BIC_YVRMEPAMT" length="16" name="/BIC/YVRMEPAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsT0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsUEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRMEPAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFIDCTAMT" comment="FIX_INLND_COST_AMT" label="_BIC_YFIDCTAMT" length="16" name="/BIC/YFIDCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZAUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZAkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFIDCTAMT" comment="FIX_INLND_COST_AMT" label="_BIC_YFIDCTAMT" length="16" name="/BIC/YFIDCTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsUUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsUkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFIDCTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRIDCAMT" comment="VAR_INLND_COST_AMT" label="_BIC_YVRIDCAMT" length="16" name="/BIC/YVRIDCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZA0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZBETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRIDCAMT" comment="VAR_INLND_COST_AMT" label="_BIC_YVRIDCAMT" length="16" name="/BIC/YVRIDCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsU0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsVEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRIDCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFXPMCAMT" comment="FIX_PUR_MD_COGS_AMT" label="_BIC_YFXPMCAMT" length="16" name="/BIC/YFXPMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZBUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZBkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFXPMCAMT" comment="FIX_PUR_MD_COGS_AMT" label="_BIC_YFXPMCAMT" length="16" name="/BIC/YFXPMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsVUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsVkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFXPMCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRPMCAMT" comment="VAR_PUR_MD_COGS_AMT" label="_BIC_YVRPMCAMT" length="16" name="/BIC/YVRPMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZB0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZCETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRPMCAMT" comment="VAR_PUR_MD_COGS_AMT" label="_BIC_YVRPMCAMT" length="16" name="/BIC/YVRPMCAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsV0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsWEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRPMCAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YFRTAMT" comment="FIX_RYLTY_AMT" label="_BIC_YFRTAMT" length="16" name="/BIC/YFRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZCUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZCkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YFRTAMT" comment="FIX_RYLTY_AMT" label="_BIC_YFRTAMT" length="16" name="/BIC/YFRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsWUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsWkfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YFRTAMT</refTable>
       </feature>
-      <feature businessName="/BIC/YVRRTAMT" comment="VAR_RYLTY_AMT" label="_BIC_YVRRTAMT" length="16" name="/BIC/YVRRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_9-lZC0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZDETHEe-9oMPNevfcRQ"/>
+      <feature businessName="/BIC/YVRRTAMT" comment="VAR_RYLTY_AMT" label="_BIC_YVRRTAMT" length="16" name="/BIC/YVRRTAMT" precision="16" sourceType="DOUBLE" talendType="id_Double" xmi:id="_SObsW0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsXEfPEe-uBpX1nDvZyw"/>
         <refTable>/BIC/YVRRTAMT</refTable>
       </feature>
-      <feature businessName="ODQ_CHANGEMODE" comment="Change Mode for a Data Record in the Delta" label="ODQ_CHANGEMODE" length="1" name="ODQ_CHANGEMODE" sourceType="STRING" talendType="id_String" xmi:id="_9-lZDUTHEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZDkTHEe-9oMPNevfcRQ"/>
+      <feature businessName="ODQ_CHANGEMODE" comment="Change Mode for a Data Record in the Delta" label="ODQ_CHANGEMODE" length="1" name="ODQ_CHANGEMODE" sourceType="STRING" talendType="id_String" xmi:id="_SObsXUfPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsXkfPEe-uBpX1nDvZyw"/>
         <refTable>ODQ_CHANGEMODE</refTable>
       </feature>
-      <feature businessName="ODQ_ENTITYCNTR" comment="Number of Data Units (Data Records for Example)" label="ODQ_ENTITYCNTR" length="19" name="ODQ_ENTITYCNTR" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_9-lZD0THEe-9oMPNevfcRQ" xsi:type="TalendMetadata:SAPBWTableField">
-        <initialValue xmi:id="_9-lZEETHEe-9oMPNevfcRQ"/>
+      <feature businessName="ODQ_ENTITYCNTR" comment="Number of Data Units (Data Records for Example)" label="ODQ_ENTITYCNTR" length="19" name="ODQ_ENTITYCNTR" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_SObsX0fPEe-uBpX1nDvZyw" xsi:type="TalendMetadata:SAPBWTableField">
+        <initialValue xmi:id="_SObsYEfPEe-uBpX1nDvZyw"/>
         <refTable>ODQ_ENTITYCNTR</refTable>
       </feature>
     </BWAdvancedDataStoreObjects>
@@ -2317,13 +2317,13 @@
   </TalendMetadata:GenericPackage>
   <orgomg.cwm.foundation.businessinformation:Description body="Status of the Process Chain" modelElement="_lzEhgEJJEe-IHs245fJtvg" xmi:id="_lzFIkEJJEe-IHs245fJtvg"/>
   <orgomg.cwm.foundation.businessinformation:Description body="Start Process Chain" modelElement="_eLVUEEJJEe-IHs245fJtvg" xmi:id="_eLpdIEJJEe-IHs245fJtvg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d15b17e1-c5a4-43c9-b042-c185bb461407"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y97FwzU6TJeH+wd759aX8snGHG0dKMyZaijzmesKf6WUGItcckbedfOXgWJ3VRlc6ZZxJj9Pc1Zl&#13;
-8OGJri7FpQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03196abb-2575-4f16-8aa5-b6eee78faad0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IX9kjoufLtDEPSDMEEw8ymyPzgmI4FZ/r4/O5VMUaVmqev9zN93C8qPjaiSyRm5hgX/ESi5f4tzO&#13;
-rRUFP/xOeA==</DigestValue></Reference></SignedInfo><SignatureValue>RH3vZo86Pyewq+72LSg5kyYDChqHyTxSmTgrLYYDfmgj0xFtrHPL6n5r+yR40D0dwJXwc6G9QLmm&#13;
-VHuq7EiCVpAWWObWyzlzH6w6emPU2U55x6FbfCgfOYcK5pOEr29+UQKv8Ysw248wtj5snpimCfPy&#13;
-9Ric5bz1r0petmWE+pNhT0FW/93QxPjLz4VHxcmyoL+Mn8mZM8WebnCZOtw0tdn68N5noL9QzaES&#13;
-emPk+yif/mKH96DYnjzvrbdb2kDw72DmuUfhbEAvTvE/jhwKZj2BZKtEJUc+Ln6ECna9wH7yAh0Y&#13;
-eeKjG7vUsLp0jEP/wRUJ5FBe45uVKVQDbxdtRg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a6a525cf-8aac-4a45-a9e6-f0d17bca7005"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/RsM8AQYO9AaTAM7CQ/QE8sDZV4/u5E0RlEhn+vcCFnGGLx0QChzB/laUkuizCJPhYI0gN/w9uWK&#13;
+zVAuXH4gyA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2ec81975-6df6-4f05-918c-e0acafda8e57"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9BwamJLcpDQ2Nw3b3hNWJQwBfwGGngWM2RD/Ehg2bVVLvfWC7BrJevbW7G18HZydZEZHn8FzCiwk&#13;
+VKkSGMV0Bw==</DigestValue></Reference></SignedInfo><SignatureValue>hL56HYnqarbZmu+xe50Q9tTD3lDDlAe/WFdIiCy2izIUkt99yb8gZ+CdSxoFgx4Hqld2TEH/W70j&#13;
+wghWtjRAHF+AzmW0dJ0rITLWDUuy6rJubh+GVIhSIQEcJDFVaB6g/yCHQtlSFfLpaQrl/p9/82uI&#13;
+c/aT+g9aipE7K7fCFH5o416w6gjlK21wx2NW4bqcqFRPiLfVLLv5u/BZPjkiWer84sMBNeNFY8Mv&#13;
+SKD6kqvLCcgK8Yg2MCrj4DVxhjdiw54RnYpQEIzyeHuyRsBsZ3V5kZLRBtCcbn89stTHQGeJzkb8&#13;
+7x/h6laGweWYvG6omNlrJsK3E6LOv0tztj/M6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2345,4 +2345,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03196abb-2575-4f16-8aa5-b6eee78faad0" Target="#_d15b17e1-c5a4-43c9-b042-c185bb461407"><Timestamp>2024-07-22 01:33:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2ec81975-6df6-4f05-918c-e0acafda8e57" Target="#_a6a525cf-8aac-4a45-a9e6-f0d17bca7005"><Timestamp>2024-07-22 02:12:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
