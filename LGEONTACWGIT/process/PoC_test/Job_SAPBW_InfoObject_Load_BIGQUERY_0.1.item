@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -144,8 +144,6 @@
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
     <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - _0MATERIAL"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;0MATERIAL&quot;"/>
     <elementParameter field="CLOSED_LIST" name="INFO_OBJECT_TYPE" value="ATTRIBUTE"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
@@ -210,7 +208,177 @@
       <additionalProperties key="innerIOType" value="ATTRIBUTE"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="200">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yYQjUEfOEe-uBpX1nDvZyw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="_0MATERIAL" name="outparuet">
+      <column comment="Material" key="true" length="40" name="_MATERIAL" nullable="true" originalDbColumnName="0MATERIAL" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Base Unit of Measure" key="false" length="3" name="_BASE_UOM" nullable="true" originalDbColumnName="0BASE_UOM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which the record was created" key="false" length="8" name="_CREATEDON" nullable="true" originalDbColumnName="0CREATEDON" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="European Article Number/Universal Product Code" key="false" length="18" name="_EANUPC" nullable="true" originalDbColumnName="0EANUPC" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Gross Weight" key="false" length="17" name="_GROSS_WT" nullable="true" originalDbColumnName="0GROSS_WT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Weight unit" key="false" length="3" name="_UNIT_OF_WT" nullable="true" originalDbColumnName="0UNIT_OF_WT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Category" key="false" length="2" name="_MATL_CAT" nullable="true" originalDbColumnName="0MATL_CAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="_MATL_GROUP" nullable="true" originalDbColumnName="0MATL_GROUP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Net Weight of Item" key="false" length="17" name="_NET_WEIGHT" nullable="true" originalDbColumnName="0NET_WEIGHT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Product Hierarchy" key="false" length="18" name="_PROD_HIER" nullable="true" originalDbColumnName="0PROD_HIER" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Size/Dimension" key="false" length="32" name="_SIZE_DIM" nullable="true" originalDbColumnName="0SIZE_DIM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Volume" key="false" length="17" name="_VOLUME" nullable="true" originalDbColumnName="0VOLUME" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Volume unit" key="false" length="3" name="_VOLUMEUNIT" nullable="true" originalDbColumnName="0VOLUMEUNIT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Specification" key="false" length="150" name="_BIC_ZSPECIPRD" nullable="true" originalDbColumnName="/BIC/ZSPECIPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Air-con. Separation Type" key="false" length="1" name="_BIC_ZAIRSEPRT" nullable="true" originalDbColumnName="/BIC/ZAIRSEPRT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Brand Type" key="false" length="1" name="_BIC_ZBRTYEPRD" nullable="true" originalDbColumnName="/BIC/ZBRTYEPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="CP Unit Code" key="false" length="10" name="_BIC_ZCPUNC" nullable="true" originalDbColumnName="/BIC/ZCPUNC" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="FA Type" key="false" length="1" name="_BIC_ZFATP_PRD" nullable="true" originalDbColumnName="/BIC/ZFATP_PRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Feature" key="false" length="20" name="_BIC_ZFETURPRD" nullable="true" originalDbColumnName="/BIC/ZFETURPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Company Code" key="false" length="4" name="_COMP_CODE" nullable="true" originalDbColumnName="0COMP_CODE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="HQ BA" key="false" length="4" name="_BIC_ZBA_HQ" nullable="true" originalDbColumnName="/BIC/ZBA_HQ" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Logistics Barcode ID" key="false" length="5" name="_BIC_ZLEANDPRD" nullable="true" originalDbColumnName="/BIC/ZLEANDPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Mapping Model" key="false" length="40" name="_BIC_ZMAPMO" nullable="true" originalDbColumnName="/BIC/ZMAPMO" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Old material number" key="false" length="40" name="_BIC_ZOLDMAT" nullable="true" originalDbColumnName="/BIC/ZOLDMAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Pack Code" key="false" length="10" name="_BIC_ZPACKCDPR" nullable="true" originalDbColumnName="/BIC/ZPACKCDPR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Previous Model" key="false" length="40" name="_BIC_ZPMATNPRD" nullable="true" originalDbColumnName="/BIC/ZPMATNPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product Type" key="false" length="4" name="_BIC_ZPRODTYPE" nullable="true" originalDbColumnName="/BIC/ZPRODTYPE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Code" key="false" length="20" name="_BIC_ZMODELPRD" nullable="true" originalDbColumnName="/BIC/ZMODELPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Set Part No" key="false" length="15" name="_BIC_ZSPTNOPRD" nullable="true" originalDbColumnName="/BIC/ZSPTNOPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Suffix CD" key="false" length="20" name="_BIC_ZSMDLSFFX" nullable="true" originalDbColumnName="/BIC/ZSMDLSFFX" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="UPC Code" key="false" length="30" name="_BIC_ZUPCCDPRD" nullable="true" originalDbColumnName="/BIC/ZUPCCDPRD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Packaging Material Type" key="false" length="4" name="_BIC_ZVHART" nullable="true" originalDbColumnName="/BIC/ZVHART" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="_DIVISION" nullable="true" originalDbColumnName="0DIVISION" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product" key="false" length="32" name="_CRM_PROD" nullable="true" originalDbColumnName="0CRM_PROD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Type" key="false" length="4" name="_MATL_TYPE" nullable="true" originalDbColumnName="0MATL_TYPE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="General item category group" key="false" length="4" name="_BIC_ZMTPOS" nullable="true" originalDbColumnName="/BIC/ZMTPOS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Category of International Article Number (EAN)" key="false" length="2" name="_BIC_ZNUMTP" nullable="true" originalDbColumnName="/BIC/ZNUMTP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="DChain-spec. status" key="false" length="2" name="_BIC_ZVMSTA" nullable="true" originalDbColumnName="/BIC/ZVMSTA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 1" key="false" length="18" name="_PRODH1" nullable="true" originalDbColumnName="0PRODH1" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 2" key="false" length="18" name="_PRODH2" nullable="true" originalDbColumnName="0PRODH2" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 3" key="false" length="18" name="_PRODH3" nullable="true" originalDbColumnName="0PRODH3" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy level 4" key="false" length="18" name="_PRODH4" nullable="true" originalDbColumnName="0PRODH4" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Model Flag(C)" key="false" length="1" name="_BIC_ZD_SAFLG" nullable="true" originalDbColumnName="/BIC/ZD_SAFLG" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Quotation Item" key="false" length="40" name="_BIC_ZQUTITMPR" nullable="true" originalDbColumnName="/BIC/ZQUTITMPR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cross-Plant Material Status" key="false" length="2" name="_BIC_ZMSTAE" nullable="true" originalDbColumnName="/BIC/ZMSTAE" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date of Last Change" key="false" length="8" name="_BIC_ZLAEDA" nullable="true" originalDbColumnName="/BIC/ZLAEDA" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Last Chgd. Time" key="false" length="6" name="_BIC_ZLASTCHTM" nullable="true" originalDbColumnName="/BIC/ZLASTCHTM" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person Who Changed Object" key="false" length="12" name="_BIC_ZAENAM" nullable="true" originalDbColumnName="/BIC/ZAENAM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="innerIOType" value="ATTRIBUTE"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="outparuet" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1._MATERIAL" name="_MATERIAL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BASE_UOM" name="_BASE_UOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._CREATEDON" name="_CREATEDON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1._EANUPC" name="_EANUPC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._GROSS_WT" name="_GROSS_WT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._UNIT_OF_WT" name="_UNIT_OF_WT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._MATL_CAT" name="_MATL_CAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._MATL_GROUP" name="_MATL_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._NET_WEIGHT" name="_NET_WEIGHT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._PROD_HIER" name="_PROD_HIER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._SIZE_DIM" name="_SIZE_DIM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._VOLUME" name="_VOLUME" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1._VOLUMEUNIT" name="_VOLUMEUNIT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZSPECIPRD" name="_BIC_ZSPECIPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZAIRSEPRT" name="_BIC_ZAIRSEPRT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZBRTYEPRD" name="_BIC_ZBRTYEPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZCPUNC" name="_BIC_ZCPUNC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZFATP_PRD" name="_BIC_ZFATP_PRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZFETURPRD" name="_BIC_ZFETURPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._COMP_CODE" name="_COMP_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZBA_HQ" name="_BIC_ZBA_HQ" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZLEANDPRD" name="_BIC_ZLEANDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZMAPMO" name="_BIC_ZMAPMO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZOLDMAT" name="_BIC_ZOLDMAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPACKCDPR" name="_BIC_ZPACKCDPR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPMATNPRD" name="_BIC_ZPMATNPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZPRODTYPE" name="_BIC_ZPRODTYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZMODELPRD" name="_BIC_ZMODELPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZSPTNOPRD" name="_BIC_ZSPTNOPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZSMDLSFFX" name="_BIC_ZSMDLSFFX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZUPCCDPRD" name="_BIC_ZUPCCDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZVHART" name="_BIC_ZVHART" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._DIVISION" name="_DIVISION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._CRM_PROD" name="_CRM_PROD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._MATL_TYPE" name="_MATL_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZMTPOS" name="_BIC_ZMTPOS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZNUMTP" name="_BIC_ZNUMTP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZVMSTA" name="_BIC_ZVMSTA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._PRODH1" name="_PRODH1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._PRODH2" name="_PRODH2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._PRODH3" name="_PRODH3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._PRODH4" name="_PRODH4" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZD_SAFLG" name="_BIC_ZD_SAFLG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZQUTITMPR" name="_BIC_ZQUTITMPR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZMSTAE" name="_BIC_ZMSTAE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1._BIC_ZLAEDA" name="_BIC_ZLAEDA" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1._BIC_ZLASTCHTM" name="_BIC_ZLASTCHTM" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1._BIC_ZAENAM" name="_BIC_ZAENAM" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="_MATERIAL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BASE_UOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_CREATEDON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_EANUPC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_GROSS_WT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_UNIT_OF_WT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_CAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_NET_WEIGHT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_PROD_HIER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_SIZE_DIM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_VOLUME" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="_VOLUMEUNIT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSPECIPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZAIRSEPRT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZBRTYEPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZCPUNC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZFATP_PRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZFETURPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_COMP_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZBA_HQ" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZLEANDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMAPMO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZOLDMAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPACKCDPR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPMATNPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZPRODTYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMODELPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSPTNOPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZSMDLSFFX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZUPCCDPRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZVHART" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_DIVISION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_CRM_PROD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_MATL_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMTPOS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZNUMTP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZVMSTA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_PRODH4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZD_SAFLG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZQUTITMPR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZMSTAE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_BIC_ZLAEDA" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_BIC_ZLASTCHTM" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_BIC_ZAENAM" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/_0MATERIAL.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
@@ -274,9 +442,13 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPInfoObjectInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPInfoObjectInput_2" target="tFileOutputParquet_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPInfoObjectInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPInfoObjectInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="outparuet" lineStyle="0" metaname="outparuet" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputParquet_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="outparuet"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -294,13 +466,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_522e2dbc-144c-40f6-8db5-520bf9e8e12b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pHO8CAPqYHXlj1j3TP5uB+0IsJMnPz0sVy7Q0IMtHSmmNV6VznziX8St2m9TVI6LHAdnFqzIAjIr&#13;
-hS8BTzFv1A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d150fd2-4a75-4246-86f6-6cef7b06ad3f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WGWOJrWqdLE2EiZpC4glnWoCAI+pljHNcIbr77iht4N2zcIhFkaaajt9fbhfhL3/itVJu4yXLL29&#13;
-s86qXvnBtQ==</DigestValue></Reference></SignedInfo><SignatureValue>TIF5dN41yTh/AptHH/4Sy1cnYfifbfKR5UG0gIkZe++uGlzzhpm8VdKU4LVHdDYfIp2mT63sY1rL&#13;
-LePrJ0Gob8gwUq6x1wScuaOYjY6vuJR1xLvV3zrdGsTgCD0VhQvE9mR7Uba8kBc7fbac5FtM1L8g&#13;
-vrbQtlQOL33obIgEANtWsYJbdbrSYqXl1JAnbNMlrzF0dXTE7nAPJRPLwRFf3qF0HssFpMusO2m3&#13;
-WrjonFcewgrDcfpiLo+StjEoRahaUHEVV1ZfOVmUhePcwiMSDDYaowdtqUpgGcjaZKjOhNvOCEOY&#13;
-PFtBzjMcU+4A4fjOxKZKxu2YPx6nFRLLeIANhQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c24c96e2-3349-42ce-b9b3-cca51d34a487"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8m09KuUfXun+HwBftOz+cHHf8U3icHkdxgmLm3imcuWrdE55MOV2MraOHMLMEYjKw7R1NN7PltdZ&#13;
+OIBDiEVekw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad3ebbdb-9430-461e-b0df-3d505819df31"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fu9shXeMuLW5nx/Sqh86taUj5T/8KZQyUS2/9uwloDBeJ8tb5xsH7/pcjXra5i7WyxmKIq7px0qz&#13;
+iaXiVZ26Uw==</DigestValue></Reference></SignedInfo><SignatureValue>etR+Fsls4nmogMeI8BRjeh5d2xwOZuvFK3uXd7dFVw+bVtWk6UxGnTRleciwjHpkfYY5B1TV8ga6&#13;
+m3EQOIgWpwn0zg5KH1P39qZVni6rQeJ6MeoPttCtgU5uVljl2FjUebykNWk/cekmbr1LtvXfqxA1&#13;
+S0mWLCjielmahPeuAeWstiFCxI4MqZmhsZYYgzECwGjamhMhBTnuZrUx5qJ+CjuFH0w2dI2lBlMA&#13;
+zP8REabFxV4Yu7LAVC4pJEEGy5dmXeEgC24q+WAFpKCgYy5Kl7k5CCc+wkorsZfeWgOuDGNCiUuj&#13;
+1fXe+DPII498dkt60sfJJUBtVo2voaNDcEnMnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -322,4 +494,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d150fd2-4a75-4246-86f6-6cef7b06ad3f" Target="#_522e2dbc-144c-40f6-8db5-520bf9e8e12b"><Timestamp>2024-07-22 03:36:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad3ebbdb-9430-461e-b0df-3d505819df31" Target="#_c24c96e2-3349-42ce-b9b3-cca51d34a487"><Timestamp>2024-07-22 03:37:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
