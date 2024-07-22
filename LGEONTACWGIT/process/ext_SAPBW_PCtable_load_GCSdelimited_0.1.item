@@ -3,16 +3,19 @@
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_FULL"/>
     <contextParameter comment="" internalId="_oAyEUEJLEe-IHs245fJtvg" name="pcstat_flag" prompt="pcstat_flag?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_oAyEUUJLEe-IHs245fJtvg" name="pcstat" prompt="pcstat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xlaG4EfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;/data001/talend/ext_sapbw_pctable_load_gcs.delimited&quot;"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PC_DELTA">
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_DELTA"/>
     <contextParameter comment="" internalId="_oAyEUkJLEe-IHs245fJtvg" name="pcstat_flag" prompt="pcstat_flag?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_oAyEU0JLEe-IHs245fJtvg" name="pcstat" prompt="pcstat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xlaG4UfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_FULL"/>
     <contextParameter comment="" internalId="_oAyEVEJLEe-IHs245fJtvg" name="pcstat_flag" prompt="pcstat_flag?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_oAyEVUJLEe-IHs245fJtvg" name="pcstat" prompt="pcstat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_xlaG4kfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -647,7 +650,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gBSA0EWxEe-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_VHDP4EfKEe-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -964,17 +967,37 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/talend/ext_sapbw_pctable_load_gcs.parquet&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="CREATE"/>
-    <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
-    <elementParameter field="TEXT" name="ROW_GROUP_SIZE" value="134217728"/>
-    <elementParameter field="TEXT" name="PAGE_SIZE" value="1048576"/>
-    <elementParameter field="TEXT" name="LABEL" value="tFileOutputParquet"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.output_fname"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="parquet_out1" name="tFileOutputParquet_1">
+    <metadata connector="FLOW" label="parquet_out1" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="-1" name="REQTSN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="DATAPAKID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="RECORD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -1025,7 +1048,7 @@
     <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/talend/ext_sapbw_pctable_load_gcs.parquet&quot;"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.output_fname"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
@@ -1039,30 +1062,30 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
   <connection connectorName="FLOW" label="row_SINGLE_PARAM_1" lineStyle="0" metaname="row_SINGLE_PARAM_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPTableInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" mergeOrder="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPBapi_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPTableInput_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
   <connection connectorName="FLOW" label="row_SINGLE_PARAM_2" lineStyle="0" metaname="row_SINGLE_PARAM_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1095,11 +1118,11 @@
     </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
-  <connection connectorName="FLOW" label="parquet_out1" lineStyle="0" metaname="parquet_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputParquet_1">
+  <connection connectorName="FLOW" label="parquet_out1" lineStyle="0" metaname="parquet_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="parquet_out1"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_1" target="tGSConnection_2">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tGSConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGSConnection_2" offsetLabelX="0" offsetLabelY="0" source="tGSConnection_2" target="tGSPut_2">
@@ -1147,13 +1170,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0a66039d-f4d2-4de6-b424-3b0b2ec19818"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1QpnyulYnCGRzJRC3Y624Ih0qyjskJAVQkOeXA0x36YcUCM33uEXj1vvMAswnrmaVtE6bUJDTzpU&#13;
-BLqMQVwL0g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c403549f-ef26-401e-9192-bbd936a090a3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ntfc3EGcgjEbohVqcw7N9wcLYdEo9k+7wp9Qq0we/DoY9mkJ+7hFfVDy6xSoECETdQJ0jfNZbMXL&#13;
-8wmU5oXyVg==</DigestValue></Reference></SignedInfo><SignatureValue>humu35HfImXjk2nO+0l7O/mC0GIuwtQWg4Qv5LCJaRpyCI7WHsEqRLt8irlm3fV/sKyU3CIxDlyS&#13;
-L3wBMbsGbf2j8dlIh323wMsK43HTVUBZkLVeMObMAYk9ZlxYqbOIQ9i2WK7DVOYvAIvvAteQzOZO&#13;
-PeT0NfjApAa/bogoTq8VWD/ZbRzyfAsh1WbvBauDmWA7ih5XUBJ6eqet581hgwxsQqZE+GPV7Y+Y&#13;
-Jp7dHcmWqirgAQVZU6s7Ze/pC8pVpAOjaEK+wQ6U+SFR3ohWYsCPiBXdnNj6Q2dXyDvmNcWnHzrL&#13;
-nbZk1RaqGK2bGiFmooQtbfe8sZxYR7jRsEtQWA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cbae0656-cb1d-47da-bdbe-1ed1957ba3df"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O1P1cACSboniHSFNvC1U5ng0U1aED/886Kbal3iK2Jbzy/8BdHIFMjcQkdBJtmujwmsaxcDEwo7E&#13;
+4dQmpLRTzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8f6ed2b4-1019-4ba5-b4b6-272fc92078db"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UQlKuYSNS3S+f3J11Ys2CBu5kTUNA1cfqUWi0uIqnecYyIMv1eG5Yhna86N4OB/XpgA9oWWSUDDT&#13;
+xlnxIS+egw==</DigestValue></Reference></SignedInfo><SignatureValue>p3PV7WuCkolJfUUL8p8p6ULWVdfKK1B3OkVXciRBEZxJnCpUaGZYmeaGXrwkMYBdm2aqBedBQZxH&#13;
+fmqZfMl8fbTCYSvEFf39EO4sv5dHushSctXvcIMuZFY8XwiZFTPYwC9ZgeoJr36QlADkTrvOtD6+&#13;
+I4qXH3GUnt887eedea/WQucmfmNBf6SZXrujBYRrg2sXLkcDYXexc/x9GmX+zbf/NAYx7Hxig1dJ&#13;
+82hQsEscVjAC1Rg8WNGanxWZ45li0mPSA3YqlDFuKvhpmzp6Cy+ruW3Do4HzZHY/apZZh6XOsM3G&#13;
+pGf7HDIm6+rj5LsPO7MaKXlWVciUMUyzhHf/9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1175,4 +1198,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c403549f-ef26-401e-9192-bbd936a090a3" Target="#_0a66039d-f4d2-4de6-b424-3b0b2ec19818"><Timestamp>2024-07-22 01:33:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8f6ed2b4-1019-4ba5-b4b6-272fc92078db" Target="#_cbae0656-cb1d-47da-bdbe-1ed1957ba3df"><Timestamp>2024-07-22 01:36:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
