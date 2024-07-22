@@ -148,222 +148,7 @@
     <elementParameter field="TEXT" name="LABEL" value="tSAPConnection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
-    <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
-    <elementParameter field="TEXT" name="USERID" value="&quot;qliktest01&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:zOQco2g8LUr6K/mT++ZgOJ+EBvrCXr0dxKEcQ4Pr4/FxiupkeICesQ=="/>
-    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
-    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
-    <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TEXT" name="SAP_FUNCTION" value="&quot;RSPC_API_CHAIN_START&quot;"/>
-    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="TABLE" name="MAPPING_INPUT">
-      <elementValue elementRef="NAME" value="&quot;I_CHAIN&quot;"/>
-      <elementValue elementRef="TYPE" value="SINGLE"/>
-      <elementValue elementRef="SCHEMA" value="row_I_CHAIN_1"/>
-      <elementValue elementRef="PARENT_ROW" value=""/>
-      <elementValue elementRef="PARAMETER_TYPE" value="IMPORT"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="NAME" value="&quot;SINGLE_PARAM&quot;"/>
-      <elementValue elementRef="TYPE" value="SINGLE"/>
-      <elementValue elementRef="SCHEMA" value="row_SINGLE_PARAM_1"/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="TABLE" name="SAP_PROPERTIES">
-      <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="tSAPBapi_start"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSAPBapi_1"/>
-    <metadata comment="" connector="FLOW" label="row_SINGLE_PARAM_1" name="row_SINGLE_PARAM_1" type="OUTPUT">
-      <column comment="" key="false" length="25" name="E_LOGID" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW" label="row_I_CHAIN_1" name="row_I_CHAIN_1">
-      <column comment="" defaultValue="context.pchain" key="false" length="-1" name="I_CHAIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <additionalProperties key="isinput" value="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#10;output_row.E_LOGID = input_row.E_LOGID;&#10;&#10;globalMap.put(&quot;logId&quot;, input_row.E_LOGID);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="tJavaRow_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row_SINGLE_PARAM_1" name="tJavaRow_1">
-      <column comment="" key="false" length="25" name="E_LOGID" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="E_LOGID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row_SINGLE_PARAM_1" name="tLogRow_1">
-      <column comment="" key="false" length="25" name="E_LOGID" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
-    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
-    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
-    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
-    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
-    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="DECLARATION" value=""/>
-    <elementParameter field="TEXT" name="CONDITION" value="context.pcstat_flag&lt;1"/>
-    <elementParameter field="TEXT" name="ITERATION" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="tLoop"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" show="false" value="ApplicationServer"/>
-    <elementParameter field="TEXT" name="CLIENT" show="false" value="&quot;200&quot;"/>
-    <elementParameter field="TEXT" name="USERID" show="false" value="&quot;qliktest01&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:vQrMhp6FMiX6bXVVIYAcXnQqcNXRT5/tqC4UXTangyXgmeojKW3XTg=="/>
-    <elementParameter field="TEXT" name="LANGUAGE" show="false" value="&quot;EN&quot;"/>
-    <elementParameter field="TEXT" name="HOSTNAME" show="false" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMNUMBER" show="false" value="&quot;00&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
-    <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TEXT" name="SAP_FUNCTION" value="&quot;RSPC_API_CHAIN_GET_STATUS&quot;"/>
-    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="TABLE" name="MAPPING_INPUT">
-      <elementValue elementRef="NAME" value="&quot;I_CHAIN&quot;"/>
-      <elementValue elementRef="TYPE" value="SINGLE"/>
-      <elementValue elementRef="SCHEMA" value="row_I_CHAIN_2"/>
-      <elementValue elementRef="PARENT_ROW" value=""/>
-      <elementValue elementRef="PARAMETER_TYPE" value="IMPORT"/>
-      <elementValue elementRef="NAME" value="&quot;I_LOGID&quot;"/>
-      <elementValue elementRef="TYPE" value="SINGLE"/>
-      <elementValue elementRef="SCHEMA" value="row_I_LOGIN_1"/>
-      <elementValue elementRef="PARENT_ROW" value=""/>
-      <elementValue elementRef="PARAMETER_TYPE" value="IMPORT"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="NAME" value="&quot;SINGLE_PARAM&quot;"/>
-      <elementValue elementRef="TYPE" value="SINGLE"/>
-      <elementValue elementRef="SCHEMA" value="row_SINGLE_PARAM_2"/>
-      <elementValue elementRef="NAME" value="&quot;E_S_MESSAGE&quot;"/>
-      <elementValue elementRef="TYPE" value="STRUCTURE"/>
-      <elementValue elementRef="SCHEMA" value="row_E_S_MESSAGE_1"/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
-      <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="tSAPBapi_check"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSAPBapi_2"/>
-    <metadata connector="FLOW" label="row_I_CHAIN_2" name="row_I_CHAIN_2">
-      <column comment="" defaultValue="context.pchain" key="false" length="-1" name="I_CHAIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <additionalProperties key="isinput" value="true"/>
-    </metadata>
-    <metadata connector="FLOW" label="row_I_LOGIN_1" name="row_I_LOGIN_1">
-      <column comment="" defaultValue="(String)globalMap.get(&quot;logId&quot;)" key="false" length="-1" name="I_LOGID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <additionalProperties key="isinput" value="true"/>
-    </metadata>
-    <metadata comment="" connector="FLOW" label="row_SINGLE_PARAM_2" name="row_SINGLE_PARAM_2" type="OUTPUT">
-      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata comment="" connector="FLOW" label="row_E_S_MESSAGE_1" name="row_E_S_MESSAGE_1" type="OUTPUT">
-      <column comment="" key="false" length="20" name="MSGID" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="MSGNO" nullable="true" pattern="" precision="0" sourceType="long" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="MSGTY" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="MSGV1" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="MSGV2" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="MSGV3" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="MSGV4" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="E_STATUS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row_SINGLE_PARAM_2" name="tLogRow_2">
-      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code erstellt anhand des Eingabe- und Ausgabeschemas&#10;output_row.E_STATUS = input_row.E_STATUS;&#10;&#10;context.pcstat_flag = &quot;A&quot;.equals(input_row.E_STATUS) ? 0 : 1;&#10;context.pcstat = input_row.E_STATUS;&#10;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row_SINGLE_PARAM_2" name="tJavaRow_2">
-      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSleep_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="10"/>
-    <elementParameter field="TEXT" name="LABEL" value="tSleep"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row_SINGLE_PARAM_2" name="tSleep_1">
-      <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="560">
+  <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_2"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
@@ -388,11 +173,11 @@
     <elementParameter field="CHECK" name="CDS_VIEWS" value="false"/>
     <elementParameter field="TABLE" name="CDS_VIEW_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="FROM_STATEMENT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="FILTER" value="&quot;RECORD &lt;= 2000&quot;"/>
+    <elementParameter field="TEXT" name="FILTER" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" show="false" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
-    <elementParameter field="TEXT" name="START_ROW" value="-1"/>
-    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="-1"/>
+    <elementParameter field="TEXT" name="START_ROW" value="1"/>
+    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="1000000"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -645,12 +430,12 @@
       <column comment="VAR_RYLTY_AMT" key="false" length="16" name="_BIC_YVRRTAMT" nullable="true" originalDbColumnName="/BIC/YVRRTAMT" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="560">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_VHDP4EfKEe-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_PL-F0Ef8Ee-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -967,7 +752,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1038,7 +823,7 @@
     <elementParameter field="TEXT" name="LABEL" value="tGSConnection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="560">
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGSConnection_2"/>
@@ -1064,51 +849,6 @@
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSAPConnection_1" target="tGSConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
-  </connection>
-  <connection connectorName="FLOW" label="row_SINGLE_PARAM_1" lineStyle="0" metaname="row_SINGLE_PARAM_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" mergeOrder="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPBapi_2">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPTableInput_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row_SINGLE_PARAM_2" lineStyle="0" metaname="row_SINGLE_PARAM_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tLogRow_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="E_LOGID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tJavaRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tSleep_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tSAPTableInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1141,20 +881,6 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Start SAPBW Process Chain"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Check the status of SAPBW Process Chain"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_2"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Extract OHD table and load it into Google Cloud Storage as parquet"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
@@ -1170,13 +896,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e789c0e7-9375-4777-8fff-8d1f6748b8bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mcvsoBrvXXE6dnI9rDvqmAiaB+Ue5np4o81XWNM2m4XZ1NyxvB4xrnppQwylnFF18PzG9/1td9Ni&#13;
-JD8GigF/fQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1457469e-596c-4338-b678-bb3d136faf59"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LctPAFO8TTcIgY00YDGn2AXhbC8yiNmopfw+vw4WK6T8DRebUI7Oy6l4ZYahIAYcLoQ56un3Xm1a&#13;
-vgOxILYSig==</DigestValue></Reference></SignedInfo><SignatureValue>WF73pePYxdR4BTqLp2gFcw7KkvkDp/23a1KqlQsI00yV6vB3FM1u/qR874xhTOgY9K3emANj2MF6&#13;
-DhytLbyTKS5NiKYUpN0K7ORhiVlBOkmN9bNnvG/Kk5NTCfKZIUS7kAlTk1jB4B/6Ouwtew/vqDAM&#13;
-ntPPoHiVwIf3Im6gGtSzTOn8EMmCzcVAha+HlBmt3BbaFzkfzaXoTJsJGeJbpl59i8XE37Qwze7C&#13;
-mv/2UrmGpzh6TnGO0S+0eaqiHcs7iPxzqyiz0/wXOovdHGipUcGm1sUewfVM+zaftuggfSvX+xUV&#13;
-YOGUNfvyGq3d6zq/SDMaMKUblSQe2woz/wsNUA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_727e234d-78ca-4d99-a680-aabe4b2175ff"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H1xv8mOCgVetYchqEQNw6BwDEm+31qpWIwyHFkEHdjIbDuOxFlaOKlrxKm8Owz/wS7LT4EY7q7VI&#13;
++lq7Ucyjkg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_597ddafe-b873-419c-9718-596abf59eb8c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3MaBulZPXc0b/tpgwwOe5xY2g9FI3lhkyoCfCoGgBkDieTDqcu6kic1HwdSSI86jCpPMl1IyWi8T&#13;
+Um/RHB0QYA==</DigestValue></Reference></SignedInfo><SignatureValue>cOWe4+w8aihGK6oBSPYS06n3bLDPFLXdhuisX+ekn5UgASeHMCyILIb50ECJz7Y5XJ1DEDF2ZyBB&#13;
+142s5DYbGJTujFGmjv4sTTrhy+vcPF5kPTcBxKsXGviG6bbLUX4soMiNK3KP33XpJk93r9V/Oh/f&#13;
+LBZSOc11VwaU3ZcOOap/UTuBR7zWNSc1iXAwDwUyV7RC46/6sKNK0A+SOWufawdzyjoDG7gBp179&#13;
+nOf47dhK+xn+zW6+8c7nPC34zWNDyElZff5BRSMAR+T2E74/z7DJbgXfvYF6h3RWY7O8Ezc2hPCQ&#13;
+/kiP2g/qqhqdWPJ2zso32iEKuFW4N0Ju9UBThQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1198,4 +924,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1457469e-596c-4338-b678-bb3d136faf59" Target="#_e789c0e7-9375-4777-8fff-8d1f6748b8bc"><Timestamp>2024-07-22 07:30:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_597ddafe-b873-419c-9718-596abf59eb8c" Target="#_727e234d-78ca-4d99-a680-aabe4b2175ff"><Timestamp>2024-07-22 07:31:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
