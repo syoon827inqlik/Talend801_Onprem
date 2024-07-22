@@ -363,8 +363,33 @@
       <column comment="" key="false" length="1" name="E_STATUS" nullable="true" pattern="" precision="0" sourceType="string" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="560">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_2"/>
+  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" value="&quot;/home/talend/Downloads/svcac-edl-dev-etl.json&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:ek57xFC5ahBtH+YMf1Ny2MHEVBXiipbDyfnlajD6"/>
+    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="tGSConnection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_2"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="int i=1"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i&lt;500000000"/>
+    <elementParameter field="TEXT" name="ITERATION" value="i=500000+i"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -372,7 +397,7 @@
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" show="false" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" show="false" value="&quot;200&quot;"/>
     <elementParameter field="TEXT" name="USERID" show="false" value="&quot;qliktest01&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:+uzbuTduRyVfrhpLZ4b7bwZ8t4vRPvevOByUEuSAW3EcdpEA5rtUVw=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:MdOjBYUmupiIeFCF9RHjo7I1BqueQc9xD3TAnPn2hHKlBImxrOIqxg=="/>
     <elementParameter field="TEXT" name="LANGUAGE" show="false" value="&quot;EN&quot;"/>
     <elementParameter field="TEXT" name="HOSTNAME" show="false" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMNUMBER" show="false" value="&quot;00&quot;"/>
@@ -388,11 +413,11 @@
     <elementParameter field="CHECK" name="CDS_VIEWS" value="false"/>
     <elementParameter field="TABLE" name="CDS_VIEW_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="FROM_STATEMENT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="FILTER" value="&quot;RECORD &lt;= 2000&quot;"/>
+    <elementParameter field="TEXT" name="FILTER" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" show="false" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
-    <elementParameter field="TEXT" name="START_ROW" value="-1"/>
-    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="-1"/>
+    <elementParameter field="TEXT" name="START_ROW" value="i"/>
+    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="1000000"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -402,7 +427,7 @@
     <elementParameter field="TEXT" name="FTP_HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FTP_PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTP_USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="FTP_PASS" show="false" value="enc:system.encryption.key.v1:kX2LJp+3Ahg43Ex9dGsWBz5uNWLRzjqnR5qpxahn"/>
+    <elementParameter field="PASSWORD" name="FTP_PASS" show="false" value="enc:system.encryption.key.v1:fUilZIeFQZlYKWrVwrVlvnwb6X9vKopY6RZEnR4e"/>
     <elementParameter field="CHECK" name="USE_SERVER_LOGICAL_PATH" show="false" value="false"/>
     <elementParameter field="TEXT" name="FTP_DIR" show="false" value="&quot;/usr/sap/talend/ftp/&quot;"/>
     <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" show="false" value="&quot;current_data_file&quot;"/>
@@ -425,7 +450,7 @@
     <elementParameter field="CHECK" name="FETCH_ALL_AT_ONCE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="tSAPTableInput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="_BIC_OHY_TALND01" name="tSAPTableInput_2">
+    <metadata connector="FLOW" label="_BIC_OHY_TALND01" name="tSAPTableInput_1">
       <column comment="" key="true" length="23" name="REQTSN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="DATAPAKID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="RECORD" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
@@ -645,12 +670,12 @@
       <column comment="VAR_RYLTY_AMT" key="false" length="16" name="_BIC_YVRRTAMT" nullable="true" originalDbColumnName="/BIC/YVRRTAMT" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="560">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_VHDP4EfKEe-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_PL-F0Ef8Ee-ZTfOwd0d99Q-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -660,7 +685,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="tMap"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="parquet_out1" name="parquet_out1">
+    <metadata connector="FLOW" label="parquet_out1" name="copyOfparquet_out1">
       <column comment="" key="false" length="-1" name="REQTSN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="DATAPAKID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="RECORD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -691,34 +716,34 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row5.REQTSN " name="REQTSN" type="id_String"/>
-        <mapperTableEntries expression="row5.DATAPAKID " name="DATAPAKID" type="id_Integer"/>
-        <mapperTableEntries expression="row5.RECORD " name="RECORD" type="id_Integer"/>
-        <mapperTableEntries expression="row5._BIC_YCSBCCD " name="_BIC_YCSBCCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YCCTPCD " name="_BIC_YCCTPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YCTPCD " name="_BIC_YCTPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YLTPCD " name="_BIC_YLTPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YEOATPCD " name="_BIC_YEOATPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YVMLLAG " name="_BIC_YVMLLAG" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YPMSCD " name="_BIC_YPMSCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YMFRCD " name="_BIC_YMFRCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YFRCD " name="_BIC_YFRCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YSMSFCD " name="_BIC_YSMSFCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YSSRNRCD " name="_BIC_YSSRNRCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YRRP_FLAG " name="_BIC_YRRP_FLAG" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YFBTCCD " name="_BIC_YFBTCCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YFBTCSDCD " name="_BIC_YFBTCSDCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YSPSATPCD " name="_BIC_YSPSATPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YMKT_CD " name="_BIC_YMKT_CD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YDBIZTPCD " name="_BIC_YDBIZTPCD" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YLUPUSRID " name="_BIC_YLUPUSRID" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YLUPDT " name="_BIC_YLUPDT" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YCRUSRID " name="_BIC_YCRUSRID" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YCRDT " name="_BIC_YCRDT" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YACYYYYMM " name="_BIC_YACYYYYMM" type="id_String"/>
-        <mapperTableEntries expression="row5._BIC_YPLYYYYMM " name="_BIC_YPLYYYYMM" type="id_String"/>
+        <mapperTableEntries expression="row4.REQTSN " name="REQTSN" type="id_String"/>
+        <mapperTableEntries expression="row4.DATAPAKID " name="DATAPAKID" type="id_Integer"/>
+        <mapperTableEntries expression="row4.RECORD " name="RECORD" type="id_Integer"/>
+        <mapperTableEntries expression="row4._BIC_YCSBCCD " name="_BIC_YCSBCCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YCCTPCD " name="_BIC_YCCTPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YCTPCD " name="_BIC_YCTPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YLTPCD " name="_BIC_YLTPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YEOATPCD " name="_BIC_YEOATPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YVMLLAG " name="_BIC_YVMLLAG" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YPMSCD " name="_BIC_YPMSCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YMFRCD " name="_BIC_YMFRCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YFRCD " name="_BIC_YFRCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YSMSFCD " name="_BIC_YSMSFCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YSSRNRCD " name="_BIC_YSSRNRCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YRRP_FLAG " name="_BIC_YRRP_FLAG" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YFBTCCD " name="_BIC_YFBTCCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YFBTCSDCD " name="_BIC_YFBTCSDCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YSPSATPCD " name="_BIC_YSPSATPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YMKT_CD " name="_BIC_YMKT_CD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YDBIZTPCD " name="_BIC_YDBIZTPCD" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YLUPUSRID " name="_BIC_YLUPUSRID" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YLUPDT " name="_BIC_YLUPDT" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YCRUSRID " name="_BIC_YCRUSRID" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YCRDT " name="_BIC_YCRDT" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YACYYYYMM " name="_BIC_YACYYYYMM" type="id_String"/>
+        <mapperTableEntries expression="row4._BIC_YPLYYYYMM " name="_BIC_YPLYYYYMM" type="id_String"/>
       </varTables>
-      <outputTables name="parquet_out1" sizeState="INTERMEDIATE">
+      <outputTables name="copyOfparquet_out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.REQTSN " name="REQTSN" type="id_String"/>
         <mapperTableEntries expression="Var.DATAPAKID " name="DATAPAKID" type="id_Integer"/>
         <mapperTableEntries expression="Var.RECORD " name="RECORD" type="id_Integer"/>
@@ -746,7 +771,7 @@
         <mapperTableEntries expression="Var._BIC_YACYYYYMM " name="_BIC_YACYYYYMM" type="id_String"/>
         <mapperTableEntries expression="Var._BIC_YPLYYYYMM " name="_BIC_YPLYYYYMM" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
         <mapperTableEntries name="REQTSN" nullable="true" type="id_String"/>
         <mapperTableEntries name="DATAPAKID" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="RECORD" nullable="true" type="id_Integer"/>
@@ -967,8 +992,8 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="context.output_fname"/>
@@ -976,9 +1001,9 @@
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -994,10 +1019,10 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="parquet_out1" name="tFileOutputDelimited_1">
+    <metadata connector="FLOW" label="parquet_out1" name="tFileOutputDelimited_2">
       <column comment="" key="false" length="-1" name="REQTSN" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="DATAPAKID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="RECORD" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -1026,25 +1051,13 @@
       <column comment="" key="false" length="-1" name="_BIC_YPLYYYYMM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_2"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
-    <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" value="&quot;/home/talend/Downloads/svcac-edl-dev-etl.json&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:ek57xFC5ahBtH+YMf1Ny2MHEVBXiipbDyfnlajD6"/>
-    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
-    <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
-    <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
-    <elementParameter field="TEXT" name="LABEL" value="tGSConnection"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="560">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_2"/>
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGSConnection_2"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SERVICE_ACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" show="false" value="&quot;C:/Users/jaeyoung.yang/workspace/key.json&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:rzKSV7kOAIL0Pohz4S1VihcS8koAqqZldBCmIIIe"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:4ld/1iDa76LjvToLtJ/++pCJHQl+Jdylt+yd9qsK"/>
     <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
@@ -1079,16 +1092,16 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tLoop_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" mergeOrder="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPBapi_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPTableInput_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
   <connection connectorName="FLOW" label="row_SINGLE_PARAM_2" lineStyle="0" metaname="row_SINGLE_PARAM_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1110,7 +1123,12 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tSAPTableInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_2" target="tMap_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_2" offsetLabelX="0" offsetLabelY="0" source="tLoop_2" target="tSAPTableInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSAPTableInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="NUM_PARTITIONS" show="false" value="4"/>
     <elementParameter field="CHECK" name="HASH_PARTITION" show="false" value="true"/>
@@ -1119,14 +1137,14 @@
       <elementValue elementRef="KEY_COLUMN" value="DATAPAKID"/>
       <elementValue elementRef="KEY_COLUMN" value="RECORD"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
-  <connection connectorName="FLOW" label="parquet_out1" lineStyle="0" metaname="parquet_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+  <connection connectorName="FLOW" label="copyOfparquet_out1" lineStyle="0" metaname="copyOfparquet_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="parquet_out1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfparquet_out1"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tGSPut_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_2" target="tGSPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -1154,29 +1172,29 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPTableInput_2"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Extract OHD table and load it into Google Cloud Storage as parquet"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_2"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Looping to extract OHD SAPTable by 1000000 and load it into Google Cloud Storage as delimited"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_31801767-83db-416e-a668-3972ad2faa10"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mcvsoBrvXXE6dnI9rDvqmAiaB+Ue5np4o81XWNM2m4XZ1NyxvB4xrnppQwylnFF18PzG9/1td9Ni&#13;
-JD8GigF/fQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9663423d-e3c9-4b4a-9887-fc435814f59a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wVtN33e0YfpZixU9Gbchx959ey7rXL0TbHv/+nqGlH0IIMT52IYh9TK6Nh1J13QmucKwwV1rnCSB&#13;
-/v7X3Snqfg==</DigestValue></Reference></SignedInfo><SignatureValue>A6KYaHtQNXZheJ3I4PZefo8k+6RHcmgXpliVcjPxzzeFh8jhdvyjIj2nWIEoQl6UUgnxZsCG4GsP&#13;
-560wGKDpY3mCYTD0ZkMlv+V6kLcSAOqsQbg0WyWsumwmWIVmOMZwA39oETLQxeGt4i8/8ZD4d8nr&#13;
-DTtiqi7YDnc+AnvLXYnu23J6ZjQvz49VauntcbB4cQposiu+kIq9CR8RkB/zKkL/3MoWIeEqBK2A&#13;
-0UUWNwxj5BdyjGIodxbKrRScYcerkQlyKovb7oOlbQvbVSrV7e5uQmer7M8y38Rb34CS2yzr6rZV&#13;
-rz2SDSiYMBbg2kRyUljPZRqxjfLdoS7LwkdhsQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_476bb314-4764-4858-b98c-78cac23a46cf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LM+SMq8NpamEvo0TyePvMIAGX0ACA4alZt9iYVT1jXz4JdIP2/Z8aLo5lE06PR50yN8tkWEzwAkX&#13;
+VKRE/aYAaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5366a316-1bee-41da-b9d5-67c1eafe7fc0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0nF9hP4LJBRIEo3FVU9mRtc630+d9LkVpxiNO2QqOGgFikQ6zYh/BktAZlC0PXv8ifONq/a7QC1L&#13;
+jXuUF72IBg==</DigestValue></Reference></SignedInfo><SignatureValue>lTH2G9I5xo2nwXmI88H5HL5/e+6HS5BGWQvADjEDty5AN4GU4Z7JOr8TvT5dJWXWMuFuqbbux77b&#13;
+KbMs32sKa2SiZqCWap+KcYJym4/fCcZHRa/RSIcpLGyj7ydkl3CzdR1YTfUezPj3deGsGosQ1+EN&#13;
+YvVDD4TE0Jl4/G08Xc1+nuAstFZeImJF0nKKGyriUxAyr3e0iTi5CDdMAfHQZS0bQG0uTqhyl+HA&#13;
+u8X8JUjLw6k0fpM9Elw2b/kV+bl8elW3uQBmiLHRSMhxsjMg7AvYG3wnz38dZwyBIs6aAsOGoJMU&#13;
+5m+h/rnZDeZFMtaTzE2RAb+komxXSQLzFFfv3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1198,4 +1216,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9663423d-e3c9-4b4a-9887-fc435814f59a" Target="#_31801767-83db-416e-a668-3972ad2faa10"><Timestamp>2024-07-22 06:20:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5366a316-1bee-41da-b9d5-67c1eafe7fc0" Target="#_476bb314-4764-4858-b98c-78cac23a46cf"><Timestamp>2024-07-22 08:16:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
