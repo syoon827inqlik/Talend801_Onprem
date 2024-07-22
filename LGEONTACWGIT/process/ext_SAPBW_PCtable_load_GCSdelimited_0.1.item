@@ -3,7 +3,7 @@
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_FULL"/>
     <contextParameter comment="" internalId="_oAyEUEJLEe-IHs245fJtvg" name="pcstat_flag" prompt="pcstat_flag?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_oAyEUUJLEe-IHs245fJtvg" name="pcstat" prompt="pcstat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_xlaG4EfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;/data001/talend/ext_sapbw_pctable_load_gcs.delimited&quot;"/>
+    <contextParameter comment="" internalId="_xlaG4EfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;/data001/talend/scenario_01/ext_sapbw_pctable_load_gcs.delimited&quot;"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PC_DELTA">
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_DELTA"/>
@@ -1026,7 +1026,7 @@
       <column comment="" key="false" length="-1" name="_BIC_YPLYYYYMM" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="560">
+  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_2"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_KEY" value="&quot;/home/talend/Downloads/svcac-edl-dev-etl.json&quot;"/>
@@ -1038,7 +1038,7 @@
     <elementParameter field="TEXT" name="LABEL" value="tGSConnection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="560">
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGSConnection_2"/>
@@ -1061,6 +1061,9 @@
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSAPConnection_1" target="tGSConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
@@ -1122,11 +1125,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="parquet_out1"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tGSConnection_2">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tGSPut_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGSConnection_2" offsetLabelX="0" offsetLabelY="0" source="tGSConnection_2" target="tGSPut_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -1170,13 +1170,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_828682cf-9ff1-4796-bc79-c5e764c578c4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OEWEiksgAQGfcjw3ZVEsgPoP9T81+eJUCu14kxzXxxDHd58/xAwPmu3KlPG+Adnvz7e9I2ifiZdT&#13;
-DmZM6sfT6A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0544baf-7bc8-4326-9fc9-251011e1fe19"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GwMvbltJrXsmPzUWNVJYkQu1yQASJkI0Fg7QeAOzVSJk3M/xWsYZqgq8YOmwTJZRlKe5IBssnPSw&#13;
-ZZqEd7f6mA==</DigestValue></Reference></SignedInfo><SignatureValue>hKLMtpTdDF3In9Y3ECR8RWTsmrm24EDgpsr8ENyuucEGH8oxMc81uwvIzNlWEY7FB8PLLkpq7Y5/&#13;
-SwHD2ffxLZq2fGNlaRYvgviPd1GIJXXpVmZXsNF/LzRYXvxjMplJbkyTmspBpuWvh/BMUHl9FxIE&#13;
-/9zztm6z67Ct0PPxW1W/1mo1VtxenBfSu9jHGeMOCHHsW2FHDvBCbIVNrliLwfGcpQ/BfUSqX02E&#13;
-lMTbfZBAEHVNpB8E/N6cCJU740Y+5j9VblgWP2sGJfRkCZBDs/ZCEeHqdD3sh8NVZCPIEHUhL9lh&#13;
-Ys2F1Ki/1nr80+no8G1U83UuAWGMqvy48U18qg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46b88ca4-de0e-47f4-ac1d-470a5d09e7af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kq11x+e2jRrSBxcmGha8BSlE1wD+gkXJ9kFUNn5LB4lJjuMXjbbOcqgUmpbiv82p6dhopg/x1IZW&#13;
+wScFp4OJSA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f82de2b9-7686-4228-8fa4-da9c1c992e92"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xcFIOo1OTF6ZyqMf9fuSHQx3BtxkJWVVg0AICt3NVK1GaQAMNDUaZRh2cXFBZEo1ZDXY58j9SuOg&#13;
+big33sdn1A==</DigestValue></Reference></SignedInfo><SignatureValue>OylHZHKsz7WKvI+FF0pQnneyLCoCCjzUiaz2DT2KaHp4YyLo7MKhwhy5sy7KIX2IdXownn3RyFqf&#13;
+fiF3CcnroJbZUBueNdJje5g2u9pp0E+eZlERBxifUL53X1Ic+a3/mLcd2eehmzHUYFQNCRe5dPKV&#13;
+nvqGOWuGDPdQjvaz5UsAOiIhvXrX2iXJDkHEuL+En+KZJ0rcl4vgPabXrYgrAOCLB7DdGKvFkSsT&#13;
+coKiFu7Z2KXT3zT//TMpxwW6VlP1MZ9YB3Lq7950pyakDYiXTILuqGufZotKGk5HghJZEmoAS9JB&#13;
+tDMTi+0Grkfv9rcEYWjlUH8FfCj9/4eeWsFwuA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1198,4 +1198,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0544baf-7bc8-4326-9fc9-251011e1fe19" Target="#_828682cf-9ff1-4796-bc79-c5e764c578c4"><Timestamp>2024-07-22 03:31:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f82de2b9-7686-4228-8fa4-da9c1c992e92" Target="#_46b88ca4-de0e-47f4-ac1d-470a5d09e7af"><Timestamp>2024-07-22 03:38:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
