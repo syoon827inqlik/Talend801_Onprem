@@ -131,26 +131,26 @@
   </node>
   <node componentName="tSAPInfoObjectInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPInfoObjectInput_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
-    <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
-    <elementParameter field="TEXT" name="USERID" value="&quot;qliktest01&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:I+ckRIv0vu3G+/5LHQR9Y5F1Uloi5MsMfDrhhLc3KfoKxBS7DaA98w=="/>
-    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
-    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
-    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" show="false" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" show="false" value="&quot;200&quot;"/>
+    <elementParameter field="TEXT" name="USERID" show="false" value="&quot;qliktest01&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:I+ckRIv0vu3G+/5LHQR9Y5F1Uloi5MsMfDrhhLc3KfoKxBS7DaA98w=="/>
+    <elementParameter field="TEXT" name="LANGUAGE" show="false" value="&quot;EN&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" show="false" value="&quot;vhlgrb4dcs.sap.lge.com&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" show="false" value="&quot;00&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
     <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;0MATERIAL&quot;"/>
     <elementParameter field="CLOSED_LIST" name="INFO_OBJECT_TYPE" value="ATTRIBUTE"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
-    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TABLE" name="SAP_PROPERTIES">
+    <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
       <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
     </elementParameter>
@@ -466,13 +466,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c24c96e2-3349-42ce-b9b3-cca51d34a487"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8m09KuUfXun+HwBftOz+cHHf8U3icHkdxgmLm3imcuWrdE55MOV2MraOHMLMEYjKw7R1NN7PltdZ&#13;
-OIBDiEVekw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad3ebbdb-9430-461e-b0df-3d505819df31"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fu9shXeMuLW5nx/Sqh86taUj5T/8KZQyUS2/9uwloDBeJ8tb5xsH7/pcjXra5i7WyxmKIq7px0qz&#13;
-iaXiVZ26Uw==</DigestValue></Reference></SignedInfo><SignatureValue>etR+Fsls4nmogMeI8BRjeh5d2xwOZuvFK3uXd7dFVw+bVtWk6UxGnTRleciwjHpkfYY5B1TV8ga6&#13;
-m3EQOIgWpwn0zg5KH1P39qZVni6rQeJ6MeoPttCtgU5uVljl2FjUebykNWk/cekmbr1LtvXfqxA1&#13;
-S0mWLCjielmahPeuAeWstiFCxI4MqZmhsZYYgzECwGjamhMhBTnuZrUx5qJ+CjuFH0w2dI2lBlMA&#13;
-zP8REabFxV4Yu7LAVC4pJEEGy5dmXeEgC24q+WAFpKCgYy5Kl7k5CCc+wkorsZfeWgOuDGNCiUuj&#13;
-1fXe+DPII498dkt60sfJJUBtVo2voaNDcEnMnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18055db7-f916-4f61-9320-e83bae4f53b5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hOr2BJXxDKZgoWokY2EjjwBCjARfsaN8WVdq8AM8KZvmVT6IaJsiOHEbNMbfYRRXqjqEKZzKQTQu&#13;
+0xmZXIVNUA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_978d91ba-8d1a-4972-a8f4-b5a0e75da2d3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OOkR0Gn05E+HVo0Lchag8DukvW5d1irKcgdS3HxKrCwJdQ2L589pAai84Fsl6U0snKWGFHm3cq6Q&#13;
+hDtZHKO1jw==</DigestValue></Reference></SignedInfo><SignatureValue>SfI3CC8dS2nUBEnBIy3PgdZpGL5tEt9Gj0iqDQf2UXSzKMVFJQbmSPIL93kqVA8p9odKyaBz1MDf&#13;
+JlPtcRETqF+eXWszmEdS516Ed6nCHyiMYBWCKJiSWKfEpACrq5ZcpuY1zwYZtEVBbSF1YW7cRlZs&#13;
+1hJXVrE799eY2I12KngN8VtB+4qOrgRp695r60Osl1MWAn3IxcNJqvQVtn+ReZo3IyahNBrQvIvE&#13;
+OFkOkwTBVxrpfGZHM1h9TE6TV5djNhj3zlw1uuBLgJw56SyBK4o9autAaD8f7cQtMCHoP9lff1bu&#13;
+QHDsvgI698eRDoEB4KFKbndtRJNJky+LDoiiJA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -494,4 +494,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad3ebbdb-9430-461e-b0df-3d505819df31" Target="#_c24c96e2-3349-42ce-b9b3-cca51d34a487"><Timestamp>2024-07-22 03:37:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_978d91ba-8d1a-4972-a8f4-b5a0e75da2d3" Target="#_18055db7-f916-4f61-9320-e83bae4f53b5"><Timestamp>2024-07-22 03:39:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
