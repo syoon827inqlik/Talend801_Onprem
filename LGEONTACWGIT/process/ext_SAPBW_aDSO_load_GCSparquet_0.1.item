@@ -121,8 +121,6 @@
     <elementParameter field="TEXT" name="SYSTEMNUMBER" show="false" value="&quot;00&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMID" show="false" value="&quot;PRD&quot;"/>
     <elementParameter field="TEXT" name="GROUPNAME" show="false" value="&quot;tGroup&quot;"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE3_F"/>
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE3$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE3$F&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;talend004&quot;"/>
@@ -1517,16 +1515,6 @@
   </node>
   <node componentName="tSAPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPConnection_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tSAPConnection"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Business/SAP"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tSAPConnection"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="LABEL" name="NOTE3" show="false" value="The selected SAP JCO version allows you to share this SAP connection only with tSAPInput and tSAPOutput"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
@@ -2213,7 +2201,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
@@ -2228,13 +2216,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc9ed3ed-ee8e-46cd-a8d8-187580292c70"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n4Dn/8VjqoJ7bnkzi6EalzbSp78XHf0s/vyo5Q8M0S6hQDi8qqU7fgEk3TSCJFMwxd271wV6aqQY&#13;
-lB0WTST1mQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1dcb5160-0283-4ca7-9c31-9a20246443ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U9An1kVAtUdwusXjfg2/qNSzSuQ/EIv/9vL4PkSBUniz2/GKZKXn8xan/yInVd1ejY2QepjeHxm5&#13;
-83/QGUN6pQ==</DigestValue></Reference></SignedInfo><SignatureValue>ksHhqFtpcds5kdMjtdacqacH96+OGfz0G8cU/DGukl7MpejV4mCG0nejQpLryonjR47O7No9JeqP&#13;
-lqbi5KZTCok4rMdRGGWmsNFRAMPyAO9FCGGK2aOQMyz3fmFS641muNmk6wlFCI9ssL1aFu/jbAsn&#13;
-8j4K8kfezpMQsNCA9odUU+nhGX9TVBy2Sbf399ZJvHK+SC+Nqg74uSFD3R5UlgO/JlM1qqzhm2yq&#13;
-STQachcCcJzO2opcnbx4mX8yWUFwofoMB0hV/BHBkOlMeTGSTFRjbpw74U1Ikz5nrT4kXXk7Klp7&#13;
-YUmZXAujh5KLAu+AOM1Bvc6IiT97OfiFe0RXaw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2bb2cd19-bfcb-494a-909b-41f09357879a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yocuM0MNL0saVmgKXscDaxGmjI3kBoa1DNk3aJTJ6UYJCreVhFrZKqO9Eq9ehg9hQfos01jiS3kn&#13;
+eZy75Y1mRg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c789668a-be94-4e42-8c33-e12739233c12"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s1/qT/KOm8tXO+55XXJm2XpJNoAW52c/XwWPFDQ799igtxEn2984sLo2KUaynMxsoK0/iqwQFlif&#13;
+MMoSgW0aUg==</DigestValue></Reference></SignedInfo><SignatureValue>RPCHQpal6XNo6cFRI60MNEPtiF+5bCrjrQRQNJnExv+eKxiVFlntE7L+b/k290kMylyBk4qLefuv&#13;
+ITaWvyJkuggbqo0XcaO06Opo5pM0CBUY0PizrLa1zB/KKXc0NlFDGSTGjMMgNxvcuvHwulX9LdvS&#13;
+cR5ZnzJSbdvjQQ2jF92F0DRKm00udNZs1U+dSwemJjNtLWKW0X+MAt6j5rG/rpJUVP7odceg1b1z&#13;
+DV7Y4+n4WYzcV3JshL92Wljvs1rmE2rZqAYU3lSbJc0YCmdAyzQlBRA3nYz+CRyxujxT0Z1hctGe&#13;
+iG/Y9YGY9KQZTEgwdwCFM3xMnK/Ng4mlKnbqtg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2256,4 +2244,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1dcb5160-0283-4ca7-9c31-9a20246443ee" Target="#_bc9ed3ed-ee8e-46cd-a8d8-187580292c70"><Timestamp>2024-07-22 03:47:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c789668a-be94-4e42-8c33-e12739233c12" Target="#_2bb2cd19-bfcb-494a-909b-41f09357879a"><Timestamp>2024-07-23 08:08:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
