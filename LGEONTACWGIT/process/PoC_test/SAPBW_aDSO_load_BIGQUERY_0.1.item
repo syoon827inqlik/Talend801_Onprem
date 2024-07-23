@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms4G&quot;,&quot;-Xmx8G&quot;,&quot;-DTDM_STREAM_MEMORY_LIMIT=30&quot;]}"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1G&quot;,&quot;-Xmx4G&quot;,&quot;-DTDM_STREAM_MEMORY_LIMIT=30&quot;]}"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -1445,7 +1445,7 @@
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_0723_YD_CASE4_F&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN02&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN03&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE"/>
@@ -2696,13 +2696,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8723895e-5bb6-4490-bd6a-3f5d38f112d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pY2uUYI28+KosvCrQr55cPp3K4ORkNJF8DXoOfz+HnnkWqTlO8MuWjqS29GkhU2CZDAJIhY3SBGA&#13;
-5Gli1wfMIg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d4638690-7f2c-4767-88e3-0829dda84f6a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/8AT6USQXODzVksxlX0AW8nH57aTQf84+ETKum/Bd2ubCnIuNc70EZypembncvCgq0+8aNlGvnNh&#13;
-+PnMCOcOzg==</DigestValue></Reference></SignedInfo><SignatureValue>PHXRK4BG7VqLAOCs6PGElJZy/TwfjFLlMPkz21CRjsmXR6c5/e22y4Kp63mcVmBurhj9oOTognod&#13;
-Hr4ZiMht5c4T+uJ1WUULbqi2T9qbFiRjghxVdzIHwcTxHTTN2ziVIhQc3PmmGbHJzlSCzvnAoIOn&#13;
-ZKs0TOgYH+hgwx1IGO/EJ0cM3++3MSpCTxyIthOhvmYoPEMMPTg3LVCdPpWdPHF4W3nQNrYJBFQ0&#13;
-YfcBbK6xp57UdHqJ2voVD/zvNgL3bVyBASub1D+6q8n0fy3GDWDFqmHjajRghE+E534ugMNyzeSR&#13;
-nl7JCThKHnQs60LbanQ5c2MOAAt941uSxtne/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7f221e19-e0ae-4885-a1c7-209ff7533f5a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LYs+ar6hdLARu1kBZ3IrU1fJ2kFtbRt5r8lo2nxeficKH1ehbgZNsO3GvODhHs+6K8Ak9YqO8Iwg&#13;
+0tQTkuajRA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d0ff9000-24b9-4fea-8440-7b9a4284ffab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x1ojapQfraeojBdkDnm8N6anAm4xENhy8GlWuDzeg1+/U630z2CV8iv8xFa1RidW/XAKpXDGXqUb&#13;
+KIVsYl2O6Q==</DigestValue></Reference></SignedInfo><SignatureValue>ARbxiRh6+mDs3mHbxP+AaYwKbmM0JkFKLnp+CyGFovNnf9vdefju1mwCT6c1yBiArTo1ujimgcbD&#13;
+21r8xyZRXqdTyApQ+KdH2WqfABiGFhIGmid7L9X9qddxpQSkkbzO/x0xKY7vJ4UmRvylDKe8jT7d&#13;
+tMC9b58MG7lMYO72fpy5TWmYZK1NaUQgoNUGuKr29txXzeAquV8hRZSJ4XCST8Mn56aXYoq0BA7x&#13;
+dM+GW03M7EcA0/plCMXMvwGwEw3Vt9u0evxMt/CmnAmMxDsYuvkTSArW57jYUL+soEQBBZoXbOwE&#13;
+ckeo47I89gj22uYhXeP3Qz9pWhycDB0emSrh+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2724,4 +2724,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d4638690-7f2c-4767-88e3-0829dda84f6a" Target="#_8723895e-5bb6-4490-bd6a-3f5d38f112d6"><Timestamp>2024-07-23 08:27:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d0ff9000-24b9-4fea-8440-7b9a4284ffab" Target="#_7f221e19-e0ae-4885-a1c7-209ff7533f5a"><Timestamp>2024-07-23 08:33:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
