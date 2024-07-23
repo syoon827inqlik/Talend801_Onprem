@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1G&quot;,&quot;-Xmx4G&quot;,&quot;-DTDM_STREAM_MEMORY_LIMIT=20&quot;]}"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms8G&quot;,&quot;-Xmx12G&quot;]}"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -385,7 +385,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ftXocEj1Ee-Nmqq3DmzUcA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_IFN18Ej2Ee-Nmqq3DmzUcA-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -1055,7 +1055,7 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Fetch01.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_FileType01.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -1356,7 +1356,7 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="TEXT" name="SAPHANA_PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-    <elementParameter field="TEXT" name="FETCH_SIZE" value="662333"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="120000000"/>
     <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
       <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
@@ -1587,7 +1587,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ftXocEj1Ee-Nmqq3DmzUcA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_IFN18Ej2Ee-Nmqq3DmzUcA-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -1815,7 +1815,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out_parquet_2" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2._BIC_YCSBCCD" name="_BIC_YCSBCCD" nullable="true" type="id_String"/>
@@ -2255,16 +2255,37 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="240" sizeX="32" sizeY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_2"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Fetch02.parquet&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
-    <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;GZIP&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
-    <elementParameter field="TEXT" name="ROW_GROUP_SIZE" value="134217728"/>
-    <elementParameter field="TEXT" name="PAGE_SIZE" value="1048576"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_FileType02.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out_parquet_1" name="tFileOutputParquet_2">
+    <metadata connector="FLOW" label="out_parquet_1" name="tFileOutputDelimited_1">
       <column comment="CONSLD_BIZ_CAT_CD" key="false" length="30" name="_BIC_YCSBCCD" nullable="true" originalDbColumnName="/BIC/YCSBCCD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="CSMS_CHNL_TYPE_CD" key="false" length="5" name="_BIC_YCCTPCD" nullable="true" originalDbColumnName="/BIC/YCCTPCD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="CONTR_TYPE_CD" key="false" length="1" name="_BIC_YCTPCD" nullable="true" originalDbColumnName="/BIC/YCTPCD" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -2498,11 +2519,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="out_parquet_2" lineStyle="0" metaname="out_parquet_2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputParquet_2">
+  <connection connectorName="FLOW" label="out_parquet_2" lineStyle="0" metaname="out_parquet_2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_2"/>
   </connection>
-  <note opaque="false" posX="400" posY="40" sizeHeight="81" sizeWidth="321" text="Fetch Size 숫자에 따른 속도 비교 &#13;&#10;비교 컬럼 /BIC/YDIV_CD &#13;&#10;대상 : GJT 662.332"/>
+  <note opaque="true" posX="360" posY="40" sizeHeight="121" sizeWidth="641" text="파일 형식의 따른 속도 비교&#13;&#10;비교 컬럼 /BIC/YDIV_CD &#13;&#10;대상 : GJT 662.332&#13;&#10;&#13;&#10;! 측정 시 xms 8 xmx 12 주고 기존 대상과 비교 !&#13;&#10;PTest2 : P_UsedtMap01 적재 할때 속도와 비교"/>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -2512,7 +2533,7 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Infinit Fetch"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Type Parquet"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
@@ -2524,17 +2545,17 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_2"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Rows Fetch"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Type CSV"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_77b74a8d-27f9-4043-8007-7de312ac7e62"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P0uKd1aZ4lB0ls0u490a4sLBbr5Fmk+H43KZoy5lkHrvVIYUGnYGROPeHhaauq4402bl5SIqo0lZ&#13;
-zVwCimoyzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1a26c31e-e1b8-4af5-88f3-eed424af13fc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rgzAP6oihDPhJIm1pn6GbpGNozXJTnbf8ffoL8eAXuCO7zbCHgtuoTY3gHEpRW+nCFx+XtMslmXh&#13;
-tcXDNXHeOw==</DigestValue></Reference></SignedInfo><SignatureValue>FwUOGyUYFRbQgEnLHb5eToF17mFlPFlh7p6W6vEgZTiHPZqKL0Jiya1NRkOAEBYXN5EjbQCGYzjF&#13;
-fDqLZxTihqTJYyh9zwc4ZNh9QYc+P9sBB02A8kAclLg0HmeFy3+EcLR43AriaLzV1kjbhCQ7Bta6&#13;
-0hoZ/vbC9q0i7njzgdtcJYgFBT3N4GlT9jSfxV4WjeCwGk8ERpHjRPQRh7jEZWUHJYktaY4G1kci&#13;
-zZqeVYYjYQ6uy2zEWe2canSp4T+VuQVc2mMtM5xvEXW2AVe1UicVyNbEnIA68BtGdUZAAT6SWJNP&#13;
-zrSClX08ofH8Kk18TbSrRRktvbO1JSiXHWEejw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e1598e2e-95d0-41b3-bf3b-255d35612dfc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wC9BFqSVIfAbljbMctypF9cRgfqdM14Hsg1iPcbxznk1CZJtgBfkjgCWIx8VKymU2n6JH66pFVGm&#13;
+g3DfJx+lag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ba5b1d4d-369c-4adb-9bb5-26e96256cea3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ppVRFXDuBndYprPeAeMc4LjwkbUiGB/GiM8eg42x/SB56W7h5sWKbCYtE/kv+Su0X0av/VE3LOjZ&#13;
+Y5/nyzEePQ==</DigestValue></Reference></SignedInfo><SignatureValue>VFwPMk1ReEJ1ylOxUVP6PQX/Eidwejv05gw4ccdZup9WIs1rDL1NujDI6BB3yT8h0a6qG2Z7bQUW&#13;
+6cpjIWHC1+gI8yDO9t9FeZjn5oKfUvWHISfPB/s8/9VZdQv6hannJudXnhQs1uPisK8kTgjs3LJj&#13;
+utvU7DzsAJZsuSalPgCiDKAm4dmt4c91zh2BAZQwvJkbix12MSlH74Hp2zugTtRX0Ra41JPzSq3c&#13;
+gMs1/3ZwVnO0FTHWrMt6JsQyTLQ+OPnXfu6dQ1DtRc5VQ1m+t24iLEXqtHFv4ut3AMQDfu62byz+&#13;
+cCjmrg4Un4KH4OkHdCzlp39YftnHte56z8hWDQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2556,4 +2577,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1a26c31e-e1b8-4af5-88f3-eed424af13fc" Target="#_77b74a8d-27f9-4043-8007-7de312ac7e62"><Timestamp>2024-07-23 13:19:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ba5b1d4d-369c-4adb-9bb5-26e96256cea3" Target="#_e1598e2e-95d0-41b3-bf3b-255d35612dfc"><Timestamp>2024-07-23 13:27:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
