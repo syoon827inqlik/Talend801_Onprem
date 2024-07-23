@@ -133,7 +133,23 @@
     <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN01&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
-    <elementParameter field="TABLE" name="SELECTION_TABLE"/>
+    <elementParameter field="TABLE" name="SELECTION_TABLE">
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;SALES&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;DIV&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;CMPNY&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+    </elementParameter>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1372,7 +1388,23 @@
     <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN02&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
-    <elementParameter field="TABLE" name="SELECTION_TABLE"/>
+    <elementParameter field="TABLE" name="SELECTION_TABLE">
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;ETC&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;PRODUCTION&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YEOTYPECD"/>
+      <elementValue elementRef="SIGN" value="INCLUDE"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="LOWVALUE" value="&quot;HQ&quot;"/>
+      <elementValue elementRef="HIGHVALUE" value="&quot;&quot;"/>
+    </elementParameter>
     <elementParameter field="LABEL" name="NOTE_DATASOURCE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -2645,13 +2677,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_64cc55fe-7cde-4f18-aff5-9dd52a5843d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tuttvuDJYWIZle9P5iP9oAg9sDpqoR0pplqf9Zdi8wGsSgYOg1iJLb8DIXCcW//D9eNEU52r4OB3&#13;
-oHjsgxwbDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ee265f8c-bc91-4a2c-8d0c-49f0afb5ccb2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qgo2ScvOLteKoxoTSzGX6POqV+9GFQc5GGLfpRrB0hZuFYB4TGWX34+VNzC9sxOABiO/arQqJhKR&#13;
-j4HwiYGM4Q==</DigestValue></Reference></SignedInfo><SignatureValue>kKBW6Kbp2oZCZAk0QM+/QF6HQYmeech57ryZfz0mnA3SuQqrDuMQlrUb5T6kNHX8K6l/rVJPQsPa&#13;
-bJ/RNcR08aquH2GCRy7bmBSP82lkNSwa8vWnlBeL28zHBIVgHBxC9GnZFF263S5EZUl981lShStx&#13;
-6iasa+UFfwH6gjUg5mB01l/ktLFL8tp9jsJAMG0Mb+yJLYt/HzP3np+FwgswAeOVBTP0hMBCCpoh&#13;
-dWSxM4PdUDdgVVxVpJBWLT+4bqKwJPvR5RXV0sGiuF0CwXtQv2/MKG4RSHmS0UqE5NxQVn8AB7jC&#13;
-SyIxpdLg72epZ74aeknNnAnWVncLmUO6G9LS/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6fc736c6-4b23-4b6a-9b15-96be6de4fcdb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wa6kYLD+kHjDYUweTb0yUlqQqfd3huPoz1ogrKfj8XPqhZs3bTmBeYj6+RsfIZjpzgY/YfQgl1eF&#13;
+CPh5Qs2LyA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_988a3580-536b-44cc-9c30-134708de6b49"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4BE4tRWjr1M0QG6Q5KZnHe85tw/UE9uI4YRYr8Aan3GtNJaVpA4quQYwM6FTxszxxewtqSmoCPbo&#13;
+d0v61RUXVw==</DigestValue></Reference></SignedInfo><SignatureValue>UMuBlooTn7QqfYAdlFxEnMjgaGm6fH2XVKqVqcz9AL1PYv7+77Yzbc/s2N8/cdfIdm5pDVu7tZ0m&#13;
+TC2CZqoqvtqIYog0OQT7rz5oPr/+o9cM6ZylosY964CipzAqrKsbgyzrKucb/8wUiJPOn11DApv9&#13;
+TcGlLt1hdbwF/sqUbMQQsntK/q3kpy3588K0CTl9RvKvwTR8t+Z5e9mBeibso9Tds4+K2JoDDm3u&#13;
+z4u0ltpJ0RVFhVkeQrEyHsVJsXkT6ybwPpdtjmL7b+C0ZKj8S514g9Zspp54wQW5Sl0VQD4INSXO&#13;
+twCVvcZNL0TOwd0K0At5MJPtwOaf2JO3K6LEYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2673,4 +2705,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ee265f8c-bc91-4a2c-8d0c-49f0afb5ccb2" Target="#_64cc55fe-7cde-4f18-aff5-9dd52a5843d0"><Timestamp>2024-07-23 08:25:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_988a3580-536b-44cc-9c30-134708de6b49" Target="#_6fc736c6-4b23-4b6a-9b15-96be6de4fcdb"><Timestamp>2024-07-23 08:57:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
