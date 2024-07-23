@@ -3,7 +3,7 @@
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND02_FULL"/>
     <contextParameter comment="" internalId="_oAyEUEJLEe-IHs245fJtvg" name="pcstat_flag" prompt="pcstat_flag?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_oAyEUUJLEe-IHs245fJtvg" name="pcstat" prompt="pcstat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_xlaG4EfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;/data001/talend/scenario_01/ext_sapbw_pctable_load_gcs.delimited&quot;"/>
+    <contextParameter comment="" internalId="_xlaG4EfKEe-ZTfOwd0d99Q" name="output_fname" prompt="output_fname?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;D:\talend\scenario_01\ext_sapbw_pctable_load_gcs.delimited&quot;"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PC_DELTA">
     <contextParameter comment="" internalId="_QaSJkEJKEe-IHs245fJtvg" name="pchain" prompt="pchain?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="YPC_TALND01_DELTA"/>
@@ -19,7 +19,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms2048M&quot;,&quot;-Xmx5G&quot;]}"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms2048M&quot;,&quot;-Xmx4096G&quot;]}"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -950,30 +950,30 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSAPConnection_1" target="tGSConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
   <connection connectorName="FLOW" label="row_SINGLE_PARAM_1" lineStyle="0" metaname="row_SINGLE_PARAM_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row_SINGLE_PARAM_1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLoop_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tLoop_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" mergeOrder="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tSAPBapi_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tLoop_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;G&quot;.equals(context.pcstat)"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
   <connection connectorName="FLOW" label="row_SINGLE_PARAM_2" lineStyle="0" metaname="row_SINGLE_PARAM_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1050,13 +1050,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4cf487df-5952-4910-9781-8499cba0137b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/95cVwqhX6rH+EEvXOSDJcGC2I8xdU817YmgiQxyfUy9hVYQwW9ZGeavqmyfd5Nn57NrGApnfSAJ&#13;
-88Cqy+1glw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_70c6d85a-80f1-4529-91ee-61abfe34f5ed"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>whB9gZbqRoBF50KexjMo4YLDVI9FDbSSH7BTSVvA/Hkizqc72RVutkJTI81dnQyp9BinPFXbiOjs&#13;
-eDcbC2UmxQ==</DigestValue></Reference></SignedInfo><SignatureValue>fpEojC7r8EVQXe9jKfyFo75csAa7e3k6Radl5HfG+2vi9lLKGF5Kczsby4eBCi8JIgXJC1y3mcRK&#13;
-d4bauxA2XkgHlk0txlv8pTJgnkJ2hkCPj6K180raE7da4VzItagzMpXxfgNAbaudZGMrxfpIUoLp&#13;
-YuOZ/O/6fwl8lPqDNPBvHrH06YxDxP5ydtcT3cav8F/uElu+ebwUZ5N7idQ6wU2lPwUamou9EEC4&#13;
-FKEJdkMcpkrX+OSDbnNLX1NgVoXBuWOqjkWvMQzD16hl0bqFmFt+vlBjhkiGM0kyaGFri06Xswmi&#13;
-RO1URNBx0GWDyleLe2LbR/EE0fkFokHj07fLeQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_05e1bf1c-ce99-492e-8ed5-fb2b063157f1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lK45exlISKtVSeuCSmcYKtrCoKq3vWUVIELpciu9Xrh1G8aVh9OS7bAy0XQFYCaIH/Fmn4gU1E0J&#13;
+6hbHaCljzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_084f9980-566b-4b87-afa8-19387ebd10c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0pmeL71P6XYQXY0QK5EpGM6x3rgfFbsBoAk5Gn6Y/Cfxnim7lK5U8A7LGgedb/3jaXfrbGReHd2p&#13;
+AXUXTywOKA==</DigestValue></Reference></SignedInfo><SignatureValue>W5/uon2QcstSPGbkG8BYNW+7VvewLd4eYEF48LG+bX18IVbqHidtdE60Lu/Wgh7bfl+8S+76JzpB&#13;
+7QmJRLk24NgmN2/DttNsSpHndEJyqUh9nQw2tF03GVWCbdRZTNr8v6HeaiPopmq4x4o5aLZk5+O7&#13;
+W8Vrhc9BbHuaTwCbvdgEGNEXgkZBvHOHi8W2a29NmsiyVLVVF8wenS0dmwPsbkxBJYkQAWLBRQx5&#13;
+r8t36GLn9VLSv/4itKnpMQx49EYHXXnPet4E8XNGQeh8YIRFEnevmeGZSqNYa6Q1Wzt8DEDNaWEL&#13;
+WIOrCdccRelpUpq0gSGjZy2/JcgY4rlGBd/sDw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1078,4 +1078,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_70c6d85a-80f1-4529-91ee-61abfe34f5ed" Target="#_4cf487df-5952-4910-9781-8499cba0137b"><Timestamp>2024-07-23 07:57:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_084f9980-566b-4b87-afa8-19387ebd10c9" Target="#_05e1bf1c-ce99-492e-8ed5-fb2b063157f1"><Timestamp>2024-07-23 07:59:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
