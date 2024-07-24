@@ -1308,6 +1308,7 @@
   </node>
   <node componentName="tSAPADSOInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPADSOInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="SAP_JCO"/>
@@ -1584,6 +1585,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2257,6 +2259,7 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Fetch02.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;GZIP&quot;"/>
@@ -2496,10 +2499,12 @@
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPADSOInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="out_parquet_2" lineStyle="0" metaname="out_parquet_2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputParquet_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_2"/>
   </connection>
   <note opaque="false" posX="400" posY="40" sizeHeight="81" sizeWidth="321" text="Fetch Size 숫자에 따른 속도 비교 &#13;&#10;비교 컬럼 /BIC/YDIV_CD &#13;&#10;대상 : GJT 662.332"/>
@@ -2528,13 +2533,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_faa98398-67e1-4077-b435-df76aa2114f7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nlUiaY6+cCn7bjZKyMZjtYimrBzacymBgLU298X4XdQ2f+h51isriqCZZpx29s0Hz5SWlZDW7+wQ&#13;
-sLfvuApOZQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1fa85253-8f1c-463c-ab03-f184958b5f39"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qXROkjAwvxC+X0I2iANBqcmJ6noLQJrIWv3ENvn3yRkiBrYUdZAVkakiLAwczvw1e0yTJfgKH0uc&#13;
-fgYQDZ5HGA==</DigestValue></Reference></SignedInfo><SignatureValue>RQlLqiqmaRuiynuEi4drgzsFVAGgUkFom0zM4YsOeokO+EENrqLL/dQ3WhIJZPacWwBrm9/hEgdV&#13;
-ssSVf0qN7KzVlaWgIUuA52aMTdTpIwBi6IaaCy4Nye5KPwHmmA2XWefuswMVzFfEm4s02DgYMvU9&#13;
-OkxLnXd0BcbTGAvkwXz+2/iviu4pkMJrxEABN99Dwh1o4QRC6jqv9xNkKciaUC2IqGtHaRjXFbEz&#13;
-oNVnLpVVuYI2TYsBBLiiMVrCJqwP9mUZfnu3REEVErPhorYkFmaGnoL/Gjcx7qPVSgohnkdQweaR&#13;
-ZQzHsX9YhSPsI0u0QovrLTXz2Xu+g5kXxndY4Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f08c212f-21b5-48ac-87c9-88d27b579f00"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hGIo2Hry0/fQ3qHXUisvNT/0Jw4o49WW7M/2wTS632HMZt/L8LOBHYZMP/dE5eIsepCBIvRX2pH5&#13;
+crdzuHq3nA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_39b7dbd7-20d2-4714-8150-5f3c051a0cfa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i7P0kaVk8thtcPikpqCl/RXCkcZm5GfAk9KI9v9cg0v2qLRCcVqCVp8u2ywPX6nsVYUs8S70jwKT&#13;
+waFXO4OWuw==</DigestValue></Reference></SignedInfo><SignatureValue>mrzjwJ7xxVPcD3YObEdL+oC+WZYBFTYtVlOjMOqYq6juEYRAgazZFmmPyagk1bqQsFuNrc6Hi+X6&#13;
+QhllFX5dh40bosui3gCu+aq8mrIBpV+kd1IiAfkC8liO6BBJlOk7hXtiV/IGuzr6UuF4A7BF6bIH&#13;
+PBUwzkcr74pWuyHhIaauUqysL+EN2ohKdeSGqp/Hu2fAu939xSAhsxMWw6ArRupGJGOKtTnQPi8i&#13;
+zPVs3qt0ATpuJNq9YMWnYvmlAQE0hxQGUplv4oYneNa1L66UEvGDPfkbfbz0ZkOqTQVQLPSw+gX5&#13;
+cqZRgeHLGjckYOpAHu8DWWgX6amL5ohHcGlDeA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2556,4 +2561,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1fa85253-8f1c-463c-ab03-f184958b5f39" Target="#_faa98398-67e1-4077-b435-df76aa2114f7"><Timestamp>2024-07-23 13:27:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_39b7dbd7-20d2-4714-8150-5f3c051a0cfa" Target="#_f08c212f-21b5-48ac-87c9-88d27b579f00"><Timestamp>2024-07-24 05:21:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
