@@ -154,10 +154,10 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE4_F"/>
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE4$F&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_Test06_1&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_Test06_2&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN02&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
-    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="false"/>
+    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE">
       <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
       <elementValue elementRef="SIGN" value="INCLUDE"/>
@@ -1334,7 +1334,7 @@
     <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_Test06_1&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN01&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
-    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="false"/>
+    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE">
       <elementValue elementRef="SELECTION_COLUMN" value="/BIC/YDIV_CD"/>
       <elementValue elementRef="SIGN" value="INCLUDE"/>
@@ -2483,7 +2483,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
+  <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputParquet_1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE4_F"/>
@@ -2709,7 +2709,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="400">
+  <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputParquet_3"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE4_F"/>
@@ -2935,7 +2935,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="320">
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUnite_1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ONIK8EJJEe-IHs245fJtvg - YD_CASE4_F"/>
@@ -3159,7 +3159,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="320" sizeX="32" sizeY="32">
+  <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="320" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_3"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/tuniteTest.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
@@ -3387,6 +3387,13 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -3398,8 +3405,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_2"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_2" target="tFileInputParquet_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_2" target="tParallelize_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPADSOInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3409,8 +3416,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_parquet_1"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_1" target="tFileInputParquet_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_1" target="tParallelize_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="10" mergeOrder="1" metaname="tFileInputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputParquet_1" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3423,6 +3430,12 @@
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tFileOutputParquet_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tFileInputParquet_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tFileInputParquet_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
   </connection>
   <note opaque="true" posX="360" posY="40" sizeHeight="121" sizeWidth="641" text="여러개의 parquet 합치"/>
   <subjob>
@@ -3453,13 +3466,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ba278e9-0693-4fb0-a069-2dac0f4f0612"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oGl2UvM79pxsN1mKokm4ZYm8C0dcYKlLLYOeJu4MpQzZK26t3Kpxm4/tFEIS01vNtFS2mZrMlC83&#13;
-JCRXuYuH9w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ac507be0-b729-472e-b409-5bb7a6185cde"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hSv6KK+isKX61SUaH9fgOUreKG9mOeCCqD4db/P8ItflGV04cJbrFIrl8iergYClLKKSscMaMcsO&#13;
-wT5+ujJkKQ==</DigestValue></Reference></SignedInfo><SignatureValue>iOhEJOnpiDl6F3XCofb2KOSnIMaPOufBgUzcn2sr1LXIgWIwJqkm3SWTWPwmOPpszciE6AItzmlQ&#13;
-SL+/nx8I4cMNynLqLlNkROL6TazEXKmd3Gld+YxbpR1c5w4+I+rfu9aG8X1yMHa5LIWPnlSBIRvC&#13;
-nAtksrj+vLx2kPCeLAeGA83yS+PwaLuFnjeSABLA4F/9YIhtWX51X+9BKLiDfLW8SWBQIS6dhF6T&#13;
-VB2DTIf1H7MxItlOvlK5iRzseCD71NVA4cWMyTYFhw6fxKZF/6kic0pzElRTYDMS0N5micRFJyVo&#13;
-/Sh3YyLhGv3SXkHIXhgWm03N+Hx32sB+S2tBZA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0589a2b9-45b1-4cb1-bd60-655fe0087934"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KXlx18SSk5Asd7ZXO7f2nr1L5blo017+vhjhEsTb8Nmokb4NUhhOHM7qjJh4UMNZ6l2QIIwHqdpf&#13;
+VV9VyeTdiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0c96b4a5-4e7a-4b9c-8559-fff3f2d97b06"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AbYFihsRXBdl60zoXoZD0OfDrKCgmpgWmHO61mOEsGXMaTGoDJcOEAGLQq2yjoynUMX2SH655rZG&#13;
+V4d18PH0KQ==</DigestValue></Reference></SignedInfo><SignatureValue>OTZPQGqmTh2tnMGJL/ajrHHq0Pxm1+G12AexB/7reY6S3qMViAoSZxxxZu9LbD5s50YJqbIdguny&#13;
+I5H0+Umyr2vri+HQeQoSMCIXuy3RGLE3pDQBcnj9B5bQujM39TfBsJVzczlNZfNEXpQxgPL68sXL&#13;
+cVvuqYOYjOsIexjLwuCYX9AdIupXaUN8uFB9vyk4KKhtEKg1pttG/HuqYUV5lGX7tF0Nv8bXEJlo&#13;
+RePJxyT5avLwgCvQbvt5+4bXu7FUZ/Qsj/+/RsaIrhla1ZzlmqsIl7vQ4hun9LKksvVEaeU5TjFI&#13;
+IzBVlfGTP1LYvWvISIuqUtZBDLADLx0Z/nnlvA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -3481,4 +3499,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ac507be0-b729-472e-b409-5bb7a6185cde" Target="#_6ba278e9-0693-4fb0-a069-2dac0f4f0612"><Timestamp>2024-07-24 09:27:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0c96b4a5-4e7a-4b9c-8559-fff3f2d97b06" Target="#_0589a2b9-45b1-4cb1-bd60-655fe0087934"><Timestamp>2024-07-24 09:28:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
