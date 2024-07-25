@@ -1319,7 +1319,7 @@
     <elementParameter field="CHECK" name="FTP_HTTP_FUNCTION" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="480" sizeX="32" sizeY="32">
+  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="560" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
@@ -1331,7 +1331,7 @@
     <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="480" sizeX="32" sizeY="32">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="560" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Divided01.parquet&quot;"/>
@@ -1344,7 +1344,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileDelete_1"/>
   </node>
-  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="480" sizeX="32" sizeY="32">
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="560" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2555,7 +2555,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="640" sizeX="32" sizeY="32">
+  <node componentName="tGSConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="680" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConnection_2"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SERVICE_ACCOUNT"/>
@@ -2567,7 +2567,7 @@
     <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="640" sizeX="32" sizeY="32">
+  <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="680" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_2"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2588,7 +2588,7 @@
     <elementParameter field="TEXT" name="PART_SIZE" show="false" value="50"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="640" sizeX="32" sizeY="32">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="680" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Divided02.parquet&quot;"/>
@@ -3589,7 +3589,7 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="TEXT" name="SAPHANA_PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-    <elementParameter field="TEXT" name="FETCH_SIZE" value="34640000"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="13856000"/>
     <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
       <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
@@ -4776,7 +4776,7 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="sap_id"/>
     <elementParameter field="TEXT" name="SAPHANA_PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-    <elementParameter field="TEXT" name="FETCH_SIZE" value="34640000"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="13856000"/>
     <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
       <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
@@ -6067,13 +6067,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_be1dfb64-fa5d-4501-bf87-1230c904976f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jpVKReH+GvhoUK8W7E8veIG1y5D6YrRbuDXzSeNKhf6qstEpVwvJa13z4nHVdSUu+ODoVLLaiIse&#13;
-TT+KxjYYnw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c2b104e8-cb3d-4488-9233-eb968acaae59"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8ediFn8a6ms0kTq4lWmbBDKd/l9vQ7QeXfHAsP3uBXbAjtjm2pfmqZJzI2Z8HzWeFgGVS2aYCNCz&#13;
-lqB2VP3yqg==</DigestValue></Reference></SignedInfo><SignatureValue>ARV8IdAo05DivQkCBglz3Zk3Scs9Pz1STbUq+4Lqq2Nn/SN475nC9Kdh0DcBAUGPUicJKf7HzYiT&#13;
-eaK0fgxQudtDjATuRXtx0hkH0Y1EyzY9Lm08DIwsnl58z18zdylv5iLSp1R5a7ZYxcjsGaQWJ0Yd&#13;
-HRnSOkycUYGEIr5LxqwTe+8vxbjZLclkCSWRKBlg+5SjBjHd1tGWYQ9VQrCSdYeylX53U5RE96TE&#13;
-Rj2QX8QSYvZV3MQswz6oXyN7ngKanZSatfQx61w0ncOmIFCX2Ccanw2vsCJHPydbrq8BlLxI6avW&#13;
-K1qHTncn38+qH5x0NlzmwtKVS3Q/nj/Su5v9Ug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_421481c8-9207-493d-a9c4-aefc15b65d80"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zC+zB2REYETz+U/3dc2rV6ww8PjE+CIVq6Y4N+0OHIpy7j+jeT5ihT76GytjnZQl7FbgHC/ptXXf&#13;
+sLe7iNK/pg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ade8406b-e16d-4958-a823-a585b6d104d8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PobtFgv7ogc3W2TgSej5NlTmTa9kXtk+n8daiut1QHQ6sVfuRGQPrY7ulwybFZyaDAIDNLVOnlNO&#13;
+f5kp5LK0LQ==</DigestValue></Reference></SignedInfo><SignatureValue>XXQ+49VRIUuTBCwOVhsblvH8+z9r1Zyh/qEtzkcLeW5YdsLHhc6dgfgyTHPcfbs3spdoJYHEuROy&#13;
+3mOiieS2A8a+idQeBtEDIYBeTIPSRzp/p4+2hhtpD4eGCEj8sl4pLB4NPx4UlyT4PPju8GkjQqaL&#13;
+MQicO3UElnVtaDgM8yE0MnA3v9XkAcv2uo4vWBSX9IgD88gDwQ+m5u8e2ux1goo4qZecNxwNaCiG&#13;
+tOcfik4WPg0xym4AEjlLGeVYiiG6oiPfPOLuNl+TI1ov1b3Ayt9RjOwOWABBkBHpxjAD4Fol/sZg&#13;
+3qQQzlI6hqRNp7qYEfVt9/PehTphVr8Wa9D+uQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -6095,4 +6095,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c2b104e8-cb3d-4488-9233-eb968acaae59" Target="#_be1dfb64-fa5d-4501-bf87-1230c904976f"><Timestamp>2024-07-25 01:52:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ade8406b-e16d-4958-a823-a585b6d104d8" Target="#_421481c8-9207-493d-a9c4-aefc15b65d80"><Timestamp>2024-07-25 02:33:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
