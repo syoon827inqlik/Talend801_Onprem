@@ -2603,7 +2603,6 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" show="false" value="&quot;D:/YD_CASE4/YD_CASE4_P_Divided&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:/YD_CASE4&quot;"/>
     <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder or delete_file&quot;"/>
@@ -2640,7 +2639,7 @@
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_Test08_1&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN01&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN02&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE">
@@ -3803,7 +3802,6 @@
   </node>
   <node componentName="tGSPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSPut_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGSConnection_5"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SERVICE_ACCOUNT"/>
@@ -3859,7 +3857,7 @@
     <elementParameter field="TEXT" name="TABLE" show="false" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;YD_CASE4$F&quot;"/>
     <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;TAC_Test08_2&quot;"/>
-    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN01&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="&quot;RUN02&quot;"/>
     <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
     <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="true"/>
     <elementParameter field="TABLE" name="SELECTION_TABLE">
@@ -5070,8 +5068,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfout_parquet_1_0"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_3" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_3" target="tGSPut_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGSPut_3" offsetLabelX="0" offsetLabelY="0" source="tGSPut_3" target="tFileDelete_3">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk10"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSAPADSOInput_4" offsetLabelX="0" offsetLabelY="0" source="tSAPADSOInput_4" target="tMap_4">
@@ -5081,6 +5081,9 @@
   <connection connectorName="FLOW" label="copyOfcopyOfout_parquet_1" lineStyle="0" metaname="copyOfcopyOfout_parquet_1" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputParquet_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfout_parquet_1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_4" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_4" target="tGSPut_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
   </connection>
   <note opaque="false" posX="720" posY="40" sizeHeight="121" sizeWidth="521" text="분할 적재 시 속도 비교&#13;&#10;컬럼 : /BIC/YEOTYPECD&#13;&#10;총 6분할 후 2등분 약 5천만건씩 적재&#13;&#10;! 제일 마지막에 테스트 !&#13;&#10;속도만 체크 후 중단 ( 최소 백만건 이후부터 성능 체크)&#13;&#10;">
     <elementParameter field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
@@ -5170,13 +5173,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ce5c2201-c595-421c-be2c-598239bc4dd8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s9SIHYcTZj/KxcRU/0PTkD+tHwydk6w8WV3UTmy5GVlgZzIK9KQGlwfIG06gzNMxyI+iqk23ioaX&#13;
-qOGpOS8OOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_95866c72-3661-4bcd-a590-36248ba0d963"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+mmqC1RaLxXn78/MmoiYNWCqbIef8/N9TYq8vpnJDDVAAQmDIQuqik53Dt1SJBAk6K+VpfsXzJT1&#13;
-QeB9npNjNQ==</DigestValue></Reference></SignedInfo><SignatureValue>AQ9kmV9+VdTJ0IkIZprZDJPhnnFzKak2adJGmV2LxU4Cm+REI4DN50erX12aQ0Zdyh7Xf30tAYg9&#13;
-tLH2U1pCWuTmrfkqWmM7g/cc86SkJwpg2C0vrOfOkuLCd2x/LamdEs8a0LEL0lD04RXYTH5B7833&#13;
-+3gOQjTqapWynaCQ1qZN7D+LaZxDihRegBLNLrR75VeykPNlX9b9Lrp/Qhr1yXyz40Gam8rI2T4g&#13;
-67QcqWpt0RWtIFNCDTK+MlnybB8pBji0BAjzILzLWgB88ngjIImSZpkwP2Dh6iAj0kCZ9CAj7XSI&#13;
-AzP7Z3PgLJvugnR0Mnb5GDvycOB3+2NGpRTXBQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c217da98-2344-46eb-8f1f-bdc03bf5590c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>928u0SttP5MrckvcUAh8UCl0OMAqknIZlKKSX6hpsIbaz9xqSVGO8xro6YNMAaI2cclARuournDy&#13;
+TrY4ViXYTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e140038e-e4f7-426c-a52e-0bade23d78b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H99pDgu+Jws7sPnCX6vCWY3jSbNp0yn4S+2Krt9wingw4mhYHVSd/f18FYw5qelCP1OBD7kA9mCp&#13;
+kb6+KGlWzA==</DigestValue></Reference></SignedInfo><SignatureValue>MaUDWOAQKCOnsAUX7bOuxtojmJdqB6wAlYeQcWEkyStdkEnvWBuYZve3c+KpsLsktBMe3PlMQgXI&#13;
+zLhAm/WXxRfjWQPKkEs8WPStOYpLRbeMh0iOWuZa2V/hzgCQaXVUsUwDMpW1i0i4VxT5TyD6QPU3&#13;
+o1nhQlb/6gLiM64n5PQhAlGzIAhhUkei8rSr7hUICWdcNys37lEGGeAIVe4YF87Epln/5yFUYSAH&#13;
+7mxEYHXPDJ9g1ucW9nzpQ2s1ByjrDr9qn7wnUa/cxyXyPr1+EkW3aLa+JWhuOZ+kezQKElTDh8Xs&#13;
+J3yliOFVH9MqG/xBmvJqfQEHZt35Vu3WHeNOFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -5198,4 +5201,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_95866c72-3661-4bcd-a590-36248ba0d963" Target="#_ce5c2201-c595-421c-be2c-598239bc4dd8"><Timestamp>2024-07-25 06:01:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e140038e-e4f7-426c-a52e-0bade23d78b4" Target="#_c217da98-2344-46eb-8f1f-bdc03bf5590c"><Timestamp>2024-07-25 06:04:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
