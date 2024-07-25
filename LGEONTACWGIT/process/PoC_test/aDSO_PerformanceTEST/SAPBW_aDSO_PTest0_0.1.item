@@ -2603,14 +2603,14 @@
   </node>
   <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputParquet_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/in.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/YD_CASE4_P_Divided01.parquet&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputParquet_1"/>
   </node>
   <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputParquet_2"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/in.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/YD_CASE4_P_Divided02.parquet&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputParquet_2"/>
@@ -3605,7 +3605,7 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_3"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Divided01.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/YD_CASE4_P_Divided01.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -4792,7 +4792,7 @@
   </node>
   <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="400" sizeX="32" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputParquet_4"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE4_P_Divided02.parquet&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/YD_CASE4_P_Divided02.parquet&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
     <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;SNAPPY&quot;"/>
     <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -5073,6 +5073,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfout_parquet_1"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_4" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_4" target="tFileInputParquet_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
   <note opaque="false" posX="400" posY="40" sizeHeight="121" sizeWidth="521" text="분할 적재 시 속도 비교&#13;&#10;컬럼 : /BIC/YEOTYPECD&#13;&#10;총 6분할 후 2등분 약 5천만건씩 적재&#13;&#10;! 제일 마지막에 테스트 !&#13;&#10;속도만 체크 후 중단 ( 최소 백만건 이후부터 성능 체크)&#13;&#10;">
     <elementParameter field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="192;192;192"/>
@@ -5171,13 +5174,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24fb866e-a625-4d22-912e-7eeac9ba7bdd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VahWobCC9mynJ1GI1PFGYcGnVXDUeG0LGsI8GLQLWWIFNm8fglHYtpW2iADTKnzTdDf6Y3ROnpq1&#13;
-rNfvhAWQIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e8308b2-eb88-4729-80cc-df1faadbb964"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lIETxZPbJ1xbGZUFihJ/inqgrPVbfTyIoxS4sr2GxQj8by+R2BAL8aT4J+y6WKxnGQ0LoDBEAoOv&#13;
-uo8z71118g==</DigestValue></Reference></SignedInfo><SignatureValue>gRtnWRyS6nrG1bVB4sAOR9mN1BpU5BlG6F//zKDPBWBlJXGFr8zrj/sYL2ZD7lUP/jtF2c52rUng&#13;
-2sNwkDQD4mjs1QZ1y/GZV9hY//ZRpOa5sc1exf72G0uUZCDRF/kWR7X7vOVrL6rrBSGiANKO3pK0&#13;
-VDEyKRCcpFtzAs5x9FEM48l9r2AIxbTfRMrRitgOn+sKEgLFX3C/UoHOGxspQUOcGh+M7B7ErWvW&#13;
-oRqK9X2MUyaGapWRWutTl7+4OcmDTbx+CU/YeXRf3r50a56usNU36zdILAaWgVGM3/mTf/sg+eF+&#13;
-yIg6nwA7k0Umd12m6KOCncNPTZeEzOsSqmQj8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2891f744-b663-495c-81fe-a45ff79132f1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ErN1PCr/6FKZBli9qyHX7XUXVFb75uz5mCJ80PluMY09pxdAT0I8eVhpeuS2vMkL/5Yc5wvlXS1x&#13;
+pcSAvjwX2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6aa4aad2-c98b-4ce3-abcd-1da9cba38348"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dNUaTrZuWMuM55ZHaI0n62VTUUs2SmINTWzYipLYHeIqpp+AR2p873l2OAVnHyaii8Zko8sQ1+EH&#13;
+6ps//RVMZA==</DigestValue></Reference></SignedInfo><SignatureValue>VN4rFDzTN96CBtsdBSHux8PMqnLG9Cbw16h8yMAIBvp0KIi7EcN5oTLAVOMZYrK9iEYXj53h+FAU&#13;
+jarYnj+7YkO9X0ejQy+7XzZ6uYC+MvUb1hJx0qicrtl0k+Gw10wVCX+X3gRHbd2LBnO+Ef28kyBv&#13;
+akb+OVaAVRN6GCUQNtBLmdgmGTAsTwcullrL8uFjM2GsE8lHAwjD1GDmEW9vpWss3IIR0T++Mn3S&#13;
+Z8M4zsrR/aghWNuHvbTmJJXwIAHGVF0qA9PupMCop1OzHAfk0D9qaKBiIWuKpa1IkZ/ppREvQGSt&#13;
+U9qow7IkOS+3ASRS6AflhrkH4QGrZ03b+MK4KQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -5199,4 +5202,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e8308b2-eb88-4729-80cc-df1faadbb964" Target="#_24fb866e-a625-4d22-912e-7eeac9ba7bdd"><Timestamp>2024-07-25 01:46:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6aa4aad2-c98b-4ce3-abcd-1da9cba38348" Target="#_2891f744-b663-495c-81fe-a45ff79132f1"><Timestamp>2024-07-25 01:47:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
