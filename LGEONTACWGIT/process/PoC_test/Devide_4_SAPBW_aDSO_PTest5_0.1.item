@@ -6529,7 +6529,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="200">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_3"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F_devide1.parquet&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder&quot;"/>
@@ -6758,7 +6758,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="320">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_4"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F_devide2.parquet&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder&quot;"/>
@@ -6987,7 +6987,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="440">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_5"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F_devide3.parquet&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder&quot;"/>
@@ -7216,7 +7216,7 @@
       <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="560">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_6"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/data001/poc_test/YD_CASE3_F_devide4.parquet&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/delete_folder&quot;"/>
@@ -7467,7 +7467,7 @@
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/YD_CASE3_F_devide1.parquet&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -7487,7 +7487,7 @@
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/YD_CASE3_F_devide2.parquet&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -7507,7 +7507,7 @@
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/YD_CASE3_F_devide3.parquet&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -7527,7 +7527,7 @@
     <elementParameter field="TEXT" name="GS_PROJECT_ID" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;lge-edl-dev-test&quot;"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/data001/poc_test/YD_CASE3_F_devide4.parquet&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;talend&quot;"/>
     <elementParameter field="CHECK" name="USE_FILES_LIST" value="false"/>
     <elementParameter field="TABLE" name="FILES" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -7535,6 +7535,32 @@
     <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
     <elementParameter field="TEXT" name="PART_SIZE" value="50"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tBigQuerySQLRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="200" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="PASSWORD" name="ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:YULXq6X0c1vsVUSEbi07CmSAlaZHfEFbjBlazWqe"/>
+    <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;/home/talend/Downloads/svcac-edl-dev-etl.json&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:nHhhAabNYlBFleMhjMd1wdSROk8N7jqlMjY7iOrj"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;pj-lge-edl-dev&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE OR REPLACE EXTERNAL TABLE `pj-lge-edl-dev.POC_TALEND.YD_CASE3_F` &#13;&#10;OPTIONS (&#13;&#10;  format='PARQUET',&#13;&#10;uris = ['gs://lge-edl-dev-test/talend/YD_CASE3_F_devide*.parquet']&#13;&#10;);&quot;"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_BQ" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Users/bonseung.gu/Desktop/talend_poc/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" show="false" value="AUTO"/>
+    <elementParameter field="CHECK" name="FORCE_SINGLE_QUERY_EXEC" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Google_Bigquery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQuerySQLRow_1"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -7704,13 +7730,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cf5a2686-a093-4fca-a660-c5664c267d1d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hJ2dA0pvqUoX5F42LlYNt2iNHIfYGlEYRGPWHg35KRkfQNEqik3NJQH9sPMduV05voU1bmh7enHk&#13;
-RBPDLRy9dA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_233a3470-3a05-4c8d-a7db-28ba5e19697a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t3Dj4Ah8Ft1NOP5ryG6ZL3ALEwQKLmrxUEzdaE1/y+z76zDcYFlOFCQ5pDGg3Rr6rnCSkC63C8aT&#13;
-ks7pHc+ZAw==</DigestValue></Reference></SignedInfo><SignatureValue>n9+10bR+o/jBCPH23WGaI9s8S20bi93m9qXQV875HwipcouJydTk1tPabAfn4LoBJFB5EUYGb711&#13;
-G9M/KE3ynvQKbDdAmOBcuZfGEqr4Lg0umcF/xW85FtvzpC34FnM51AezNk/imhBbMBD9vD3Gqs09&#13;
-fnrJJHswp0X8hiYrg9rdCJmYFgnUj+RPU71FyC6XSwLmdW4//cvsoKZ+xC/m7UrnassDI69N/RSu&#13;
-4RRUiXKDTiSGgqZ7sFpEtfzxNGBQj3ggxcwuslZHAjg65AyyXBfi3+7KgS/80o7f3ft9If5/SCp7&#13;
-BdPRpP3h21u6O+8l/UqIly2fU/5+091Rp5ql+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQuerySQLRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7fa44ff2-8bc3-4b3d-9b16-0e8e43825a48"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5YhFjoIiFF+mFNaULvX2NEchg8dq9ObiM8sNgy5ge0WOrOHmcKkrAbRoWU90c0H58VroAK5+WufD&#13;
+h0LDm+rMxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_82ad895e-d018-4d5c-a300-058eacb0cc9e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CDsDBNuYmIC9OtW72WucHKax1uVqd+8B9ZZ0VxUyXizOh1XDIZDJC42Vcwyia3JKqSmoHS4Y827z&#13;
+ns3flfZUbA==</DigestValue></Reference></SignedInfo><SignatureValue>K5+zdGRvdfisY0vWRHPZssZzphsMX0UmGAYih5T478ASrS5hax13n9ZmmJhee9rD+6yyzlx+odfK&#13;
+TTz7PZvdlGgZaefC9q761JLaVVEuB3+e693KFr/IJddLgv3L98FmMxfno9LclR9axIuCXSr09ZnI&#13;
+TlWrn7oJM3od/FK9uYRcV86xmIOYO2lxmQSYp2O1oNUHikSRYN9JpreaFhYOZLy//k12+5L7piVk&#13;
+VoUK/fnretiXcwBsopXQCp9LJ+oi3g0PD0Jjf5D7RMr4LMleu5mdYEgHZ2ZBl3TrPS3U2sgjB2kx&#13;
+e3nuQwnzskHfkzrdNNCl7AifPOkCbJUibyGxiQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -7732,4 +7763,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_233a3470-3a05-4c8d-a7db-28ba5e19697a" Target="#_cf5a2686-a093-4fca-a660-c5664c267d1d"><Timestamp>2024-07-28 07:11:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_82ad895e-d018-4d5c-a300-058eacb0cc9e" Target="#_7fa44ff2-8bc3-4b3d-9b16-0e8e43825a48"><Timestamp>2024-07-28 07:25:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
