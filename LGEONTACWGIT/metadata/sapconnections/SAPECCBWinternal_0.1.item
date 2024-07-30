@@ -1,12 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SAPConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" Client="800" Host="172.20.16.11" Language="EN" Password="enc:system.encryption.key.v1:oCio9+46SMcbWjuUWpf8aqeO07+qgwsF1MkNKV+VVtGiBr0u" SystemNumber="00" Username="qlik" jcoVersion="SAP2" xmi:id="_bT4I8E41Ee-yA6T5wLin3Q" xmi:version="2.0">
-  <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_bT5XEE41Ee-yA6T5wLin3Q"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ae5a9c5e-7da1-4d6a-b97f-9392ebc0d723"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p3DIsMPJid6T/TY58fyrHydnz5hdaTgMMFUtiXugw+YKfEN5wlLj/Jk1WOmUFfrCNUAtqMgDthlr&#13;
-o0sY7BRYSg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4735562d-47be-45ca-8fd7-51e1735d002b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H41BqMzPTFnUOiW08jQpqZ2bZZksTgT+inFRoXfAE3W8z1bwnYbE7NEuR5U5G7ghZ2qo1lraEFlW&#13;
-+F69i1WNMg==</DigestValue></Reference></SignedInfo><SignatureValue>fJ2LVfm9g+UdfKyCxEFed1P3vgD6n9EKgP7f0spM6PhjCMWPRqYTIIMAoEcfLl2TccYUhhVOI+QO&#13;
-IMVonL05UlfdofZXZ/kpkF7frUomOlByWV9FleWwLFqNzj9haKKEijym+ndTCvV4aMJd75etI/Lb&#13;
-bCp124hVZ+pSq4DN4UMwF725o52wNmDmYVEQFCKSL6vVXeRRTRgB0ibHoDtnK44TcqqjbYK7uIC3&#13;
-WNNZ97oWv9/VVTLX9RuJARPTknIt/3u4LNIDxssAEcREuUfzH6irYeZTut6vZWeHqE6Zj6wyZswK&#13;
-T5GdpeUAnpQkEDFsbINabzcn7kXV6Kc38KlH3g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:SAPConnection Client="800" Host="172.20.16.11" Language="EN" Password="enc:system.encryption.key.v1:oCio9+46SMcbWjuUWpf8aqeO07+qgwsF1MkNKV+VVtGiBr0u" SystemNumber="00" Username="qlik" dataPackage="_jlFxME41Ee-yA6T5wLin3Q" jcoVersion="SAP2" xmi:id="_bT4I8E41Ee-yA6T5wLin3Q">
+    <taggedValue tag="adsoConnectionType" value="SAP_JCO" xmi:id="_bT5XEE41Ee-yA6T5wLin3Q"/>
+  </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage dataManager="_bT4I8E41Ee-yA6T5wLin3Q" name="SAPECCBWinternal" xmi:id="_jlFxME41Ee-yA6T5wLin3Q">
+    <ownedElement id="_i764YE41Ee-yA6T5wLin3Q" label="ZDS_MDI" name="ZDS_MDI" tableType="TABLE" xmi:id="_jlFxMU41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTable">
+      <feature businessName="ZREC_NO" comment="Record Number" key="true" label="ZREC_NO" length="3" name="ZREC_NO" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxMk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxM041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZBUKRS" comment="Company code" label="ZZBUKRS" length="4" name="ZZBUKRS" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxNE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxNU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZREC_NO001" comment="Record Number" key="true" label="ZREC_NO001" length="3" name="ZREC_NO001" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxNk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxN041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZAUFNR" comment="Order Number" label="ZZAUFNR" length="12" name="ZZAUFNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxOE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxOU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZREC_NO002" comment="Record Number" key="true" label="ZREC_NO002" length="3" name="ZREC_NO002" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxOk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxO041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZWMENG" comment="Order quantity in sales units" label="ZZWMENG" length="13" name="ZZWMENG" precision="3" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxPE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxPU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZBMENG" comment="Confirmed Quantity" label="ZZBMENG" length="13" name="ZZBMENG" precision="3" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxPk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxP041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZMEINS" comment="Base Unit of Measure" label="ZZMEINS" length="3" name="ZZMEINS" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxQE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxQU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZVRKME" comment="Sales unit" label="ZZVRKME" length="3" name="ZZVRKME" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxQk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxQ041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZVBELN" comment="Sales document number with leading zeroes" label="ZZVBELN" length="10" name="ZZVBELN" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxRE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxRU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZPOSNR" comment="Sales Document Item" label="ZZPOSNR" length="6" name="ZZPOSNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_jlFxRk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxR041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZLDDAT" comment="DATE" label="ZZLDDAT" length="12" name="ZZLDDAT" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxSE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxSU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZREC_NO003" comment="Record Number" key="true" label="ZREC_NO003" length="3" name="ZREC_NO003" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxSk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxS041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZERDAT" comment="Delivery Date" label="ZZERDAT" length="12" name="ZZERDAT" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxTE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxTU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZNETPR" comment="Net price" label="ZZNETPR" length="19" name="ZZNETPR" precision="2" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxTk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxT041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZWAERK" comment="Currency" label="ZZWAERK" length="5" name="ZZWAERK" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxUE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxUU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZNETWR" comment="Delivery Amount" label="ZZNETWR" length="19" name="ZZNETWR" precision="2" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxUk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxU041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZZWAERK" comment="Currency" label="ZZZWAERK" length="5" name="ZZZWAERK" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxVE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxVU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZERZET" comment="Delivery Time" label="ZZERZET" length="48" name="ZZERZET" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxVk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxV041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZREC_NO004" comment="Record Number" key="true" label="ZREC_NO004" length="3" name="ZREC_NO004" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxWE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxWU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZZVBELN" comment="Delivery" label="ZZZVBELN" length="10" name="ZZZVBELN" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxWk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxW041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZZPOSNR" comment="Delivery Item" label="ZZZPOSNR" length="6" name="ZZZPOSNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_INTEGER" talendType="id_BigDecimal" xmi:id="_jlFxXE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxXU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZLFIMG" comment="Actual quantity delivered (in sales units)" label="ZZLFIMG" length="13" name="ZZLFIMG" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxXk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxX041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZSPART" comment="Division" label="ZZSPART" length="2" name="ZZSPART" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxYE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxYU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZVKBUR" comment="Sales Office" label="ZZVKBUR" length="4" name="ZZVKBUR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxYk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxY041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZVKGRP" comment="Sales Group" label="ZZVKGRP" length="3" name="ZZVKGRP" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxZE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxZU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZVTWEG" comment="Distribution Channel" label="ZZVTWEG" length="2" name="ZZVTWEG" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxZk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxZ041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZMATNR" comment="Material Number" label="ZZMATNR" length="18" name="ZZMATNR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxaE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxaU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZMTART" comment="Material Type" label="ZZMTART" length="4" name="ZZMTART" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxak41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxa041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ZZZVRKME" comment="Sales unit" label="ZZZVRKME" length="3" name="ZZZVRKME" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;true&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;true&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxbE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxbU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ODQ_CHANGEMODE" comment="Change Mode for a Data Record in the Delta" label="ODQ_CHANGEMODE" length="1" name="ODQ_CHANGEMODE" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="STRING" talendType="id_String" xmi:id="_jlFxbk41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxb041Ee-yA6T5wLin3Q"/>
+      </feature>
+      <feature businessName="ODQ_ENTITYCNTR" comment="Number of Data Units (Data Records for Example)" label="ODQ_ENTITYCNTR" length="19" name="ODQ_ENTITYCNTR" properties="ID_COLUMN_CAN_BE_USED_FOR_INTERVAL_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_IS_MANDATORY_FOR_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_PATTERN_SELECTION&#10;&#10;false&#10;&#10;ID_COLUMN_CAN_BE_USED_FOR_SINGLEL_SELECTION&#10;&#10;false&#10;&#10;" sourceType="BIG_DECIMAL" talendType="id_BigDecimal" xmi:id="_jlFxcE41Ee-yA6T5wLin3Q" xsi:type="TalendMetadata:SAPTableField">
+        <initialValue xmi:id="_jlFxcU41Ee-yA6T5wLin3Q"/>
+      </feature>
+      <additionalProperties key="CONTENT_TYPE" value="METADATA_SAP_CONTENT_EXTRACTOR" xmi:id="_jlFxck41Ee-yA6T5wLin3Q"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f2dc172d-753e-4c62-925f-812d84676cba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>viiSRTmdaerfddPQzs5vl9ukoDJ2TKx7GbYaIsf0geC/RMp1MZ+5NOa8TGRXaCKasdC2slDhsPMM&#13;
+DYmiZuA/7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f27c1dca-3076-4cf1-9135-12947a0b657e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JE7yFDpvCH6EDe0V5RCV2nj9UMtFhjQRtgv8teSUGmsiXSiiaPu8NeDkyK+7hnq0AQQpYgARyhP3&#13;
+28PD7s1E6w==</DigestValue></Reference></SignedInfo><SignatureValue>KcKQGtvqnM4hVhMXORBkF+v0ERxMh5BORhDhn3BLCZKCpFA7mcCugUdBbhOaesbnCWfoxu9YJwIn&#13;
+PsjEEY8zKh+AVftS0ACnaxNfgyv/sRBnquJNBeNA2UImLuJyXoF056eaqhWQWd+mEJs3/QdTJBB9&#13;
+JKREgFIh2e2rDBr7aNo5PMVduBNS/Emd2vKGOaeYuG63nKnlcZsrRy62tlbwqbcYXiGB4PJ5TsXd&#13;
+dSqSOlkaxhXyjVAn3u6fepJ4NPi+bIXPx8FWP+ELWLo7RqLmA4x4h1ElH8W3dUQGxxH17OTGR0yy&#13;
+PQIY/uVpnlfG06JZiL9l82OLzW8kcleVWyHkBw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -28,4 +131,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4735562d-47be-45ca-8fd7-51e1735d002b" Target="#_ae5a9c5e-7da1-4d6a-b97f-9392ebc0d723"><Timestamp>2024-07-30 05:34:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SAPConnection>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f27c1dca-3076-4cf1-9135-12947a0b657e" Target="#_f2dc172d-753e-4c62-925f-812d84676cba"><Timestamp>2024-07-30 05:35:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
