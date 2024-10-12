@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_KJMHYIhFEe-v0dVNgRNoYg" name="mysql" id="_97ATQIhEEe-v0dVNgRNoYg" label="mysql" dataPackage="_KLf0gIhFEe-v0dVNgRNoYg" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://localhost:43306/dynamic?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="43306" Username="root" Password="enc:system.encryption.key.v1:Zz7iGOKXhSb6sF1bA4udrC5YrO0OjN5prlMvhzpaPhSPkmEzTw==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="dynamic" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_KJSOAIhFEe-v0dVNgRNoYg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_KJ3c0IhFEe-v0dVNgRNoYg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_KKCb8IhFEe-v0dVNgRNoYg" tag="Status" value=""/>
+    <taggedValue xmi:id="_KKCb8YhFEe-v0dVNgRNoYg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_KKCb8ohFEe-v0dVNgRNoYg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_KKCb84hFEe-v0dVNgRNoYg" tag="Description" value=""/>
+    <taggedValue xmi:id="_KKCb9IhFEe-v0dVNgRNoYg" tag="Author" value=""/>
+    <taggedValue xmi:id="_KKCb9YhFEe-v0dVNgRNoYg" tag="otherParameter"/>
+    <taggedValue xmi:id="_KKl1kIhFEe-v0dVNgRNoYg" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_KKl1kYhFEe-v0dVNgRNoYg" tag="DB ProductVersion" value="8.0.36"/>
+    <taggedValue xmi:id="_KKl1kohFEe-v0dVNgRNoYg" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_KJSOAYhFEe-v0dVNgRNoYg" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KLf0gIhFEe-v0dVNgRNoYg" name="dynamic" dataManager="_KJMHYIhFEe-v0dVNgRNoYg"/>
+</xmi:XMI>
