@@ -14,7 +14,7 @@
     <slf4j-api.version>1.7.34</slf4j-api.version>
     <encoding>UTF-8</encoding>
     <signer.version>8.0.12</signer.version>
-    <add-opens>true</add-opens>
+    <add-opens>false</add-opens>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
     <compliance>1.8</compliance>
     <maven.deploy.skip>true</maven.deploy.skip>
