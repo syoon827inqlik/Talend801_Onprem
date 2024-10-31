@@ -118,7 +118,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String context.lcommand = &quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/20241031114425_lKyft/stdOutErr_20241031114425_lKyft.log | grep stop | awk -F '|' '{print $5\&quot;|\&quot;$6}' > /workspace/test.log&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.lcommand = &quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/20241031114425_lKyft/stdOutErr_20241031114425_lKyft.log | grep stop | awk -F '|' '{print $5\&quot;|\&quot;$6}' > /workspace/test.log&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
