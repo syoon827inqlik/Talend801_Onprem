@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="lcommand" prompt="lcommand?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BekjMJdEEe-Hy5CO6EG_ng"/>
-    <contextParameter comment="" name="dirJobServerLog" prompt="dirJobServerLog?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/opt/Talend-8.0.1/job/opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/" internalId="_hxSDUJdJEe-Hy5CO6EG_ng"/>
+    <contextParameter comment="" name="dirJobServerLog" prompt="dirJobServerLog?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/" internalId="_hxSDUJdJEe-Hy5CO6EG_ng"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
