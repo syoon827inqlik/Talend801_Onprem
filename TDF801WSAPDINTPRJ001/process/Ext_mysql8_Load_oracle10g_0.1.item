@@ -236,7 +236,7 @@
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="7" name="ORDER_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -309,7 +309,7 @@
       <outputTables sizeState="INTERMEDIATE" name="load1">
         <mapperTableEntries name="ORDER_ID" expression="row1.order_id" type="id_Integer"/>
         <mapperTableEntries name="CUSTOMER_ID" expression="row1.customer_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLOYEE_ID" expression="row1.employee_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="EMPLOYEE_ID" expression="row1.employee_id" type="id_Short" nullable="true"/>
         <mapperTableEntries name="ORDER_DATE" expression="row1.order_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="REQUIRED_DATE" expression="row1.required_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="SHIPPED_DATE" expression="row1.shipped_date" type="id_Date" nullable="true"/>
@@ -632,7 +632,7 @@
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="7" name="ORDER_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -706,7 +706,7 @@
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="7" name="ORDER_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
