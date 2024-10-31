@@ -409,7 +409,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_G-IMEJdYEe-Hy5CO6EG_ng-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FNx3gJdSEe-Hy5CO6EG_ng-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -418,7 +418,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfout1">
+    <metadata connector="FLOW" name="out3">
       <column comment="" key="false" length="-1" name="projectname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="talendjobname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="talendjobversion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -435,17 +435,17 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfout1">
-        <mapperTableEntries name="projectname" expression="row3.projectname " type="id_String" nullable="true"/>
-        <mapperTableEntries name="talendjobname" expression="row3.talendjobname " type="id_String" nullable="true"/>
-        <mapperTableEntries name="talendjobversion" expression="row3.talendjobversion " type="id_String" nullable="true"/>
-        <mapperTableEntries name="runasuser" expression="row3.runasuser " type="id_String" nullable="true"/>
-        <mapperTableEntries name="basicstatus" expression="row3.basicstatus " type="id_String" nullable="true"/>
-        <mapperTableEntries name="detailedstatus" expression="row3.detailedstatus " type="id_String" nullable="true"/>
-        <mapperTableEntries name="serverjobstartdate" expression="row3.serverjobstartdate " type="id_String" nullable="true"/>
-        <mapperTableEntries name="serverjobenddate" expression="row3.serverjobenddate " type="id_String" nullable="true"/>
-        <mapperTableEntries name="idremotejob" expression="row3.idremotejob " type="id_String" nullable="true"/>
-        <mapperTableEntries name="idremotejobexecution" expression="row3.idremotejobexecution " type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="projectname" expression="row2.projectname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="talendjobname" expression="row2.talendjobname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="talendjobversion" expression="row2.talendjobversion " type="id_String" nullable="true"/>
+        <mapperTableEntries name="runasuser" expression="row2.runasuser " type="id_String" nullable="true"/>
+        <mapperTableEntries name="basicstatus" expression="row2.basicstatus " type="id_String" nullable="true"/>
+        <mapperTableEntries name="detailedstatus" expression="row2.detailedstatus " type="id_String" nullable="true"/>
+        <mapperTableEntries name="serverjobstartdate" expression="row2.serverjobstartdate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="serverjobenddate" expression="row2.serverjobenddate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="idremotejob" expression="row2.idremotejob " type="id_String" nullable="true"/>
+        <mapperTableEntries name="idremotejobexecution" expression="row2.idremotejobexecution " type="id_String" nullable="true"/>
         <mapperTableEntries name="linkname" expression="row3.linkname " type="id_String" nullable="true"/>
         <mapperTableEntries name="records" expression="row3.records " type="id_String" nullable="true"/>
       </outputTables>
@@ -461,8 +461,8 @@
         <mapperTableEntries name="idremotejob" type="id_String" nullable="true"/>
         <mapperTableEntries name="idremotejobexecution" expression="row3.idremotejobexecution " type="id_String" nullable="true" operator="="/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="idremotejobexecution" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="idremotejobexecution" expression="row2.idremotejobexecution " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="linkname" type="id_String" nullable="true"/>
         <mapperTableEntries name="records" type="id_String" nullable="true"/>
       </inputTables>
@@ -628,9 +628,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfout1" lineStyle="0" metaname="copyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_2">
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
