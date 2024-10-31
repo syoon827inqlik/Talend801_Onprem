@@ -210,7 +210,7 @@
         <mapperTableEntries name="idremotejobexecution" expression="row1.idremotejobexecution" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out2">
-        <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $4\&quot;|\&quot;$5\&quot;|\&quot;$6}' > &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $4\&quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="projectname" type="id_String" nullable="true"/>
