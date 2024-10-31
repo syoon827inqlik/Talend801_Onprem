@@ -139,7 +139,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;      projectname, &#xD;&#xA;      talendjobname, &#xD;&#xA;      talendjobversion, &#xD;&#xA;      contextvalues, &#xD;&#xA;      runasuser, &#xD;&#xA;      basicstatus, &#xD;&#xA;      detailedstatus, &#xD;&#xA;      serverjobstartdate, &#xD;&#xA;      serverjobenddate, &#xD;&#xA;      idremotejob,&#xD;&#xA;      idremotejobexecution&#xD;&#xA;FROM taskexecutionhistory&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT projectname, talendjobname, talendjobversion, contextvalues, runasuser, basicstatus, detailedstatus, serverjobstartdate, serverjobenddate, idremotejob, idremotejobexecution FROM taskexecutionhistory&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
