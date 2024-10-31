@@ -475,7 +475,7 @@
         <mapperTableEntries name="idremotejobexecution" expression="row3.idremotejobexecution " type="id_String" nullable="true" operator="="/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="idremotejobexecution" expression=" row2.idremotejobexecution " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="idremotejobexecution" expression="row2.idremotejobexecution " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="linkname" type="id_String" nullable="true"/>
         <mapperTableEntries name="records" type="id_String" nullable="true"/>
       </inputTables>
