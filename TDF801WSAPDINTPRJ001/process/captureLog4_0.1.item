@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="lcommand" prompt="lcommand?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BekjMJdEEe-Hy5CO6EG_ng"/>
     <contextParameter comment="" name="dirJobServerLog" prompt="dirJobServerLog?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/" internalId="_hxSDUJdJEe-Hy5CO6EG_ng"/>
   </context>
   <parameters>
@@ -288,7 +287,7 @@
       <column comment="" key="false" length="-1" name="idremotejobexecution" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="200">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand});&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
