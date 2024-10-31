@@ -230,7 +230,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ORDERS" name="load1">
-      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
@@ -248,7 +248,7 @@
       <column comment="" key="false" length="7" name="SHIPPED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
@@ -307,13 +307,13 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="load1">
-        <mapperTableEntries name="ORDER_ID" expression="row1.order_id" type="id_Integer"/>
+        <mapperTableEntries name="ORDER_ID" expression="row1.order_id" type="id_Short"/>
         <mapperTableEntries name="CUSTOMER_ID" expression="row1.customer_id" type="id_String" nullable="true"/>
         <mapperTableEntries name="EMPLOYEE_ID" expression="row1.employee_id" type="id_Short" nullable="true"/>
         <mapperTableEntries name="ORDER_DATE" expression="row1.order_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="REQUIRED_DATE" expression="row1.required_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="SHIPPED_DATE" expression="row1.shipped_date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SHIP_VIA" expression="row1.ship_via" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SHIP_VIA" expression="row1.ship_via" type="id_Short" nullable="true"/>
         <mapperTableEntries name="FREIGHT" expression="row1.freight" type="id_Double" nullable="true"/>
         <mapperTableEntries name="SHIP_NAME" expression="row1.ship_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="SHIP_ADDRESS" expression="row1.ship_address" type="id_String" nullable="true"/>
@@ -626,7 +626,7 @@
     <elementParameter field="TEXT" name="LABEL" value="oracle10g_ORDERS_CUSTOMERS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ORDERS" name="tDBOutput_1">
-      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
@@ -644,7 +644,7 @@
       <column comment="" key="false" length="7" name="SHIPPED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
@@ -700,7 +700,7 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="ORDERS" name="REJECT">
-      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
@@ -718,7 +718,7 @@
       <column comment="" key="false" length="7" name="SHIPPED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
