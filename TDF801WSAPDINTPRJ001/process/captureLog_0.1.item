@@ -226,7 +226,7 @@
         <mapperTableEntries name="serverjobenddate" expression="row1.serverjobenddate" type="id_String" nullable="true"/>
         <mapperTableEntries name="idremotejob" expression="row1.idremotejob" type="id_String" nullable="true"/>
         <mapperTableEntries name="idremotejobexecution" expression="row1.idremotejobexecution" type="id_String" nullable="true"/>
-        <mapperTableEntries name="lcommand" expression="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/&quot; + idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + idremotejobexecution + &quot;.log&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand" expression="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServersFiles/jobexecutions/logs/&quot; + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="projectname" type="id_String" nullable="true"/>
