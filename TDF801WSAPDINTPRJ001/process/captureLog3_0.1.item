@@ -270,7 +270,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.lcommand = out2.lcommand;&#xA;&#xA;new String[] cmd = {&quot;/bin/bash&quot;, &quot;-c&quot;, context.lcommand}&#xA;&#xA;p = Runtime.getRuntime().exec(cmd);&#xA;p.waitFor();&#xA;p.destroy();"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.lcommand = out2.lcommand;&#xA;&#xA;new String[] cmd = {&quot;/bin/bash&quot;, &quot;-c&quot;, context.lcommand}&#xA;&#xA;Runtime.getRuntime().exec(cmd);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
