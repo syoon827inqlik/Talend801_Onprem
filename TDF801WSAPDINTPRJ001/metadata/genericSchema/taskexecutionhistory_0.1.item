@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_hni6sJdYEe-Hy5CO6EG_ng" comment="connectionComment" label="connectionLabel" dataPackage="_hni6sZdYEe-Hy5CO6EG_ng"/>
+  <TalendMetadata:GenericPackage xmi:id="_hni6sZdYEe-Hy5CO6EG_ng" dataManager="_hni6sJdYEe-Hy5CO6EG_ng">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hni6spdYEe-Hy5CO6EG_ng" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6s5dYEe-Hy5CO6EG_ng" name="projectname" id="29372" label="projectname" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6tJdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6tZdYEe-Hy5CO6EG_ng" name="talendjobname" id="29373" label="talendjobname" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6tpdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6t5dYEe-Hy5CO6EG_ng" name="talendjobversion" id="29374" label="talendjobversion" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6uJdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6uZdYEe-Hy5CO6EG_ng" name="runasuser" id="29375" label="runasuser" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6updYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6u5dYEe-Hy5CO6EG_ng" name="basicstatus" id="29376" label="basicstatus" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6vJdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6vZdYEe-Hy5CO6EG_ng" name="detailedstatus" id="29377" label="detailedstatus" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6vpdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6v5dYEe-Hy5CO6EG_ng" name="serverjobstartdate" id="29378" label="serverjobstartdate" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_hni6wJdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6wZdYEe-Hy5CO6EG_ng" name="serverjobenddate" id="29379" label="serverjobenddate" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_hni6wpdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6w5dYEe-Hy5CO6EG_ng" name="idremotejob" id="29380" label="idremotejob" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6xJdYEe-Hy5CO6EG_ng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hni6xZdYEe-Hy5CO6EG_ng" name="idremotejobexecution" id="29381" label="idremotejobexecution" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_hni6xpdYEe-Hy5CO6EG_ng"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
