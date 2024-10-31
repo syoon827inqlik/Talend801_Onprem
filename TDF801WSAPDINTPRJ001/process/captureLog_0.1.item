@@ -107,7 +107,7 @@
     <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServerFiles/jobexecutions/logs/stdOutErr_202310311114425_lKyft.log | grep stop | awk -F '|' '{print $5&quot;|&quot;$6}'&quot;" show="false"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="true"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND">
-      <elementValue elementRef="VALUE" value="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServerFiles/jobexecutions/logs/stdOutErr_202310311114425_lKyft.log | grep stop | awk -F '|' '{print $5&quot;|&quot;$6}'&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServerFiles/jobexecutions/logs/20241031114425_lKyft/stdOutErr_20241031114425_lKyft.log | grep stop | awk -F '|' '{print $5&quot;|&quot;$6}'&quot;"/>
     </elementParameter>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
