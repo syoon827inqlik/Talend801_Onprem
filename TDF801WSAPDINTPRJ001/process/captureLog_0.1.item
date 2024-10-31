@@ -113,7 +113,7 @@
     <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:K6KYhNW/zPHKcPBXJamEsl7TlMDD12Yt6zsgSs2YEdr7WafF" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
-      <elementValue elementRef="COMMAND" value="cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServerFiles/jobexecutions/logs/stdOutErr_202310311114425_lKyft.log | grep stop | awk -F '|' '{print $5&quot;|&quot;$6}'"/>
+      <elementValue elementRef="COMMAND" value="&quot;cat /opt/Talend-8.0.1/jobserver/agent/TalendJobServerFiles/jobexecutions/logs/stdOutErr_202310311114425_lKyft.log | grep stop | awk -F '|' '{print $5&quot;|&quot;$6}'&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="TIMEOUT" value="60" show="false"/>
