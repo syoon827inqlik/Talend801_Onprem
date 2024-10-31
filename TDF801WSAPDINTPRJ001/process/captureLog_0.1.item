@@ -226,7 +226,7 @@
         <mapperTableEntries name="serverjobenddate" expression="row1.serverjobenddate" type="id_String" nullable="true"/>
         <mapperTableEntries name="idremotejob" expression="row1.idremotejob" type="id_String" nullable="true"/>
         <mapperTableEntries name="idremotejobexecution" expression="row1.idremotejobexecution" type="id_String" nullable="true"/>
-        <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $5\&quot;|\&quot;$6}' > /workspace/log_&quot; + row1.idremotejobexecution + &quot;.log&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $5\&quot;|\&quot;$6}' > /workspace/job_&quot; + row1,.talendjobname + row1.idremotejobexecution + &quot;.log&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="projectname" type="id_String" nullable="true"/>
