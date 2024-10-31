@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_i5ihIJcjEe-Hy5CO6EG_ng" name="DCoracle-xe-10g" id="_cwPAkJcjEe-Hy5CO6EG_ng" label="DCoracle-xe-10g" dataPackage="_i7b-kJcjEe-Hy5CO6EG_ng _i7b-kZcjEe-Hy5CO6EG_ng _i7b-kpcjEe-Hy5CO6EG_ng _i7b-k5cjEe-Hy5CO6EG_ng _i7b-lJcjEe-Hy5CO6EG_ng _i7b-lZcjEe-Hy5CO6EG_ng _i7b-lpcjEe-Hy5CO6EG_ng _i7b-l5cjEe-Hy5CO6EG_ng _i7b-mJcjEe-Hy5CO6EG_ng _i7b-mZcjEe-Hy5CO6EG_ng _i7b-mpcjEe-Hy5CO6EG_ng _i7b-m5cjEe-Hy5CO6EG_ng _i7b-nJcjEe-Hy5CO6EG_ng _i7b-nZcjEe-Hy5CO6EG_ng" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:49161:XE" dbVersionString="ORACLE_18" Port="49161" Username="seanyoon" Password="enc:system.encryption.key.v1:UDqrFDZa6pn4ChUPvhTIv0izsPNStp7bqH7pOvshwtO/ceTWow==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_i5ihIZcjEe-Hy5CO6EG_ng" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_i6UkQJcjEe-Hy5CO6EG_ng" tag="package filter" value=""/>
+    <taggedValue xmi:id="_i6UkQZcjEe-Hy5CO6EG_ng" tag="Status" value=""/>
+    <taggedValue xmi:id="_i6UkQpcjEe-Hy5CO6EG_ng" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_i6UkQ5cjEe-Hy5CO6EG_ng" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_i6UkRJcjEe-Hy5CO6EG_ng" tag="Description" value=""/>
+    <taggedValue xmi:id="_i6UkRZcjEe-Hy5CO6EG_ng" tag="Author" value=""/>
+    <taggedValue xmi:id="_i6UkRpcjEe-Hy5CO6EG_ng" tag="otherParameter"/>
+    <taggedValue xmi:id="_i63W0JcjEe-Hy5CO6EG_ng" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_i63W0ZcjEe-Hy5CO6EG_ng" tag="DB ProductVersion" value="Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production"/>
+    <taggedValue xmi:id="_i63W0pcjEe-Hy5CO6EG_ng" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_i5ihIpcjEe-Hy5CO6EG_ng" key="CONN_PARA_KEY_USERNAME" value="seanyoon"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-kJcjEe-Hy5CO6EG_ng" name="ANONYMOUS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-kZcjEe-Hy5CO6EG_ng" name="CTXSYS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-kpcjEe-Hy5CO6EG_ng" name="DBSNMP" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-k5cjEe-Hy5CO6EG_ng" name="DIP" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-lJcjEe-Hy5CO6EG_ng" name="FLOWS_020100" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-lZcjEe-Hy5CO6EG_ng" name="FLOWS_FILES" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-lpcjEe-Hy5CO6EG_ng" name="HR" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-l5cjEe-Hy5CO6EG_ng" name="MDSYS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-mJcjEe-Hy5CO6EG_ng" name="OUTLN" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-mZcjEe-Hy5CO6EG_ng" name="SEANYOON" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-mpcjEe-Hy5CO6EG_ng" name="SYS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-m5cjEe-Hy5CO6EG_ng" name="SYSTEM" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-nJcjEe-Hy5CO6EG_ng" name="TSMSYS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-nZcjEe-Hy5CO6EG_ng" name="XDB" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
+</xmi:XMI>
