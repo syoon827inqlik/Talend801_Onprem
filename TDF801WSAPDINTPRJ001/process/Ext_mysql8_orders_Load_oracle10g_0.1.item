@@ -104,26 +104,26 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="newString"/>
-      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getFirstName()"/>
+      <elementValue elementRef="ARRAY" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newShort"/>
-      <elementValue elementRef="ARRAY" value="1"/>
+      <elementValue elementRef="ARRAY" value="1,2,3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newDouble"/>
       <elementValue elementRef="ARRAY" value="Mathematical.ABS(10 )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newDate"/>
       <elementValue elementRef="ARRAY" value="TalendDate.addDate(myDate ,addValue ,&quot;MM&quot; )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newBigDecimal1"/>
-      <elementValue elementRef="ARRAY" value=""/>
+      <elementValue elementRef="ARRAY" value="1,2,3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newBigDecimal2"/>
-      <elementValue elementRef="ARRAY" value=""/>
+      <elementValue elementRef="ARRAY" value="1,2,3"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRowGenerator_1">
       <column comment="" defaultValue="" key="false" length="-1" name="newString" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newShort" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; 1 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; 1,2,3 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newDouble" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;ABS&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
@@ -132,10 +132,10 @@
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;addDate&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;date&quot;,&quot;PARAMETER_VALUE&quot;:&quot;myDate &quot;},{&quot;PARAMETER_NAME&quot;:&quot;nb&quot;,&quot;PARAMETER_VALUE&quot;:&quot;addValue &quot;},{&quot;PARAMETER_NAME&quot;:&quot;dateType&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;MM\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newBigDecimal1" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;1,2,3 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newBigDecimal2" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;1,2,3 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
     </metadata>
   </node>
