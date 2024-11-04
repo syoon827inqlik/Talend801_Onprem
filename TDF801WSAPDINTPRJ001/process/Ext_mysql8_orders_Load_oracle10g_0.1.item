@@ -106,7 +106,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="newString"/>
       <elementValue elementRef="ARRAY" value="TalendDataGenerator.getFirstName()"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newShort"/>
-      <elementValue elementRef="ARRAY" value=""/>
+      <elementValue elementRef="ARRAY" value="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newDouble"/>
       <elementValue elementRef="ARRAY" value="Mathematical.ABS(10 )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newDate"/>
@@ -123,7 +123,7 @@
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newShort" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; 1 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" defaultValue="" key="false" length="-1" name="newDouble" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;ABS&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
