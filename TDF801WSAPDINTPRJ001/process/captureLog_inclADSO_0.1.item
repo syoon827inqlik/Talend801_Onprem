@@ -157,7 +157,7 @@
       <column comment="" key="false" length="-1" name="lcommand_adso" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $4\&quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
@@ -289,7 +289,7 @@
       <column comment="" key="false" length="-1" name="records" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="projectname" expression="row2.projectname " type="id_String" nullable="true"/>
