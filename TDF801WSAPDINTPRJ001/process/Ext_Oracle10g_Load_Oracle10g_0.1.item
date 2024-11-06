@@ -203,7 +203,45 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="for (java.lang.reflect.Field field: input_row.getClass().getFields()) {&#xA;&#xA;Object objType = field.get(input_row);&#xA;Class type = field.getType();&#xA;&#xA;// Get the matching output field by its field name.&#xA;java.lang.reflect.Field outField = output_row.getClass().getField(field.getName());&#xA;&#xA;// If the field type is String, and it's empty or null do something...&#xA;if (type.getSimpleName().equals(&quot;Date&quot;) &amp;&amp; (field.get(input_row) == null)) &#xA;&#x9;{&#xA;&#x9;outField.set(output_row, &quot;&quot;);&#xA;&#x9;} &#xA;else if (type.getSimpleName().equals(&quot;Date&quot;))&#xA;&#x9;{&#xA;&#x9;outField.set(output_row, field.get(input_row).toString());&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;outField.set(output_row,  field.get(input_row));&#xA;&#x9;}&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="100" name="COL_INT" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_DEC" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_FLOAT" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_LONG" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_NUMBER" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_BIGDEC" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_DATE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_TSTAMP" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_NVCHAR" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COL_VCHAR" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -250,35 +288,35 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="COL_INT" expression="row1.COL_INT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_DEC" expression="row1.COL_DEC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_FLOAT" expression="row1.COL_FLOAT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_LONG" expression="row1.COL_LONG" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_NUMBER" expression="row1.COL_NUMBER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_BIGDEC" expression="row1.COL_BIGDEC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_DATE" expression="row1.COL_DATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_TSTAMP" expression="row1.COL_TSTAMP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_NVCHAR" expression="row1.COL_NVCHAR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_VCHAR" expression="row1.COL_VCHAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_INT" expression="row2.COL_INT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_DEC" expression="row2.COL_DEC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_FLOAT" expression="row2.COL_FLOAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_LONG" expression="row2.COL_LONG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_NUMBER" expression="row2.COL_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_BIGDEC" expression="row2.COL_BIGDEC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_DATE" expression="row2.COL_DATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_TSTAMP" expression="row2.COL_TSTAMP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_NVCHAR" expression="row2.COL_NVCHAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_VCHAR" expression="row2.COL_VCHAR" type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="COL_INT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COL_DEC" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COL_FLOAT" type="id_Float" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="COL_INT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_DEC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_FLOAT" type="id_String" nullable="true"/>
         <mapperTableEntries name="COL_LONG" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COL_NUMBER" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COL_BIGDEC" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COL_DATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="COL_TSTAMP" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="COL_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_BIGDEC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_DATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COL_TSTAMP" type="id_String" nullable="true"/>
         <mapperTableEntries name="COL_NVCHAR" type="id_String" nullable="true"/>
         <mapperTableEntries name="COL_VCHAR" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tOracleOutput" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -456,9 +494,13 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
