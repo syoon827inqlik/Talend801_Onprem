@@ -24,7 +24,7 @@
   <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-l5cjEe-Hy5CO6EG_ng" name="MDSYS" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-mJcjEe-Hy5CO6EG_ng" name="OUTLN" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_i7b-mZcjEe-Hy5CO6EG_ng" name="SEANYOON" dataManager="_i5ihIJcjEe-Hy5CO6EG_ng">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_9z0foJvsEe--d48mYGOfTQ" name="TAB_CONVTYPE" id="_9zz4kJvsEe--d48mYGOfTQ" label="TAB_CONVTYPE" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9z0foJvsEe--d48mYGOfTQ" name="TAB_CONVTYPE" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_9zz4kJvsEe--d48mYGOfTQ" label="TAB_CONVTYPE" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_9z0foZvsEe--d48mYGOfTQ" name="COL_INT" label="COL_INT" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
         <taggedValue xmi:id="_9z0fopvsEe--d48mYGOfTQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_9z0fo5vsEe--d48mYGOfTQ" language="COLUMN_DEF"/>
