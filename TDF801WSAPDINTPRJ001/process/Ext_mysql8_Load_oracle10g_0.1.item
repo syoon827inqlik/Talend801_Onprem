@@ -626,13 +626,13 @@
     <elementParameter field="TEXT" name="LABEL" value="oracle10g_ORDERS_CUSTOMERS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ORDERS" name="tDBOutput_1">
-      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="7" name="ORDER_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -644,10 +644,10 @@
       <column comment="" key="false" length="7" name="SHIPPED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="40" name="SHIP_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
@@ -700,13 +700,13 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="ORDERS" name="REJECT">
-      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="true" length="38" name="ORDER_ID" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="38" name="EMPLOYEE_ID" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="7" name="ORDER_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -718,10 +718,10 @@
       <column comment="" key="false" length="7" name="SHIPPED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="38" name="SHIP_VIA" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="63" name="FREIGHT" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="40" name="SHIP_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
