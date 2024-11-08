@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="JobServer" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="oracle10g_Host" prompt="oracle10g_Host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;localhost&quot;" internalId="_dynWkJ2lEe-oKsYFG7wcaA"/>
+    <contextParameter comment="" name="oracle10g_Port" prompt="oracle10g_Port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;49161&quot;" internalId="_dynWkZ2lEe-oKsYFG7wcaA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="JobServer">
+    <contextParameter comment="" name="oracle10g_Host" prompt="oracle10g_Host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;172.18.0.2&quot;" internalId="_dynWkp2lEe-oKsYFG7wcaA"/>
+    <contextParameter comment="" name="oracle10g_Port" prompt="oracle10g_Port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;1521&quot;" internalId="_dynWk52lEe-oKsYFG7wcaA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -101,33 +108,21 @@
   </parameters>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tOracleInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/Oracle" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tOracleInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_cwPAkJcjEe-Hy5CO6EG_ng" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.oracle10g_Host"/>
     <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;49161&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.oracle10g_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;XE&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;XE&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;seanyoon&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Qb1D/5PP87nNZpw6sW8N46b6fVnEnJtddSmgbKD2gMNbbvBLg1BW"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAB_CONVTYPE&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAB_TYPEORIGINAL&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
@@ -170,6 +165,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="TAB_CONVTYPE" name="tDBInput_1">
       <column comment="" key="false" length="38" name="COL_INT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -318,31 +314,20 @@
   </node>
   <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tOracleOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/Oracle" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tOracleOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_cwPAkJcjEe-Hy5CO6EG_ng" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;49161&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.oracle10g_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.oracle10g_Port"/>
     <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;XE&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;XE&quot;" show="false"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;seanyoon&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lT6e4BnMEQheSSHF6ogSQBv3P8HdKM6p2r/T4wxGwyCxfxGC2FQ0"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAB_CONVEDTYPE&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAB_TYPECONVERTED&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -427,6 +412,7 @@
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="TAB_CONVEDTYPE" name="tDBOutput_1">
       <column comment="" key="false" length="100" name="COL_INT" nullable="true" pattern="" precision="0" sourceType="NVARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
