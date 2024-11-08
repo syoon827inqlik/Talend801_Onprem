@@ -328,7 +328,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;seanyoon&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lT6e4BnMEQheSSHF6ogSQBv3P8HdKM6p2r/T4wxGwyCxfxGC2FQ0"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAB_TYPE_ORIGINAL&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
