@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="JobServer" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Server" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="oracle10g_Host" prompt="oracle10g_Host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;localhost&quot;" internalId="_dynWkJ2lEe-oKsYFG7wcaA"/>
     <contextParameter comment="" name="oracle10g_Port" prompt="oracle10g_Port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;49161&quot;" internalId="_dynWkZ2lEe-oKsYFG7wcaA"/>
   </context>
-  <context confirmationNeeded="false" hide="false" name="JobServer">
+  <context confirmationNeeded="false" hide="false" name="Server">
     <contextParameter comment="" name="oracle10g_Host" prompt="oracle10g_Host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;172.18.0.2&quot;" internalId="_dynWkp2lEe-oKsYFG7wcaA"/>
     <contextParameter comment="" name="oracle10g_Port" prompt="oracle10g_Port?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="&quot;1521&quot;" internalId="_dynWk52lEe-oKsYFG7wcaA"/>
   </context>
