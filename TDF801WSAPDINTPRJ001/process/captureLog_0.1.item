@@ -856,7 +856,7 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계1: 실행된 Job들에 대한 로그파일 파싱"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계1: 실행 Job들에 대한 로그파일 파싱  "/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
@@ -874,14 +874,14 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계2: 파싱된 로그 정보(링크별 실행건수)와 Job 정보 통합 저장"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계2: 파싱된 로그 정보(링크별 실행건수)와 Job 정보 통합 저장  "/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계3: batchJob별 subJob 목록 저장"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="단계3: batchJob별 subJob 목록 저장  "/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
