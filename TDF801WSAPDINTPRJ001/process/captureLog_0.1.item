@@ -500,7 +500,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="idremotejobexecution" expression="row3.idremotejobexecution " type="id_String" nullable="true"/>
-        <mapperTableEntries name="subjobname" expression="row4.subjobname == null ? row3.idremotesubjobexec : row4.subjobname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="subjobname" expression="row4.subjobname == null ? &quot;non-batch&quot; : row4.subjobname " type="id_String" nullable="true"/>
         <mapperTableEntries name="linkname" expression="row3.linkname " type="id_String" nullable="true"/>
         <mapperTableEntries name="records" expression="row3.records " type="id_Integer" nullable="true"/>
       </outputTables>
