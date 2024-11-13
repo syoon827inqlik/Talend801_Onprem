@@ -153,15 +153,19 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out2">
-      <column comment="" key="false" length="-1" name="lcommand" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="lcommand_adso" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lcommand_logs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lcommand_adsologs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lcommand_batchjobs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lcommand_batchlogs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
-        <mapperTableEntries name="lcommand" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $3\&quot;|\&quot;$4\&quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="lcommand_adso" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep Fetched | awk -F ' ' '{print \&quot;&quot; + row1.idremotejobexecution + &quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand_logs" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $4\&quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand_adsologs" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep Fetched | awk -F ' ' '{print \&quot;&quot; + row1.idremotejobexecution + &quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand_batchjobs" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep \&quot;start job\&quot; | awk -F '|' '{print $3\&quot;|\&quot;$4\&quot;|\&quot;$5}' >> &quot; + context.dirworking + &quot;log_batchjobs.out&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lcommand_batchlogs" expression="&quot;cat &quot; + context.dirJobServerLog + row1.idremotejobexecution + &quot;/&quot; + &quot;stdOutErr_&quot; + row1.idremotejobexecution + &quot;.log | grep stop | awk -F '|' '{print $3\&quot;|\&quot;$4\&quot;|\&quot;$5\&quot;|\&quot;$6}' >> &quot; + context.dirworking + &quot;log_linkrecords.out&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="idremotejobexecution" type="id_String" nullable="true"/>
@@ -170,7 +174,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand});&#xA;Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand_adso});&#xA;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand_logs});&#xA;Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand_adsologs});&#xA;Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand_batchjobs});&#xA;Runtime.getRuntime().exec(new String[]{&quot;/bin/bash&quot;, &quot;-c&quot;, out2.lcommand_batchlogs});&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="parsingLinkRecords"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -496,7 +500,16 @@
       <elementValue elementRef="TRACE_COLUMN" value="serverjobenddate"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="lcommand_adso"/>
+      <elementValue elementRef="TRACE_COLUMN" value="lcommand_adsologs"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lcommand_batchlogs"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lcommand_batchjobs"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lcommand_logs"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
