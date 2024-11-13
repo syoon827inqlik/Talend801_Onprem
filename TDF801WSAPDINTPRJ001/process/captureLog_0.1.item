@@ -508,7 +508,7 @@
         <mapperTableEntries name="linkname" expression="row3.linkname " type="id_String" nullable="true"/>
         <mapperTableEntries name="records" expression="row3.records " type="id_Integer" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="out5">
+      <outputTables sizeState="INTERMEDIATE" name="out5" expressionFilter="row4.subjobname != null" activateExpressionFilter="true">
         <mapperTableEntries name="idremotejobexecution" expression="row4.idremotejobexecution " type="id_String" nullable="true"/>
         <mapperTableEntries name="subjobname" expression="row4.subjobname " type="id_String" nullable="true"/>
       </outputTables>
