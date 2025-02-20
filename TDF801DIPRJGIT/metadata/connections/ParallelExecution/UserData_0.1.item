@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_HiBdcGp7EemXMLEeEZYAlg" name="UserData" id="_A9NsoGp7EemXMLEeEZYAlg" label="UserData" dataPackage="_2cdOMGp7EemXMLEeEZYAlg" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/dynamic?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="talend" Password="enc:system.encryption.key.v1:ZbKQOPrvvsAyGwSefriHPNFh0bFJ/Z10WM0iKS6wx8mFGg==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="dynamic" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
-    <taggedValue xmi:id="_HiBdcWp7EemXMLEeEZYAlg" tag="Is Conn Need Reload" value="false"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_HiBdcGp7EemXMLEeEZYAlg" name="UserData" id="_A9NsoGp7EemXMLEeEZYAlg" label="UserData" dataPackage="_2GbgEO9EEe-WG4l4aT3G9w _2cdOMGp7EemXMLEeEZYAlg" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:53306/northwind?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="53306" Username="root" Password="enc:system.encryption.key.v1:RpyXsOZObti4DMt+mKqb1Bf8pfJnxIYBUz+vHzgGOnlgD2OnUw==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="northwind" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_HiBdcWp7EemXMLEeEZYAlg" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_HieJYGp7EemXMLEeEZYAlg" tag="package filter" value=""/>
     <taggedValue xmi:id="_HinTUGp7EemXMLEeEZYAlg" tag="Status" value=""/>
     <taggedValue xmi:id="_HinTUWp7EemXMLEeEZYAlg" tag="Version" value="0.1"/>
@@ -10,11 +10,12 @@
     <taggedValue xmi:id="_HinTVGp7EemXMLEeEZYAlg" tag="Author" value=""/>
     <taggedValue xmi:id="_HinTVWp7EemXMLEeEZYAlg" tag="otherParameter"/>
     <taggedValue xmi:id="_HixEUGp7EemXMLEeEZYAlg" tag="DB ProductName" value="MySQL"/>
-    <taggedValue xmi:id="_HixEUWp7EemXMLEeEZYAlg" tag="DB ProductVersion" value="5.7.11-log"/>
+    <taggedValue xmi:id="_HixEUWp7EemXMLEeEZYAlg" tag="DB ProductVersion" value="8.0.36"/>
     <taggedValue xmi:id="_HixEUmp7EemXMLEeEZYAlg" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_HiBdcmp7EemXMLEeEZYAlg" key="CONN_PARA_KEY_USERNAME" value="talend"/>
+    <parameters xmi:id="_HiBdcmp7EemXMLEeEZYAlg" key="CONN_PARA_KEY_USERNAME" value="root"/>
     <parameters xmi:id="_1j-uEGp7EemXMLEeEZYAlg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_2GbgEO9EEe-WG4l4aT3G9w" name="northwind" dataManager="_HiBdcGp7EemXMLEeEZYAlg"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_2cdOMGp7EemXMLEeEZYAlg" name="dynamic" dataManager="_HiBdcGp7EemXMLEeEZYAlg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_zXCf8Wp8EemXMLEeEZYAlg" name="userdata" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_zXCf8Gp8EemXMLEeEZYAlg" label="userdata" tableType="TABLE">
       <taggedValue xmi:id="_zXCf8mp8EemXMLEeEZYAlg" tag="Comment" value=""/>
