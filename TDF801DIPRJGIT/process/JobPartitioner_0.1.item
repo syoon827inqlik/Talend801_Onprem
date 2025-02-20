@@ -184,13 +184,13 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="State"/>
-      <elementValue elementRef="SORT" value="num"/>
+      <elementValue elementRef="SORT" value="alpha"/>
       <elementValue elementRef="ORDER" value="asc"/>
       <elementValue elementRef="COLNAME" value="City"/>
-      <elementValue elementRef="SORT" value="num"/>
+      <elementValue elementRef="SORT" value="alpha"/>
       <elementValue elementRef="ORDER" value="asc"/>
       <elementValue elementRef="COLNAME" value="Address"/>
-      <elementValue elementRef="SORT" value="num"/>
+      <elementValue elementRef="SORT" value="alpha"/>
       <elementValue elementRef="ORDER" value="asc"/>
     </elementParameter>
     <elementParameter field="CHECK" name="EXTERNAL" value="true"/>
