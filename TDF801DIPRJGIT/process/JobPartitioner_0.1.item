@@ -240,7 +240,7 @@
   </node>
   <node componentName="tRecollector" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRecollector_1" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="DEPART_COMPONENT" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="DEPART_COMPONENT" value="tDepartitioner_1"/>
     <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRecollector_1">
