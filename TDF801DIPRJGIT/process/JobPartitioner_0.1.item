@@ -180,7 +180,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="200">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="545" posY="219">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="State"/>
@@ -216,7 +216,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tDepartitioner" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="200">
+  <node componentName="tDepartitioner" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDepartitioner_1" show="false"/>
     <elementParameter field="TEXT" name="QUEUE_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -238,7 +238,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tRecollector" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
+  <node componentName="tRecollector" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRecollector_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="DEPART_COMPONENT" value="tDepartitioner_1"/>
     <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
@@ -261,7 +261,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="360">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
