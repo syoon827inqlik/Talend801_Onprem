@@ -233,7 +233,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="enriched_data">
-        <mapperTableEntries name="ID" expression="String.format(&quot;%10s&quot;,Numeric.sequence(&quot;s1&quot;,1,1)+&quot;&quot;).replace(' ', '0’); " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ID" expression="String.format(&quot;%10s&quot;,Numeric.sequence(&quot;s1&quot;,1,1)+&quot;&quot;).replace(' ', '0'); " type="id_String" nullable="true"/>
         <mapperTableEntries name="Firstname" expression="raw_data.Firstname" type="id_String" nullable="true"/>
         <mapperTableEntries name="Lastname" expression="raw_data.Lastname" type="id_String" nullable="true"/>
         <mapperTableEntries name="Address" expression="raw_data.Address" type="id_String" nullable="true"/>
