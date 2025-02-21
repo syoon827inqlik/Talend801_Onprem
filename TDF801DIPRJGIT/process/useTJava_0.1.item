@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="UID" prompt="UID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="__vY18PAWEe-kCLg_K-J45A"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -101,16 +103,6 @@
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_8XWDcPATEe-kCLg_K-J45A" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
@@ -204,12 +196,28 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="160">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.UID = Numeric.random(1,100)+&quot;&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="generated_random_index"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tJava_1">
+      <column comment="" key="false" length="9" name="Firstname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Lastname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Zipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_mrrBMPATEe-kCLg_K-J45A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_BHYZEPAWEe-kCLg_K-J45A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -230,19 +238,19 @@
       <column comment="" key="false" length="15" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="enriched_data">
-        <mapperTableEntries name="ID" expression="String.format(&quot;%10s&quot;,Numeric.sequence(&quot;s1&quot;,1,1)+&quot;&quot;).replace(' ', '0'); " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Firstname" expression="raw_data.Firstname" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Lastname" expression="raw_data.Lastname" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Address" expression="raw_data.Address" type="id_String" nullable="true"/>
-        <mapperTableEntries name="City" expression="raw_data.City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Zipcode" expression="raw_data.Zipcode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="State" expression="raw_data.State" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Country" expression="raw_data.Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ID" expression="context.UID+String.format(&quot;%10s&quot;,Numeric.sequence(&quot;s1&quot;,1,1)+&quot;&quot;).replace(' ', '0'); " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Firstname" expression="row1.Firstname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Lastname" expression="row1.Lastname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Address" expression="row1.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="City" expression="row1.City " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Zipcode" expression="row1.Zipcode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="State" expression="row1.State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" expression="row1.Country " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="raw_data" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Firstname" type="id_String" nullable="true"/>
         <mapperTableEntries name="Lastname" type="id_String" nullable="true"/>
         <mapperTableEntries name="Address" type="id_String" nullable="true"/>
@@ -299,9 +307,13 @@
       <column comment="" key="false" length="15" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="raw_data" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+  <connection connectorName="FLOW" label="raw_data" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJava_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="raw_data" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="enriched_data" lineStyle="0" metaname="enriched_data" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
