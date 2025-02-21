@@ -196,7 +196,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="120" sizeX="41" sizeY="40">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="120" sizeX="41" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -211,7 +211,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="add_UID"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row4" name="ee">
+    <metadata connector="FLOW" label="eeee" name="eeee">
       <column comment="" key="false" length="9" name="Firstname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Lastname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -219,12 +219,11 @@
       <column comment="" key="false" length="9" name="Zipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="TotalRows" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="ee" sizeState="INTERMEDIATE">
+      <outputTables name="eeee" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Firstname" name="Firstname" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Lastname" name="Lastname" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Address" name="Address" nullable="true" type="id_String"/>
@@ -232,7 +231,6 @@
         <mapperTableEntries expression="row1.Zipcode" name="Zipcode" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.State" name="State" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Country" name="Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TotalRows" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Firstname" nullable="true" type="id_String"/>
@@ -245,12 +243,21 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="200">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#10;//&#10;// multiply by 2 the row identifier&#10;// output_row.id = input_row.id * 2;&#10;//&#10;// lowercase the name&#10;// output_row.name = input_row.name.toLowerCase();&#10;&#10;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_5dloEPATEe-LXeArAikIEA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="row4" name="tJavaRow_1">
+    <metadata connector="FLOW" label="row4" name="eee">
       <column comment="" key="false" length="9" name="Firstname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Lastname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -260,6 +267,29 @@
       <column comment="" key="false" length="15" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="TotalRows" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="eee" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.Firstname" name="Firstname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Lastname" name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Address" name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.City" name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Zipcode" name="Zipcode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.State" name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Country" name="Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.TotalRows" name="TotalRows" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="eeee" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Firstname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Lastname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Zipcode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Country" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -310,26 +340,26 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="ee" lineStyle="0" metaname="ee" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_1">
+  <connection connectorName="FLOW" label="eeee" lineStyle="0" metaname="eeee" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ee"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="eeee"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="eee" lineStyle="0" metaname="eee" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="eee"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_520a9d8d-b611-4f41-845e-debec4013f2b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7xt/covDLS1vwa5Tt0xSqOstmiBAm85QpKJVh/A18zv7btVA/jfvG/Lx3ZNMrHqZU8MYTLj6Pcau&#13;
-JcFUw0OmOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_87812ce0-3e35-4865-8b04-39884e627fe2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TplB9aKdqA5RRt//gdq1LliIw4MiL0RYV7XA/HhFx2SxJ/W5l01wtXnbfZvxEXeh7zJbp2oSuAZZ&#13;
-LhQtE/kTTg==</DigestValue></Reference></SignedInfo><SignatureValue>NnvWG/naUm5hGjIzxqc78V5uYKS3n2suP9b05fh4C8o0KBa+L15AL2kvttJogSXIrcAq6Ny1ttnP&#13;
-/L0zghbMBGzMX5xkctznN4ZR4u/KawJ1rLhZBgIzdFgk/0N0vYtBvd7c+6CaNkfvOx0o9XaDltI4&#13;
-wtS1Tbb5jLs1EjwDwiSd3GJGHWAQj4CNHqHdCpt2dinmk3xck237XRUVBIup0UG4OB6CzkAbTo/9&#13;
-8XSbF5VpRMDvLPnR1hplG5BX8AK/JJLSeQ0doEzQoyORJSvsFS+vEurrciplVSIfMrVPMPuwG04C&#13;
-WNxlpLtkqsrk4ePeESyBdhDtahnpalQFq1jdbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fa82c7d6-ed65-4f4a-b7fc-e5952a5a874f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P8TwjYxkc735quNEAwcMRUbUSqVsF1LUhxO6G6wFCIgbDaPXLrQIrjaMqREpHaTf8Nppnqw/sT6f&#13;
+GQhy5p6c/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5aa55815-febc-4074-9e16-af56298d958a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KLpsfLVZMqzppWVaPCc6NXZUlDMIfTQjBm8Tc6QnTnLA7MyknfVrInge5ecOFWEC14iNsTNvFh8z&#13;
+PvqXAlMh4Q==</DigestValue></Reference></SignedInfo><SignatureValue>VSx0P0XE8mHvgWx5fM72PHVVb1Z1LS9sHmzeTzPScT0ZxYA0IOnSV535WoEiADP4nlyhitmnIWmF&#13;
+bClFqCm8AlBBWV5bz/OMwNRF1TcQNQou7IKFIZ13Idn2VGlFHmCdzJpUXy0vxjcHZqz2WH7anuuW&#13;
+2dDicH5oVXv1katGkhIlwvR+geW1gw6s4ek/zY7Cdp/nqw5qIaQvZYfZqgXreekibHXaBpt+8N03&#13;
+sMeVz1NLCIuZmLi1CaEgj7lwoiA5fMLCe/AyD5LaMMsErIJYH1Cj51Ed7R0dWE+8If0WsrGUmxTv&#13;
+qi6iTd+Uk6GDWY7ogi24S6WTyUJSuHr86CZwfQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -351,4 +381,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_87812ce0-3e35-4865-8b04-39884e627fe2" Target="#_520a9d8d-b611-4f41-845e-debec4013f2b"><Timestamp>2025-02-21 06:27:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5aa55815-febc-4074-9e16-af56298d958a" Target="#_fa82c7d6-ed65-4f4a-b7fc-e5952a5a874f"><Timestamp>2025-02-21 06:29:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
