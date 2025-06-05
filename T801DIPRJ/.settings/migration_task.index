@@ -165,7 +165,17 @@
     "version" : "7.4.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.8.0.1-R2025-04",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.7.3.1",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-04",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
     "status" : "noimpact"
@@ -205,6 +215,11 @@
     "version" : "7.4.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-04",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.camel.designer.migration.UpdatecJMSMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -218,6 +233,11 @@
     "id" : "org.talend.camel.designer.migration.UpdatecSOAPServiceNamePortNameDefault",
     "breaks" : "5.4.1",
     "version" : "5.6.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.designer.bigdata.di.repository.migration.IcebergInputUseSQLQueryMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.designer.core.generic.model.migration.ChangeDBConnectionToJDBCTypeMigrationTask",
@@ -573,6 +593,11 @@
     "id" : "org.talend.designer.spark.repository.migration.UpdateRemovedSparkLocalVersion",
     "breaks" : "7.3.1",
     "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.designer.spark.repository.migration.UpdateRemovedUniversalSparkLocal24Version",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.designer.spark.repository.migration.UpdateSpark24And23Version",
@@ -1795,11 +1820,6 @@
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.FileInputRegexContextVariableMigrationTaskForSave",
-    "breaks" : "5.1.1",
-    "version" : "5.1.2",
-    "status" : "noimpact"
-  }, {
-    "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
