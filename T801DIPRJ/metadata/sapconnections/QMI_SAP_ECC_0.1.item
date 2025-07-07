@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
-  <TalendMetadata:SAPConnection xmi:id="_crciwFsZEfCeELPrjQ3Ujw" dataPackage="_Gzo6QFsfEfCeELPrjQ3Ujw" Host="172.20.16.11" Username="qlik" Password="enc:system.encryption.key.v1:71IFW/9XjOIIJRKjh5lkd+dlU/u1MwRjGcsLTcQXptvWYAEf" Client="800" SystemNumber="00" Language="EN" jcoVersion="SAP2">
+  <TalendMetadata:SAPConnection xmi:id="_crciwFsZEfCeELPrjQ3Ujw" id="_crFWYFsZEfCeELPrjQ3Ujw" dataPackage="_Gzo6QFsfEfCeELPrjQ3Ujw" Host="172.20.16.11" Username="qlik" Password="enc:system.encryption.key.v1:3XkALSXo1n7eR84NoeHWiXFuHi0wKO0M4at+D//lZSUSOQ+q" Client="800" SystemNumber="00" Language="EN" jcoVersion="SAP2">
     <taggedValue xmi:id="_crpXEFsZEfCeELPrjQ3Ujw" tag="adsoConnectionType" value="SAP_JCO"/>
+    <additionalProperties xmi:id="_jlNrYFsjEfCeELPrjQ3Ujw" propertyName="api_use_z_talend_read_table" Value="true"/>
   </TalendMetadata:SAPConnection>
   <TalendMetadata:GenericPackage xmi:id="_Gzo6QFsfEfCeELPrjQ3Ujw" name="QMI_SAP_ECC" dataManager="_crciwFsZEfCeELPrjQ3Ujw">
     <ownedElement xsi:type="TalendMetadata:SAPTable" xmi:id="_Gzo6QVsfEfCeELPrjQ3Ujw" name="MARA" id="_-kl1MFseEfCeELPrjQ3Ujw" label="MARA" tableType="TABLE" tableSearchType="TRANSPARENT">
