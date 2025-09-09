@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_92gJARxyEeiuOvPhKHCIWA" name="Customers004" dataPackage="_92gJAhxyEeiuOvPhKHCIWA" Server="Localhost 127.0.0.1" FilePath="C:/StudentFiles/CustomerSales.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_92gJAhxyEeiuOvPhKHCIWA" name="default" dataManager="_92gJARxyEeiuOvPhKHCIWA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_92gJAxxyEeiuOvPhKHCIWA" id="_Y_Lb8BxyEeiuOvPhKHCIWA" label="CustomersSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJBBxyEeiuOvPhKHCIWA" name="id" label="id" length="2" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJBRxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJBhxyEeiuOvPhKHCIWA" name="CustomerName" label="CustomerName" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJBxxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJCBxyEeiuOvPhKHCIWA" name="CustomerAddress" label="CustomerAddress" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJCRxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJChxyEeiuOvPhKHCIWA" name="stateCode" label="stateCode" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJCxxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJDBxyEeiuOvPhKHCIWA" name="idProduct" label="idProduct" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJDRxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJDhxyEeiuOvPhKHCIWA" name="RegisterTime" label="RegisterTime" length="23" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;">
+        <initialValue xmi:id="_92gJDxxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJEBxyEeiuOvPhKHCIWA" name="Shop1" label="Shop1" length="11" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJERxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJEhxyEeiuOvPhKHCIWA" name="Shop2" label="Shop2" length="11" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJExxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJFBxyEeiuOvPhKHCIWA" name="Shop3" label="Shop3" length="11" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJFRxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJFhxyEeiuOvPhKHCIWA" name="Shop4" label="Shop4" length="11" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJFxxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJGBxyEeiuOvPhKHCIWA" name="Shop5" label="Shop5" length="11" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJGRxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJGhxyEeiuOvPhKHCIWA" name="Shop6" label="Shop6" length="11" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJGxxyEeiuOvPhKHCIWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_92gJHBxyEeiuOvPhKHCIWA" name="Shop7" label="Shop7" length="11" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_92gJHRxyEeiuOvPhKHCIWA"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
