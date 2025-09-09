@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_K_DxsO4aEeawiph590D2RA" name="warehouse007" id="_mJrDaYx_EfC1Xa5SZ82j_Q" label="warehouse007" dataPackage="_LAUV8O4aEeawiph590D2RA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/warehouse?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="talend" Password="enc:system.encryption.key.v1:iXu6jYTpv8o+i7CXqosETIKTmrouYirjlAjXc37L1bjiJQ==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="warehouse" SqlSynthax="SQL_92" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_K_Dxse4aEeawiph590D2RA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_LAIIsO4aEeawiph590D2RA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_LAIvwO4aEeawiph590D2RA" tag="Status" value=""/>
+    <taggedValue xmi:id="_LAIvwe4aEeawiph590D2RA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_LAIvwu4aEeawiph590D2RA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_LAIvw-4aEeawiph590D2RA" tag="Description" value=""/>
+    <taggedValue xmi:id="_LAIvxO4aEeawiph590D2RA" tag="Author" value=""/>
+    <taggedValue xmi:id="_LAIvxe4aEeawiph590D2RA" tag="otherParameter"/>
+    <taggedValue xmi:id="_LAOPUO4aEeawiph590D2RA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_LAOPUe4aEeawiph590D2RA" tag="DB ProductVersion" value="5.7.11-log"/>
+    <taggedValue xmi:id="_LAOPUu4aEeawiph590D2RA" tag="DB IdentifierQuoteString" value="`"/>
+    <queries xmi:id="__OiiQO4fEeawiph590D2RA"/>
+    <parameters xmi:id="_K_Dxsu4aEeawiph590D2RA" key="CONN_PARA_KEY_USERNAME" value="talend"/>
+    <parameters xmi:id="_B34BwHMFEemXMLEeEZYAlg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_LAUV8O4aEeawiph590D2RA" name="warehouse" dataManager="_K_DxsO4aEeawiph590D2RA"/>
+</xmi:XMI>
